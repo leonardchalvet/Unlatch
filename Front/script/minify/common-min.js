@@ -1,0 +1,1 @@
+function animScroll(){var i=$window.height()/1.5;$(".sectionAnim_container").each(function(){$window.scrollTop()>=$(this).offset().top-i+i/4&&($(this).hasClass("reach")||$(this).addClass("reach"))})}$window=$(window),$window.scroll(function(){animScroll()}),animScroll();

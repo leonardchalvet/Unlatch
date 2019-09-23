@@ -1,0 +1,425 @@
+@import 'common.scss';
+/*=================================
+=            PAGE ABOUT           =
+=================================*/
+
+main{
+	padding-top: 130px;
+}
+
+#section-cover{
+	position: relative;
+	
+	.wrapper{
+		position: relative;
+		@include styleGrid1;
+		padding-bottom: 375px;
+	}
+	.container-text{
+		width: 585px;
+		h1{
+			@include styleH1_light;
+			span{
+				@include styleH1_bold;
+			}
+		}
+		.sep{
+			margin: 50px 0px 50px 0px;
+			width: 60px;
+			height: 4px;
+			background-color: $colorMain_1_strong;
+		}
+		p{
+			max-width: 475px;
+			@include styleParagraphBig;
+			color: $colorMain_5;
+		}
+	}
+	.container-img{
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		.img{
+			position: relative;
+			z-index: 1;
+			img{
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+		.img-1{
+			width: 44%;
+			height: 300px;
+		}
+		.img-2{
+			width: 19%;
+			height: 450px;
+			margin-bottom: 110px;
+		}
+		.img-3{
+			width: 31%;
+			height: 564px;
+			margin-bottom: 110px;
+		}
+	}
+	.obj-1{
+		width: 198px;
+		position: absolute;
+		right: 173px;
+		top: 0px;
+	}
+	.obj-2{
+		width: 175px;
+		position: absolute;
+		right: -1px;
+		bottom: 0px;
+	}
+}
+
+#section-features{
+	margin-top: 100px;
+	.wrapper{
+		@include styleGrid1;
+	}
+	.container-text{
+		width: 750px;
+		margin: auto;
+		text-align: center;
+		h2{
+			@include styleH2_light;
+			span{
+				@include styleH2_bold;
+			}
+		}
+	}
+	.container-col{
+		margin-top: 100px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		position: relative;
+		.col{
+			width: 50%;
+			&:nth-child(1){
+				padding-right: 110px;
+			}
+			&:nth-child(2){
+				padding-top: 80px;
+				padding-left: 110px;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: 0px;
+				height: 100%;
+				width: 1px;
+				transform: translateX(-50%);
+				background-color: $colorMain_4_medium;
+			}
+			.container-el{
+				.el{
+					display: flex;
+					flex-flow: row wrap;
+					align-items: flex-start;
+					&:nth-child(1){
+						border-bottom: 1px solid $colorMain_4_medium;
+					}
+					.icn{
+						margin-right: 50px;
+						width: 52px;
+						img{
+							width: 100%;
+						}
+					}
+					.text{
+						flex: 1;
+						h3{
+							@include styleH3_light;
+							span{
+								@include styleH3_bold;
+							}
+						}
+						p{
+							margin-top: 16px;
+							@include styleParagraphMedium;
+							color: $colorMain_5;
+						}
+					}
+				}
+				.el-1{
+					padding-bottom: 70px;
+					padding-left: 100px;
+				}
+				.el-2{
+					padding-top: 70px;
+					padding-left: 100px;
+				}
+				.el-3{
+					padding-bottom: 70px;
+					padding-right: 100px;
+				}
+				.el-4{
+					padding-top: 70px;
+					padding-right: 100px;
+				}
+			}
+		}
+	}
+}
+
+#section-fondateurs{
+	margin-top: 140px;
+	padding: 75px 0px 95px 0px;
+	position: relative;
+	.container-background{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		height: 100%;
+		/*clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 10%, 80% 10%, 80% 0);*/
+		width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}) / 2)));
+		background-color: $colorMain_3_strong;
+	}
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+		z-index: 1;
+	}
+	.obj-1{
+		position: absolute;
+		width: 200px;
+		right: 175px;
+	}
+	.obj-2{
+		position: absolute;
+		width: 175px;
+		top: 56px;
+		right: 0px;
+	}
+	.container-text{
+		h2{
+			@include styleH2_light;
+			color: #FFF;
+			span{
+				@include styleH2_bold;
+			}
+		}
+	}
+	.container-el{
+		margin-top: 75px;
+		padding-right: 95px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+		.el{
+			width: 280px;
+			.pp{
+				height: 335px;
+				img{
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+			.container-infos{
+				margin-top: 40px;
+				position: relative;
+				.name{
+					@include styleH4_bold;
+					color: #FFF;
+				}
+				.job{
+					padding-left: 40px;
+					position: relative;
+					@include styleParagraphBig;
+					color: #FFF;
+					&:before{
+						content: '';
+						opacity: 0.8;
+						position: absolute;
+						left: 0px;
+						top: 50%;
+						left: 0px;
+						width: 25px;
+						height: 2px;
+						background-color: $colorMain_1_strong;
+					}
+				}
+				a{
+					position: absolute;
+					right: 0px;
+					top: 0px;
+					img{
+						width: 20px;
+					}
+				}
+			}
+			p{
+				margin-top: 35px;
+				@include styleParagraphMedium;
+				color: rgba(255, 255, 255, 0.8);
+			}
+		}
+	}
+}
+
+#section-stats{
+	.wrapper{
+		@include styleGrid1;
+	}
+	.container-col{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		.col{
+			width: calc(100% / 3);
+			.container-el{
+				width: 100%;
+				.el{
+					position: relative;
+					width: 100%;
+					h4{
+						position: relative;
+						z-index: 1;
+					}
+					p{
+						position: relative;
+						z-index: 1;
+						margin-top: 40px;
+						@include styleParagraphBig;
+					}
+				}
+			}
+			.el-1{
+				border-right: 1px solid $colorMain_4_medium;
+				h4{
+					@include styleH1_light;	
+					color: #FFF;
+				}
+				p{
+					color: #FFF;
+				}
+				padding-top: 110px;
+				padding-bottom: 110px;
+				padding-right: 110px;
+
+				&:before{
+					content: '';
+					right: 0px;
+					bottom: 0px;
+					position: absolute;
+					background-color: $colorMain_1_strong;
+					height: 100%;
+					width: calc(100% + ((100vw - #{$grid_desktop_1}) / 2));
+				}
+			}
+			.el-3{
+				border-bottom: 1px solid $colorMain_4_medium;
+				h4{
+					@include styleH1_bold;	
+				}
+				padding-top: 200px;
+				padding-bottom: 125px;
+				padding-left: 55px;
+				padding-right: 55px;
+			}
+			.el-5{
+				border-left: 1px solid $colorMain_4_medium;
+				h4{
+					@include styleH1_light;	
+				}
+				padding-top: 120px;
+				padding-bottom: 130px;
+				padding-left: 110px;
+			}
+			.el-2{
+				border-right: 1px solid $colorMain_4_medium;
+				h4{
+					@include styleH1_bold;	
+				}
+				padding-top: 125px;
+				padding-bottom: 195px;
+				padding-right: 110px;
+			}
+			.el-4{
+				h4{
+					@include styleH1_light;		
+				}
+				padding-top: 125px;
+				padding-bottom: 70px;
+				padding-left: 55px;
+				padding-right: 55px;
+			}
+			.el-6{
+				border-left: 1px solid $colorMain_4_medium;
+				h4{
+					@include styleH1_bold;		
+				}
+				padding-top: 125px;
+				padding-bottom: 195px;
+				padding-left: 110px;
+			}
+		}
+	}
+}
+
+#section-join{
+	padding: 80px 0px 80px 0px;
+	position: relative;
+	background-color: $colorMain_4_strong;
+	.wrapper{
+		@include styleGrid1;
+	}
+	.container-text{
+		text-align: center;
+		h2{
+			@include styleH2_light;
+			span{
+				@include styleH2_bold;
+			}
+		}
+	}
+	.container-btn{
+		text-align: center;
+		margin-top: 50px;
+		a{
+			@include styleButtonBig_2;
+		}
+	}
+
+	.obj-1{
+		position: absolute;
+		width: 130px;
+		top: 0px;
+		left: 0px;
+	}
+	.obj-2{
+		position: absolute;
+		width: 130px;
+		top: 0px;
+		left: 130px;
+	}
+	.obj-3{
+		position: absolute;
+		width: 130px;
+		bottom: 0px;
+		right: 130px;
+	}
+	.obj-4{
+		position: absolute;
+		width: 130px;
+		right: 0px;
+		bottom: 0px;
+	}
+}
+
+/*=====================================
+=            END PAGE ABOUT           =
+=====================================*/
