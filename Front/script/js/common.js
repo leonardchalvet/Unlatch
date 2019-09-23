@@ -1,6 +1,11 @@
+
+// @codekit-prepend 'jQuery.3.3.1.js'
+
 /*========================================================================
 ================================= COMMON =================================
 ========================================================================*/
+
+
 
 $(window).on('load', function() {
 	$window = $(window);
@@ -41,6 +46,32 @@ $('#header-desktop .link-features').click(function(){
 
 $('main').click(function(){
 	$('#header-desktop').removeClass('open-dropdown-product open-dropdown-features');
+})
+
+$('em').each(function(){
+	$(this).replaceWith('<span>' + $(this).html() +'</span>');
+})
+
+$('a.openLightbox').click(function(){
+	$('.container-lightbox').addClass('displayBlock');
+	setTimeout(function(){
+		$('.container-lightbox').addClass('show');
+	})
+})
+
+$('.container-lightbox .lightbox .cross').click(function(){
+	$('.container-lightbox').removeClass('show');
+	setTimeout(function(){
+		$('.container-lightbox').removeClass('displayBlock');
+	}, 500)
+})
+
+$(document).click(function(){
+	if (!$(event.target).closest('.container-lightbox .lightbox').length) {
+		if($('.container-lightbox').hasClass('show')) {
+			$('.container-lightbox .lightbox .cross').click();
+		}
+	}
 })
 
 
