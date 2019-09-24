@@ -613,9 +613,145 @@ main
 	}
 }
 
+
 /* -------------------------------------------------------------- */
 /* ********************* END SECTION COMMON ********************* */
 /* -------------------------------------------------------------- */
+
+/* ------------------------------------------------------------ */
+/* ********************* SECTION LIGHTBOX ********************* */
+/* ------------------------------------------------------------ */
+
+.container-lightbox {
+
+    position: absolute;
+    z-index: 20;
+    
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0,0,0,.6);
+
+    opacity: 0;
+    transition: opacity .5s ease;
+
+    &.displayBlock {
+        display: flex;
+        .lightbox {
+            display: block;
+        }
+    }
+
+    &.show {
+        opacity: 1;
+        .lightbox {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .lightbox {
+        display: none;
+        position: relative;
+        width: 560px;
+        border-radius: 4px;
+        background-color: #FFF;
+
+        opacity: 0;
+        transform: scale(.7);
+        transition: opacity .5s ease, transform .5s ease;
+
+        .wrapper {
+            padding: 80px 105px;
+        }
+        .cross {
+            cursor: pointer;
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 12px;
+            height: 12px;
+
+            .line {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                border-radius: 5px;
+                background-color: #000;
+                &:first-child {
+                    transform: rotate(45deg);
+                }
+                &:last-child {
+                    transform: rotate(-45deg);    
+                }
+            }
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+        h3 {
+            @include styleH3_bold;
+        }
+        p {
+            @include styleParagraphMedium;
+        }
+        form {
+            margin-top: 25px;
+            input, input::placeholder {
+                @include styleParagraphMedium;
+            }
+            .input {
+                position: relative;
+                width: 100%;
+                input {
+                    border: none;
+                    outline: none;
+                    &:focus {
+                        + .line {
+                            background-color: #000;
+                        }
+                    }
+                    &.error {
+                        .line {
+
+                        }
+                    }
+                }
+                .line {
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    width: 100%;
+                    height: 1px;
+                    background-color: $colorMain_4_medium;
+                    transition: all .25s ease;
+                }
+            }
+            button {
+                margin-top: 30px;
+                outline: none;
+                border: none;
+                width: 100%;
+                @include styleButtonBig_2;
+                .btn-text {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------------- */
+/* ********************* END LIGHTBOX ********************* */
+/* -------------------------------------------------------- */
 
 /* --------------------------------------------------------- */
 /* ********************* IMPORT STYLE  ********************* */

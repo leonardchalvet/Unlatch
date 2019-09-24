@@ -254,6 +254,7 @@ function sectionQuotesCaroussel(Delay, Section, El, Img, Nav){
     }, valDelay);
 
     valDelay = Delay;
+    
 
 };
 /*=================================================================================
@@ -267,7 +268,7 @@ $(window).on('load', function() {
 
 
 	player.on('play', function(data) {
-	    iframe.addClass('show');
+	    iframe.closest('.container-video').addClass('show');
 	});
 
 

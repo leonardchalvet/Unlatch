@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "31491",
 "files": {
+	"/404.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/404.php",
+		"oF": 0
+		},
 	"/about.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -31,6 +39,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/common-header.php",
+		"oF": 0
+		},
+	"/contact.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/contact.php",
 		"oF": 0
 		},
 	"/feature.php": {
@@ -535,6 +551,72 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/img/contact/cover.png": {
+		"ft": 32768,
+		"iS": 419803,
+		"oA": 0,
+		"oAP": "/img/contact/cover.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/contact/list-logo/1-Fiducim@4x.png": {
+		"ft": 32768,
+		"iS": 5956,
+		"oA": 0,
+		"oAP": "/img/contact/list-logo/1-Fiducim@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/contact/list-logo/2-Demathieu Bard@4x.png": {
+		"ft": 32768,
+		"iS": 12881,
+		"oA": 0,
+		"oAP": "/img/contact/list-logo/2-Demathieu Bard@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/contact/list-logo/3-Quartus@4x.png": {
+		"ft": 32768,
+		"iS": 8716,
+		"oA": 0,
+		"oAP": "/img/contact/list-logo/3-Quartus@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/contact/list-logo/4-Arc@4x.png": {
+		"ft": 32768,
+		"iS": 10591,
+		"oA": 0,
+		"oAP": "/img/contact/list-logo/4-Arc@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/contact/list-logo/5-Primea@4x.png": {
+		"ft": 32768,
+		"iS": 16082,
+		"oA": 0,
+		"oAP": "/img/contact/list-logo/5-Primea@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/img/header/link-icn/icn-1.svg": {
@@ -1174,6 +1256,17 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/script/js/contact.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/contact-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/js/index.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1203,6 +1296,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/script/minify/common-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/script/minify/contact-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/contact-min-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
@@ -1242,6 +1346,16 @@
 		"oAP": "/solution_2.php",
 		"oF": 0
 		},
+	"/style/css/404.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/404-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/style/css/about.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1249,6 +1363,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style/css/about-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/contact.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/contact-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1312,6 +1436,19 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/style/scss/404.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/404.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/style/scss/about.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1335,6 +1472,19 @@
 		"oA": 1,
 		"oAP": "/style/css/common.css",
 		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/contact.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/contact.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
