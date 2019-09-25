@@ -1,0 +1,200 @@
+/*=====================================
+=            HEADER DESKTOP           =
+=====================================*/
+#header-desktop{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 20;
+	transition: all 0.25s ease;
+	background-color: #FFF;
+	.head{
+		position: relative;
+		z-index: 2;
+		transition: all 0.25s ease;
+		border-bottom: 1px solid transparent;
+		.wrapper{
+			position: relative;
+			@include styleGrid1;
+			height: 90px;
+			padding-left: 200px;
+		}
+		.logo{
+			position: absolute;
+			left: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+			
+			img{
+				height: 30px;
+				
+			}
+		}
+		.container-link{
+			height: 100%;
+			list-style: none;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			li{
+				position: relative;
+				height: 100%;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				&:not(:last-child){
+					margin-right: 45px;
+				}
+				a{
+					text-decoration: none;
+					cursor: pointer;
+					display: flex;
+					flex-flow: row wrap;
+					align-items: center;
+					span{
+						@include styleParagraphSmall;
+						font-family: $font_1_semibold;
+						color: #000;
+						transition: all 0.25s ease;
+					}
+					img{
+						width: 7px;
+						margin-left: 10px;
+					}
+				}
+				&:after{
+					opacity: 0;
+					content: '';
+					position: absolute;
+					left: 0px;
+					bottom: 0px;
+					width: 100%;
+					height: 2px;
+					transition: all 0.25s ease;
+				}
+				&.active,
+				&:hover{
+					&:after{
+						opacity: 1;
+					}
+					a{
+						span{
+							
+						}
+					}
+				}
+			}
+		}
+		.container-action{
+			position: absolute;
+			right: 30px;
+			top: 50%;
+			transform: translateY(-50%);
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			.tel{
+				text-decoration: none;
+				margin-right: 25px;
+				@include styleParagraphSmall;
+				color: #000;
+				font-family: $font_1_semibold;
+			}
+			.demo{
+				text-decoration: none;
+				@include styleButtonSmall_1;
+			}
+		}
+	}
+	&.scroll{
+		.head{
+			background-color: #FFF;
+			box-shadow: 0 20px 29px 0 rgba(0,0,0,0.05);
+		}
+	}
+	&.open-dropdown-solutions,
+	&.open-dropdown-features,
+	&.open-dropdown-entreprise{
+		.head{
+			box-shadow: none;
+			border-color: #D0D0D0;
+			background-color: #FFF;
+		}
+	}
+	&.open-dropdown-solutions{
+		.dropdown-solutions{
+			transform: translateY(0px);
+			box-shadow: 0 11px 27px 0 rgba(0,0,0,0.15);
+		}
+	}
+	&.open-dropdown-features{
+		.dropdown-features{
+			transform: translateY(0px);
+			box-shadow: 0 11px 27px 0 rgba(0,0,0,0.15);
+		}
+	}
+	&.open-dropdown-entreprise{
+		.dropdown-entreprise{
+			transform: translateY(0px);
+			box-shadow: 0 11px 27px 0 rgba(0,0,0,0.15);
+		}
+	}
+	.dropdown{
+		position: absolute;
+		left: 0px;
+		top: 90px;
+		width: 100%;
+		background-color: #FFF;
+		padding-top: 50px;
+		padding-bottom: 60px;
+		transition: all 300ms cubic-bezier(0.000, 0.965, 0.805, 0.995);
+		transform: translateY(calc(-100% - 70px));
+		.wrapper{
+			@include styleGrid1;
+		}
+		ul{
+			list-style: none;
+			display: flex;
+			flex-flow: row wrap;
+			li{
+				width: calc(100% / 4);
+				&:nth-child(-1n+3){
+					margin-bottom: 50px;
+				}
+				&:not(:nth-child(3n)){
+					margin-right: 12.5%;
+				}
+				a{
+					text-decoration: none;
+					display: flex;
+					flex-flow: row wrap;
+					align-items: flex-start;
+					.icn{
+						width: 37px;
+						margin-right: 40px;
+						img{
+							width: 100%;
+						}
+					}
+					.text{
+						padding-top: 15px;
+						flex: 1;
+						h4{
+							@include styleParagraphBig;
+							margin-bottom: 15px;
+							color: #000;
+						}
+						p{
+							@include styleParagraphSmall;
+							color: $colorMain_5;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*=========================================
+=            END HEADER DESKTOP           =
+=========================================*/

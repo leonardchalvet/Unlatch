@@ -1,0 +1,773 @@
+@font-face {
+	font-family:Aalto-Sans-Pro-Light;
+	src:url(../../fonts/Aalto-Sans-Pro-Light.otf);
+}
+@font-face {
+	font-family:Aalto-Sans-Pro-SemiBold;
+	src:url(../../fonts/Aalto-Sans-Pro-SemiBold.otf);
+}
+@font-face {
+	font-family:Aalto-Sans-Pro-Medium;
+	src:url(../../fonts/Aalto-Sans-Pro-Medium.otf);
+}
+@font-face {
+	font-family:Aalto-Sans-Pro-Regular;
+	src:url(../../fonts/Aalto-Sans-Pro-Regular.otf);
+}
+
+body, html, *
+{
+	padding: 0px;
+	margin: 0px;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+body, html {
+	width: 100%;
+	height: 100%;
+}
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, i
+{
+	font-weight: normal;
+	font-style: normal;
+}
+body.block
+{
+	overflow:hidden;
+}
+
+/* ------------------------------------------------------------- */
+/* ********************* CONTAINER GENERAL ********************* */
+/* ------------------------------------------------------------- */
+
+main
+{
+	position: relative;
+	width: 100%;
+	overflow:hidden;
+}
+
+/* ----------------------------------------------------------------- */
+/* ********************* END CONTAINER GENERAL ********************* */
+/* ----------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------- */
+/* ********************* VARIABLES ********************* */
+/* ----------------------------------------------------- */
+
+/*==============================
+=            COLORS            =
+==============================*/
+
+	/*----------  MAIN COLORS  ----------*/
+	$colorMain_1_strong: #FF4D37;
+	$colorMain_1_medium: #FB3A23;
+	$colorMain_1_low: #FFF5C8;
+
+	$colorMain_2_strong: #D0FFD6;
+	$colorMain_2_medium: #BFFFC7;
+	$colorMain_2_low: #E8FFEB;
+
+	$colorMain_3_strong: #181818;
+	$colorMain_3_medium: #252525;
+	$colorMain_3_low: #3B3B3B;
+
+	$colorMain_4_strong: #F4F5F5;
+	$colorMain_4_medium: #E7E7E7;
+	$colorMain_4_low: #FCFCFC;
+
+	$colorMain_5: #6D7278;
+
+
+/*=====  End of COLORS  ======*/
+
+
+/*=============================
+=            FONTS            =
+=============================*/
+
+	$font_1_light: Aalto-Sans-Pro-Light;
+	$font_1_semibold: Aalto-Sans-Pro-SemiBold;
+
+/*=====  End of FONTS  ======*/
+
+
+/*=================================
+=            TEXT SIZE            =
+=================================*/
+
+	/*----------  H1  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h1_textsize_desktop: 70px;
+		$h1_lineheight_desktop: 64px;
+
+
+	/*----------  H2  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h2_textsize_desktop: 44px;
+		$h2_lineheight_desktop: 48px;
+
+
+	/*----------  H3  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h3_textsize_desktop: 32px;
+		$h3_lineheight_desktop: 38px;
+
+
+	/*----------  H4  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h4_textsize_desktop: 26px;
+		$h4_lineheight_desktop: 34px;
+
+
+	/*----------  QUOTE  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$quote_textsize_desktop: 26px;
+		$quote_lineheight_desktop: 40px;
+
+
+	/*----------  PARAGRAPH BIG  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$paragraphBig_textsize_desktop: 20px;
+		$paragraphBig_lineheight_desktop: 26px;
+
+
+	/*----------  PARAGRAPH MEDIUM  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$paragraphMedium_textsize_desktop: 18px;
+		$paragraphMedium_lineheight_desktop: 26px;
+
+
+	/*----------  PARAGRAPH SMALL  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$paragraphSmall_textsize_desktop: 16px;
+		$paragraphSmall_lineheight_desktop: 24px;
+
+
+	/*----------  PARAGRAPH TINY  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$paragraphTiny_textsize_desktop: 13px;
+		$paragraphTiny_lineheight_desktop: 18px;
+
+
+	/*----------  LINK  ----------*/
+		$link_textsize_desktop: 20px;
+		$link_lineheight_desktop: 18px;
+
+/*=====  End of TEXT SIZE  ======*/
+
+
+/*============================
+=            GRID            =
+============================*/
+
+	$grid_desktop_1: 1200px;
+	$grid_desktop_2: 1100px;
+	$grid_desktop_3: 1000px;
+	$grid_desktop_4: 900px;
+
+	$grid_tablet: 100%;
+	$grid_mobile: 100%;
+
+/*=====  End of GRID  ======*/
+
+
+/*===================================
+=            BREAK POINT            =
+===================================*/
+
+	$breakPoint_tablet: 1250px;
+	$breakPoint_mobile: 700px;
+
+
+/*=====  End of BREAK POINT  ======*/
+
+/* --------------------------------------------------------- */
+/* ********************* END VARIABLES ********************* */
+/* --------------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* ********************* MIXIN ********************* */
+/* ------------------------------------------------- */
+
+	/*----------  FUNCTION  ----------*/
+	/*
+	@mixin rgba-background($hexcolor, $opacity) {
+	  background-color: rgba($hexcolor, $opacity); 
+	}*/
+
+	/*----------  HEADING  ----------*/
+
+		/*----------  H1  ----------*/
+		@mixin styleH1_common{
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $h1_textsize_desktop;
+				line-height: $h1_lineheight_desktop;
+			}
+			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){}
+			@media screen and (max-width: $breakPoint_mobile){}	
+		}
+		@mixin styleH1_light{
+			@include styleH1_common;
+			font-family: $font_1_light;
+		}
+		@mixin styleH1_bold{
+			@include styleH1_common;
+			font-family: $font_1_semibold;
+		}
+
+		/*----------  H2  ----------*/
+		@mixin styleH2_common{
+			font-size: $h2_textsize_desktop;
+			line-height: $h2_lineheight_desktop;
+		}
+		@mixin styleH2_light{
+			@include styleH2_common;
+			font-family: $font_1_light;
+		}
+		@mixin styleH2_bold{
+			@include styleH2_common;
+			font-family: $font_1_semibold;
+		}
+
+		/*----------  H3  ----------*/
+		@mixin styleH3_common{
+			font-size: $h3_textsize_desktop;
+			line-height: $h3_lineheight_desktop;
+		}
+		@mixin styleH3_light{
+			@include styleH3_common;
+			font-family: $font_1_light;
+		}
+		@mixin styleH3_bold{
+			@include styleH3_common;
+			font-family: $font_1_semibold;
+		}
+
+		/*----------  H4  ----------*/
+		@mixin styleH4_common{
+			font-size: $h4_textsize_desktop;
+			line-height: $h4_lineheight_desktop;
+		}
+		@mixin styleH4_light{
+			@include styleH4_common;
+			font-family: $font_1_light;
+		}
+		@mixin styleH4_bold{
+			@include styleH4_common;
+			font-family: $font_1_semibold;
+		}
+
+
+		/*----------  QUOTE  ----------*/
+		@mixin styleQuote{
+			font-family: $font_1_light;
+			font-size: $quote_textsize_desktop;
+			line-height: $quote_lineheight_desktop;
+		}
+
+		/*----------  PARAGRAPH BIG  ----------*/
+		@mixin styleParagraphBig{
+			font-family: $font_1_light;
+			font-size: $paragraphBig_textsize_desktop;
+			line-height: $paragraphBig_lineheight_desktop;
+		}
+
+		/*----------  PARAGRAPH MEDIUM  ----------*/
+		@mixin styleParagraphMedium{
+			font-family: $font_1_light;
+			font-size: $paragraphMedium_textsize_desktop;
+			line-height: $paragraphMedium_lineheight_desktop;
+		}
+
+		/*----------  PARAGRAPH SMALL  ----------*/
+		@mixin styleParagraphSmall{
+			font-family: $font_1_light;
+			font-size: $paragraphSmall_textsize_desktop;
+			line-height: $paragraphSmall_lineheight_desktop;
+		}
+
+		/*----------  PARAGRAPH TINY  ----------*/
+		@mixin styleParagraphTiny{
+			font-family: $font_1_light;
+			font-size: $paragraphTiny_textsize_desktop;
+			line-height: $paragraphTiny_lineheight_desktop;
+		}
+
+
+		/*---------- LINK ----------*/
+		@mixin styleLink_common{
+			text-decoration: none;
+			display: inline-flex;
+			align-items: center;
+			.link-text{
+				@include styleParagraphBig;
+				font-family: $font_1_semibold;
+			}
+			.link-arrow{
+				margin-left: 20px;
+				position: relative;
+				height: 30px;	
+				width: 30px;	
+				border: 1px solid $colorMain_1_strong;
+				transition: all 0.25s ease;
+				svg{
+					stroke: $colorMain_1_strong;
+					width: 8px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					transition: all 0.25s ease;
+				}
+			}
+			&:hover{
+				.link-arrow{
+					border-color: $colorMain_3_strong;
+					background-color: $colorMain_3_strong;
+					svg{
+						stroke: #FFF;
+					}
+				}
+			}
+		}
+
+		@mixin styleLink_1{
+			@include styleLink_common;
+			.link-text{
+				color: #181818;
+			}
+		}
+
+		@mixin styleLink_2{
+			@include styleLink_common;
+			.link-text{
+				color: #FFF;
+			}
+			.link-arrow{
+				background-color: $colorMain_1_strong;
+				svg{
+					stroke: #FFF;
+				}
+			}
+		}
+
+
+		/*----------  BUTTON  ----------*/
+		@mixin styleButtonBig_common{
+			text-decoration: none;
+		  	display: inline-flex;
+		  	border-radius: 4px;
+		  	padding: 16px 30px 16px 30px;
+		  	transition: all 0.25s ease;
+		  	.btn-text{
+		  		@include styleParagraphMedium;
+		  		font-family: $font_1_semibold;
+		  		color: #FFF;
+		  	}
+		  	&:hover{
+		  		background-color: #242424;
+		  	}
+		  	
+		}
+
+		@mixin styleButtonBig_1{
+		  	@include styleButtonBig_common;
+		  	background-color: $colorMain_3_strong;
+		}
+		@mixin styleButtonBig_2{
+		  	@include styleButtonBig_common;
+		  	background-color: $colorMain_1_strong;
+		}
+
+		@mixin styleButtonSmall_1{
+			text-decoration: none;
+		  	display: block;
+		  	padding: 7px 22px 7px 22px;
+		  	border: 1px solid $colorMain_1_strong;
+			border-radius: 6px;
+		  	.btn-text{
+		  		@include styleParagraphSmall;
+		  		font-family: $font_1_semibold;
+		  		color: $colorMain_1_strong;
+		  	}
+		}
+
+
+		/*----------  GRID  ----------*/
+
+			/*----------  COMMON  ----------*/
+			@mixin styleGrid-common{
+				margin-right: auto;
+				margin-left: auto;
+				@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+					width: $grid_tablet;
+					padding-right: 50px;
+					padding-left: 50px;
+				}
+				@media screen and (max-width: $breakPoint_mobile){
+					width: $grid_mobile;
+					padding-right: 25px;
+					padding-left: 25px;
+				}
+			}
+
+			/*----------  SIZE 1  ----------*/
+			@mixin styleGrid1{
+				@include styleGrid-common;
+				@media screen and (min-width: $breakPoint_tablet){
+					width: $grid_desktop_1;
+				}
+			}
+
+			/*----------  SIZE 2  ----------*/
+			@mixin styleGrid2{
+				@include styleGrid-common;
+				@media screen and (min-width: $breakPoint_tablet){
+					width: $grid_desktop_2;
+				}
+			}
+
+			/*----------  SIZE 3  ----------*/
+			@mixin styleGrid3{
+				@include styleGrid-common;
+				@media screen and (min-width: $breakPoint_tablet){
+					width: $grid_desktop_3;
+				}
+			}
+
+			/*----------  SIZE 4  ----------*/
+			@mixin styleGrid4{
+				@include styleGrid-common;
+				@media screen and (min-width: $breakPoint_tablet){
+					width: $grid_desktop_4;
+				}
+			}
+
+
+
+/* ----------------------------------------------------- */
+/* ********************* END MIXIN ********************* */
+/* ----------------------------------------------------- */
+
+
+/* ---------------------------------------------------------- */
+/* ********************* SECTION COMMON ********************* */
+/* ---------------------------------------------------------- */
+
+.sectionAnim_container{
+
+
+	.elAnim__slide {
+	    opacity: 0;
+	    transform: translateY(20px);
+	    transition: transform 1000ms cubic-bezier(0.070, 0.965, 0.560, 1.000), opacity 1000ms cubic-bezier(0.070, 0.965, 0.560, 1.000);
+	}
+	.elAnim__fade{
+	  	opacity: 0;
+	  	transition: opacity 1000ms cubic-bezier(0.070, 0.965, 0.560, 1.000);
+	}
+	@for $i from 1 to 20 {
+	    .anim__delayMedium_#{$i} { transition-delay: $i * 0.1s !important; }
+	}
+	@for $i from 1 to 20 {
+	    .anim__delaySmall_#{$i} { transition-delay: $i * 0.05s !important; }
+	}
+
+	&.reach .elAnim__slide,
+	&.active .elAnim__slide {
+	    opacity: 1;
+	    transform: translateY(0px);
+	}
+	&.reach .elAnim__fade,
+	&.active .elAnim__fade {
+	    opacity: 1;
+	}
+}
+
+
+#common-section-banner{
+	margin-top: 150px;
+	position: relative;
+	background-color: $colorMain_2_strong;
+	.wrapper{
+		@include styleGrid3;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.container-img{
+		width: 450px;
+		height: 450px;
+		position: relative;
+		img{
+			position: absolute;
+			left: 50%;
+			bottom: -200px;
+			transform: translateX(-50%);
+			width: 350px;
+		}
+	}
+	.container-text{
+		padding: 85px 0px 40px 0px;
+		flex: 1;
+		h2{
+			@include styleH2_light;
+			span{
+				@include styleH2_bold;
+			}
+		}
+		>p{
+			margin-top: 16px;
+			@include styleParagraphBig;
+		}
+		a{
+			margin-top: 16px;
+			@include styleButtonBig_1;
+		}
+		.container-infos{
+			margin-top: 45px;
+			position: relative;
+			padding-left: 40px;
+			&:before{
+				content: '';
+				background-color: $colorMain_3_strong;
+				position: absolute;
+				top: 10px;
+				left: 0px;
+				width: 25px;
+				height: 1px;
+			}
+			p{
+				@include styleParagraphSmall;
+				font-family: $font_1_semibold;
+			}
+		}
+	}
+
+	.obj-2{
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+		width: 120px;
+	}
+	.obj-3{
+		position: absolute;
+		right: 120px;
+		bottom: 0px;
+		width: 130px;
+	}
+}
+
+#common-section-join{
+	padding: 80px 0px 80px 0px;
+	position: relative;
+	background-color: $colorMain_4_strong;
+	.wrapper{
+		@include styleGrid1;
+	}
+	.container-text{
+		text-align: center;
+		h2{
+			@include styleH2_light;
+			span{
+				@include styleH2_bold;
+			}
+		}
+	}
+	.container-btn{
+		text-align: center;
+		margin-top: 50px;
+		a{
+			@include styleButtonBig_2;
+		}
+	}
+
+	.obj-1{
+		position: absolute;
+		width: 130px;
+		top: 0px;
+		left: 0px;
+	}
+	.obj-2{
+		position: absolute;
+		width: 130px;
+		top: 0px;
+		left: 130px;
+	}
+	.obj-3{
+		position: absolute;
+		width: 130px;
+		bottom: 0px;
+		right: 130px;
+	}
+	.obj-4{
+		position: absolute;
+		width: 130px;
+		right: 0px;
+		bottom: 0px;
+	}
+}
+
+
+/* -------------------------------------------------------------- */
+/* ********************* END SECTION COMMON ********************* */
+/* -------------------------------------------------------------- */
+
+/* ------------------------------------------------------------ */
+/* ********************* SECTION LIGHTBOX ********************* */
+/* ------------------------------------------------------------ */
+
+.container-lightbox {
+
+    position: absolute;
+    z-index: 20;
+    
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0,0,0,.6);
+
+    opacity: 0;
+    transition: opacity .5s ease;
+
+    &.displayBlock {
+        display: flex;
+        .lightbox {
+            display: block;
+        }
+    }
+
+    &.show {
+        opacity: 1;
+        .lightbox {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .lightbox {
+        display: none;
+        position: relative;
+        width: 560px;
+        border-radius: 4px;
+        background-color: #FFF;
+
+        opacity: 0;
+        transform: scale(.7);
+        transition: opacity .5s ease, transform .5s ease;
+
+        .wrapper {
+            padding: 80px 105px;
+        }
+        .cross {
+            cursor: pointer;
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 12px;
+            height: 12px;
+
+            .line {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                border-radius: 5px;
+                background-color: #000;
+                &:first-child {
+                    transform: rotate(45deg);
+                }
+                &:last-child {
+                    transform: rotate(-45deg);    
+                }
+            }
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+        h3 {
+            @include styleH3_bold;
+        }
+        p {
+            @include styleParagraphMedium;
+        }
+        form {
+            margin-top: 25px;
+            input, input::placeholder {
+                @include styleParagraphMedium;
+            }
+            .input {
+                position: relative;
+                width: 100%;
+                input {
+                    border: none;
+                    outline: none;
+                    &:focus {
+                        + .line {
+                            background-color: #000;
+                        }
+                    }
+                    &.error {
+                        .line {
+
+                        }
+                    }
+                }
+                .line {
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    width: 100%;
+                    height: 1px;
+                    background-color: $colorMain_4_medium;
+                    transition: all .25s ease;
+                }
+            }
+            button {
+                margin-top: 30px;
+                outline: none;
+                border: none;
+                width: 100%;
+                @include styleButtonBig_2;
+                .btn-text {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------------------------------------- */
+/* ********************* END LIGHTBOX ********************* */
+/* -------------------------------------------------------- */
+
+/* --------------------------------------------------------- */
+/* ********************* IMPORT STYLE  ********************* */
+/* --------------------------------------------------------- */
+
+@import 'header.scss';
+@import 'footer.scss';
+
+/* ------------------------------------------------------------- */
+/* ********************* END IMPORT STYLE  ********************* */
+/* ------------------------------------------------------------- */
+
+
+
+
+
+
+
+

@@ -25,6 +25,14 @@
 		"oAP": "/about.php",
 		"oF": 0
 		},
+	"/clients.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/clients.php",
+		"oF": 0
+		},
 	"/common-footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -39,6 +47,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/common-header.php",
+		"oF": 0
+		},
+	"/common-lightbox.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/common-lightbox.php",
 		"oF": 0
 		},
 	"/contact.php": {
@@ -1243,6 +1259,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/index.php",
+		"oF": 0
+		},
+	"/pres.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pres.php",
 		"oF": 0
 		},
 	"/script/js/common.js": {

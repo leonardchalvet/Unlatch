@@ -1,0 +1,35 @@
+@import 'solution_common.scss';
+
+#section-cover{
+	.container-img{
+		right: 0px;
+	}
+	.obj-1{
+		right: 580px;
+	}
+	.obj-2{
+		right: 400px;
+	}
+	.container-text{
+		width: 530px;
+	}
+}
+
+#section-features{
+	.container-features{
+		.feature{
+			&.higlight{
+				.container-background{
+					right: calc(0px - ((100vw - #{$grid_desktop_1}) / 2));
+				}
+				.obj-1{
+					left: 0px;
+				}
+				.obj-2{
+					left: 230px;
+					top: 0%;
+				}
+			}
+		}
+	}
+}

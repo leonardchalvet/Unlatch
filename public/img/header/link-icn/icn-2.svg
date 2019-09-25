@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="49px" viewBox="0 0 36 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icon@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1c-Home-Unlatch-DropdownSolution" transform="translate(-536.000000, -129.000000)">
+            <g id="Icon" transform="translate(536.000000, 129.000000)">
+                <rect id="Rectangle-Copy-4" fill="#E7E7E7" x="0" y="28.6769253" width="16.6281481" height="19.962963"></rect>
+                <rect id="Rectangle-Copy-15" fill="#BFFFC7" x="19.2037037" y="19.0584068" width="16.6281481" height="29.5814815"></rect>
+                <polygon id="Oval-Copy" fill="#E7E7E7" points="19.2037037 0.181481481 19.2037037 16.8777778 35.8318519 16.8777778"></polygon>
+                <ellipse id="Oval" fill="#FF4D37" cx="8.31407407" cy="16.8777778" rx="8.31407407" ry="8.34814815"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
