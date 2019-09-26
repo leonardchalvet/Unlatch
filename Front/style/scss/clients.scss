@@ -216,15 +216,17 @@ main{
 			&:nth-last-child(1n + 3) {
 				margin-bottom: 140px;
 			}
+			&:before {
+				position: absolute;
+				top: 0;
+				left: -125px;
+				width: 1px;
+				height: 100%;
+				background-color: rgba($colorMain_5, .29);
+			}
 			&:nth-child(even) {
 				&:before {
 					content: " ";
-					position: absolute;
-					top: 0;
-					left: -125px;
-					width: 1px;
-					height: 100%;
-					background-color: rgba($colorMain_5, .29);
 				}
 			}
 			width: 380px;
@@ -316,6 +318,72 @@ main{
 		  }
 		}
 	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#section-cover {
+		.container-text {
+			p {
+				width: 100%;
+			}
+			.container-quotes {
+				.obj-1 {
+					top: 40px;
+					left: 25px;
+				}
+				.container-el {
+					height: 950px;
+					.el {
+						q {
+							top: 120px;
+							width: calc(100% - 55px);
+						}
+					}
+				}
+			}
+		}
+		.container-img {
+			margin-top: 25px;
+			height: 350px;
+			.el {
+				img {
+
+				}
+				.container-infos {
+					width: 100%;
+					padding-left: 10px;
+					.name {
+
+					}
+					.job {
+
+					}
+				}
+			}
+		}
+	}
+
+	#section-clients {
+		.container-el {
+			.el {
+				width: 100%;
+				&:nth-last-child(1n + 2) {
+					margin-bottom: 120px;
+				}
+				&:not(:first-child) {
+					&:before {
+						content: " ";
+						height: 1px;
+						width: 100%;
+						left: 0;
+						top: -60px;
+					}
+				}
+			}
+		}
+	}
+
 }
 
 /*=======================================
