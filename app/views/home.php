@@ -31,9 +31,6 @@ $document = $WPGLOBAL['document']->data;
         <div class="wrapper">
           <div class="container-text">
             <?= RichText::asHtml($document->cover_title); ?>
-            <script type="text/javascript">
-              $('#section-cover h1').addClass('elAnim__slide anim__delayMedium_1');
-            </script>
             <div class="sep elAnim__slide anim__delayMedium_2"></div>
             <p class="elAnim__slide anim__delayMedium_3">
               <?= RichText::asHtml($document->cover_text); ?>
@@ -76,9 +73,6 @@ $document = $WPGLOBAL['document']->data;
         <div class="wrapper">
           <div class="container-text">
             <?= RichText::asHtml($document->job_title); ?>
-            <script type="text/javascript">
-              $('#section-metier h2').addClass('elAnim__slide anim__delayMedium_1');
-            </script>
           </div>
           <div class="container-el">
             <?php $i = 1; 
@@ -119,10 +113,6 @@ $document = $WPGLOBAL['document']->data;
           <div class="container-text">
             <?= RichText::asHtml($document->pres_title); ?>
             <?= RichText::asHtml($document->pres_text); ?>
-            <script type="text/javascript">
-              $('#section-pres h2').addClass('elAnim__slide anim__delayMedium_1');
-              $('#section-pres p').addClass('elAnim__slide anim__delayMedium_2');
-            </script>
             <a class="elAnim__slide anim__delayMedium_3 openLightbox">
               <span class="link-text">
                 <?= RichText::asText($document->pres_link_text); ?>
@@ -286,9 +276,6 @@ $document = $WPGLOBAL['document']->data;
           </div>
           <div class="container-text">
             <?= RichText::asHtml($document->banner_title); ?>
-            <script type="text/javascript">
-              $('#section-section-banner h2').addClass('elAnim__slide anim__delayMedium_2');
-            </script>
             <a href="<?= $document->banner_button_link->url; ?>" class="elAnim__slide anim__delayMedium_3">
               <span class="btn-text"><?= RichText::asText($document->banner_buttton_text); ?></span>
             </a>
@@ -304,6 +291,13 @@ $document = $WPGLOBAL['document']->data;
     <?php include('common-footer.php') ?>
 
     <script type="text/javascript" src="/script/minify/index-min.js"></script>
+    <script type="text/javascript">
+      $('#section-cover h1').addClass('elAnim__slide anim__delayMedium_1');
+      $('#section-metier h2').addClass('elAnim__slide anim__delayMedium_1');
+      $('#section-pres h2').addClass('elAnim__slide anim__delayMedium_1');
+      $('#section-pres p').addClass('elAnim__slide anim__delayMedium_2');
+      $('#common-section-banner h2').addClass('elAnim__slide anim__delayMedium_2');
+    </script>
 
   </body>
 </html>

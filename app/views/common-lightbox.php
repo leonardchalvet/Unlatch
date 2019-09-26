@@ -11,19 +11,20 @@ $lightbox = $WPGLOBAL['lightbox']->data;
 		</div>
 		<div class="wrapper">
 			<h3>
-				Plaquette de présentation
+				<?= RichText::asText($lightbox->title); ?>
 			</h3>
 			<p>
-				Veuillez inscrire votre adresse email afin de pouvoir télécharger notre plaquette.
+				<?= RichText::asText($lightbox->text); ?>
 			</p>
 			<form>
 				<div class="input">
-					<input type="text" name="email" placeholder="Adresse email">
+					<input type="text" name="email" placeholder="<?= RichText::asText($lightbox->input); ?>">
 					<div class="line"></div>
 				</div>
-				<a class="download" href="path_to_file" download="https://www.peipotato.org/sites/default/files/2017-10/Test%20PDF.pdf" style="display: none;"></a>
+				<a class="download" href="path_to_file" download="<?= $lightbox->doc_pdf->url; ?>" style="display: none;"></a>
+				<input type="text" name="email" value="<?= RichText::asText($lightbox->email); ?>" style="display: none;">
 				<button>
-					<span class="btn-text">Télécharger</span>
+					<span class="btn-text"><?= RichText::asText($lightbox->button_text); ?></span>
 				</button>
 			</form>
 		</div>
