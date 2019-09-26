@@ -21,15 +21,15 @@
 
 			<section id="section-cover">
 				<div class="wrapper">
+					<h1>Ils nous font <span>confiance</span></h1>
 					<div class="container-text">
-						<h1>Ils nous font <span>confiance</span></h1>
 						<p>
 							Lancé en 2017, le logiciel LegaLife Immobilier a réussi à convaincre plus de 130 promoteurs immobiliers grâce à une solution complète et très simple d’utilisation pour les différents intervenants de la vente immobilière. Voici ce que pensent nos clients !
 						</p>
 						<div class="container-quotes">
 							<img class="obj-1" src="img/common/icn-quote-white.svg" alt="">	
 							<div class="container-el">
-								<div class="el">
+								<div class="el active">
 									<q>
 										Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré
 									</q>
@@ -64,22 +64,22 @@
 						</div>
 					</div>
 					<div class="container-img">
-						<div class="el">
+						<div class="el active">
 							<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
 							<div class="container-infos">
 								<div class="name">Norbert Desmard</div>
 								<div class="job">Directeur Commercial, Quartus</div>
 							</div>
 						</div>
-						<div class="el">
-							<img src="img/common/section-quotes/quote-img-2.jpg" alt="">
+						<div class="el hide-before">
+							<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
 							<div class="container-infos">
 								<div class="name">Anthony Perez</div>
 								<div class="job">Président, Davril Promotion</div>
 							</div>
 						</div>
-						<div class="el">
-							<img src="img/common/section-quotes/quote-img-3.jpg" alt="">
+						<div class="el hide-before">
+							<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
 							<div class="container-infos">
 								<div class="name">Catherine Galatoire</div>
 								<div class="job">Directrice Commerciale, CBo Territoria</div>
@@ -100,7 +100,7 @@
 							</q>
 							<div class="info">
 								<div class="pp">
-									<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+									<div class="img" style="background-image: url(img/common/section-quotes/quote-img-1.jpg)" alt=""></div>
 								</div>
 								<div class="col">
 									<div class="name">Norbert Desmard</div>
@@ -115,10 +115,10 @@
 							</q>
 							<div class="info">
 								<div class="pp">
-									<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+									<div class="img" style="background-image: url(img/common/section-quotes/quote-img-1.jpg)" alt=""></div>
 								</div>
 								<div class="col">
-									<div class="name">Norbert Desmard</div>
+									<div class="name">Josué Jannin</div>
 									<div class="job">Directeur Commercial</div>
 								</div>
 							</div>
@@ -130,7 +130,7 @@
 							</q>
 							<div class="info">
 								<div class="pp">
-									<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+									<div class="img" style="background-image: url(img/common/section-quotes/quote-img-1.jpg)" alt=""></div>
 								</div>
 								<div class="col">
 									<div class="name">Norbert Desmard</div>
@@ -145,7 +145,7 @@
 							</q>
 							<div class="info">
 								<div class="pp">
-									<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+									<div class="img" style="background-image: url(img/common/section-quotes/quote-img-1.jpg)" alt=""></div>
 								</div>
 								<div class="col">
 									<div class="name">Norbert Desmard</div>
@@ -160,7 +160,7 @@
 							</q>
 							<div class="info">
 								<div class="pp">
-									<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+									<div class="img" style="background-image: url(img/common/section-quotes/quote-img-1.jpg)" alt=""></div>
 								</div>
 								<div class="col">
 									<div class="name">Norbert Desmard</div>
@@ -175,7 +175,7 @@
 							</q>
 							<div class="info">
 								<div class="pp">
-									<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+									<div class="img" style="background-image: url(img/common/section-quotes/quote-img-1.jpg)" alt=""></div>
 								</div>
 								<div class="col">
 									<div class="name">Norbert Desmard</div>
@@ -204,6 +204,6 @@
 
 		<?php include('common-footer.php') ?>
 
-		<script type="text/javascript" src="script/minify/common-min.js"></script>
+		<script type="text/javascript" src="script/minify/clients-min.js"></script>
 	</body>
 </html>
