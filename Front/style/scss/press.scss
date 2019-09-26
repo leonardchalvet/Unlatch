@@ -1,0 +1,209 @@
+@import 'common.scss';
+/*=================================
+=            PAGE PRESS           =
+=================================*/
+
+main{
+	padding-top: 130px;
+}
+
+#section-cover{
+	position: relative;
+	.wrapper{
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	.container-text {
+		width: 575px;
+		h1{
+			width: 100%;
+			@include styleH1_light;
+			span{
+				display: block;
+				@include styleH1_bold;
+			}
+			margin-bottom: 35px;
+		}
+		.container-quotes{
+			padding: 70px 60px;
+			margin-top: 140px;
+			width: 100%;
+			height: 590px;
+			position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+				background-color: $colorMain_3_strong;
+			}
+			.obj-1{
+				position: relative;
+				z-index: 1;
+				width: 70px;
+				height: 50px;
+			}
+			h3 {
+				margin-top: 50px;
+				position: relative;
+				z-index: 1;
+				@include styleH4_bold;
+				color: #FFF;
+				width: calc(100% - 100px);
+			}
+			q{
+				display: inline-block;
+				margin-top: 30px;
+				position: relative;
+				z-index: 1;
+				@include styleQuote;
+				color: #FFF;
+			}
+			.logo {
+				position: relative;
+				z-index: 1;
+				margin-top: 65px;
+				max-width: 180px;
+				max-height: 25px;
+			}
+		}
+	}
+	.container-img{
+		height: 790px;
+		width: 575px;
+		img{
+			position: relative;
+			height: 100%;
+			width: 100%;
+			top: 0px;
+			left: 0px;
+			object-fit: cover;
+		}
+	}
+}
+
+.common-section-pdf {
+	position: relative;
+	padding-top: 70px;
+	padding-bottom: 140px;
+	.obj-1 {
+		position: absolute;
+		top: -90px;
+		right: 0;
+		width: 130px;
+		height: 300px;
+	}
+	.obj-2 {
+		position: absolute;
+		top: -30px;
+		right: 128px;
+		width: 130px;
+		height: 180px;	
+	}
+	.wrapper {
+		@include styleGrid3;
+	}
+	h2 {
+		text-align: center;
+		@include styleH2_light;	
+		span {
+			@include styleH2_bold;
+		}
+	}
+	.container-el {
+		padding-top: 120px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.el {
+			position: relative;
+			&:nth-last-child(1n + 3) {
+				margin-bottom: 140px;
+			}
+			&:nth-child(even) {
+				&:before {
+					content: " ";
+					position: absolute;
+					top: 0;
+					left: -125px;
+					width: 1px;
+					height: 100%;
+					background-color: rgba($colorMain_5, .29);
+				}
+			}
+			width: 380px;
+			img {
+				max-width: 150px;
+				max-height: 25px;
+			}
+			h3 {
+				margin-top: 50px;
+				@include styleH4_bold;
+			}
+			q {
+				display: inline-block;
+				margin-top: 15px;
+				@include styleParagraphBig;
+				color: $colorMain_5;
+			}
+			a {
+				cursor: pointer;
+				margin-top: 50px;
+				display: flex;
+				align-items: center;
+				width: fit-content;
+				text-decoration: none;
+				color: #000;
+				.btn-text {
+					@include styleH4_bold;
+					font-size: 20px;
+					line-height: 22px;
+					background-color: none;
+					border: none;
+					outline: none;
+					margin-right: 20px;
+				}
+				.link-arrow {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 32px;
+					height: 32px;
+					background-color: #FFF;
+					border: 1.5px solid $colorMain_1_strong;
+					svg {
+						width: 9px;
+						height: 15px;
+						stroke: $colorMain_1_strong;
+					}
+				}
+				&:hover {
+					.link-arrow {
+						background-color: $colorMain_1_strong;
+						svg {
+							stroke: #FFF;
+						}
+					}
+				}
+			}
+		}
+	}
+	.container-btn {
+		margin-top: 100px;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		a {
+			@include styleButtonBig_2;
+		}
+	}
+}
+
+/*=====================================
+=            END PAGE PRESS           =
+======================================*/
