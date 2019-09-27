@@ -11,8 +11,6 @@
 
 		<link rel="stylesheet" type="text/css" href="style/css/contact.css">
 
-		<script src="https://player.vimeo.com/api/player.js"></script>
-
 	</head>
 	
 	<body>

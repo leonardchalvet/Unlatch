@@ -25,6 +25,38 @@
 		"oAP": "/about.php",
 		"oF": 0
 		},
+	"/blog-author.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog-author.php",
+		"oF": 0
+		},
+	"/blog-categories.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog-categories.php",
+		"oF": 0
+		},
+	"/blog-post.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog-post.php",
+		"oF": 0
+		},
+	"/blog.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog.php",
+		"oF": 0
+		},
 	"/common-footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -39,6 +71,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/common-header.php",
+		"oF": 0
+		},
+	"/common-lightbox.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/common-lightbox.php",
 		"oF": 0
 		},
 	"/contact.php": {
@@ -234,6 +274,36 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"/img/blog-post/icn-facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/blog-post/icn-facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/blog-post/icn-linkedin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/blog-post/icn-linkedin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/blog-post/icn-twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/blog-post/icn-twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
 		},
 	"/img/common-feature/section-cover/obj-1.svg": {
 		"ft": 2097152,
@@ -1366,6 +1436,46 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/style/css/blog-author.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog-author-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/blog-categories.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog-categories-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/blog-post.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog-post-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/blog.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/style/css/contact.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1458,6 +1568,58 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style/css/about.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/blog-author.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog-author.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/blog-categories.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog-categories.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/blog-post.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog-post.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/blog.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
