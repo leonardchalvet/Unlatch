@@ -26,31 +26,26 @@ $(window).on('load', function() {
 })
 
 
-$('#header-desktop .link-solutions').click(function(){
-	$('#header-desktop').removeClass('open-dropdown-features open-dropdown-entreprise');
-	if ($('#header-desktop').hasClass('open-dropdown-solutions')) {
-		$('#header-desktop').removeClass('open-dropdown-solutions');
-	} else {
-		$('#header-desktop').addClass('open-dropdown-solutions');
-	}
-})
+for(let i = 1 ; i < 10 ; i++) {
+	$('#header-desktop .link-' + i).click(function(){
+		for(let j = 1 ; j < 10 ; j++) {
+			$('#header-desktop').removeClass('open-dropdown-' + j);
+		}
+		if ($('#header-desktop').hasClass('open-dropdown-' + i)) {
+			$('#header-desktop').removeClass('open-dropdown-' + i);
+		} else {
+			$('#header-desktop').addClass('open-dropdown-' + i);
+		}
+	})
+}
 
-$('#header-desktop .link-features').click(function(){
-	$('#header-desktop').removeClass('open-dropdown-solutions open-dropdown-entreprise');
-	if ($('#header-desktop').hasClass('open-dropdown-features')) {
-		$('#header-desktop').removeClass('open-dropdown-features');
-	} else {
-		$('#header-desktop').addClass('open-dropdown-features');
-	}
-})
-
-$('#header-desktop .link-entreprise').click(function(){
-
-	$('#header-desktop').removeClass('open-dropdown-solutions open-dropdown-features');
-	if ($('#header-desktop').hasClass('open-dropdown-entreprise')) {
-		$('#header-desktop').removeClass('open-dropdown-entreprise');
-	} else {
-		$('#header-desktop').addClass('open-dropdown-entreprise');
+$(document).click(function(){
+	if (!$(event.target).closest('#header-desktop').length) {
+		for(let i = 1 ; i < 10 ; i++) {
+			if ($('#header-desktop').hasClass('open-dropdown-' + i)) {
+				$('#header-desktop').removeClass('open-dropdown-' + i);
+			}
+		}
 	}
 })
 
@@ -63,6 +58,7 @@ $('em').each(function(){
 })
 
 $('a.openLightbox').click(function(){
+	$('body').addClass('block');
 	$('.container-lightbox').addClass('displayBlock');
 	setTimeout(function(){
 		$('.container-lightbox').addClass('show');
@@ -73,6 +69,7 @@ $('.container-lightbox .lightbox .cross').click(function(){
 	$('.container-lightbox').removeClass('show');
 	setTimeout(function(){
 		$('.container-lightbox').removeClass('displayBlock');
+		$('body').removeClass('block');
 	}, 500)
 })
 
