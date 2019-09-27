@@ -1,0 +1,206 @@
+@import 'common.scss';
+
+/*===================================
+=            PAGE CONTACT           =
+===================================*/
+
+#section-contact{
+	position: relative;
+	
+	.wrapper{
+		min-height: 100vh;
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	.container-text{
+		width: 700px;
+
+		.container-cover{
+			padding-top: 130px;
+			position: relative;
+			padding-bottom: 40px;
+			width: 100%;
+			&:before{
+				content: '';
+				background-color: $colorMain_4_strong;
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				height: 100%;
+				width: 100%;
+				width: calc(100% + (100vw - (#{$grid_desktop_1} / 2)));
+			}
+			h1{
+				position: relative;
+				z-index: 1;
+				@include styleH1_light;
+				span{
+					@include styleH1_bold;
+				}
+			}
+			p{
+				position: relative;
+				z-index: 1;
+				margin-top: 100px;
+				@include styleParagraphBig;
+				color: $colorMain_5;
+				a{
+					color: $colorMain_3_strong;
+					text-decoration: none;
+				}
+			}
+			img{
+				position: absolute;
+				width: 255px;
+				right: 10px;
+				bottom: 0px;
+			}
+		}
+		.container-infos{
+			padding-top: 55px;
+			padding-right: 100px;
+			> p{
+				@include styleParagraphMedium;
+				color: $colorMain_3_strong;
+			}
+			ul{
+				margin-top: 32px;
+				list-style: none;
+				li{
+					padding-left: 40px;
+					position: relative;
+					&:not(:last-child){
+						margin-bottom: 17px;
+					}
+					&:before{
+						content: '';
+						position: absolute;
+						left: 0px;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 20px;
+						height: 2px;
+						background-color: $colorMain_1_strong;
+					}
+					p{
+						@include styleParagraphMedium;
+						color: $colorMain_5;
+					}
+				}
+			}
+
+			.container-logo{
+				margin-top: 100px;
+				p{
+					@include styleParagraphBig;
+					margin-bottom: 50px;
+					span{
+						font-family: $font_1_semibold;
+					}
+				}
+				.list-logo{
+					display: flex;
+					flex-flow: row wrap;
+					align-items: center;
+					justify-content: space-between;
+					img{
+						max-width: 90px;
+						max-height: 30px;
+					}
+				}
+			}
+		}
+		
+	}
+	.container-form{
+		position: relative;
+		flex: 1;
+		padding: 130px 0px 265px 70px;
+		&:before{
+			content: '';
+			background-color: $colorMain_3_strong;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			height: 100%;
+			width: 100%;
+			width: calc(100% + (100vw - (#{$grid_desktop_1} / 2)));
+		}
+		.head{
+			position: relative;
+			z-index: 1;
+			h2{
+				@include styleH2_light;
+				color: #FFF;
+				span{
+					@include styleH2_bold;
+				}
+			}
+			p{
+				margin-top: 16px;
+				@include styleParagraphMedium;
+				color: rgba(255, 255, 255, 0.8);
+			}
+		}
+		form{
+			position: relative;
+			z-index: 1;
+			margin-top: 50px;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			.label{
+				width: calc(50% - 24px);
+				margin-bottom: 45px;
+				position: relative;
+				height: 35px;
+				input{
+					outline: none;
+					position: absolute;
+					z-index: 1;
+					top: 0px;
+					left: 0px;
+					width: 100%;
+					height: 100%;
+					background-color: transparent;
+					border: none;
+					border-bottom: 1px solid $colorMain_5;
+					@include styleParagraphSmall;
+					color: #FFF;
+				}
+				.name{
+					@include styleParagraphSmall;
+					color: $colorMain_5;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					transition: all 0.25s ease;
+				}
+				&.focus,
+				&.fill{
+					.name{
+						transform: translateY(-100%) scale(0.8) translateX(-10%);
+					}
+				}
+			}
+
+			button{
+				border: none;
+				width: 100%;
+				text-align: center;
+				@include styleButtonBig_2;
+				.btn-text{
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+	}
+	
+}
+
+/*=======================================
+=            END PAGE CONTACT           =
+=======================================*/

@@ -1,0 +1,39 @@
+@import 'solution_common.scss';
+
+#section-cover{
+	&:before{
+		right: 0px;
+	}
+	.container-text{
+		width: calc(500px + 530px);
+		padding-left: 500px;
+	}
+	.container-img{
+		left: 0px;
+	}
+	.obj-1{
+		right: calc(200px - ((100vw - #{$grid_desktop_1}) / 2));
+	}
+	.obj-2{
+		right: calc(0px - ((100vw - #{$grid_desktop_1}) / 2));
+	}
+}
+
+#section-features{
+	.container-features{
+		.feature{
+			&.higlight{
+				.container-background{
+					left: calc(0px - ((100vw - #{$grid_desktop_1}) / 2));
+				}
+				.obj-1{
+					right: 230px;
+				}
+				.obj-2{
+					right: 0px;
+					top: 50%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,391 @@
+@import 'common.scss';
+/*=================================
+=            PAGE CLIENTS           =
+=================================*/
+
+main{
+	padding-top: 130px;
+}
+
+#section-cover{
+	position: relative;
+	.wrapper{
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	h1{
+		width: 100%;
+		@include styleH1_light;
+		span{
+			display: block;
+			@include styleH1_bold;
+		}
+		margin-bottom: 35px;
+	}
+	.container-text {
+		width: 575px;
+		p {
+			width: calc(100% - 70px);
+			@include styleParagraphBig;
+		}
+		.container-quotes{
+			margin-top: 40px;
+			width: 100%;
+			position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+				background-color: $colorMain_1_strong;
+			}
+			.obj-1{
+				position: absolute;
+				left: 55px;
+				top: 55px;
+				width: 70px;
+				z-index: 1;
+			}
+			.container-el{
+				height: 620px;
+				position: relative;
+				z-index: 1;
+				.el{
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					height: 100%;
+					width: 100%;
+					opacity: 0;
+					transition: all 0.5s ease;
+					q{
+						position: absolute;
+						width: calc(100% - 100px);
+						top: 155px;
+						left: 50%;
+						transform: translateX(-50%);
+						@include styleQuote;
+						color: #FFF;
+					}
+					.container-infos{
+						position: absolute;
+						bottom: 80px;
+						padding-left: 50px;
+						&:before{
+							position: absolute;
+							top: 16px;
+							left: 0px;
+							content: '';
+							width: 26px;
+							height: 2px;
+							background-color: $colorMain_2_medium;
+						}
+						.name{
+							@include styleH4_bold;
+							color: #FFF;
+						}
+						.job{
+							@include styleParagraphBig;
+							color: #FFF;
+						}
+					}
+					&.active{
+						opacity: 1;
+					}
+				}
+			}
+			.container-nav{
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				z-index: 1;
+				width: 120px;
+				height: 80px;
+				display: flex;
+				flex-flow: row wrap;
+				.nav{
+					cursor: pointer;
+					width: 50%;
+					height: 100%;
+					position: relative;
+					transition: all 0.25s ease;
+					svg{
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						stroke: #FFF;
+						width: 16px;
+						transition: all 0.25s ease;
+					}
+					&.prev{
+						svg{
+							transform: translate(-50%, -50%) rotate(180deg);
+						}
+					}
+					&.next{
+						svg{
+							transform: translate(-50%, -50%);
+						}
+					}
+					&:hover{
+						background-color: #FFF;
+						svg{
+							stroke: $colorMain_1_strong;
+						}
+					}
+				}
+			}
+		}
+	}
+	.container-img{
+		height: 790px;
+		width: 575px;
+		position: relative;
+		.el {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			img{
+				position: relative;
+				height: 100%;
+				width: 100%;
+				top: 0px;
+				left: 0px;
+				object-fit: cover;
+			}
+			.container-infos {
+				padding: 25px 50px;
+				position: absolute;
+				z-index: 1;
+				left: 0;
+				bottom: 0;
+				background-color: #FFF;
+				.name {
+					@include styleH3_bold;
+					font-size: 26px;
+					line-height: 28px;
+				}
+				.job {
+					@include styleH3_light;
+					font-size: 20px;
+					line-height: 22px;
+				}
+			}
+
+			&.active{
+				transition: all 1000ms cubic-bezier(1.000, 0.005, 0.435, 1.000);
+				z-index: 1;
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+			}
+			&.hide-before{
+				clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+			}
+			&.hide-after{
+				transition: all 1000ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+				opacity: 1;
+				clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+			}
+		}
+	}
+}
+
+#section-clients {
+	padding-top: 140px;
+	.wrapper {
+		@include styleGrid3;
+	}
+	h2 {
+		text-align: center;
+		@include styleH2_light;	
+		span {
+			@include styleH2_bold;
+		}
+	}
+	.container-el {
+		padding-top: 120px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.el {
+			position: relative;
+			&:nth-last-child(1n + 3) {
+				margin-bottom: 140px;
+			}
+			&:before {
+				position: absolute;
+				top: 0;
+				left: -125px;
+				width: 1px;
+				height: 100%;
+				background-color: rgba($colorMain_5, .29);
+			}
+			&:nth-child(even) {
+				&:before {
+					content: " ";
+				}
+			}
+			width: 380px;
+			img {
+				max-width: 150px;
+				max-height: 25px;
+			}
+			q {
+				display: inline-block;
+				margin-top: 50px;
+				@include styleParagraphBig;
+				color: $colorMain_5;
+			}
+			.info {
+				margin-top: 50px;
+				display: flex;
+				align-items: center;
+				.pp {
+					position: relative;
+					margin-right: 30px;
+					width: 75px;
+					height: 75px;
+					.img {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						border-radius: 50%;
+						background-position: center center;
+						background-repeat: no-repeat;
+						background-size: cover;
+					}
+				}
+				.col {
+					.name {
+						@include styleH4_bold;
+					}
+					.job {
+						@include styleParagraphBig;
+					}
+				}
+			}
+		}
+	}
+}
+
+#section-logos{
+	padding-top: 180px;
+	padding-bottom: 120px;
+	.wrapper{
+		position: relative;
+	}
+	.container-text{
+		max-width: 775px;
+		text-align: center;
+		margin: auto;
+		h2{
+			@include styleH2_light;
+			span{
+				@include styleH2_bold
+			}
+		}
+	}
+	.container-logos{
+		
+		margin: auto;
+		margin-top: 40px;
+		height: 300px;
+		width: 100%;
+		position: relative;
+		img{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			height: 100%;
+			animation-duration: 20s;
+  			animation-name: slideLoop;
+  			animation-iteration-count: infinite;
+  			animation-timing-function: linear;
+		}
+		@keyframes slideLoop {
+		  0% {
+		    transform: translateX(0%);
+		  }
+
+		  100% {
+			transform: translateX(calc(-100% + 100vw));
+		  }
+		}
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#section-cover {
+		.container-text {
+			p {
+				width: 100%;
+			}
+			.container-quotes {
+				.obj-1 {
+					top: 40px;
+					left: 25px;
+				}
+				.container-el {
+					height: 950px;
+					.el {
+						q {
+							top: 120px;
+							width: calc(100% - 55px);
+						}
+					}
+				}
+			}
+		}
+		.container-img {
+			margin-top: 25px;
+			height: 350px;
+			.el {
+				img {
+
+				}
+				.container-infos {
+					width: 100%;
+					padding-left: 10px;
+					.name {
+
+					}
+					.job {
+
+					}
+				}
+			}
+		}
+	}
+
+	#section-clients {
+		.container-el {
+			.el {
+				width: 100%;
+				&:nth-last-child(1n + 2) {
+					margin-bottom: 120px;
+				}
+				&:not(:first-child) {
+					&:before {
+						content: " ";
+						height: 1px;
+						width: 100%;
+						left: 0;
+						top: -60px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+/*=======================================
+=            END PAGE CLIENTS           =
+========================================*/

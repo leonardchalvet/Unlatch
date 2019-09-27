@@ -1,0 +1,52 @@
+@import 'common.scss';
+
+/*===============================
+=            PAGE 404           =
+================================*/
+
+main {
+	height: 100vh;
+}
+
+#section-404 {
+	.wrapper {
+		@include styleGrid4;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: 100%;
+	}
+	h1 {
+		text-align: center;
+		span {
+			display: block;
+			&:nth-child(1){
+				@include styleH1_light;
+			}
+			&:nth-child(2){
+				@include styleH1_bold;
+			}
+		}
+	}
+	.sep{
+		margin: 40px 0px 40px 0px;
+		width: 60px;
+		height: 4px;
+		background-color: $colorMain_1_strong;
+	}
+	p {
+		@include styleParagraphBig;
+		text-align: center;
+	}
+	.container-btn {
+		margin-top: 25px;
+		a {
+			@include styleButtonBig_2;
+		}
+	}
+}
+
+/*===================================
+=            END PAGE 404           =
+=====================================*/

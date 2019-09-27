@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="39px" viewBox="0 0 29 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icone@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1c-Home-Unlatch-DropdownFeatures-" transform="translate(-81.000000, -353.000000)">
+            <g id="Group" transform="translate(81.000000, 153.000000)">
+                <g id="4" transform="translate(0.000000, 200.000000)">
+                    <g id="icone">
+                        <rect id="Rectangle" fill="#FF4D37" x="0" y="0" width="29" height="11.2809917"></rect>
+                        <rect id="Rectangle" fill="#E7E7E7" x="0" y="27.7190083" width="29" height="11.2809917"></rect>
+                        <rect id="Rectangle" fill="#E7E7E7" transform="translate(10.311111, 19.500000) rotate(-180.000000) translate(-10.311111, -19.500000) " x="0" y="13.214876" width="20.6222222" height="12.5702479"></rect>
+                        <polygon id="Oval-Copy" fill="#BFFFC7" transform="translate(22.555556, 19.661157) rotate(-135.000000) translate(-22.555556, -19.661157) " points="18.0431589 15.1487603 18.0444444 24.1722681 27.0679522 24.1735537"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
