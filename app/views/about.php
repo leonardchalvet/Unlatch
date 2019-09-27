@@ -3,16 +3,11 @@ use Prismic\Dom\RichText;
 $document = $WPGLOBAL['document']->data;
 ?>
 <html>
-  <head>
+  	<head>
 
-    <title><?= RichText::asText($document->global_title); ?></title>
+    	<title><?= RichText::asText($document->global_title); ?></title>
 
-    <meta name="description" content="<?= RichText::asText($document->global_description); ?>" /><html>
-	<head>
-
-		<title>About</title>
-
-		<meta name="description" content="" />
+    	<meta name="description" content="<?= RichText::asText($document->global_description); ?>" />
 
 		<meta http-equiv="content-type" content="text/html; charset=utf8" />
 
