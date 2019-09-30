@@ -349,6 +349,7 @@ main{
 		width: 130px;
 	}
 	.wrapper{
+		position: relative;
 		@include styleGrid1;
 	}
 	.container-text{
@@ -371,6 +372,176 @@ main{
 			@include styleButtonBig_1;
 		}
 	}
+}
+
+@media screen and (max-width: $breakPoint_mobile){
+	main{
+		padding-top: 75px;
+	}
+	#section-cover{
+
+		&:before{
+			width: 100%;
+		}
+		.wrapper{
+			padding-bottom: 0px;
+		}
+		.container-text{
+			width: 100%;
+			padding-left: 0px;
+		}
+		.container-img{
+			margin-top: 40px;
+			position: relative;
+			left: initial;
+			bottom: initial;
+			width: calc(100% + 50px);
+			margin-left: -25px;
+			height: 350px;
+		}
+
+		.obj-1{
+			display: none;
+		}
+	}
+
+	#section-features{
+		margin-top: 60px;
+		.container-text{
+			width: 100%;
+		}
+		.container-col{
+			.col{
+				width: 100%;
+				&:after{
+					content: initial;
+				}
+				&:nth-child(1),
+				&:nth-child(2){
+					padding: 0px;
+				}
+				.container-el{
+					.el{
+						width: 100%;
+						padding: 0px;
+						border: none;
+					}
+					.el-1,
+					.el-2,
+					.el-3,
+					.el-4{
+						margin-bottom: 40px;
+						padding: 0px;
+						padding-bottom: 40px;
+						border-right: none;
+						border-top: 0px;
+						border-left: 0px;
+					}
+					.el-1, 
+					.el-2, 
+					.el-3{
+						border-bottom: 1px solid #E7E7E7;
+					}
+				}
+			}
+		}
+	}
+
+	#section-services{
+		margin-top: 0px;
+		padding: 60px 0px 60px 0px;
+		.obj-1{
+			display: none;
+		}
+		.obj-2{
+			display: none;
+		}
+		.container-text{
+			width: 100%;
+			padding: 0px;
+			.container-actions{
+				.link{
+					margin-top: 40px;
+				}
+			}
+		}
+		.container-img{
+			display: none;
+		}
+	}
+
+	#section-quote{
+		margin-top: 40px;
+		.wrapper{
+			display: block;
+		}
+		.container-img{
+			height: 400px;
+			width: calc(100% + 50px);
+			margin-left: -25px;
+		}
+		.container-quote{
+			width: 100%;
+			margin-top: 40px;
+			padding-left: 0px;
+			.obj-1{
+				display: none;
+			}
+			.container-el{
+				height: initial;
+				.el{
+					height: initial;
+					top: initial;
+					left: initial;
+					position: relative;
+					
+					q{
+						position: relative;
+						top: initial;
+						transform: translateY(0px);
+						color: $colorMain_3_strong;
+					}
+					.container-infos{
+						margin-top: 40px;
+						position: relative;
+						bottom: initial;
+						.name{
+							color: $colorMain_3_strong;
+						}
+						.job{
+							color: $colorMain_3_strong;
+						}
+					}
+				}
+			}
+			.container-action{
+				margin-top: 40px;
+				display: block;
+				.container-link{
+					width: 100%;
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+
+	#section-demo{
+		margin-top: 80px;
+		.obj-1, 
+		.obj-2, 
+		.obj-3, 
+		.obj-4{
+			width: 90px;
+		}
+
+		.obj-3{
+			left: 90px;
+		}
+		.obj-4{
+			right: 90px;
+		}
+	}
+
 }
 
 

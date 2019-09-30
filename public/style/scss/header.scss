@@ -181,6 +181,11 @@
 		}
 	}
 }
+@media screen and (max-width: $breakPoint_mobile){
+	#header-desktop{
+		display: none;
+	}
+}	
 /*=========================================
 =            END HEADER DESKTOP           =
 =========================================*/

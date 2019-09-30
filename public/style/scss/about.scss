@@ -420,6 +420,124 @@ main{
 	}
 }
 
+@media screen and (max-width: $breakPoint_mobile){
+	main{
+		padding-top: 75px;
+	}
+
+	#section-cover{
+		.wrapper{
+			padding-bottom: 0px;
+		}
+		.container-text{
+			width: 100%;
+		}
+		.container-img{
+			position: relative;
+			bottom: initial;
+			left: initial;
+			margin-top: 40px;
+			.img-1{
+				width: 55%;
+			}
+			.img-2{
+				display: none;
+			}
+			.img-3{
+				height: 400px;
+				margin-bottom: 40px;
+				width: 40%;
+			}
+		}
+		.obj-1,
+		.obj-2{
+			display: none;
+		}
+	}
+
+	#section-features{
+		margin-top: 120px;
+		.container-text{
+			width: 100%;
+		}
+		.container-col{
+			.col{
+				width: 100%;
+				&:after{
+					content: initial;
+				}
+				&:nth-child(1),
+				&:nth-child(2){
+					padding: 0px;
+				}
+				.container-el{
+					.el{
+						width: 100%;
+						padding: 0px;
+						border: none;
+					}
+					.el-1,
+					.el-2,
+					.el-3,
+					.el-4{
+						margin-bottom: 40px;
+						padding: 0px;
+						padding-bottom: 40px;
+						border-right: none;
+						border-top: 0px;
+						border-left: 0px;
+					}
+					.el-1, 
+					.el-2, 
+					.el-3{
+						border-bottom: 1px solid #E7E7E7;
+					}
+				}
+			}
+		}
+	}
+
+	#section-fondateurs{
+		margin-top: 0px;
+		padding: 60px 0px 60px 0px;
+		.container-el{
+			margin-top: 60px;
+			padding-right: 0px;
+			.el{
+				width: 100%;
+				&:not(:last-child){
+					margin-bottom: 60px;
+				}
+			}
+		}
+	}
+
+	#section-stats{
+		padding: 60px 0px 60px 0px;
+		.container-col{
+			.col{
+				width: 100%;
+				.container-el{
+					.el{
+						padding: 20px 0px 20px 0px;
+						border: none;
+						&:before{
+							content: initial;
+						}
+					}
+					.el-1,
+					.el-6{
+						h4,
+						p{
+							color: initial;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 /*=====================================
 =            END PAGE ABOUT           =
 =====================================*/

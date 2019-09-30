@@ -189,6 +189,26 @@
 	}
 }
 
+@media screen and (max-width: $breakPoint_mobile){
+	#section-blog{
+		.wrapper{
+			padding-top: 75px;
+		}
+		.container-blog{
+			.el-text{
+				width: 100%;
+				margin-bottom: 80px;
+			}
+			.el-blog{
+				width: 100%;
+				&:not(last-child){
+					margin-bottom: 60px;
+				}
+			}
+		}
+	}
+}
+
 /*==========================================
 =            END PAGE CATEGORIES           =
 ==========================================*/
