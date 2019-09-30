@@ -104,8 +104,8 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
     //PART 4 - Call current page
     $document = NULL;
     $nType = 0;
-    $arrayTypes = ['home', 'clients', 'services', 'about', 'solutions', 'features', 'p404']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
-    $arrayView  = ['home', 'clients', 'services', 'about', 'solutions', 'feature', '404']; // NAME IN "VIEWS" FOLDER, ALWAYS SAME POSITION BETWEEN "arrayTypes" & "arrayView"
+    $arrayTypes = ['home', 'clients', 'pres', 'services', 'about', 'solutions', 'features', 'p404']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
+    $arrayView  = ['home', 'clients', 'pres', 'services', 'about', 'solutions', 'feature', '404']; // NAME IN "VIEWS" FOLDER, ALWAYS SAME POSITION BETWEEN "arrayTypes" & "arrayView"
     foreach ($arrayTypes as $type) {
         $document = $api->getByUID($type, $args['uid'], $options);
         $allLang = $api->getByUID($type, $args['uid'], [ 'lang' => '*' ] );
