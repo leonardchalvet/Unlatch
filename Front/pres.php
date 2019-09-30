@@ -23,6 +23,9 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h1>Ils nous font <span>confiance</span></h1>
+						<p>
+							Retrouvez sur cette page les communiqués de Presse d'Unlatch ainsi que les médias qui parlent de nous.
+						</p>
 						<div class="container-quotes">
 							<img class="obj-1" src="img/common/icn-quote-red.svg" alt="">
 							<h3>
@@ -31,7 +34,14 @@
 							<q>
 								Parapher une vente immobilière depuis un ordinateur, une tablette ou un smartphone est désormais possible grâce à la signature électronique…
 							</q>
-							<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="" style="filter: invert(1);">
+							<div class="container-logo">
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="" style="filter: invert(1);">
+								</div>
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="" style="filter: invert(1);">
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="container-img">
@@ -45,7 +55,14 @@
 					<h2>Les communiqués de <span>presse</span></h2>
 					<div class="container-el">
 						<div class="el">
-							<img src="img/home/section-logos/logo-haagendazs.png" alt="">
+							<div class="container-logo">
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+							</div>
 							<h3>Ces technologie qui mettent l’immobilier en mouvement</h3>
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
@@ -60,7 +77,14 @@
 							</a>
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/logo-haagendazs.png" alt="">
+							<div class="container-logo">
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+							</div>
 							<h3>Ces technologie qui mettent l’immobilier en mouvement</h3>
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
@@ -75,7 +99,14 @@
 							</a>
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/logo-haagendazs.png" alt="">
+							<div class="container-logo">
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+							</div>
 							<h3>Ces technologie qui mettent l’immobilier en mouvement</h3>
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
@@ -90,7 +121,14 @@
 							</a>
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/logo-haagendazs.png" alt="">
+							<div class="container-logo">
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+							</div>
 							<h3>Ces technologie qui mettent l’immobilier en mouvement</h3>
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
@@ -127,7 +165,11 @@
 					<h2>Unlatch dans les <span>médias</span></h2>
 					<div class="container-el">
 						<div class="el">
-							<img src="img/home/section-logos/logo-haagendazs.png" alt="">
+							<div class="container-logo">
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+							</div>
 							<h3>Ces technologie qui mettent l’immobilier en mouvement</h3>
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
@@ -142,7 +184,11 @@
 							</a>
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/logo-haagendazs.png" alt="">
+							<div class="container-logo">
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+							</div>
 							<h3>Ces technologie qui mettent l’immobilier en mouvement</h3>
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
@@ -157,7 +203,11 @@
 							</a>
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/logo-haagendazs.png" alt="">
+							<div class="container-logo">
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="" style="filter: invert(1);">
+								</div>
+							</div>
 							<h3>Ces technologie qui mettent l’immobilier en mouvement</h3>
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
@@ -172,7 +222,11 @@
 							</a>
 						</div>
 						<div class="el">
-							<img src="img/home/section-logos/logo-haagendazs.png" alt="">
+							<div class="container-logo">
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+							</div>
 							<h3>Ces technologie qui mettent l’immobilier en mouvement</h3>
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.

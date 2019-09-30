@@ -27,6 +27,9 @@ $document = $WPGLOBAL['document']->data;
 				<div class="wrapper">
 					<div class="container-text">
 						<?= RichText::asHtml($document->cover_title); ?>
+						<p>
+							<?= RichText::asText($document->cover_text); ?>
+						</p>
 						<div class="container-quotes">
 							<img class="obj-1" src="/img/common/icn-quote-red.svg" alt="">
 							<h3>
@@ -35,7 +38,16 @@ $document = $WPGLOBAL['document']->data;
 							<q>
 								<?= RichText::asText($document->cover_quote_text); ?>
 							</q>
-							<img class="logo" src="<?= $document->cover_quote_logo->url; ?>" alt="">
+							<div class="container-logo">
+								<div class="logo">
+									<img class="logo" src="<?= $document->cover_quote_logo_1->url; ?>" alt="">
+								</div>
+								<?php if(!empty($document->cover_quote_logo_2->url)) { ?>
+								<div class="logo">
+									<img class="logo" src="<?= $document->cover_quote_logo_2->url; ?>" alt="">
+								</div>
+								<?php } ?>
+							</div>
 						</div>
 					</div>
 					<div class="container-img">
@@ -50,7 +62,16 @@ $document = $WPGLOBAL['document']->data;
 					<div class="container-el">
 						<?php foreach ($document->pres_container_el as $pres) { ?>
 						  <div class="el">
-							<img src="<?= $pres->pres_logo->url; ?>" alt="">
+							<div class="container-logo">
+								<div class="logo">
+									<img class="logo" src="<?= $pres->pres_logo_1->url; ?>" alt="">
+								</div>
+								<?php if(!empty($pres->pres_logo_2->url)) { ?>
+								<div class="logo">
+									<img class="logo" src="<?= $pres->pres_logo_2->url; ?>" alt="">
+								</div>
+								<?php } ?>
+							</div>
 							<h3><?= RichText::asText($pres->pres_subtitle); ?></h3>
 							<q>
 								<?= RichText::asText($pres->pres_text); ?>
