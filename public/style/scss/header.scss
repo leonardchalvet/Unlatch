@@ -113,33 +113,19 @@
 			box-shadow: 0 20px 29px 0 rgba(0,0,0,0.05);
 		}
 	}
-	&.open-dropdown-solutions,
-	&.open-dropdown-features,
-	&.open-dropdown-entreprise{
-		.head{
-			box-shadow: none;
-			border-color: #D0D0D0;
-			background-color: #FFF;
-		}
-	}
-	&.open-dropdown-solutions{
-		.dropdown-solutions{
-			transform: translateY(0px);
-			box-shadow: 0 11px 27px 0 rgba(0,0,0,0.15);
-		}
-	}
-	&.open-dropdown-features{
-		.dropdown-features{
-			transform: translateY(0px);
-			box-shadow: 0 11px 27px 0 rgba(0,0,0,0.15);
-		}
-	}
-	&.open-dropdown-entreprise{
-		.dropdown-entreprise{
-			transform: translateY(0px);
-			box-shadow: 0 11px 27px 0 rgba(0,0,0,0.15);
-		}
-	}
+	@for $i from 1 to 10 {
+  		&.open-dropdown-#{$i} {
+  			.head{
+				box-shadow: none;
+				border-color: #D0D0D0;
+				background-color: #FFF;
+			}	
+			.dropdown-#{$i} {
+				transform: translateY(0px);
+				box-shadow: 0 11px 27px 0 rgba(0,0,0,0.15);
+			}
+  		}
+  	}
 	.dropdown{
 		position: absolute;
 		left: 0px;

@@ -1,0 +1,387 @@
+@import 'common.scss';
+
+/*===============================
+=            PAGE POST          =
+===============================*/
+
+
+#section-head{
+	padding-top: 145px;
+	.wrapper{
+		@include styleGrid1;
+	}
+	.container-path{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		a{
+			text-decoration: none;
+			@include styleParagraphTiny;
+			color: $colorMain_5;
+		}
+		svg{
+			margin: 0px 15px 0px 15px;
+			width: 4px;
+			stroke: $colorMain_5;
+		}
+	}
+
+	.container-text{
+		margin-top: 32px;
+		h1{
+			width: 775px;
+			@include styleH1_light;
+			span{
+				@include styleH1_bold;
+			}
+		}
+	}
+
+	.container-infos{
+		margin-top: 54px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		.pp{
+			height: 92px;
+			width: 92px;
+			border-radius: 45px;
+			overflow: hidden;
+			img{
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+		.text{
+			flex: 1;
+			margin-left: 15px;
+			.name{
+				@include styleParagraphBig;
+				font-family: $font_1_semibold;
+			}
+			.post{
+				@include styleParagraphMedium;
+			}
+			.date{
+				margin-top: 16px;
+				@include styleParagraphSmall;
+			}
+		}
+	}
+
+	.cover{
+		margin-top: 55px;
+		width: 100%;
+		height: 660px;
+		position: relative;
+		img{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+		.bdg{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			background-color: #FFF;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			padding: 11px 30px 11px 30px;
+			span{
+				@include styleParagraphMedium;
+				font-family: $font_1_semibold;
+			}
+		}
+	}
+}
+
+#section-wysiwyg{
+
+	padding-top: 50px;
+	.wrapper{
+		position: relative;
+		@include styleGrid1;
+	}
+	.container-share{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		a{
+			display: block;
+			text-decoration: none;
+			width: 15px;
+			filter: grayscale(1);
+			&:not(:last-child){
+				margin-bottom: 50px;
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.wysiwyg{
+		width: 675px;
+		margin: auto;
+		position: relative;
+		> p{
+			text-align: left;
+			@include styleParagraphMedium;
+			color: $colorMain_5;
+			
+			strong{
+				font-weight: normal;
+				color: $colorMain_1_strong;
+				text-decoration: underline;
+			}
+			> img{
+				display: block;
+				width: calc(100% + 200px);
+				margin: 40px 0px 70px -100px;
+			}
+			a{
+				text-decoration: none;
+				color: $colorMain_3_strong;
+				font-family: $font_1_semibold;
+				text-decoration: underline;
+			}
+		}
+		> h2{
+			@include styleH2_light;
+			text-align: left;
+			margin: 50px 0px 25px 0px;
+		}
+		> h3{
+			@include styleH3_light;
+			text-align: left;
+			margin: 50px 0px 25px 0px;
+		}
+		> ul,
+		> ol{
+			text-align: left;
+			list-style: none;
+			margin: 25px 0px 50px 0px;
+			li{
+				padding-left: 40px;
+				position: relative;
+				@include styleParagraphMedium;
+				color: $colorMain_5;
+				margin-bottom:10px;
+				&:last-child{
+					margin-bottom:0px;
+				}
+				&:before{
+					background-color: $colorMain_1_strong;
+					content:'';
+					height: 5px;	
+					width: 5px;
+					border-radius: 3px;
+					position: absolute;
+					left: 10px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+		}
+		> img{
+			display: block;
+			width: calc(100% + 200px);
+			margin: 40px 0px 70px -100px;
+		}
+		iframe{
+			width: calc(100% + 200px);
+			margin-left: -100px;
+			height: 380px;
+			margin-top: 50px;
+		}
+		.container-quote{
+			padding: 75px 0px 75px 0px;
+			width: 100%;
+			text-align: left;
+			display: flex;
+			flex-flow: row wrap;
+			.icn{
+				width: 60px;
+				margin-right: 30px;
+				img{
+					width: 100%;
+				}
+			}
+			.text{
+				flex: 1;
+				q{
+					@include styleQuote;
+					margin-top:25px;
+				}
+			}
+		}
+		.container-author{
+			margin-top: 50px;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: space-between;
+			width: calc(100% + 200px);
+			margin-left: -100px;
+			padding-bottom: 50px;
+			border-bottom: 1px solid #D6D6D6;
+			.infos{
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				.pp{
+					height: 92px;
+					width: 92px;
+					border-radius: 45px;
+					overflow: hidden;
+					img{
+						height: 100%;
+						width: 100%;
+						object-fit: cover;
+					}
+				}
+				.text{
+					flex: 1;
+					margin-left: 15px;
+					.name{
+						@include styleParagraphBig;
+						font-family: $font_1_semibold;
+					}
+					.post{
+						@include styleParagraphMedium;
+					}
+					a{
+						@include styleParagraphMedium;
+						color: $colorMain_1_strong;
+						font-family: $font_1_semibold;
+					}
+				}
+			}
+			.share{
+				p{
+					@include styleParagraphMedium;
+					span{
+						color: $colorMain_4_strong;
+						font-family: $font_1_semibold;
+					}
+				}
+				.container-link{
+					display: flex;
+					flex-flow: row wrap;
+					align-items: center;
+					a{
+						text-decoration: none;
+						&:not(:last-child){
+							margin-right: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#section-similar{
+	padding-top: 85px;
+	.wrapper{
+		@include styleGrid1;
+	}
+	.container-text{
+		text-align: center;
+		h2{
+			@include styleH2_light;
+			span{
+				@include styleH2_bold;
+			}
+		}
+	}
+	.container-blog{
+		margin-top: 50px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		.el-blog{
+			margin-bottom: 120px;
+			width: calc((100% / 3) - 18px);
+			.cover{
+				height: 270px;
+				position: relative;
+				width: 100%;
+				.bdg{
+					position: absolute;
+					z-index: 1;
+					left: 0px;
+					top: 0px;
+					padding: 10px 30px 10px 30px;
+					background-color: #FFF;
+					span{
+						@include styleParagraphMedium;
+						font-family: $font_1_semibold;
+						color: $colorMain_3_strong;
+					}
+				}
+				img{
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+				.btn{
+					position: absolute;
+					z-index: 1;
+					right: 0px;
+					bottom: 0px;
+					height: 50px;	
+					width: 50px;
+					background-color: #FFF;
+					svg{
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						width: 9px;
+						stroke: $colorMain_1_strong;
+					}
+				}
+			}
+			.text{
+				padding-top: 18px;
+				.infos{
+					display: flex;
+					flex-flow: row wrap;
+					align-items: center;
+					.name,
+					.date{
+						@include styleParagraphSmall;
+						color: $colorMain_5;
+					}
+					.sep{
+						margin: 0px 5px 0px 5px;
+						width: 3px;
+						height: 1px;
+						background-color: $colorMain_5;
+					}
+				}
+
+				h3{
+					margin-top: 14px;
+					@include styleH3_light;
+				}
+				p{
+					margin-top: 16px;
+					@include styleParagraphSmall;
+					color: $colorMain_5;
+				}
+			}
+		}
+	}
+}
+
+
+/*===================================
+=            END PAGE POST          =
+===================================*/

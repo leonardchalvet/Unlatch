@@ -6,24 +6,24 @@
 			</a>
 			<ul class="container-link">
 				<li>
-					<a class="link-solutions">
+					<a class="link-1">
 						<span>Solutions</span>
 						<img src="img/common/arrow-2.svg" alt="">
 					</a>
 				</li>
 				<li>
-					<a class="link-features">
+					<a class="link-2">
 						<span>Fonctionnalités</span>
 						<img src="img/common/arrow-2.svg" alt="">
 					</a>
 				</li>
 				<li>
-					<a class="link-services">
+					<a href="">
 						<span>Services</span>
 					</a>
 				</li>
 				<li>
-					<a class="link-entreprise">
+					<a class="link-3">
 						<span>Entreprise</span>
 						<img src="img/common/arrow-2.svg" alt="">
 					</a>
@@ -38,7 +38,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="dropdown dropdown-solutions">
+	<div class="dropdown dropdown-1">
 		<div class="wrapper">
 			<ul>
 				<li>
@@ -74,7 +74,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="dropdown dropdown-features">
+	<div class="dropdown dropdown-2">
 		<div class="wrapper">
 			<ul>
 				<li>
@@ -170,7 +170,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="dropdown dropdown-entreprise">
+	<div class="dropdown dropdown-3">
 		<div class="wrapper">
 			<ul>
 				<li>

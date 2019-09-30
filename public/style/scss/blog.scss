@@ -1,0 +1,190 @@
+@import 'common.scss';
+
+/*================================
+=            PAGE BLOG           =
+================================*/
+
+
+#section-blog{
+	position: relative;
+	.wrapper{
+		@include styleGrid1;
+		padding-top: 145px;
+	}
+	.head{
+		h1{
+			@include styleH1_light;
+			color: $colorMain_3_strong;
+			span{
+				@include styleH1_bold;
+			}
+		}
+		p{
+			margin-top: 32px;
+			@include styleParagraphBig;
+			color: $colorMain_5;
+		}
+	}
+	.container-blog{
+		margin-top: 50px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		.el-blog{
+			margin-bottom: 120px;
+			&:nth-child(-n+2){
+				width: calc(50% - 12px);
+				.cover{
+					height: 415px;
+				}
+			}
+			&:not(:nth-child(-n+2)){
+				width: calc((100% / 3) - 18px);
+				.cover{
+					height: 270px;
+				}
+			}
+			.cover{
+				
+				position: relative;
+				width: 100%;
+				.bdg{
+					position: absolute;
+					z-index: 1;
+					left: 0px;
+					top: 0px;
+					padding: 10px 30px 10px 30px;
+					background-color: #FFF;
+					span{
+						@include styleParagraphMedium;
+						font-family: $font_1_semibold;
+						color: $colorMain_3_strong;
+					}
+				}
+				img{
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+				.btn{
+					position: absolute;
+					z-index: 1;
+					right: 0px;
+					bottom: 0px;
+					height: 50px;	
+					width: 50px;
+					background-color: #FFF;
+					svg{
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						width: 9px;
+						stroke: $colorMain_1_strong;
+					}
+				}
+			}
+			.text{
+				padding-top: 18px;
+				.infos{
+					display: flex;
+					flex-flow: row wrap;
+					align-items: center;
+					.name,
+					.date{
+						@include styleParagraphSmall;
+						color: $colorMain_5;
+					}
+					.sep{
+						margin: 0px 5px 0px 5px;
+						width: 3px;
+						height: 1px;
+						background-color: $colorMain_5;
+					}
+				}
+
+				h3{
+					margin-top: 14px;
+					@include styleH3_light;
+				}
+				p{
+					margin-top: 16px;
+					@include styleParagraphSmall;
+					color: $colorMain_5;
+				}
+			}
+		}
+	}
+	.nav-index{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+		.nav-prev,
+		.nav-next{
+			text-decoration: none;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			svg{
+				width: 7px;
+				stroke: $colorMain_5;
+			}
+			.text{
+				@include styleParagraphMedium;
+				color: $colorMain_5;
+			}
+		}
+		.nav-prev{
+			svg{
+				transform: rotate(180deg);
+				margin-right: 16px;
+			}
+		}
+		.nav-next{
+			svg{
+				margin-left: 16px;
+			}
+		}
+		ul{
+			margin: 0px 16px 0px 16px;
+			list-style: none;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			li{
+				height: 25px;
+				width: 25px;
+				border-radius: 25px;
+				
+				position: relative;
+				a{
+					text-align: center;
+					text-decoration: none;
+					position: absolute;
+					top: 50%;
+					left: 0%;
+					width: 100%;
+					transform: translateY(-50%);
+					@include styleParagraphMedium;
+					color: $colorMain_5;
+				}
+				&.active{
+					background-color: $colorMain_4_strong;
+					a{
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*====================================
+=            END PAGE BLOG           =
+====================================*/

@@ -77,6 +77,7 @@ $document = $WPGLOBAL['document']->data;
 				</div>
 			</section>
 
+			<?php if($document->press_show == 'yes') { ?>
 			<section id="section-pres">
 				<div class="wrapper">
 					<div class="container-text">
@@ -99,6 +100,7 @@ $document = $WPGLOBAL['document']->data;
 					</div>
 				</div>
 			</section>
+			<?php } ?>
 
 			<section id="section-quotes">
 				<div class="wrapper">

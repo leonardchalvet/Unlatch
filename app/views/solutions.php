@@ -13,7 +13,7 @@ $document = $WPGLOBAL['document']->data;
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" type="text/css" href="/style/css/solution_1.css">
+		<link rel="stylesheet" type="text/css" href="/style/css/solution_<?php echo $document->global_template; ?>.css">
 
 	</head>
 	
@@ -49,11 +49,40 @@ $document = $WPGLOBAL['document']->data;
 			<section id="section-features">
 				<div class="wrapper">
 					<div class="container-text">
-						<h2>
-							<span>Du lead jusqu’à la livraison</span> du bien immobilier, notre solution s’occupe de toutes les tâches chronophages
-						</h2>
+						<?= RichText::asHtml($document->features_title); ?>
 					</div>
 					<div class="container-features">
+						<?php foreach ($document->body as $slice) { ?>
+
+							<div class="feature <?php if($slice->primary->feature_highlight == 'yes') { echo 'higlight'; } ?>">
+								<div class="container-illu">
+									<img src="<?= $slice->primary->feature_img->url; ?>" alt="">
+								</div>
+								<div class="container-text">
+									<?= RichText::asHtml($slice->primary->feature_title); ?>
+									<p>
+										<?= RichText::asText($slice->primary->feature_text); ?>
+									</p>
+									<ul>
+										<?php foreach ($slice->items as $item) { ?>
+											<li>
+												<a href="<?= $item->feature_link->url; ?>"><?= RichText::asText($item->feature_link_text); ?></a>
+											</li>
+										<?php } ?>
+									</ul>
+								</div>
+								<?php if($slice->primary->feature_highlight == 'yes') { ?>
+									<div class="container-background">
+										<img class="obj-1" src="/img/common-solutions/section-features/obj-1.svg" alt="">
+										<img class="obj-2" src="/img/common-solutions/section-features/obj-2.svg" alt="">
+									</div>
+								<?php } ?>
+							</div>
+
+						<?php
+							$i++;
+						} ?>
+						<!--
 						<div class="feature">
 							<div class="container-illu">
 								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
@@ -148,6 +177,7 @@ $document = $WPGLOBAL['document']->data;
 								</ul>
 							</div>
 						</div>
+						-->
 					</div>
 				</div>
 			</section>
