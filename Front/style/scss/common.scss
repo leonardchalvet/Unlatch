@@ -562,6 +562,24 @@ main
 		width: 130px;
 	}
 }
+@media screen and (max-width: $breakPoint_mobile){
+	#common-section-banner{
+		.container-img{
+			display: none;
+		}
+		.container-text{
+			position: relative;
+			text-align: center;
+		}
+		.obj-2{
+			width: 90px;
+		}
+		.obj-3{
+			right: 90px;
+			width: 90px;
+		}
+	}
+}
 
 #common-section-join{
 	padding: 80px 0px 80px 0px;
@@ -569,6 +587,7 @@ main
 	background-color: $colorMain_4_strong;
 	.wrapper{
 		@include styleGrid1;
+		position: relative;
 	}
 	.container-text{
 		text-align: center;
@@ -610,6 +629,25 @@ main
 		width: 130px;
 		right: 0px;
 		bottom: 0px;
+	}
+}
+@media screen and (max-width: $breakPoint_mobile){
+	#common-section-join{
+		.obj-1{
+			width: 90px;
+		}
+		.obj-2{
+			width: 90px;
+			left: 90px;
+		}
+		.obj-3{
+			right: 90px;
+			width: 90px;
+		}
+		.obj-4{
+			width: 90px;
+		}
+
 	}
 }
 

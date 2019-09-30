@@ -492,6 +492,164 @@ main{
 	}
 }
 
+
+@media screen and (max-width: $breakPoint_mobile){
+	main{
+		padding-top: 75px;
+	}
+	#section-cover{
+
+		&:before{
+			width: 100%;
+		}
+		.wrapper{
+			padding-bottom: 0px;
+		}
+		.container-text{
+			width: 100%;
+			padding-left: 0px;
+		}
+		.container-img{
+			margin-top: 40px;
+			position: relative;
+			left: initial;
+			bottom: initial;
+			width: calc(100% + 50px);
+			margin-left: -25px;
+			height: 350px;
+		}
+	}
+
+	#section-features{
+		margin-top: 100px;
+
+		.container-text{
+			width: 100%;
+		}
+
+		.container-features{
+			margin-top: 60px;
+			.feature{
+				position: relative;
+				&:not(:last-child){
+					margin-bottom: 60px;
+				}
+				.container-illu{
+					position: relative;
+					order: 1;
+					width: 100%;
+					height: 300px;
+				}
+				.container-text{
+					order: 2;
+					margin-top: 40px;
+				}
+
+				&.higlight{
+					margin: 100px 0px 100px 0px;
+					.container-background{
+						left: 0;
+					}
+				}
+
+				&:nth-child(odd){
+					.container-illu{
+						order: 1;
+						img{
+							left: 0px;
+							right: initial;
+							transform: translateY(-50%);
+						}
+					}
+				}
+				&:nth-child(even){
+					.container-illu{
+						order: 1;
+						img{
+							right: 0px;
+							left: initial;
+							transform: translateY(-50%);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#section-pres{
+		.container-el{
+			.el{
+				&:nth-child(1){
+					padding-bottom: 60px;
+				}
+				&:nth-child(2){
+					margin-top: 60px;
+					padding-bottom: 60px;
+				}
+				&:nth-child(3){
+					margin-top: 60px;
+					margin-left: 0px;
+				}
+			}
+		}
+	}
+
+	#section-quotes{
+		margin-top: 40px;
+		.wrapper{
+			display: block;
+		}
+		.container-img{
+			height: 400px;
+			width: calc(100% + 50px);
+			margin-left: -25px;
+		}
+		.container-quotes{
+			width: 100%;
+			margin-top: 40px;
+			.obj-1{
+				display: none;
+			}
+			.container-el{
+				height: initial;
+				.el{
+					height: initial;
+					top: initial;
+					left: initial;
+					position: relative;
+					padding-left: 0px;
+					q{
+						position: relative;
+						top: initial;
+						transform: translateY(0px);
+						color: $colorMain_3_strong;
+					}
+					.container-infos{
+						margin-top: 40px;
+						position: relative;
+						bottom: initial;
+						.name{
+							color: $colorMain_3_strong;
+						}
+						.job{
+							color: $colorMain_3_strong;
+						}
+					}
+				}
+			}
+			.container-action{
+				margin-top: 40px;
+				display: block;
+				.container-link{
+					width: 100%;
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+
+}	
+
 /*========================================
 =            END PAGE SOLUTION           =
 ========================================*/

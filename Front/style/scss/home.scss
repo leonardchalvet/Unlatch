@@ -750,6 +750,206 @@ main{
 #common-section-banner{
 	margin-top: 400px;
 }
+
+
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){}
+
+
+@media screen and (max-width: $breakPoint_mobile){
+	main{
+		padding-top: 75px;
+	}
+	#section-cover{
+		padding-top: 40px;
+		.wrapper{
+			padding-bottom: 40px;
+		}
+		.container-text{
+			width: 100%;
+		}
+		.container-video{
+			display: none;
+		}
+	}
+	#section-logos{
+		padding: 60px 0px 40px 0px;
+		.obj-3,
+		.obj-4{
+			display: none;
+		}
+		.container-el{
+			.el{
+				width: calc(100% / 3);
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	#section-metier{
+		padding: 60px 0px 60px 0px;
+		.container-el{
+			margin-top: 40px;
+			&:after{
+				display: none;
+			}
+			.el{
+				&:before{
+					content: initial;
+				}
+				width: 100%;
+				&:nth-child(1){
+					margin-bottom: 60px;
+				}
+				.icn{
+					width: 40px;
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+
+	#section-pres{
+		padding: 60px 0px 60px 0px;
+
+		.container-illu{
+			width: 100%;
+			margin-top: 40px;
+		}
+	}
+
+	#section-stats{
+		padding: 60px 0px 60px 0px;
+		.container-col{
+			.col{
+				width: 100%;
+				.container-el{
+					.el{
+						padding: 20px 0px 20px 0px;
+						border: none;
+						&:before{
+							content: initial;
+						}
+					}
+					.el-1,
+					.el-6{
+						h4,
+						p{
+							color: initial;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#section-quotes{
+		.container-img{
+			height: 400px;
+		}
+	}
+
+	#section-quotes{
+		margin-top: 40px;
+		.wrapper{
+			display: block;
+		}
+		.container-img{
+			height: 400px;
+			width: calc(100% + 50px);
+			margin-left: -25px;
+		}
+		.container-quotes{
+			width: 100%;
+			margin-top: 40px;
+			.obj-1{
+				display: none;
+			}
+			.container-el{
+				height: initial;
+				.el{
+					height: initial;
+					display: none;
+					top: initial;
+					left: initial;
+					position: relative;
+					padding-left: 0px;
+					q{
+						position: relative;
+						top: initial;
+						transform: translateY(0px);
+						color: $colorMain_3_strong;
+					}
+					&.active{
+						display: block;
+					}
+					.container-infos{
+						margin-top: 40px;
+						position: relative;
+						bottom: initial;
+						.name{
+							color: $colorMain_3_strong;
+						}
+						.job{
+							color: $colorMain_3_strong;
+						}
+					}
+				}
+			}
+			.container-action{
+				margin-top: 40px;
+				display: block;
+				.container-link{
+					width: 100%;
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+	
+	#section-features{
+		padding: 60px 0px 60px 0px;
+		.container-ftr{
+			flex-direction: column;
+			.container-el{
+				order: 2;
+				width: 100%;
+				.el{
+					padding-left: 25px;
+					.text{
+						height: 0px;
+						position: initial;
+						top: initial;
+						padding-left: 0px;
+						margin-top: 25px;
+					}
+					&.active{
+						.text{
+							height: initial;
+						}
+					}
+				}
+			}
+			.container-img{
+				order: 1;
+				width: 100%;
+				height: 350px;
+				margin-bottom: 40px;
+				.img{
+					img{
+						height: 200px;
+						width: 100%;
+						object-fit: cover;
+					}
+				}
+				
+			}
+		}
+	}
+
+	#common-section-banner{
+		margin-top: 20px;
+	}
+}	
 /*====================================
 =            END PAGE HOME           =
 =====================================*/

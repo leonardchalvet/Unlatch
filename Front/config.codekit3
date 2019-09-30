@@ -57,6 +57,14 @@
 		"oAP": "/blog.php",
 		"oF": 0
 		},
+	"/clients.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/clients.php",
+		"oF": 0
+		},
 	"/common-footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -305,6 +313,26 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
+	"/img/blog-post/obj-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/blog-post/obj-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/blog-post/obj-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/blog-post/obj-2.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/img/common-feature/section-cover/obj-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -463,6 +491,76 @@
 		"miP": 0,
 		"oA": 0,
 		"oAP": "/img/common/arrow-2.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common/footer/flag/en.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common/footer/flag/en.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common/footer/flag/fr.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common/footer/flag/fr.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common/footer/icn-facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/footer/icn-facebook.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common/footer/icn-instagram.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/footer/icn-instagram.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common/footer/icn-linkedin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/footer/icn-linkedin.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common/footer/icn-twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/footer/icn-twitter.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common/footer/logo-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/footer/logo-white.svg",
 		"oF": 1,
 		"opt": 1,
 		"plM": 4010962575359,
@@ -1165,6 +1263,26 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/img/pres/obj-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/pres/obj-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/pres/obj-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/pres/obj-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/img/services/section-cover/illu.png": {
 		"ft": 32768,
 		"iS": 1339333,
@@ -1315,6 +1433,25 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
+	"/pres.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pres.php",
+		"oF": 0
+		},
+	"/script/js/clients.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/clients-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/js/common.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1355,6 +1492,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/script/minify/jQuery.3.3.1-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/script/minify/clients-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/clients-min-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
@@ -1476,6 +1624,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/style/css/clients.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/clients-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/style/css/contact.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1503,6 +1661,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style/css/home-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/press.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/press-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1624,6 +1792,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/style/scss/clients.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/clients.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/style/scss/common.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1699,6 +1880,19 @@
 		"oA": 0,
 		"oAP": "/style/css/home.css",
 		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/press.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/press.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},

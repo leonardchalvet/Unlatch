@@ -84,6 +84,10 @@ $(document).click(function(){
 	}
 })
 
+$('footer .foot .container-lg >.lg').click(function(){
+	$(this).parent().toggleClass('active');
+})
+
 
 /*============================================================================
 ================================= END COMMON =================================
