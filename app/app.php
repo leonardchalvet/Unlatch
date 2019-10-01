@@ -92,7 +92,7 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
         }
     }
     if(!$options) {
-        header('Location: /'); // 404 or /
+        header('Location: /404'); // 404 or /
         exit;
     }
 
@@ -104,8 +104,8 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
     //PART 4 - Call current page
     $document = NULL;
     $nType = 0;
-    $arrayTypes = ['home', 'clients', 'pres', 'services', 'about', 'solutions', 'contact', 'features', 'p404']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
-    $arrayView  = ['home', 'clients', 'pres', 'services', 'about', 'solutions', 'contact', 'feature', '404']; // NAME IN "VIEWS" FOLDER, ALWAYS SAME POSITION BETWEEN "arrayTypes" & "arrayView"
+    $arrayTypes = ['home', 'blog', 'clients', 'pres', 'services', 'about', 'legal_notices', 'solutions', 'contact', 'features', 'p404']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
+    $arrayView  = ['home', 'blog', 'clients', 'pres', 'services', 'about', 'legal_notices', 'solutions', 'contact', 'feature', '404']; // NAME IN "VIEWS" FOLDER, ALWAYS SAME POSITION BETWEEN "arrayTypes" & "arrayView"
     foreach ($arrayTypes as $type) {
         $document = $api->getByUID($type, $args['uid'], $options);
         $allLang = $api->getByUID($type, $args['uid'], [ 'lang' => '*' ] );
@@ -118,30 +118,97 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
 
     //PART 5 - Call good view
     if($document != NULL) {
-      if($arrayView[$nType-1] == 'post') {
-      	header('Location: /'.$args['lg'].'/blog/'.$args['uid']. '');
-      	exit(); 
-      }
-      else if($arrayView[$nType-1] == 'blog') {
-      	$options['pageSize'] = 8;
-  	  	$posts = $api->query(Predicates::at('document.type', 'page_blog'), $options);
-  	  	render($app, $arrayView[$nType-1], array('document' => $document, 'posts' => $posts, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
+      if($arrayView[$nType-1] == 'blog') {
+      	$options['pageSize'] = 1000;
+  	  	$articles = $api->query(Predicates::at('document.type', 'articles'), $options);
+  	  	
+        render($app, $arrayView[$nType-1], array('document' => $document, 'articles' => $articles, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
       }
       else {
       	render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
       }
     }
     else {
-      header('Location: /'); // 404 or /
-      //header('Location: /'.$args['lg'].'/404'); // 404 or /
+      //header('Location: /'); // 404 or /
+      header('Location: /'.$args['lg'].'/404'); // 404 or /
       exit;
     }
 });
 
-// Call page with language and categorie and name => https://url.com/language/categorie/namepage
-$app->get('/{lg}/{ct}/{uid}', function ($request, $response, $args) use ($app, $prismic) {
+// Call page with language and categorie/author and name => https://url.com/language/cta
+$app->get('/{lg}/blog/{cta}', function ($request, $response, $args) use ($app, $prismic) {
 
-    /* CHECK ct dans header */
+    $api = $prismic->get_api(); // PART 1 - Call api
+
+    //PART 2 - Select languages
+    $allLang = switchLanguages($args['lg']);
+    if(!$allLang) {
+        header('Location: /'); // 404 or /
+        exit;
+    }
+    $options = false;
+    foreach ($allLang as $lang) {
+        $testReturn = $api->getByUID('header',   'header', [ 'lang' => $lang ] );
+        if($testReturn) {
+            $options = [ 'lang' => $lang ];
+            break;
+        }
+    }
+    if(!$options) {
+        header('Location: /404'); // 404 or /
+        exit;
+    }
+
+    //PART 3 - Call Header & Footer & Lightbox
+    $header   = $api->getByUID('header',   'header',   $options);
+    $footer   = $api->getByUID('footer' ,  'footer',   $options);
+    $lightbox = $api->getByUID('lightbox', 'lightbox', $options);
+
+    //PART 4 - Call Blog
+    $document = $api->query(Predicates::at('document.type', 'blog'), $options);
+
+    //PART 5 - Call Articles
+    $options['pageSize'] = 1000;
+    $articles = $api->query(Predicates::at('document.type', 'articles'), $options);
+
+    if($document == NULL && $articles == NULL) {
+        header('Location: /'.$args['lg'].'/404'); // 404 or /
+        exit;
+    }
+
+    //PART 6 - Check CTA => categories/authors
+    $cta = skip_accents(trim(strtolower($args['cta'])));
+    
+    $bool = false;
+    foreach ($document->results[0]->data->container_categories as $categorie) {
+        $categorie = skip_accents(trim(strtolower($categorie->categorie_name_page[0]->text)));
+
+        if($cta == $categorie) {
+            $bool = true;
+            render($app, 'blog_categories', array('document' => $document, 'articles' => $articles, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox, 'cta' => $cta));
+        }
+    }
+
+    foreach ($document->results[0]->data->container_authors as $author) {
+        $author = skip_accents(trim(strtolower($author->author_name_page[0]->text)));
+
+        if($cta == $author) {
+            $bool = true;
+            render($app, 'blog_author', array('document' => $document, 'articles' => $articles, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox, 'cta' => $cta));
+        }
+    }
+
+    if(!$bool) {
+        header('Location: /'.$args['lg'].'/404'); // 404 or /
+        exit;
+    }
+
+});
+
+// Call page with language and categorie/author and name => https://url.com/language/cta/namepage
+$app->get('/{lg}/{blog}/{cta}/{uid}', function ($request, $response, $args) use ($app, $prismic) {
+
+    echo 'salut';
 
 });
 
@@ -163,4 +230,13 @@ function switchLanguages($lg) {
     }
 
     //return [ 'lang' => $lglg ];
+}
+
+//REMOVE ACCENTS
+function skip_accents( $str, $charset='utf-8' ) {
+    $str = htmlentities( $str, ENT_NOQUOTES, $charset );
+    $str = preg_replace( '#&([A-za-z])(?:acute|cedil|caron|circ|grave|orn|ring|slash|th|tilde|uml);#', '\1', $str );
+    $str = preg_replace( '#&([A-za-z]{2})(?:lig);#', '\1', $str );
+    $str = preg_replace( '#&[^;]+;#', '', $str );
+    return $str;
 }
