@@ -82,7 +82,8 @@ $(document).click(function(){
 })
 
 $('footer .foot .container-lg >.lg').click(function(){
-	$(this).parent().toggleClass('active');
+
+	$(this).closest('.container-lg').toggleClass('active');
 })
 
 

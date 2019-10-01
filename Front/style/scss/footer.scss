@@ -70,6 +70,7 @@ footer{
 					color: rgba(255, 255, 255, 0.7);
 				}
 				svg {
+					stroke: #FFF;
 					width: 6px;
 					height: 4px;
 					transition: all .25s ease;
@@ -86,6 +87,10 @@ footer{
 				.lg {
 					&:first-child {
 						margin-bottom: 12px;
+					}
+					span{
+						@include styleParagraphMedium;
+						color: #000;
 					}
 				}
 			}

@@ -204,6 +204,7 @@
 
 		<?php include('common-footer.php') ?>
 
-		<script type="text/javascript" src="script/minify/clients-min.js"></script>
 	</body>
+
+	<script type="text/javascript" src="script/minify/clients-min.js"></script>
 </html>
