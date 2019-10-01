@@ -28,18 +28,48 @@ $app->get('/', function ($request, $response) use ($app, $prismic) {
     $api = $prismic->get_api(); // PART 1 - Call api
 
     //PART 2 - Call Header & Footer
-    $header = $api->getByUID('header', 'header');
-    $footer = $api->getByUID('footer', 'footer');
-    $lightbox = ""; //$api->getByUID('lightbox', 'lightbox', $options);
+    $header   = $api->getByUID('header', 'header');
+    $footer   = $api->getByUID('footer', 'footer');
+    $lightbox = $api->getByUID('lightbox', 'lightbox');
 
     //PART 3 - Call home page (ask to client for default languages)
     $document = $api->getByID(''); //For get ID, print_r($document) in home views, ctrl-c [id]
 
     render($app, 'home', array('document' => $document, 'lightbox' => $lightbox, 'header' => $header, 'footer' => $footer));
-    
 });
 
-/*
+// Livesearch
+$app->get('/{lg}/livesearch', function ($request, $response, $args) use ($app, $prismic) {
+
+    $api = $prismic->get_api(); // PART 1 - Call api
+
+    //PART 2 - Select languages
+    $allLang = switchLanguages($args['lg']);
+    if(!$allLang) {
+        header('Location: /'); // 404 or /
+        exit;
+    }
+    $options = false;
+    foreach ($allLang as $lang) {
+        $testReturn = $api->getByUID('header', 'header', [ 'lang' => $lang ] );
+        if($testReturn) {
+            $options = [ 'lang' => $lang ];
+            break;
+        }
+    }
+    if(!$options) {
+        header('Location: /404'); // 404 or /
+        exit;
+    }
+
+    //PART 3 - Call Blog
+    $options['pageSize'] = 9999;
+    $document = $api->query(Predicates::at('document.type', 'articles'), $options);
+
+    //PART 4 - Render the page
+    render($app, 'livesearch', array('document' => $document));
+});
+
 // Call page with name => https://url.com/namepage
 $app->get('/{uid}', function ($request, $response, $args) use ($app, $prismic) {
     $api = $prismic->get_api(); // PART 1 - Call api
@@ -71,7 +101,6 @@ $app->get('/{uid}', function ($request, $response, $args) use ($app, $prismic) {
       exit;
     }
 });
-*/
 
 // Call page with language and name => https://url.com/language/namepage
 $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prismic) {
@@ -119,7 +148,7 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
     //PART 5 - Call good view
     if($document != NULL) {
       if($arrayView[$nType-1] == 'blog') {
-      	$options['pageSize'] = 1000;
+      	$options['pageSize'] = 9999;
   	  	$articles = $api->query(Predicates::at('document.type', 'articles'), $options);
   	  	
         render($app, $arrayView[$nType-1], array('document' => $document, 'articles' => $articles, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
@@ -168,7 +197,7 @@ $app->get('/{lg}/blog/{cta}', function ($request, $response, $args) use ($app, $
     $document = $api->query(Predicates::at('document.type', 'blog'), $options);
 
     //PART 5 - Call Articles
-    $options['pageSize'] = 1000;
+    $options['pageSize'] = 9999;
     $articles = $api->query(Predicates::at('document.type', 'articles'), $options);
 
     if($document == NULL && $articles == NULL) {
@@ -202,7 +231,6 @@ $app->get('/{lg}/blog/{cta}', function ($request, $response, $args) use ($app, $
         header('Location: /'.$args['lg'].'/404'); // 404 or /
         exit;
     }
-
 });
 
 // Call page with language and categorie and name => https://url.com/language/cta/namepage
@@ -265,7 +293,6 @@ $app->get('/{lg}/{blog}/{ct}/{uid}', function ($request, $response, $args) use (
         header('Location: /'.$args['lg'].'/404'); // 404 or /
         exit;
     }
-
 });
 
 //ADD LANGUAGES FOR MORE POSSIBILITIES
