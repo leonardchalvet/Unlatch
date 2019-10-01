@@ -112,7 +112,7 @@ footer{
 			justify-content: space-around;
 			a{
 				text-decoration: none;
-				@include styleParagraphSmall;
+				@include styleParagraphTiny;
 				color: rgba(255, 255, 255, 0.7);
 			}
 		}

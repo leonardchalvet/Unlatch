@@ -42,7 +42,7 @@ main{
 				transform: translateY(-50%);
 				width: 30px;
 				height: 3px;
-				background-color: $colorMain_2_medium;
+				background-color: $colorMain_3_strong;
 			}
 			span{
 				@include styleParagraphMedium;
@@ -235,7 +235,7 @@ main{
 					background-color: $colorMain_1_strong;
 				}
 				.obj-1{
-					right: 230px;
+					right: 228px;
 					position: absolute;
 					top: 50%;
 					transform: translateY(-50%);
@@ -404,7 +404,6 @@ main{
 					color: #FFF;
 				}
 				.container-infos{
-					width: 250px;
 					position: absolute;
 					bottom: 60px;
 					padding-left: 50px;
@@ -439,13 +438,12 @@ main{
 			height: 100px;
 			display: flex;
 			flex-flow: row wrap;
-			align-items: center;
+			padding-left: 100px;
 			.container-link{
 				flex: 1;
 				display: flex;
 				flex-flow: row wrap;
 				align-items: center;
-				justify-content: center;
 				a{
 					@include styleLink_1;
 				}
@@ -490,6 +488,10 @@ main{
 			}
 		}
 	}
+}
+
+#common-section-join{
+	margin-top: 140px;
 }
 
 
@@ -640,12 +642,19 @@ main{
 			.container-action{
 				margin-top: 40px;
 				display: block;
+				padding-left: 0px;
+				justify-content: center;
 				.container-link{
 					width: 100%;
 					margin-bottom: 40px;
+					justify-content: center;
 				}
 			}
 		}
+	}
+
+	#common-section-join{
+		margin-top: 60px;
 	}
 
 }	
