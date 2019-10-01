@@ -1,0 +1,136 @@
+/*==================================
+=            BLOG COMMON           =
+==================================*/
+
+#header-blog-desktop{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 20;
+	transition: all 0.25s ease;
+	background-color: #FFF;
+	.wrapper{
+		height: 70px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+		@include styleGrid1;
+		.logo{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			margin-right: 50px;
+			img{
+				height: 25px;
+			}
+			.bdg{
+				margin-left: 5px;
+				background-color: rgba($colorMain_1_strong, 0.2);
+				padding: 0px 7px 0px 7px;
+				border-radius: 2px;
+				span{
+					@include styleParagraphBig;
+					font-family: $font_1_semibold;
+					color: $colorMain_1_strong;
+				}
+			}
+		}
+		.container-link{
+			flex: 1;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			>a{
+				margin-right: 50px;
+				text-decoration: none;
+				@include styleParagraphSmall;
+				color: $colorMain_3_strong;
+			}
+			.search{
+				position: relative;
+				.container-input{
+					position: relative;
+					input{
+						width: 150px;
+						padding-right: 14px;
+						outline: none;
+						border: none;
+						@include styleParagraphSmall;
+						color: $colorMain_3_strong;
+						
+						&::placeholder{
+							@include styleParagraphSmall;
+							color: $colorMain_3_strong;
+						}
+
+						&:after{
+							content: '';
+							position: absolute;
+							bottom: -15px;
+							left: 0px;
+							height: 1px;
+							width: 100%;
+							background-color: rgba($colorMain_5, 0.2);
+							opacity: 0;
+							transition: all 0.25s ease;
+						}
+						&:focus{
+							&:after{
+								opacity: 1;
+							}
+							
+						}
+					}
+					img{
+						position: absolute;
+						right: 0px;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 14px;
+					}
+				}
+				.dropdown{
+					display: none;
+					padding: 25px;
+					position: absolute;
+					background-color: #FFF;
+					z-index: 10;
+					top: 37px;
+					left: 0px;
+					max-height: 170px;
+					overflow: auto;
+					width: 100%;
+					box-shadow: 0 2px 50px 0 rgba(0,0,0,0.09);
+					a{
+						display: block;
+						text-decoration: none;
+						@include styleParagraphSmall;
+						color: $colorMain_3_strong;
+						&:hover{
+							color: $colorMain_1_strong;
+						}
+						&:not(:last-child){
+
+						}
+						margin-bottom: 15px;
+					}
+					&.show{
+						display: block;
+					}
+				}
+			}
+		}
+		.btn{
+			self-position: self-end;
+			@include styleButtonBig_2;
+			padding: 7px 30px 7px 30px;
+		}
+	}
+}
+
+
+/*======================================
+=            END BLOG COMMON           =
+======================================*/
