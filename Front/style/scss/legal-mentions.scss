@@ -1,0 +1,117 @@
+@import 'common.scss';
+
+/*================================
+=            PAGE HOME           =
+================================*/
+main{
+	padding-top: 145px;
+}
+
+#section-legal-mentions{
+	.wrapper{
+		@include styleGrid1;
+		padding-right: 500px;
+	}
+	h1{
+		@include styleH1_light;
+		span{
+			@include styleH1_bold;
+		}
+	}
+	.sep{
+		height: 4px;
+		width: 60px;
+		margin-top: 30px;
+		background-color: $colorMain_1_strong;
+	}
+
+	h3{
+		@include styleH3_light;
+		color: $colorMain_3_strong;
+		margin-bottom: 20px;
+		margin-top: 50px;
+	}
+	h4{
+		@include styleH4_light;
+		color: $colorMain_3_strong;
+		margin-bottom: 20px;
+		margin-top: 50px;
+	}
+	p{
+		@include styleParagraphMedium;
+		color: $colorMain_5;
+		span{
+			font-family: $font_1_semibold;
+			color: $colorMain_3_strong;
+		}
+	}
+	ul{
+		margin: 20px 0px 20px 0px;
+		list-style: none;
+		li{
+			position: relative;
+			padding-left: 15px;
+			font-family: $font_1_semibold;
+			color: $colorMain_3_strong;
+			&:before{
+				content: '';
+				position: absolute;
+				left: 0px;
+				top: 7px;
+				width: 5px;
+				height: 5px;
+				border-radius: 5px;
+				background-color: $colorMain_1_strong;
+			}
+		}
+	}
+}
+
+#section-logos{
+	margin-bottom: 70px;
+	margin-top: 120px;
+	.wrapper{
+		position: relative;
+	}
+	.container-text{
+		max-width: 775px;
+		text-align: center;
+		margin: auto;
+		h2{
+			@include styleH2_light;
+			span{
+				@include styleH2_bold
+			}
+		}
+	}
+	.container-logos{
+		
+		margin: auto;
+		margin-top: 40px;
+		height: 300px;
+		width: 100%;
+		position: relative;
+		img{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			height: 100%;
+			animation-duration: 20s;
+  			animation-name: slideLoop;
+  			animation-iteration-count: infinite;
+  			animation-timing-function: linear;
+		}
+		@keyframes slideLoop {
+		  0% {
+		    transform: translateX(0%);
+		  }
+
+		  100% {
+			transform: translateX(calc(-100% + 100vw));
+		  }
+		}
+	}
+}
+/*====================================
+=            END PAGE HOME           =
+=====================================*/

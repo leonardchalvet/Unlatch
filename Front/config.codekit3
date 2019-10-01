@@ -1433,6 +1433,14 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
+	"/legal-mentions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/legal-mentions.php",
+		"oF": 0
+		},
 	"/pres.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1880,6 +1888,19 @@
 		"oA": 0,
 		"oAP": "/style/css/home.css",
 		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/legal-mentions.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/legal-mentions.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
