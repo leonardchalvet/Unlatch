@@ -101,6 +101,13 @@ $('footer .foot .container-lg >.lg').click(function(){
 	$(this).closest('.container-lg').toggleClass('active');
 })
 
+$('#header-blog-desktop .search input').focusin(function(){
+	$('#header-blog-desktop .search .dropdown').addClass('show');
+})
+$('#header-blog-desktop .search input').focusout(function(){
+	$('#header-blog-desktop .search .dropdown').removeClass('show');
+})
+
 
 /*============================================================================
 ================================= END COMMON =================================

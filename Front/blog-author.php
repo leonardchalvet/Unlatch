@@ -15,6 +15,8 @@
 	
 	<body>
 
+		<?php include('common-header-blog.php') ?>
+
 		<main>
 
 			<section id="section-blog">

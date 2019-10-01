@@ -15,9 +15,10 @@
 	
 	<body>
 
+		<?php include('common-header-blog.php') ?>
+
 		<main>
 
-			
 			<section id="section-head">
 				
 				<img class="obj-1" src="img/blog-post/obj-1.svg" alt="">

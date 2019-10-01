@@ -73,6 +73,14 @@
 		"oAP": "/common-footer.php",
 		"oF": 0
 		},
+	"/common-header-blog.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/common-header-blog.php",
+		"oF": 0
+		},
 	"/common-header.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -611,6 +619,16 @@
 		"miP": 0,
 		"oA": 0,
 		"oAP": "/img/common/logo-black.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common/search.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/search.svg",
 		"oF": 1,
 		"opt": 1,
 		"plM": 4010962575359,
@@ -1642,6 +1660,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/style/css/blog_common.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog_common-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/style/css/clients.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1816,6 +1844,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style/css/blog.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/blog_common.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/style/css/blog_common.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
