@@ -73,6 +73,21 @@ $('.container-lightbox .lightbox .cross').click(function(){
 	}, 500)
 })
 
+$('#header-mobile .head .wrapper .container-action').click(function(){
+	$('#header-mobile').toggleClass('open');
+	$('body').toggleClass('block');
+})
+
+$('#header-mobile .container-link .wrapper .list-link .link').click(function(){
+	if ($(this).hasClass('active')) {
+		$('#header-mobile .container-link .wrapper .list-link .link').removeClass('active');
+	} else {
+		$('#header-mobile .container-link .wrapper .list-link .link').removeClass('active');
+		$(this).addClass('active');
+	}
+	
+})
+
 $(document).click(function(){
 	if (!$(event.target).closest('.container-lightbox .lightbox').length) {
 		if($('.container-lightbox').hasClass('show')) {
