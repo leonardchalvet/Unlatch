@@ -33,34 +33,37 @@ $articles = $WPGLOBAL['articles']->results;
 						</p>
 					</div>
 					<div class="container-blog">
-						<?php foreach ($articles as $article) { ?>
-						<div class="el-blog">
-							<div class="cover">
-								<div class="bdg">
-									<span>IMMOBILIER</span>
+						<?php
+						foreach ($articles as $article) {
+							if($idA != $article->id && $i <= 8) { 
+								$article = $article->data; ?>
+								<div class="el-blog">
+									<div class="cover">
+										<div class="bdg">
+											<span><?= strtoupper(RichText::asText($article->common_categorie)); ?></span>
+										</div>
+										<div class="btn">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
+												<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
+											</svg>
+										</div>
+										<img src="<?= $article->common_first_img->url; ?>" alt="">
+									</div>
+									<div class="text">
+										<div class="infos">
+											<div class="name"><?= RichText::asText($article->profil_name); ?></div>
+											<div class="sep"></div>
+											<div class="date"><?= RichText::asText($article->common_date); ?></div>
+										</div>
+										<h3>
+											<?= RichText::asText($article->common_title); ?>
+										</h3>
+										<p>
+											<?= RichText::asText($article->common_little_description); ?>
+										</p>
+									</div>
 								</div>
-								<div class="btn">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
-										<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
-									</svg>
-								</div>
-								<img src="/img/img-test/background-1.jpg" alt="">
-							</div>
-							<div class="text">
-								<div class="infos">
-									<div class="name">Sonia Dupont</div>
-									<div class="sep"></div>
-									<div class="date">09 Septembre 2019</div>
-								</div>
-								<h3>
-									Titre de l’article sur une ou deux lignes maximum.
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-								</p>
-							</div>
-						</div>
-						<?php } ?>
+						<?php $i++; } } ?>
 					</div>
 
 					<div class="nav-index">

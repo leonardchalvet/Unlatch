@@ -205,10 +205,66 @@ $app->get('/{lg}/blog/{cta}', function ($request, $response, $args) use ($app, $
 
 });
 
-// Call page with language and categorie/author and name => https://url.com/language/cta/namepage
-$app->get('/{lg}/{blog}/{cta}/{uid}', function ($request, $response, $args) use ($app, $prismic) {
+// Call page with language and categorie and name => https://url.com/language/cta/namepage
+$app->get('/{lg}/{blog}/{ct}/{uid}', function ($request, $response, $args) use ($app, $prismic) {
 
-    echo 'salut';
+    $api = $prismic->get_api(); // PART 1 - Call api
+
+    //PART 2 - Select languages
+    $allLang = switchLanguages($args['lg']);
+    if(!$allLang) {
+        header('Location: /'); // 404 or /
+        exit;
+    }
+    $options = false;
+    foreach ($allLang as $lang) {
+        $testReturn = $api->getByUID('header',   'header', [ 'lang' => $lang ] );
+        if($testReturn) {
+            $options = [ 'lang' => $lang ];
+            break;
+        }
+    }
+    if(!$options) {
+        header('Location: /404'); // 404 or /
+        exit;
+    }
+
+    //PART 3 - Call Header & Footer & Lightbox
+    $header   = $api->getByUID('header',   'header',   $options);
+    $footer   = $api->getByUID('footer' ,  'footer',   $options);
+    $lightbox = $api->getByUID('lightbox', 'lightbox', $options);
+
+    // PART 4 - Call article with name & blog
+    $document = $api->getByUID('articles', $args['uid'], $options);
+    $blog     = $api->query(Predicates::at('document.type', 'blog'), $options);
+
+    //PART 5 - Call Articles
+    $options['pageSize'] = 4;
+    $articles = $api->query(Predicates::at('document.type', 'articles'), $options);
+
+    if($document == NULL && $articles == NULL) {
+        header('Location: /'.$args['lg'].'/404'); // 404 or /
+        exit;
+    }
+
+    //PART 6 - Check CT => categories URL / Check CTD => categories DOCUMENT
+    $ct = skip_accents(trim(strtolower($args['ct'])));
+    $ctD = $document->data->global_categorie[0]->text;
+    
+    $bool = false;
+    foreach ($blog->results[0]->data->container_categories as $categorie) {
+        $categorie = skip_accents(trim(strtolower($categorie->categorie_name_page[0]->text)));
+
+        if($ct == $categorie && $ctD == $categorie) {
+            $bool = true;
+            render($app, 'articles', array('document' => $document, 'articles' => $articles, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox, 'cta' => $cta));
+        }
+    }
+
+    if(!$bool) {
+        header('Location: /'.$args['lg'].'/404'); // 404 or /
+        exit;
+    }
 
 });
 
