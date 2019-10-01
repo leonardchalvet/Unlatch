@@ -54,7 +54,10 @@
 					<div class="container-features">
 						<div class="feature">
 							<div class="container-illu">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+								<img class="sk-1" src="img/common-solutions/solution-2/1/Bank@4x.png" alt="">
+								<img class="sk-2" src="img/common-solutions/solution-2/1/Icon-text-1@4x.png" alt="">
+								<img class="sk-3" src="img/common-solutions/solution-2/1/Icon-text-2@4x.png" alt="">
+								<img class="sk-4" src="img/common-solutions/solution-2/1/Sign@4x.png" alt="">
 							</div>
 							<div class="container-text">
 								<h3>
@@ -81,7 +84,8 @@
 						</div>
 						<div class="feature higlight">
 							<div class="container-illu">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+								<img class="sk-1" src="img/common-solutions/solution-2/2/Image@4x.png" alt="">
+								<img class="sk-2" src="img/common-solutions/solution-2/2/Icon-text@4x.png" alt="">
 							</div>
 							<div class="container-text">
 								<h3>
@@ -106,7 +110,9 @@
 						</div>
 						<div class="feature">
 							<div class="container-illu">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+								<img class="sk-1" src="img/common-solutions/solution-2/3/Bank@4x.png" alt="">
+								<img class="sk-2" src="img/common-solutions/solution-2/3/Icon-text@4x.png" alt="">
+								<img class="sk-3" src="img/common-solutions/solution-2/3/Notifs@4x.png" alt="">
 							</div>
 							<div class="container-text">
 								<h3>
@@ -118,24 +124,6 @@
 								<ul>
 									<li>
 										<a href="">Espace Client Acheteur</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="feature">
-							<div class="container-illu">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
-							</div>
-							<div class="container-text">
-								<h3>
-									<span>Analysez finement</span> vos ventes immobilières.
-								</h3>
-								<p>
-									Créez facilement des dashboards incroyables pour piloter votre activité commerciale. Générez des reporting en pdf pour vos présentations.
-								</p>
-								<ul>
-									<li>
-										<a href="">Business Intelligence</a>
 									</li>
 								</ul>
 							</div>

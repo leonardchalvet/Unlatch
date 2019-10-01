@@ -508,6 +508,16 @@ main
 	  	opacity: 0;
 	  	transition: opacity 1000ms cubic-bezier(0.070, 0.965, 0.560, 1.000);
 	}
+	.elAnim__sk{
+		@for $i from 1 to 10 {
+		    .sk-#{$i} { 
+		    	display: block;
+				transform: translateY(20px);
+				opacity: 0;
+		  		transition: transform 1000ms cubic-bezier(0.070, 0.965, 0.560, 1.000), opacity 1000ms cubic-bezier(0.070, 0.965, 0.560, 1.000);
+		    }
+		}
+	}
 	@for $i from 1 to 20 {
 	    .anim__delayMedium_#{$i} { transition-delay: $i * 0.1s !important; }
 	}
@@ -516,13 +526,23 @@ main
 	}
 
 	&.reach .elAnim__slide,
-	&.active .elAnim__slide {
+	&.active .elAnim__slide, {
 	    opacity: 1;
 	    transform: translateY(0px);
 	}
 	&.reach .elAnim__fade,
 	&.active .elAnim__fade {
 	    opacity: 1;
+	}
+
+	&.reach .elAnim__sk,
+	&.active .elAnim__sk{
+		@for $i from 1 to 10 {
+		    .sk-#{$i} { 
+		    	opacity: 1;
+		    	transform: translateY(0px);
+		    }
+		}
 	}
 }
 

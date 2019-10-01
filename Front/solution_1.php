@@ -54,7 +54,9 @@
 					<div class="container-features">
 						<div class="feature">
 							<div class="container-illu">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+								<img class="sk-1" src="img/common-solutions/solution-1/1/Bank@4x.png" alt="">
+								<img class="sk-2" src="img/common-solutions/solution-1/1/Icon-text-1@4x.png" alt="">
+								<img class="sk-3" src="img/common-solutions/solution-1/1/Icon-text-2@4x.png" alt="">
 							</div>
 							<div class="container-text">
 								<h3>
@@ -81,7 +83,11 @@
 						</div>
 						<div class="feature">
 							<div class="container-illu">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+								<img class="sk-1" src="img/common-solutions/solution-1/2/Dashboard-List@4x.png" alt="">
+								<img class="sk-2" src="img/common-solutions/solution-1/2/1@4x.png" alt="">
+								<img class="sk-3" src="img/common-solutions/solution-1/2/2@4x.png" alt="">
+								<img class="sk-4" src="img/common-solutions/solution-1/2/3@4x.png" alt="">
+								<img class="sk-5" src="img/common-solutions/solution-1/2/4@4x.png" alt="">
 							</div>
 							<div class="container-text">
 								<h3>
@@ -108,7 +114,8 @@
 						</div>
 						<div class="feature higlight">
 							<div class="container-illu">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+								<img class="sk-1" src="img/common-solutions/solution-1/3/Icon-text@4x.png" alt="">
+								<img class="sk-2" src="img/common-solutions/solution-1/3/Image@4x.png" alt="">
 							</div>
 							<div class="container-text">
 								<h3>
@@ -130,7 +137,9 @@
 						</div>
 						<div class="feature">
 							<div class="container-illu">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+								<img class="sk-1" src="img/common-solutions/solution-1/4/Bank@4x.png" alt="">
+								<img class="sk-2" src="img/common-solutions/solution-1/4/Layout-Icon@4x.png" alt="">
+								<img class="sk-3" src="img/common-solutions/solution-1/4/Pie-global@4x.png" alt="">
 							</div>
 							<div class="container-text">
 								<h3>

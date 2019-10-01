@@ -276,8 +276,11 @@
 							</span>
 						</a>
 					</div>
-					<div class="container-illu">
-						<img src="" alt="">
+					<div class="container-illu elAnim__sk">
+						<img class="sk-1 anim__delayMedium_1" src="img/home/section-pres/skeleton/Dashboard-List@4x.png" alt="">
+						<img class="sk-2 anim__delayMedium_2" src="img/home/section-pres/skeleton/Bank@4x.png">
+						<img class="sk-3 anim__delayMedium_3" src="img/home/section-pres/skeleton/Profil@4x.png">
+						<img class="sk-4 anim__delayMedium_4" src="img/home/section-pres/skeleton/Profil-2@4x.png">
 					</div>
 				</div>
 			</section>

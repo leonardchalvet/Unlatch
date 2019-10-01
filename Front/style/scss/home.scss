@@ -303,10 +303,31 @@ main{
 	}
 	.container-illu{
 		width: 575px;
-		img{
-			height: 365.62px;
+		position: relative;
+		.sk-1{
 			width: 100%;
-			box-shadow: 0 2px 50px 0 rgba(0,0,0,0.09);
+			filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+		}
+		.sk-2{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			height: 100%;
+			filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+		}
+		.sk-3{
+			position: absolute;
+			bottom: 20%;
+			right: -20px;
+			height: 70px;
+			filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+		}
+		.sk-4{
+			position: absolute;
+			bottom: 40%;
+			right: -20px;
+			height: 70px;
+			filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
 		}
 	}
 }

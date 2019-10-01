@@ -121,14 +121,6 @@ main{
 				height: 400px;
 				position: relative;
 				z-index: 1;
-				img{
-					max-width: 100%;
-					max-height: 100%;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-				}
 			}
 			.container-text{
 				width: 475px;
