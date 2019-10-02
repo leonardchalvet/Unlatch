@@ -53,7 +53,7 @@ main{
 		h1{
 			@include styleH1_light;
 			color: $colorMain_3_strong;
-			span{
+			em{
 				@include styleH1_bold;
 			}
 			margin-bottom: 30px;
@@ -108,7 +108,7 @@ main{
 		text-align: center;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold;
 			}
 		}
@@ -124,17 +124,14 @@ main{
 				margin-bottom: 140px;
 			}
 			.container-illu{
-				width: 570px;
-				height: 400px;
 				position: relative;
 				z-index: 1;
-				img{
-					max-width: 100%;
-					max-height: 100%;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
+				width: 580px;
+				height: 380px;
+				.img{
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
 				}
 			}
 			.container-text{
@@ -145,7 +142,7 @@ main{
 				h3{
 					margin-bottom: 30px;
 					@include styleH3_light;
-					span{
+					em{
 						@include styleH3_bold;
 					}
 				}
@@ -258,6 +255,632 @@ main{
 			}
 		}
 	}
+
+	&.feature-1{
+		.container-features{
+			.feature{
+				&:nth-child(1){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							height: 100%;
+							left: 0px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							right: 150px;
+							top: 40px;
+							height: 100px;
+							width: 100px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							right: 0px;
+							top: 80px;
+							width: 100px;
+							height: 100px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-4{
+							position: absolute;
+							right: 30px;
+							bottom: 0px;
+							height: 185px;
+							width: 185px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(2){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 100%;
+							left: 0px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(3){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 100%;
+							left: 0px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							left: -20px;
+							bottom: 90px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							left: -90px;
+							bottom: 10px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(4){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 205px;
+							left: 100px;
+							bottom: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							right: 0px;
+							top: 120px;
+							height: 120px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							right: 140px;
+							bottom: 70px;
+							height: 100px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-4{
+							position: absolute;
+							right: 125px;
+							top: 0px;
+							height: 150px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-5{
+							position: absolute;
+							left: 70px;
+							top: 50px;
+							height: 90px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	&.feature-2{
+		.container-features{
+			.feature{
+				&:nth-child(1){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 520px;
+							left: 0px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							right: 0px;
+							bottom: 100px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							right: 40px;
+							bottom: 30px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(2){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 100%;
+							left: 0px;
+							bottom: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(3){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 100%;
+							left: 0px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							right: -20px;
+							bottom: 20px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	&.feature-3{
+		.container-features{
+			.feature{
+				&:nth-child(1){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 260px;
+							left: 80px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							left:350px;
+							top: 80px;
+							height: 80px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							left: 180px;
+							bottom: 140px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-4{
+							position: absolute;
+							left: 250px;
+							bottom: 60px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-5{
+							position: absolute;
+							left: 0px;
+							bottom: 100px;
+							height: 80px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(2){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 260px;
+							top: 0px;
+							right: 00px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							left: 80px;
+							top: 130px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							left: 90px;
+							top: 50px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-4{
+							position: absolute;
+							right: -50px;
+							bottom: 60px;
+							height: 90px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-5{
+							position: absolute;
+							left: 0px;
+							bottom: 100px;
+							height: 80px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(3){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 300px;
+							right: 0px;
+							top: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							left: 0px;
+							bottom: 0px;
+							width: 260px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							left: 185px;
+							bottom: 65px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(4){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 261px;
+							right: 0px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							right: 160px;
+							bottom: 200px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							right: 90px;
+							bottom: 125px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	&.feature-4{
+		.container-features{
+			.feature{
+				&:nth-child(1){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 530px;
+							left: 0px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							left: 330px;
+							bottom: 45px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(2){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 520px;
+							top: 0px;
+							right: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							right: 240px;
+							top: 140px;
+							height: 140px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							right: 290px;
+							top: 280px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(3){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 100%;
+							right: 0px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(4){
+					.container-illu{
+						.sk-2{
+							position: absolute;
+							width: 261px;
+							right: 0px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-1{
+							position: absolute;
+							left: 0px;
+							top: 0px;
+							width: 261px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							top: 120px;
+							right: 120px;
+							height: 140px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-4{
+							position: absolute;
+							right: 90px;
+							top: 50px;
+							height: 80px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-5{
+							position: absolute;
+							left: 90px;
+							bottom: 55px;
+							height: 80px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	&.feature-5{
+		.container-features{
+			.feature{
+				&:nth-child(1){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 260px;
+							left: 30px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							left: 190px;
+							top: 95px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							left: 300px;
+							bottom: 40px;
+							width: 230px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(2){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 520px;
+							top: 0px;
+							right: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(3){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							height: 100%;
+							left: 0px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							height: 60px;
+							left: 200px;
+							top: 110px;
+						}
+						.sk-3{
+							position: absolute;
+							height: 60px;
+							left: 200px;
+							top: 190px;
+						}
+
+					}
+				}
+				&:nth-child(4){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							right: 0px;
+							top: 30px;
+							width: 460px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							width: 75px;
+							left: 20px;
+							top: 100px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							top: 220px;
+							left: 0px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-4{
+							position: absolute;
+							right: 190px;
+							top: 0px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	&.feature-6{
+		.container-features{
+			.feature{
+				&:nth-child(1){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 520px;
+							left: 0px;
+							top: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							left: 320px;
+							top: 205px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(2){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							width: 520px;
+							top: 0px;
+							right: 0px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							left: 320px;
+							top: 205px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+				&:nth-child(3){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							height: 60px;
+							left: 120px;
+							top: 200px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							height: 240px;
+							left: 60px;
+							top: 60px;
+						}
+
+					}
+				}
+				&:nth-child(4){
+					.container-illu{
+						.sk-1{
+							position: absolute;
+							right: 0px;
+							top: 30px;
+							width: 460px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-2{
+							position: absolute;
+							width: 75px;
+							left: 20px;
+							top: 100px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-3{
+							position: absolute;
+							top: 220px;
+							left: 0px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+						.sk-4{
+							position: absolute;
+							right: 190px;
+							top: 0px;
+							height: 60px;
+							filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+						}
+
+					}
+				}
+			}
+		}
+	}
 }
 
 #section-pres{
@@ -270,7 +893,7 @@ main{
 		text-align: center;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold;
 			}
 		}

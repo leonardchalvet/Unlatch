@@ -49,7 +49,7 @@ main{
 		h1{
 			@include styleH1_light;
 			color: #FFF;
-			span{
+			em{
 				@include styleH1_bold;
 			}
 			margin-bottom: 30px;
@@ -101,7 +101,7 @@ main{
 		text-align: center;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold;
 			}
 		}
@@ -121,13 +121,10 @@ main{
 				height: 400px;
 				position: relative;
 				z-index: 1;
-				img{
-					max-width: 100%;
-					max-height: 100%;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
+				.img{
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
 				}
 			}
 			.container-text{
@@ -138,7 +135,7 @@ main{
 				h3{
 					margin-bottom: 30px;
 					@include styleH3_light;
-					span{
+					em{
 						@include styleH3_bold;
 					}
 				}
@@ -219,6 +216,11 @@ main{
 			&.higlight{
 				margin: 200px 0px 200px 0px;
 				padding: 70px 0px 70px 0px;
+				.container-text{
+					p{
+						color: $colorMain_3_strong;
+					}
+				}
 				.container-background{
 					position: absolute;
 					top: 0px;
@@ -416,7 +418,7 @@ main{
 		margin: auto;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold
 			}
 		}
@@ -429,6 +431,7 @@ main{
 		width: 100%;
 		position: relative;
 		img{
+			opacity: 0.7;
 			position: absolute;
 			left: 0px;
 			top: 0px;

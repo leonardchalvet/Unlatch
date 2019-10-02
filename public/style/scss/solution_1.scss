@@ -31,6 +31,132 @@
 					top: 0%;
 				}
 			}
+
+			&:nth-child(1){
+				.container-illu{
+					.sk-1{
+						position: absolute;
+						width: 260px;
+						left: 150px;
+						top: 0px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+					.sk-2{
+						position: absolute;
+						left: 0px;
+						top: 130px;
+						height: 60px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+					.sk-3{
+						position: absolute;
+						left: 0px;
+						top: 200px;
+						height: 60px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+				}
+			}
+
+			&:nth-child(2){
+				.container-illu{
+					.sk-1{
+						position: absolute;
+						width: 100%;
+						right: 0px;
+						top: 0px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+					.sk-2{
+						position: absolute;
+						right: 0px;
+						top: 130px;
+						height: 80px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+					.sk-3{
+						position: absolute;
+						right: 130px;
+						top: 160px;
+						height: 80px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+					.sk-4{
+						position: absolute;
+						right: 0px;
+						top: 240px;
+						height: 80px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+					.sk-5{
+						position: absolute;
+						right: 130px;
+						top: 280px;
+						height: 80px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+				}
+			}
+
+			&:nth-child(3){
+				.container-illu{
+					.sk-2{
+						position: absolute;
+						width: 430px;
+						left: 0px;
+						top: -100px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+					.sk-1{
+						position: absolute;
+						z-index: 1;
+						left: 30px;
+						bottom: 30px;
+						height: 60px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+				}
+			}
+
+			&:nth-child(4){
+				.container-illu{
+					.sk-1{
+						position: absolute;
+						height: 100%;
+						left: 0px;
+						top: 0px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+					.sk-2{
+						position: absolute;
+						left: 160px;
+						bottom: 80px;
+						height: 60px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+					.sk-3{
+						position: absolute;
+						right: 0px;
+						top: 0px;
+						height: 190px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+					.sk-4{
+						position: absolute;
+						right: 0px;
+						top: 240px;
+						height: 80px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+					.sk-5{
+						position: absolute;
+						right: 130px;
+						top: 280px;
+						height: 80px;
+						filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+					}
+				}
+			}
 		}
 	}
 }

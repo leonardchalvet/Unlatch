@@ -14,7 +14,7 @@ main{
 	}
 	h1{
 		@include styleH1_light;
-		span{
+		em{
 			@include styleH1_bold;
 		}
 	}
@@ -79,7 +79,7 @@ main{
 		margin: auto;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold
 			}
 		}
