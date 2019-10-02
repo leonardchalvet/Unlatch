@@ -299,6 +299,9 @@ main{
 	.container-illu{
 		width: 575px;
 		position: relative;
+		.img{
+			width: 100%;
+		}
 		.sk-1{
 			width: 100%;
 			filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
