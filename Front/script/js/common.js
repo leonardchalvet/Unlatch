@@ -111,9 +111,12 @@ $('footer .foot .container-lg >.lg').click(function(){
 $('#header-blog-desktop .search input').focusin(function(){
 	$('#header-blog-desktop .search .dropdown').addClass('show');
 })
-$('#header-blog-desktop .search input').focusout(function(){
+
+$('#header-blog-desktop .search .dropdown a').click(function(event){
 	$('#header-blog-desktop .search .dropdown').removeClass('show');
 })
+
+
 
 
 /*============================================================================
