@@ -19,6 +19,14 @@
 
 			<section id="section-contact" class="sectionAnim_container">
 				<div class="wrapper">
+					<div class="header">
+						<a href="" class="logo">
+							<img src="img/common/logo-black.svg" alt="">
+						</a>
+						<div class="close">
+							<img src="img/common/cross.svg" alt="">
+						</div>
+					</div>
 					<div class="container-text">
 						<div class="container-cover">
 							
@@ -73,31 +81,57 @@
 							</p>
 						</div>
 						<form action="" class="elAnim__slide anim__delayMedium_2">
-							<div class="label">
+							<div class="label label-text">
 								<input type="text">
 								<div class="name">Nom Complet</div>
 							</div>
-							<div class="label">
+							<div class="label label-text">
 								<input type="text">
 								<div class="name">Socièté</div>
 							</div>
-							<div class="label">
-								<input type="text">
-								<div class="name">Métier</div>
+							<div class="label label-dropdown">
+								<div class="container-input">
+									<input readonly type="text">
+									<div class="name">Métier</div>
+									<img class="arrow" src="img/common/arrow-3.svg" alt="">
+								</div>
+								<div class="dropdown">
+									<div class="el">Option 1</div>
+									<div class="el">Option 2</div>
+									<div class="el">Option 3</div>
+									<div class="el">Option 4</div>
+									<div class="el">Option 5</div>
+									<div class="el">Option 6</div>
+									<div class="el">Option 7</div>
+									<div class="el">Option 8</div>
+								</div>
 							</div>
-							<div class="label">
+							<div class="label label-text">
 								<input type="text">
 								<div class="name">aazz@mail.com</div>
 							</div>
-							<div class="label">
+							<div class="label label-text">
 								<input type="text">
 								<div class="name">Téléphone</div>
 							</div>
-							<div class="label">
-								<input type="text">
-								<div class="name">Volume des ventes</div>
+							<div class="label label-dropdown">
+								<div class="container-input">
+									<input readonly type="text">
+									<div class="name">Volume des ventes</div>
+									<img class="arrow" src="img/common/arrow-3.svg" alt="">
+								</div>
+								<div class="dropdown">
+									<div class="el">Option 1</div>
+									<div class="el">Option 2</div>
+									<div class="el">Option 3</div>
+									<div class="el">Option 4</div>
+									<div class="el">Option 5</div>
+									<div class="el">Option 6</div>
+									<div class="el">Option 7</div>
+									<div class="el">Option 8</div>
+								</div>
 							</div>
-							<div class="label">
+							<div class="label label-text">
 								<input type="text">
 								<div class="name">Nom Complet</div>
 							</div>

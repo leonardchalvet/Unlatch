@@ -794,6 +794,26 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
+	"/img/common/arrow-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/arrow-3.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common/Cross.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/Cross.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/img/common/footer/flag/en.svg": {
 		"ft": 2097152,
 		"miP": 0,

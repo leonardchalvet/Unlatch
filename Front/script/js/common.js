@@ -28,6 +28,8 @@ $(window).on('load', function() {
 
 for(let i = 1 ; i < 10 ; i++) {
 	$('#header-desktop .link-' + i).click(function(){
+		$('#header-desktop .container-link li').removeClass('active');
+		$(this).closest('li').addClass('active');
 		for(let j = 1 ; j < 10 ; j++) {
 			$('#header-desktop').removeClass('open-dropdown-' + j);
 		}
@@ -39,9 +41,12 @@ for(let i = 1 ; i < 10 ; i++) {
 	})
 }
 
+
 $(document).click(function(){
+
 	if (!$(event.target).closest('#header-desktop').length) {
 		for(let i = 1 ; i < 10 ; i++) {
+			$('#header-desktop .container-link li').removeClass('active');
 			if ($('#header-desktop').hasClass('open-dropdown-' + i)) {
 				$('#header-desktop').removeClass('open-dropdown-' + i);
 			}
