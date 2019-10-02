@@ -18,6 +18,10 @@
 			@include styleGrid1;
 			height: 90px;
 			padding-left: 200px;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: space-between;
 			&:after{
 				content: '';
 				position: absolute;
@@ -98,10 +102,6 @@
 			}
 		}
 		.container-action{
-			position: absolute;
-			right: 30px;
-			top: 50%;
-			transform: translateY(-50%);
 			display: flex;
 			flex-flow: row wrap;
 			align-items: center;
