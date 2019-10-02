@@ -23,19 +23,27 @@ $document = $WPGLOBAL['document']->data;
 
 			<section id="section-contact">
 				<div class="wrapper">
+					<div class="header">
+						<a href="<?= $document->content_logo_link->url; ?>" class="logo">
+							<img src="<?= $document->content_logo->url; ?>" alt="">
+						</a>
+						<a href="<?= $document->content_cross_link->url; ?>" class="close">
+							<img src="/img/common/cross.svg" alt="">
+						</a>
+					</div>
 					<div class="container-text">
 						<div class="container-cover">
-							<img src="<?= $document->content_img->url; ?>" alt="">
+							<img class="elAnim__slide anim__delayMedium_1" src="<?= $document->content_img->url; ?>" alt="">
 							<?= RichText::asHtml($document->content_title); ?>
 							<?= RichText::asHtml($document->content_under_title); ?>
 						</div>
 
-						<div class="container-infos">
+						<div class="container-infos elAnim__slide anim__delayMedium_4">
 							<p>
 								<?= RichText::asText($document->content_text); ?>
 							</p>
 
-							<ul>
+							<ul class="elAnim__slide anim__delayMedium_5">
 								<?php foreach ($document->content_container_points as $point) { ?>
 									<li>
 										<p><?= RichText::asText($point->content_point); ?></p>
@@ -43,9 +51,9 @@ $document = $WPGLOBAL['document']->data;
 								<?php } ?>
 							</ul>
 
-							<div class="container-logo">
+							<div class="container-logo elAnim__slide anim__delayMedium_6">
 								<?= RichText::asHtml($document->content_before_logos); ?>
-								<div class="list-logo">
+								<div class="list-logo elAnim__slide anim__delayMedium_7">
 									<?php foreach ($document->content_container_logos as $logo) { ?>
 										<img src="<?= $logo->content_logo->url; ?>" alt="">
 									<?php } ?>
@@ -54,18 +62,34 @@ $document = $WPGLOBAL['document']->data;
 						</div>
 					</div>
 					<div class="container-form">
-						<div class="head">
+						<div class="head elAnim__slide anim__delayMedium_1">
 							<?= RichText::asHtml($document->form_title); ?>
 							<p>
 								<?= RichText::asText($document->form_text); ?>
 							</p>
 						</div>
-						<form action="">
-							<?php foreach ($document->form_container_input as $input) { ?>
-								<div class="label">
-									<input type="text" name="<?= RichText::asText($input->form_name); ?>">
-									<div class="name"><?= RichText::asText($input->form_placeholder); ?></div>
-								</div>	
+						<form action="" class="elAnim__slide anim__delayMedium_2">
+							<?php $i = 0; 
+								foreach ($document->form_container_input as $input) { 
+								if($input->form_dropdown == 'no') { ?>
+									<div class="label label-text">
+										<input type="text" name="<?= RichText::asText($input->form_name); ?>">
+										<div class="name"><?= RichText::asText($input->form_placeholder); ?></div>
+									</div>	
+								<?php } else { ?>
+									<div class="label label-dropdown">
+										<div class="container-input">
+											<input readonly type="text" name="<?= RichText::asText($input->form_name); ?>">
+											<div class="name"><?= RichText::asText($input->form_placeholder); ?></div>
+											<img class="arrow" src="/img/common/arrow-3.svg" alt="">
+										</div>
+										<div class="dropdown">
+											<?php foreach ($document->body[$i]->items as $dp) { ?>
+												<div class="el"><?= RichText::asText($dp->form_choice); ?></div>
+											<?php } ?>
+										</div>
+									</div>
+								<?php $i++; } ?>
 							<?php } ?>
 							<input type="text" name="allmail" value="" style="display: none;">
 							<button>
@@ -80,7 +104,11 @@ $document = $WPGLOBAL['document']->data;
 
 		<?php include('common-footer.php') ?>
 
-		<script type="text/javascript" src="/script/minify/common-min.js"></script>
 		<script type="text/javascript" src="/script/minify/contact-min.js"></script>
 	</body>
 </html>
+
+<script type="text/javascript">
+	$('#section-contact .container-text .container-cover h1').addClass('elAnim__slide anim__delayMedium_2');
+	$('#section-contact .container-text .container-cover p').addClass('elAnim__slide anim__delayMedium_3');
+</script>
