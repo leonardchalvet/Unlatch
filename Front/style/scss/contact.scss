@@ -16,6 +16,7 @@
 		justify-content: space-between;
 	}
 	.header{
+		@include styleGrid1;
 		position: absolute;
 		z-index: 2;
 		top: 35px;
@@ -292,6 +293,47 @@
 		}
 	}
 	
+}
+
+@media screen and (max-width: $breakPoint_mobile){
+	#section-contact{
+		.wrapper{
+			display: block;
+		}
+		.container-text{
+			width: 100%;
+			padding-bottom: 60px;
+			.container-cover{
+				&:before{
+					width: calc(100% + 50px);
+					right: initial;
+					left: -25px;
+				}
+				p{
+					margin-top: 40px;
+				}
+				img{
+					display: none;
+				}
+			}
+			.container-infos{
+				padding-top: 60px;
+				padding-right: 0px;
+				.container-logo{
+					margin-top: 60px;
+				}
+			}
+		}
+		.container-form{
+			width: 100%;
+			padding: 60px 0px 60px 0px;
+			&:before{
+				width: calc(100% + 50px);
+				right: initial;
+				left: -25px;
+			}
+		}
+	}
 }
 
 /*=======================================
