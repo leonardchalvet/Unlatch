@@ -44,7 +44,7 @@ main{
 				height: 3px;
 				background-color: $colorMain_3_strong;
 			}
-			em{
+			span{
 				@include styleParagraphMedium;
 				font-family: $font_1_semibold;
 				color: $colorMain_3_strong;
