@@ -18,27 +18,27 @@
 		<?php include('common-header.php') ?>
 
 		<main>
-			<section id="section-cover">
+			<section id="section-cover" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="container-text">
-						<div class="title">
+						<div class="title elAnim__slide anim__delayMedium_1">
 							<span>GESTION DE LA RELATION CLIENT</span>
 						</div>
-						<h1>
+						<h1 class="elAnim__slide anim__delayMedium_2">
 							Le CRM dédié à la <span>promotion immobilière.</span>
 						</h1>
-						<p>
+						<p class="elAnim__slide anim__delayMedium_3">
 							Unlatch vous permet de rester organisé et de faciliter votre reporting auprès de vos clients promoteurs immobiliers.
 						</p>
-						<a href="">
+						<a href="" class="elAnim__slide anim__delayMedium_4">
 							<span class="btn-text">
 								Demander une démo
 							</span>
 						</a>
 					</div>
-					<img class="obj-1" src="img/common-feature/section-cover/obj-1.svg" alt="">
-					<img class="obj-2" src="img/common-feature/section-cover/obj-2.svg" alt="">
-					<div class="container-img">
+					<img class="obj-1 elAnim__slide anim__delayMedium_5" src="img/common-feature/section-cover/obj-1.svg" alt="">
+					<img class="obj-2 elAnim__slide anim__delayMedium_6" src="img/common-feature/section-cover/obj-2.svg" alt="">
+					<div class="container-img elAnim__slide anim__delayMedium_7">
 						<img src="img/common-solutions/section-cover/cover-solution-2.jpg" alt="">
 					</div>
 				</div>
@@ -46,34 +46,34 @@
 
 			<section id="section-features">
 				<div class="wrapper">
-					<div class="container-text">
-						<h2>
+					<div class="container-text sectionAnim_container">
+						<h2 class="elAnim__slide anim__delayMedium_1">
 							Nous croyons que <span>la simplicité est la clé d’une solution commerciale performante.</span>
 						</h2>
 					</div>
 					<div class="container-features">
-						<div class="feature">
-							<div class="container-illu">
+						<div class="feature sectionAnim_container">
+							<div class="container-illu elAnim__sk">
 								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
 							</div>
 							<div class="container-text">
-								<h3>
+								<h3 class="elAnim__slide anim__delayMedium_1">
 									<span>Simplifiez la pipeline</span> de vos ventes.
 								</h3>
-								<p>
+								<p class="elAnim__slide anim__delayMedium_2">
 									Unlatch optimise le traitement de vos prospects et vous permet de signer les contrats de réservation plus rapidement. Vous pouvez gérez toute votre activité sur une plateforme unique qui centralise l’ensemble des informations. 
 								</p>
 							</div>
 						</div>
-						<div class="feature higlight">
-							<div class="container-illu">
+						<div class="feature higlight sectionAnim_container">
+							<div class="container-illu elAnim__sk">
 								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
 							</div>
 							<div class="container-text">
-								<h3>
+								<h3 class="elAnim__slide anim__delayMedium_1">
 									<span>Collaborez</span> avec le promoteur et les acheteurs.
 								</h3>
-								<p>
+								<p class="elAnim__slide anim__delayMedium_2">
 									Unlatch à été conçu comme une plateforme innovante mais aussi collaborative afin de rassembler autour d’un même outil les différentes personnes qui participent à la vente immobilière (commercialisateur, promoteur, notaire, acheteur, etc.)
 								</p>
 							</div>
@@ -82,28 +82,28 @@
 								<img class="obj-2" src="img/common-feature/section-features/obj-2.svg" alt="">
 							</div>
 						</div>
-						<div class="feature">
-							<div class="container-illu">
+						<div class="feature sectionAnim_container">
+							<div class="container-illu elAnim__sk">
 								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
 							</div>
 							<div class="container-text">
-								<h3>
+								<h3 class="elAnim__slide anim__delayMedium_1">
 									<span>Rendez heureux</span> vos clients acquéreurs.
 								</h3>
-								<p>
+								<p class="elAnim__slide anim__delayMedium_2">
 									Avec Unlatch, vos clients bénéficient dès la réservation du bien immobilier d’un espace personnalisé à vos couleurs pour compléter leur dossier et suivre l’avancement des travaux.
 								</p>
 							</div>
 						</div>
-						<div class="feature">
-							<div class="container-illu">
+						<div class="feature sectionAnim_container">
+							<div class="container-illu elAnim__sk">
 								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
 							</div>
 							<div class="container-text">
-								<h3>
+								<h3 class="elAnim__slide anim__delayMedium_1">
 									<span>Analysez finement</span> vos ventes immobilières.
 								</h3>
-								<p>
+								<p class="elAnim__slide anim__delayMedium_2">
 									Créez facilement des dashboards incroyables pour piloter votre activité commerciale. Générez des reporting en pdf pour vos présentations.
 								</p>
 							</div>
@@ -112,15 +112,15 @@
 				</div>
 			</section>
 
-			<section id="section-pres">
+			<section id="section-pres" class="sectionAnim_container">
 				<div class="wrapper">
-					<div class="container-text">
+					<div class="container-text elAnim__slide anim__delayMedium_1">
 						<h2>
 							Pourquoi notre <span>CRM</span> pour<br>l’immobilier neuf <span>est différent ?</span>
 						</h2>
 					</div>
 					<div class="container-el">
-						<div class="el">
+						<div class="el elAnim__slide anim__delayMedium_2">
 							<div class="icn">
 								<img src="img/common-feature/section-pres/icn-1.svg" alt="">
 							</div>
@@ -131,7 +131,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="el">
+						<div class="el elAnim__slide anim__delayMedium_3">
 							<div class="icn">
 								<img src="img/common-feature/section-pres/icn-2.svg" alt="">
 							</div>
@@ -142,7 +142,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="el">
+						<div class="el elAnim__slide anim__delayMedium_4">
 							<div class="icn">
 								<img src="img/common-feature/section-pres/icn-3.svg" alt="">
 							</div>
@@ -157,15 +157,15 @@
 				</div>
 			</section>
 
-			<section id="section-quotes">
+			<section id="section-quotes" class="sectionAnim_container">
 				<div class="wrapper">
-					<div class="container-img">
+					<div class="container-img elAnim__slide anim__delayMedium_1">
 						<img src="img/common/section-quotes/quote-img-4.jpg" alt="">
 					</div>
 					<div class="container-quotes">
-						<img class="obj-1" src="img/common/icn-quote-white.svg" alt="">
+						<img class="obj-1 elAnim__slide anim__delayMedium_2" src="img/common/icn-quote-white.svg" alt="">
 						<div class="container-el">
-							<div class="el">
+							<div class="el elAnim__slide anim__delayMedium_3">
 								<q>
 									Dans un environnement où la digitalisation du parcours clients est toujours plus présente, nous sommes convaincus que la dématérialisation des outils de vente est un enjeu majeur de notre métier. C’est pour cette raison que nous nous sommes rapprochés d'Unlatch : satisfaire nos clients acquéreurs et répondre aux besoins de nos clients promoteurs
 								</q>
@@ -175,7 +175,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="container-action">
+						<div class="container-action elAnim__slide anim__delayMedium_4">
 							<div class="container-link">
 								<a href="">
 									<span class="link-text">
@@ -194,7 +194,7 @@
 			</section>
 
 
-			<section id="common-section-join">
+			<section id="common-section-join" class="sectionAnim_container">
 				<img class="obj-1" src="img/common/section-join/obj-1.svg" alt="">
 				<img class="obj-2" src="img/common/section-join/obj-2.svg" alt="">
 				<img class="obj-3" src="img/common/section-join/obj-3.svg" alt="">

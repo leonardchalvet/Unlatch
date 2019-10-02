@@ -17,18 +17,18 @@
 
 		<main>
 
-			<section id="section-contact">
+			<section id="section-contact" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="container-text">
 						<div class="container-cover">
 							
-							<img src="img/contact/cover.png" alt="">
+							<img class="elAnim__slide anim__delayMedium_1" src="img/contact/cover.png" alt="">
 						
-							<h1>
+							<h1 class="elAnim__slide anim__delayMedium_2">
 								Comment<br>pouvons-nous<br> 
 								<span>vous aider ?</span>
 							</h1>
-							<p>
+							<p class="elAnim__slide anim__delayMedium_3">
 								Des questions ?<br>
 								Appeler nos experts au <a href="">01 84 60 50 93</a>
 							</p>
@@ -36,11 +36,11 @@
 						</div>
 
 						<div class="container-infos">
-							<p>
+							<p class="elAnim__slide anim__delayMedium_4">
 								Nous sommes le leader de la digitalisation du processus de vente immobilière dans le neuf. Si vous souhaitez avoir plus d’informations sur Unlatch et ses produits :
 							</p>
 
-							<ul>
+							<ul class="elAnim__slide anim__delayMedium_5">
 								<li>
 									<p>Appelez-nous au 01 84 60 50 93  et un de nos experts vous conseillera !</p>
 								</li>
@@ -49,11 +49,11 @@
 								</li>
 							</ul>
 
-							<div class="container-logo">
+							<div class="container-logo elAnim__slide anim__delayMedium_6">
 								<p>
 									Approuvé par <span>+ de 180 promoteurs et commercialisateurs</span> de toutes tailles
 								</p>
-								<div class="list-logo">
+								<div class="list-logo elAnim__slide anim__delayMedium_7">
 									<img src="img/contact/list-logo/1-Fiducim@4x.png" alt="">
 									<img src="img/contact/list-logo/2-Demathieu Bard@4x.png" alt="">
 									<img src="img/contact/list-logo/3-Quartus@4x.png" alt="">
@@ -64,7 +64,7 @@
 						</div>
 					</div>
 					<div class="container-form">
-						<div class="head">
+						<div class="head elAnim__slide anim__delayMedium_1">
 							<h2>
 								Demander une <span>démo</span>
 							</h2>
@@ -72,7 +72,7 @@
 								Remplissez le formulaire ci-dessous pour qu'un représentant d'Unlatch vous contacte sous peu afin de discuter de vos besoins et vous présenter nos solutions.
 							</p>
 						</div>
-						<form action="">
+						<form action="" class="elAnim__slide anim__delayMedium_2">
 							<div class="label">
 								<input type="text">
 								<div class="name">Nom Complet</div>

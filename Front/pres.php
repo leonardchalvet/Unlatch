@@ -19,22 +19,22 @@
 
 		<main>
 
-			<section id="section-cover">
+			<section id="section-cover" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="container-text">
-						<h1>Ils nous font <span>confiance</span></h1>
-						<p>
+						<h1 class="elAnim__slide anim__delayMedium_1">Ils nous font <span>confiance</span></h1>
+						<p class="elAnim__slide anim__delayMedium_2">
 							Retrouvez sur cette page les communiqués de Presse d'Unlatch ainsi que les médias qui parlent de nous.
 						</p>
 						<div class="container-quotes">
-							<img class="obj-1" src="img/common/icn-quote-red.svg" alt="">
-							<h3>
+							<img class="obj-1 elAnim__slide anim__delayMedium_3" src="img/common/icn-quote-red.svg" alt="">
+							<h3 class="elAnim__slide anim__delayMedium_4">
 								Ces technologie qui mettent l’immobilier en mouvement
 							</h3>
-							<q>
+							<q class="elAnim__slide anim__delayMedium_5">
 								Parapher une vente immobilière depuis un ordinateur, une tablette ou un smartphone est désormais possible grâce à la signature électronique…
 							</q>
-							<div class="container-logo">
+							<div class="container-logo elAnim__slide anim__delayMedium_6">
 								<div class="logo">
 									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="" style="filter: invert(1);">
 								</div>
@@ -44,16 +44,16 @@
 							</div>
 						</div>
 					</div>
-					<div class="container-img">
+					<div class="container-img elAnim__slide anim__delayMedium_5">
 						<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
 					</div>
 				</div>
 			</section>
 
-			<section class="common-section-pdf">
+			<section class="common-section-pdf" class="sectionAnim_container">
 				<div class="wrapper">
-					<h2>Les communiqués de <span>presse</span></h2>
-					<div class="container-el">
+					<h2 class="elAnim__slide anim__delayMedium_1">Les communiqués de <span>presse</span></h2>
+					<div class="container-el elAnim__fade anim__delayMedium_2">
 						<div class="el">
 							<div class="container-logo">
 								<div class="logo">
@@ -158,7 +158,7 @@
 				</div>
 			</section>
 
-			<section class="common-section-pdf">
+			<section class="common-section-pdf" class="sectionAnim_container">
 				<img class="obj-1" src="img/pres/obj-1.svg">
 				<img class="obj-2" src="img/pres/obj-2.svg">
 				<div class="wrapper">
