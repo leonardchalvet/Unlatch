@@ -25,7 +25,7 @@
 			<section id="section-404">
 				<div class="wrapper">
 					<h1>
-						<em>Erreur</em>
+						Erreur
 						<em>404</em>
 					</h1>
 					<div class="sep"></div>

@@ -19,14 +19,9 @@ main {
 	}
 	h1 {
 		text-align: center;
-		span {
-			display: block;
-			&:nth-child(1){
-				@include styleH1_light;
-			}
-			&:nth-child(2){
-				@include styleH1_bold;
-			}
+		@include styleH1_light;
+		em {
+			@include styleH1_bold;
 		}
 	}
 	.sep{

@@ -30,16 +30,11 @@ main{
 	.container-text{
 		width: 420px;
 		h1{
-			span{
-				&:nth-child(1){
-					@include styleH1_light;
-				}
-				&:nth-child(2){
-					@include styleH1_bold;
-				}
-				color: #FFF;
+			@include styleH1_light;
+			em{
+				@include styleH1_bold;
 			}
-			
+			color: #FFF;
 		}
 		.sep{
 			margin: 40px 0px 40px 0px;

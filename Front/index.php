@@ -26,8 +26,8 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h1 class="elAnim__slide anim__delayMedium_1">
-							<span>Digitalisez<br>vos ventes</span> 
-							<span>immobilières.</span>
+							Digitalisez<br>vos ventes
+							<em>immobilières.</em>
 						</h1>
 						<div class="sep elAnim__slide anim__delayMedium_2"></div>
 						<p class="elAnim__slide anim__delayMedium_3">

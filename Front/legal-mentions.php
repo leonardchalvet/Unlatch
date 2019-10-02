@@ -22,7 +22,7 @@
 			<section id="section-legal-mentions">
 				<div class="wrapper">
 					<h1>
-						<span>Mentions Légales</span> d’Unlatch.
+						<em>Mentions Légales</em> d’Unlatch.
 						
 					</h1>
 					<div class="sep"></div>

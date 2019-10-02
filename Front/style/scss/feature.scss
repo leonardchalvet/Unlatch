@@ -53,7 +53,7 @@ main{
 		h1{
 			@include styleH1_light;
 			color: $colorMain_3_strong;
-			span{
+			em{
 				@include styleH1_bold;
 			}
 			margin-bottom: 30px;

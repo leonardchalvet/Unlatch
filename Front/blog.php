@@ -23,7 +23,7 @@
 				<div class="wrapper">
 					<div class="head">
 						<h1>
-							Le blog<span>d’Unlatch.</span>
+							Le blog<em>d’Unlatch.</em>
 						</h1>
 						<p>
 							Toutes les nouveautés, analyses et coulisses d'Unlatch..

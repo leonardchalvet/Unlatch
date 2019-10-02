@@ -38,7 +38,7 @@
 							<div class="text">
 								<h1>
 									Sonia
-									<span>Dupont</span>
+									<em>Dupont</em>
 								</h1>
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic maxime iusto reprehenderit aut eius labore id porro doloribus tempore vel at impedit, officiis libero amet animi, veritatis debitis, quidem nihil.

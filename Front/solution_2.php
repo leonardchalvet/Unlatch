@@ -25,7 +25,7 @@
 							<span>COMMERCIALISATEUR</span>
 						</div>
 						<h1 class="elAnim__slide anim__delayMedium_2">
-							Apportez un <span>nouveau service</span> à vos clients.
+							Apportez un <em>nouveau service</em> à vos clients.
 						</h1>
 						<p class="elAnim__slide anim__delayMedium_3">
 							Unlatch vous permet de rester organisé et de faciliter votre reporting auprès de vos clients promoteurs immobiliers.

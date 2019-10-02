@@ -21,7 +21,7 @@
 
 			<section id="section-cover">
 				<div class="wrapper">
-					<h1>Ils nous font <span>confiance</span></h1>
+					<h1>Ils nous font <em>confiance</em></h1>
 					<div class="container-text">
 						<p>
 							Lancé en 2017, le logiciel LegaLife Immobilier a réussi à convaincre plus de 130 promoteurs immobiliers grâce à une solution complète et très simple d’utilisation pour les différents intervenants de la vente immobilière. Voici ce que pensent nos clients !

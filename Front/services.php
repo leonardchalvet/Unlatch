@@ -23,7 +23,7 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h1 class="elAnim__slide anim__delayMedium_1">
-							Un service<br>client <span>performant.</span>
+							Un service<br>client <em>performant.</em>
 						</h1>
 						<div class="sep elAnim__slide anim__delayMedium_2"></div>
 						<p class="elAnim__slide anim__delayMedium_3">

@@ -58,9 +58,11 @@ $('main').click(function(){
 	$('#header-desktop').removeClass('open-dropdown-product open-dropdown-features open-dropdown-entreprise');
 })
 
+/*
 $('em').each(function(){
 	$(this).replaceWith('<span>' + $(this).html() +'</span>');
 })
+*/
 
 $('a.openLightbox').click(function(){
 	$('body').addClass('block');

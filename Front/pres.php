@@ -22,7 +22,7 @@
 			<section id="section-cover" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="container-text">
-						<h1 class="elAnim__slide anim__delayMedium_1">Ils nous font <span>confiance</span></h1>
+						<h1 class="elAnim__slide anim__delayMedium_1">Ils nous font <em>confiance</em></h1>
 						<p class="elAnim__slide anim__delayMedium_2">
 							Retrouvez sur cette page les communiqués de Presse d'Unlatch ainsi que les médias qui parlent de nous.
 						</p>

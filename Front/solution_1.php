@@ -25,7 +25,7 @@
 							<span>PROMOTEUR IMMOBILIER</span>
 						</div>
 						<h1 class="elAnim__slide anim__delayMedium_2">
-							Libérez<br>votre <span>productivité.</span>
+							Libérez<br>votre <em>productivité.</em>
 						</h1>
 						<p class="elAnim__slide anim__delayMedium_3">
 							Unlatch propose la solution la plus complète du marché pour repenser totalement la VEFA.

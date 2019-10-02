@@ -19,7 +19,7 @@ main{
 	h1{
 		width: 100%;
 		@include styleH1_light;
-		span{
+		em{
 			display: block;
 			@include styleH1_bold;
 		}

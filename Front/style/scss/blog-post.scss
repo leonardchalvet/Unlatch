@@ -44,7 +44,7 @@
 		h1{
 			width: 775px;
 			@include styleH1_light;
-			span{
+			em{
 				@include styleH1_bold;
 			}
 		}

@@ -41,7 +41,7 @@
 
 					<div class="container-text">
 						<h1>
-							<span>Titre de l'article</span> sur 2 ligne maximum
+							<em>Titre de l'article</em> sur 2 ligne maximum
 						</h1>
 					</div>
 

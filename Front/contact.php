@@ -34,7 +34,7 @@
 						
 							<h1 class="elAnim__slide anim__delayMedium_2">
 								Comment<br>pouvons-nous<br> 
-								<span>vous aider ?</span>
+								<em>vous aider ?</em>
 							</h1>
 							<p class="elAnim__slide anim__delayMedium_3">
 								Des questions ?<br>

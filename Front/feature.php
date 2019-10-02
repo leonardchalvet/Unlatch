@@ -25,7 +25,7 @@
 							<span>GESTION DE LA RELATION CLIENT</span>
 						</div>
 						<h1 class="elAnim__slide anim__delayMedium_2">
-							Le CRM dédié à la <span>promotion immobilière.</span>
+							Le CRM dédié à la <em>promotion immobilière.</em>
 						</h1>
 						<p class="elAnim__slide anim__delayMedium_3">
 							Unlatch vous permet de rester organisé et de faciliter votre reporting auprès de vos clients promoteurs immobiliers.
