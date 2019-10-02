@@ -5,8 +5,6 @@
 ================================= COMMON =================================
 ========================================================================*/
 
-
-
 $(window).on('load', function() {
 	$window = $(window);
 	function animScroll() {
@@ -54,16 +52,6 @@ $(document).click(function(){
 	}
 })
 
-$('main').click(function(){
-	$('#header-desktop').removeClass('open-dropdown-product open-dropdown-features open-dropdown-entreprise');
-})
-
-/*
-$('em').each(function(){
-	$(this).replaceWith('<span>' + $(this).html() +'</span>');
-})
-*/
-
 $('a.openLightbox').click(function(){
 	$('body').addClass('block');
 	$('.container-lightbox').addClass('displayBlock');
@@ -104,7 +92,6 @@ $(document).click(function(){
 })
 
 $('footer .foot .container-lg >.lg').click(function(){
-
 	$(this).closest('.container-lg').toggleClass('active');
 })
 
@@ -115,8 +102,6 @@ $('#header-blog-desktop .search input').focusin(function(){
 $('#header-blog-desktop .search .dropdown a').click(function(event){
 	$('#header-blog-desktop .search .dropdown').removeClass('show');
 })
-
-
 
 
 /*============================================================================
