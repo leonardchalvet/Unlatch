@@ -34,10 +34,19 @@ $articles = $WPGLOBAL['articles']->results;
 					</div>
 					<div class="container-blog">
 						<?php
+
+						$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
+						                "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
+						                $_SERVER['REQUEST_URI']; 
+
+						$linkS = explode('/', $link);
+						$newLink = $linkS[0] . '//' . $linkS[2] . '/' . $linkS[3] . '/blog/';
+
 						foreach ($articles as $article) {
+							$uid = $article->uid;
 							if($idA != $article->id && $i <= 8) { 
 								$article = $article->data; ?>
-								<div class="el-blog">
+								<a class="el-blog" href="<?php echo $newLink.''.RichText::asText($article->global_categorie).'/'.$uid; ?>">
 									<div class="cover">
 										<div class="bdg">
 											<span><?= strtoupper(RichText::asText($article->common_categorie)); ?></span>
@@ -62,7 +71,7 @@ $articles = $WPGLOBAL['articles']->results;
 											<?= RichText::asText($article->common_little_description); ?>
 										</p>
 									</div>
-								</div>
+								</a>
 						<?php $i++; } } ?>
 					</div>
 

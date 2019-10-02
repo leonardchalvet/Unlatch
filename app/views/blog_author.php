@@ -66,10 +66,19 @@ $documentA = $document->container_authors[$i];
 					
 					<div class="container-blog">
 						<?php $i = 1; 
+
+						$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
+						                "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
+						                $_SERVER['REQUEST_URI']; 
+
+						$linkS = explode('/', $link);
+						$newLink = $linkS[0] . '//' . $linkS[2] . '/' . $linkS[3] . '/blog/';
+
 						foreach ($articles as $article) {
+							$uid = $article->uid;
 							if($idA != $article->id && $i <= 8 && $cta == $article->data->profil_url[0]->text ) { 
 								$article = $article->data; ?>
-								<div class="el-blog">
+								<a class="el-blog" href="<?php echo $newLink.''.RichText::asText($article->global_categorie).'/'.$uid; ?>">
 									<div class="cover">
 										<div class="bdg">
 											<span><?= strtoupper(RichText::asText($article->common_categorie)); ?></span>
@@ -94,7 +103,7 @@ $documentA = $document->container_authors[$i];
 											<?= RichText::asText($article->common_little_description); ?>
 										</p>
 									</div>
-								</div>
+								</a>
 						<?php $i++; } } ?>
 					</div>
 
@@ -144,3 +153,54 @@ $documentA = $document->container_authors[$i];
 
 	<script type="text/javascript" src="/script/minify/common-min.js"></script>
 </html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		let saveContainerEl = $('#header-blog-desktop .wrapper .container-link .search .dropdown').html();
+        
+		let url = window.location.href;
+		let urlS = url.split('/');
+
+        $('#header-blog-desktop .wrapper .container-link .search .container-input input').on("keyup", function() {
+        	let value = $(this).val().toLowerCase();
+            if(value.length > 0) {
+	            request(readDateSearch, '/' + $.trim(urlS[3]) + '/livesearch?value=' + value);
+	        }
+	        else {
+	        	$('#header-blog-desktop .wrapper .container-link .search .dropdown').empty();
+				$('#header-blog-desktop .wrapper .container-link .search .dropdown').append(saveContainerEl);
+	        }
+        });
+
+        // AJAX
+        function getXMLHttpRequest() { 
+		    let objXMLHttp = null;
+		    if (window.XMLHttpRequest) {
+		        objXMLHttp = new XMLHttpRequest();
+		    }
+		    else if (window.ActiveXObject) {
+		        objXMLHttp = new ActiveXObject("Microsoft.XMLHTTP");
+		    }
+		    return objXMLHttp;
+		}
+
+        function request(callback, get) {
+			let xhr = getXMLHttpRequest();
+			
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+					callback(xhr.responseText);
+				}
+			};
+
+			xhr.open("GET", get, true);
+			xhr.send(null);
+		}
+
+		function readDateSearch(sData) {
+            $('#header-blog-desktop .wrapper .container-link .search .dropdown').empty();
+			$('#header-blog-desktop .wrapper .container-link .search .dropdown').append(sData);
+		}
+    });
+</script>
