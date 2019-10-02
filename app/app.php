@@ -33,7 +33,7 @@ $app->get('/', function ($request, $response) use ($app, $prismic) {
     $lightbox = $api->getByUID('lightbox', 'lightbox');
 
     //PART 3 - Call home page (ask to client for default languages)
-    $document = $api->getByID(''); //For get ID, print_r($document) in home views, ctrl-c [id]
+    $document = $api->getByID('XYoKVxIAACUAZYtk'); //For get ID, print_r($document) in home views, ctrl-c [id]
 
     render($app, 'home', array('document' => $document, 'lightbox' => $lightbox, 'header' => $header, 'footer' => $footer));
 });

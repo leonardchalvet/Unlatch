@@ -115,7 +115,7 @@ $document = $WPGLOBAL['document']->data;
 			<section id="section-quote" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="container-img elAnim__slide anim__delayMedium_1">
-						<img class="elAnim__slide anim__delayMedium_2"> src="<?= $document->quote_img->url; ?>" alt="">
+						<img class="elAnim__slide anim__delayMedium_2" src="<?= $document->quote_img->url; ?>" alt="">
 					</div>
 					<div class="container-quote">
 						<img class="obj-1" src="/img/common/icn-quote-red.svg" alt="">
