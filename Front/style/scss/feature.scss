@@ -44,7 +44,7 @@ main{
 				height: 3px;
 				background-color: $colorMain_3_strong;
 			}
-			span{
+			em{
 				@include styleParagraphMedium;
 				font-family: $font_1_semibold;
 				color: $colorMain_3_strong;
@@ -937,7 +937,7 @@ main{
 				flex: 1;
 				h4{
 					@include styleH4_light;
-					span{
+					em{
 						@include styleH4_bold;
 					}
 				}
