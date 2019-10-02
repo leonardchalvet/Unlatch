@@ -76,7 +76,7 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h2>
-							<span>+ de 180 promoteurs</span> immobiliers et <span>commercialisateurs</span> utilisent Unlatch
+							<em>+ de 180 promoteurs</em> immobiliers et <em>commercialisateurs</em> utilisent Unlatch
 						</h2>
 					</div>
 					<div class="container-logos">

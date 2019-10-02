@@ -48,7 +48,7 @@
 				<div class="wrapper">
 					<div class="container-text sectionAnim_container">
 						<h2 class="elAnim__slide anim__delayMedium_1">
-							<span>Du lead jusqu’à la livraison</span> du bien immobilier, notre solution s’occupe de toutes les tâches chronophages
+							<em>Du lead jusqu’à la livraison</em> du bien immobilier, notre solution s’occupe de toutes les tâches chronophages
 						</h2>
 					</div>
 					<div class="container-features">
@@ -60,7 +60,7 @@
 							</div>
 							<div class="container-text">
 								<h3 class="elAnim__slide anim__delayMedium_2">
-									Accélérez vos <span>ventes immobilières.</span>
+									Accélérez vos <em>ventes immobilières.</em>
 								</h3>
 								<p class="elAnim__slide anim__delayMedium_3">
 									L’objectif de Unlatch est de réduire le délai entre la réservation et la signature de l’acte authentique de vente chez le notaire. Vos commerciaux ne pourront plus s’en passer :
@@ -91,7 +91,7 @@
 							</div>
 							<div class="container-text">
 								<h3 class="elAnim__slide anim__delayMedium_1">
-									<span>Collaborez</span> avec les différents intervenants.
+									<em>Collaborez</em> avec les différents intervenants.
 								</h3>
 								<p class="elAnim__slide anim__delayMedium_2">
 									Véritable plateforme collaborative. Unlatch facilite le travail et le suivi des différents intervenants (dirigeants, vendeurs, administration des ventes, commercialisateurs externes, notaires).
@@ -119,7 +119,7 @@
 							</div>
 							<div class="container-text">
 								<h3 class="elAnim__slide anim__delayMedium_1">
-									<span>Rendez heureux</span> vos clients acquéreurs.
+									<em>Rendez heureux</em> vos clients acquéreurs.
 								</h3>
 								<p class="elAnim__slide anim__delayMedium_2">
 									Avec Unlatch, vos clients bénéficient dès la réservation du bien immobilier d’un espace personnalisé à vos couleurs pour compléter leur dossier et suivre l’avancement des travaux.
@@ -143,7 +143,7 @@
 							</div>
 							<div class="container-text">
 								<h3 class="elAnim__slide anim__delayMedium_1">
-									<span>Analysez finement</span> vos ventes immobilières.
+									<em>Analysez finement</em> vos ventes immobilières.
 								</h3>
 								<p class="elAnim__slide anim__delayMedium_2">
 									Créez facilement des dashboards incroyables pour piloter votre activité commerciale. Générez des reporting en pdf pour vos présentations.
@@ -199,7 +199,7 @@
 				<div class="wrapper">
 					<div class="container-text elAnim__slide anim__delayMedium_1">
 						<h2>
-							<span>+ de 180 promoteurs</span> immobiliers et <span>commercialisateurs</span> utilisent Unlatch
+							<em>+ de 180 promoteurs</em> immobiliers et <em>commercialisateurs</em> utilisent Unlatch
 						</h2>
 					</div>
 					<div class="container-logos elAnim__fade anim__delayMedium_1">
@@ -217,7 +217,7 @@
 					</div>
 					<div class="container-text">
 						<h2 class="elAnim__slide anim__delayMedium_1">
-							<span>Discutez</span> avec l'un de nos conseillers ?
+							<em>Discutez</em> avec l'un de nos conseillers ?
 						</h2>
 						<p class="elAnim__slide anim__delayMedium_2">
 							Et levez le voile sur nos solutions.

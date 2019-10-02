@@ -48,17 +48,17 @@
 				<div class="wrapper">
 					<div class="container-text sectionAnim_container">
 						<h2 class="elAnim__slide anim__delayMedium_1">
-							Nous croyons que <span>la simplicité est la clé d’une solution commerciale performante.</span>
+							Nous croyons que <em>la simplicité est la clé d’une solution commerciale performante.</em>
 						</h2>
 					</div>
 					<div class="container-features">
 						<div class="feature sectionAnim_container">
 							<div class="container-illu elAnim__sk">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+								<img class="img" src="img/common/section-quotes/quote-img-1.jpg" alt="">
 							</div>
 							<div class="container-text">
 								<h3 class="elAnim__slide anim__delayMedium_1">
-									<span>Simplifiez la pipeline</span> de vos ventes.
+									<em>Simplifiez la pipeline</em> de vos ventes.
 								</h3>
 								<p class="elAnim__slide anim__delayMedium_2">
 									Unlatch optimise le traitement de vos prospects et vous permet de signer les contrats de réservation plus rapidement. Vous pouvez gérez toute votre activité sur une plateforme unique qui centralise l’ensemble des informations. 
@@ -67,11 +67,11 @@
 						</div>
 						<div class="feature higlight sectionAnim_container">
 							<div class="container-illu elAnim__sk">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+								<img class="img" src="img/common/section-quotes/quote-img-1.jpg" alt="">
 							</div>
 							<div class="container-text">
 								<h3 class="elAnim__slide anim__delayMedium_1">
-									<span>Collaborez</span> avec le promoteur et les acheteurs.
+									<em>Collaborez</em> avec le promoteur et les acheteurs.
 								</h3>
 								<p class="elAnim__slide anim__delayMedium_2">
 									Unlatch à été conçu comme une plateforme innovante mais aussi collaborative afin de rassembler autour d’un même outil les différentes personnes qui participent à la vente immobilière (commercialisateur, promoteur, notaire, acheteur, etc.)
@@ -84,11 +84,11 @@
 						</div>
 						<div class="feature sectionAnim_container">
 							<div class="container-illu elAnim__sk">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+								<img class="img" src="img/common/section-quotes/quote-img-1.jpg" alt="">
 							</div>
 							<div class="container-text">
 								<h3 class="elAnim__slide anim__delayMedium_1">
-									<span>Rendez heureux</span> vos clients acquéreurs.
+									<em>Rendez heureux</em> vos clients acquéreurs.
 								</h3>
 								<p class="elAnim__slide anim__delayMedium_2">
 									Avec Unlatch, vos clients bénéficient dès la réservation du bien immobilier d’un espace personnalisé à vos couleurs pour compléter leur dossier et suivre l’avancement des travaux.
@@ -97,11 +97,11 @@
 						</div>
 						<div class="feature sectionAnim_container">
 							<div class="container-illu elAnim__sk">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
+								<img class="img" src="img/common/section-quotes/quote-img-1.jpg" alt="">
 							</div>
 							<div class="container-text">
 								<h3 class="elAnim__slide anim__delayMedium_1">
-									<span>Analysez finement</span> vos ventes immobilières.
+									<em>Analysez finement</em> vos ventes immobilières.
 								</h3>
 								<p class="elAnim__slide anim__delayMedium_2">
 									Créez facilement des dashboards incroyables pour piloter votre activité commerciale. Générez des reporting en pdf pour vos présentations.
@@ -116,7 +116,7 @@
 				<div class="wrapper">
 					<div class="container-text elAnim__slide anim__delayMedium_1">
 						<h2>
-							Pourquoi notre <span>CRM</span> pour<br>l’immobilier neuf <span>est différent ?</span>
+							Pourquoi notre <em>CRM</em> pour<br>l’immobilier neuf <em>est différent ?</em>
 						</h2>
 					</div>
 					<div class="container-el">
@@ -201,7 +201,7 @@
 				<img class="obj-4" src="img/common/section-join/obj-4.svg" alt="">
 				<div class="wrapper">
 					<div class="container-text">
-						<h2>Vous souhaitez faire<br><span>partie de l'équipe ?</span></h2>
+						<h2>Vous souhaitez faire<br><em>partie de l'équipe ?</em></h2>
 					</div>
 					<div class="container-btn">
 						<a href="">

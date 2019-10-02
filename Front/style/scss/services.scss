@@ -91,7 +91,7 @@ main{
 		text-align: center;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold;
 			}
 		}
@@ -140,7 +140,7 @@ main{
 						flex: 1;
 						h3{
 							@include styleH3_light;
-							span{
+							em{
 								@include styleH3_bold;
 							}
 						}
@@ -197,7 +197,7 @@ main{
 			position: relative;
 			@include styleH2_light;
 			color: #FFF;
-			span{
+			em{
 				@include styleH2_bold;
 			}
 		}
@@ -358,7 +358,7 @@ main{
 		text-align: center;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold;
 			}
 		}

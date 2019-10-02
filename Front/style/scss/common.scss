@@ -34,6 +34,8 @@ h1, h2, h3, h4, h5, h6, i, em
 {
 	font-weight: normal;
 	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
 }
 body.block
 {
@@ -649,7 +651,7 @@ main
 		text-align: center;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold;
 			}
 		}

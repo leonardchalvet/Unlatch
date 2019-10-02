@@ -108,7 +108,7 @@ main{
 		text-align: center;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold;
 			}
 		}
@@ -142,7 +142,7 @@ main{
 				h3{
 					margin-bottom: 30px;
 					@include styleH3_light;
-					span{
+					em{
 						@include styleH3_bold;
 					}
 				}
@@ -893,7 +893,7 @@ main{
 		text-align: center;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold;
 			}
 		}

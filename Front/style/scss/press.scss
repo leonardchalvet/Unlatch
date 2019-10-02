@@ -138,7 +138,7 @@ main{
 		z-index: 1;
 		text-align: center;
 		@include styleH2_light;	
-		span {
+		em {
 			@include styleH2_bold;
 		}
 	}

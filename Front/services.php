@@ -47,7 +47,7 @@
 				<div class="wrapper">
 					<div class="container-text elAnim__slide anim__delayMedium_1">
 						<h2>
-							Repensez votre façon de vendre grâce à notre <span>accompagnement personnalisé</span>
+							Repensez votre façon de vendre grâce à notre <em>accompagnement personnalisé</em>
 						</h2>
 					</div>
 					<div class="container-col">
@@ -58,7 +58,7 @@
 										<img src="img/services/section-features/icn-1.svg" alt="">
 									</div>
 									<div class="text">
-										<h3><span>Déploiement</span> facile</h3>
+										<h3><em>Déploiement</em> facile</h3>
 										<p>
 											Un chargé de compte dédié à votre entreprise vous accompagne dans la mise en place de la solution Unlatch.
 										</p>
@@ -69,7 +69,7 @@
 										<img src="img/services/section-features/icn-2.svg" alt="">
 									</div>
 									<div class="text">
-										<h3><span>Formation</span><br>des équipes </h3>
+										<h3><em>Formation</em><br>des équipes </h3>
 										<p>
 											Nous accompagnons vos équipes pour s’assurer que la solution est maitrisée par tous (formation dans vos locaux et/ou visio conférence).
 										</p>
@@ -84,7 +84,7 @@
 										<img src="img/services/section-features/icn-3.svg" alt="">
 									</div>
 									<div class="text">
-										<h3><span>Intégration</span><br>technique</h3>
+										<h3><em>Intégration</em><br>technique</h3>
 										<p>
 											Notre équipe technique vous accompagne pour connecter notre solution à vos systèmes informatiques et éviter ainsi les doubles saisies.
 										</p>
@@ -95,7 +95,7 @@
 										<img src="img/services/section-features/icn-4.svg" alt="">
 									</div>
 									<div class="text">
-										<h3><span>Support</span> client</h3>
+										<h3><em>Support</em> client</h3>
 										<p>
 											Lors de l’utilisation de nos outils vous bénéficiez d’une assistance par téléphone et par mail afin de toujours savoir quoi faire.
 										</p>
@@ -112,7 +112,7 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h2 class="elAnim__slide anim__delayMedium_1">
-							Des services <span>adaptés</span><br>à vos <span>besoins</span>
+							Des services <em>adaptés</em><br>à vos <em>besoins</em>
 						</h2>
 						<p class="elAnim__slide anim__delayMedium_2">
 							Unlatch fournit des services qui s’adaptent à votre entreprise et à son volume d’activité. Pour en savoir plus, discutez avec un membre de notre équipe.
@@ -173,7 +173,7 @@
 				<div class="wrapper">
 					<div class="container-text elAnim__slide anim__delayMedium_1">
 						<h2>
-							Passez à la <span>vitesse<br>supérieure</span> avec nos services 
+							Passez à la <em>vitesse<br>supérieure</em> avec nos services 
 						</h2>
 					</div>
 					<div class="container-btn elAnim__slide anim__delayMedium_2">

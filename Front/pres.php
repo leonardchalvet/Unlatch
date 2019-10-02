@@ -52,7 +52,7 @@
 
 			<section class="common-section-pdf" class="sectionAnim_container">
 				<div class="wrapper">
-					<h2 class="elAnim__slide anim__delayMedium_1">Les communiqués de <span>presse</span></h2>
+					<h2 class="elAnim__slide anim__delayMedium_1">Les communiqués de <em>presse</em></h2>
 					<div class="container-el elAnim__fade anim__delayMedium_2">
 						<div class="el">
 							<div class="container-logo">
@@ -162,7 +162,7 @@
 				<img class="obj-1" src="img/pres/obj-1.svg">
 				<img class="obj-2" src="img/pres/obj-2.svg">
 				<div class="wrapper">
-					<h2>Unlatch dans les <span>médias</span></h2>
+					<h2>Unlatch dans les <em>médias</em></h2>
 					<div class="container-el">
 						<div class="el">
 							<div class="container-logo">

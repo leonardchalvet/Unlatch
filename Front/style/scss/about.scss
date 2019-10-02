@@ -92,7 +92,7 @@ main{
 		text-align: center;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold;
 			}
 		}
@@ -206,7 +206,7 @@ main{
 		h2{
 			@include styleH2_light;
 			color: #FFF;
-			span{
+			em{
 				@include styleH2_bold;
 			}
 		}
@@ -367,56 +367,6 @@ main{
 				padding-left: 110px;
 			}
 		}
-	}
-}
-
-#section-join{
-	padding: 80px 0px 80px 0px;
-	position: relative;
-	background-color: $colorMain_4_strong;
-	.wrapper{
-		@include styleGrid1;
-	}
-	.container-text{
-		text-align: center;
-		h2{
-			@include styleH2_light;
-			span{
-				@include styleH2_bold;
-			}
-		}
-	}
-	.container-btn{
-		text-align: center;
-		margin-top: 50px;
-		a{
-			@include styleButtonBig_2;
-		}
-	}
-
-	.obj-1{
-		position: absolute;
-		width: 130px;
-		top: 0px;
-		left: 0px;
-	}
-	.obj-2{
-		position: absolute;
-		width: 130px;
-		top: 0px;
-		left: 130px;
-	}
-	.obj-3{
-		position: absolute;
-		width: 130px;
-		bottom: 0px;
-		right: 130px;
-	}
-	.obj-4{
-		position: absolute;
-		width: 130px;
-		right: 0px;
-		bottom: 0px;
 	}
 }
 

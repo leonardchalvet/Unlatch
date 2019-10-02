@@ -91,7 +91,7 @@
 
 			<section id="section-clients">
 				<div class="wrapper">
-					<h2>Ce qu'en pense nos <span>clients</span></h2>
+					<h2>Ce qu'en pense nos <em>clients</em></h2>
 					<div class="container-el">
 						<div class="el">
 							<img src="img/home/section-logos/logo-haagendazs.png" alt="">

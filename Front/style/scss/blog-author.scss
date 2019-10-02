@@ -71,6 +71,8 @@
 		justify-content: space-between;
 		align-items: flex-start;
 		.el-blog{
+			text-decoration: none;
+			display: block;
 			margin-bottom: 120px;
 			width: calc((100% / 3) - 18px);
 			.cover{

@@ -50,7 +50,7 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h2 class="elAnim__slide anim__delayMedium_1">
-							Nous avons pour <span>valeurs</span>
+							Nous avons pour <em>valeurs</em>
 						</h2>
 					</div>
 					<div class="container-col">
@@ -119,7 +119,7 @@
 				<div class="wrapper">
 
 					<div class="container-text elAnim__slide anim__delayMedium_3">
-						<h2>Les <span>co-fondateurs d’Unlatch</span></h2>
+						<h2>Les <em>co-fondateurs d’Unlatch</em></h2>
 					</div>
 					<div class="container-el">
 						<div class="el elAnim__slide anim__delayMedium_4">
@@ -248,7 +248,7 @@
 				<img class="obj-4 elAnim__slide anim__delayMedium_4" src="img/common/section-join/obj-4.svg" alt="">
 				<div class="wrapper">
 					<div class="container-text elAnim__slide anim__delayMedium_5">
-						<h2>Vous souhaitez faire<br><span>partie de l'équipe ?</span></h2>
+						<h2>Vous souhaitez faire<br><em>partie de l'équipe ?</em></h2>
 					</div>
 					<div class="container-btn elAnim__slide anim__delayMedium_6">
 						<a href="">
