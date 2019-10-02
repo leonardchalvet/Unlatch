@@ -1,11 +1,11 @@
 <header id="header-blog-desktop">
 	<div class="wrapper">
-		<div class="logo">
+		<a class="logo" href="">
 			<img src="img/common/logo-black.svg" alt="">
 			<div class="bdg">
 				<span>blog</span>
 			</div>
-		</div>
+		</a>
 		<div class="container-link">
 			<a href="">Immobilier</a>
 			<a href="">Tech</a>

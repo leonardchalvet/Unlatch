@@ -50,7 +50,7 @@
 					
 					<div class="container-blog">
 						
-						<div class="el-blog">
+						<a href="#" class="el-blog">
 							<div class="cover">
 								<div class="bdg">
 									<span>IMMOBILIER</span>
@@ -75,7 +75,7 @@
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 								</p>
 							</div>
-						</div>
+						</a>
 
 						<div class="el-blog">
 							<div class="cover">
