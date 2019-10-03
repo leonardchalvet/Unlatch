@@ -141,7 +141,7 @@ main{
 						flex: 1;
 						h3{
 							@include styleH3_light;
-							span{
+							em{
 								@include styleH3_bold;
 							}
 						}

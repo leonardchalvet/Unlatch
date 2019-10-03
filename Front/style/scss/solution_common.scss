@@ -94,18 +94,19 @@ main{
 	position: relative;
 	.wrapper{
 		@include styleGrid1;
-	}
-	.container-text{
-		width: 750px;
-		margin: auto;
-		text-align: center;
-		h2{
-			@include styleH2_light;
-			em{
-				@include styleH2_bold;
+		>.container-text{
+			width: 750px;
+			margin: auto;
+			text-align: center;
+			h2{
+				@include styleH2_light;
+				em{
+					@include styleH2_bold;
+				}
 			}
 		}
 	}
+	
 	.container-features{
 		margin-top: 105px;
 		.feature{
@@ -113,6 +114,7 @@ main{
 			display: flex;
 			flex-flow: row wrap;
 			align-items: center;
+			justify-content: space-between;
 			&:not(:last-child){
 				margin-bottom: 140px;
 			}
@@ -184,6 +186,7 @@ main{
 				.container-text{
 					order: 2;
 					text-align: left;
+					margin-left: auto;
 					ul{
 						li{
 							padding-left: 40px;
@@ -201,7 +204,7 @@ main{
 				.container-text{
 					order: 1;
 					text-align: right;
-
+					margin-right: auto;
 					ul{
 						li{
 							padding-right: 40px;

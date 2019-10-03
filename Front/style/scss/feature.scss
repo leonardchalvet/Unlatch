@@ -101,18 +101,19 @@ main{
 	position: relative;
 	.wrapper{
 		@include styleGrid1;
-	}
-	.container-text{
-		width: 750px;
-		margin: auto;
-		text-align: center;
-		h2{
-			@include styleH2_light;
-			em{
-				@include styleH2_bold;
+		>.container-text{
+			width: 750px;
+			margin: auto;
+			text-align: center;
+			h2{
+				@include styleH2_light;
+				em{
+					@include styleH2_bold;
+				}
 			}
 		}
 	}
+	
 	.container-features{
 		margin-top: 105px;
 		.feature{
@@ -191,6 +192,7 @@ main{
 				.container-text{
 					order: 2;
 					text-align: left;
+					margin-left: auto;
 					ul{
 						li{
 							padding-left: 40px;
@@ -208,7 +210,7 @@ main{
 				.container-text{
 					order: 1;
 					text-align: right;
-
+					margin-right: auto;
 					ul{
 						li{
 							padding-right: 40px;
@@ -450,34 +452,34 @@ main{
 						.sk-1{
 							position: absolute;
 							width: 260px;
-							left: 80px;
+							left: 120px;
 							top: 0px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
 						.sk-2{
 							position: absolute;
-							left:350px;
+							left:390px;
 							top: 80px;
 							height: 80px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
 						.sk-3{
 							position: absolute;
-							left: 180px;
+							left: 220px;
 							bottom: 140px;
 							height: 60px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
 						.sk-4{
 							position: absolute;
-							left: 250px;
+							left: 290px;
 							bottom: 60px;
 							height: 60px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
 						.sk-5{
 							position: absolute;
-							left: 0px;
+							left: 40px;
 							bottom: 100px;
 							height: 80px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
@@ -491,26 +493,26 @@ main{
 							position: absolute;
 							width: 260px;
 							top: 0px;
-							right: 0px;
+							right: 140px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
 						.sk-2{
 							position: absolute;
-							right: 160px;
+							right: 270px;
 							top: 130px;
 							height: 60px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
 						.sk-3{
 							position: absolute;
-							right: 160px;
+							right: 270px;
 						    top: 200px;
 						    height: 60px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
 						.sk-4{
 							position: absolute;
-							right: -50px;
+							right: 40px;
 							bottom: 60px;
 							height: 90px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
@@ -551,20 +553,20 @@ main{
 						.sk-1{
 							position: absolute;
 							width: 261px;
-							right: 0px;
+							right: 60px;
 							top: 0px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
 						.sk-2{
 							position: absolute;
-							right: 160px;
+							right: 220px;
 							bottom: 200px;
 							height: 60px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
 						.sk-3{
 							position: absolute;
-							right: 90px;
+							right: 150px;
 							bottom: 125px;
 							height: 60px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
@@ -726,7 +728,7 @@ main{
 						.sk-1{
 							position: absolute;
 							height: 100%;
-							left: 0px;
+							left: 100px;
 							top: 0px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
@@ -827,6 +829,7 @@ main{
 					.container-illu{
 						.sk-1{
 							position: absolute;
+							z-index: 1;
 							height: 60px;
 							left: 120px;
 							top: 200px;
@@ -834,41 +837,16 @@ main{
 						}
 						.sk-2{
 							position: absolute;
-							height: 240px;
-							left: 60px;
-							top: 60px;
-						}
-
-					}
-				}
-				&:nth-child(4){
-					.container-illu{
-						.sk-1{
-							position: absolute;
-							right: 0px;
-							top: 30px;
-							width: 460px;
-							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
-						}
-						.sk-2{
-							position: absolute;
-							width: 75px;
-							left: 20px;
-							top: 100px;
+							height: 150px;
+							left: 350px;
+							top: 0px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
 						.sk-3{
 							position: absolute;
-							top: 220px;
-							left: 0px;
-							height: 60px;
-							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
-						}
-						.sk-4{
-							position: absolute;
-							right: 190px;
+							width: 250px;
+							left: 40px;
 							top: 0px;
-							height: 60px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
 
