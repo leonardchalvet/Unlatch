@@ -265,7 +265,7 @@
 							<br>
 							CRM, espace prescripteurs, digitalisation de la documentation (signature électronique et recommandé électronique qualifié eIDAS), automatisation des processus manuels (alertes, relances, etc.), espace de travail collaboratif entre les différents acteurs (promoteur, vendeur, CGP, prescripteur, notaire, etc) et compte client pour offrir à vos acquéreurs une expérience d’achat 100 % digitale.
 						</p>
-						<a href="" class="elAnim__slide anim__delayMedium_3">
+						<a class="elAnim__slide anim__delayMedium_3">
 							<span class="link-text">
 								Télécharger la plaquette
 							</span>
@@ -502,7 +502,7 @@
 						<div class="container-img elAnim__slide anim__delayMedium_3">
 							<div class="img">
 								<img src="img/img-test/background-3.jpg" alt="">
-								<a href="">
+								<a class="openLightbox" >
 									<span class="link-text">
 										Voir tous les témoignages
 									</span>
@@ -516,7 +516,7 @@
 							
 							<div class="img">
 								<img src="img/img-test/background-3.jpg" alt="">
-								<a href="">
+								<a class="openLightbox" >
 									<span class="link-text">
 										Voir tous les témoignages
 									</span>
@@ -530,7 +530,7 @@
 
 							<div class="img">
 								<img src="img/img-test/background-3.jpg" alt="">
-								<a href="">
+								<a class="openLightbox" >
 									<span class="link-text">
 										Voir tous les témoignages
 									</span>

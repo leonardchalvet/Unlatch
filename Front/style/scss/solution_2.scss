@@ -12,7 +12,7 @@
 		left: 0px;
 	}
 	.obj-1{
-		right: calc(200px - ((100vw - #{$grid_desktop_1}) / 2));
+		right: calc(183px - ((100vw - #{$grid_desktop_1}) / 2));
 	}
 	.obj-2{
 		right: calc(0px - ((100vw - #{$grid_desktop_1}) / 2));
@@ -74,14 +74,14 @@
 						position: absolute;
 						width: 430px;
 						left: 0px;
-						top: -100px;
+						top: -80px;
 						filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 					}
 					.sk-2{
 						position: absolute;
 						z-index: 1;
 						left: 30px;
-						bottom: 30px;
+						bottom: 0px;
 						height: 60px;
 						filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 					}
