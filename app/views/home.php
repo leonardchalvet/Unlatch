@@ -35,7 +35,7 @@ $document = $WPGLOBAL['document']->data;
             <?= RichText::asHtml($document->cover_text); ?>
             <div class="container-btn elAnim__slide anim__delayMedium_4">
               <a href="<?= $document->cover_btn_link->url; ?>">
-                <span class="btn-text"><?= RichText::asHtml($document->cover_btn_txt); ?></span>
+                <span class="btn-text"><?= RichText::asText($document->cover_btn_txt); ?></span>
               </a>
             </div>
           </div>

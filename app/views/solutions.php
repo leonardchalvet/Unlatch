@@ -47,7 +47,7 @@ $nbT = $document->global_template;
 				</div>
 			</section>
 
-			<section id="section-features" class="sectionAnim_container">
+			<section id="section-features">
 				<div class="wrapper">
 					<div class="container-text sectionAnim_container">
 						<?= RichText::asHtml($document->features_title); ?>
@@ -139,7 +139,7 @@ $nbT = $document->global_template;
 						<img src="<?= $document->quotes_img->url; ?>" alt="">
 					</div>
 					<div class="container-quotes">
-						<img class="obj-1 elAnim__slide anim__delayMedium_2" src="/img/common/icn-quote-white.svg" alt="">
+						<img class="obj-1 elAnim__slide anim__delayMedium_2" src="/img/common/icn-quote-red.svg" alt="">
 						<div class="container-el">
 							<div class="el">
 								<q class="elAnim__slide anim__delayMedium_3">

@@ -27,10 +27,10 @@ $document = $WPGLOBAL['document']->data;
 				<div class="wrapper">
 					<div class="container-text">
 						<?= RichText::asHtml($document->cover_title); ?>
-						<p class="sectionAnim_container">
+						<p class="sectionAnim_container elAnim__slide anim__delayMedium_2">
 							<?= RichText::asText($document->cover_text); ?>
 						</p>
-						<div class="container-quotes">
+						<div class="container-quotes elAnim__slide anim__delayMedium_2">
 							<img class="obj-1 elAnim__slide anim__delayMedium_3" src="/img/common/icn-quote-red.svg" alt="">
 							<h3 class="elAnim__slide anim__delayMedium_4">
 								<?= RichText::asText($document->cover_quote_title); ?>
@@ -56,12 +56,13 @@ $document = $WPGLOBAL['document']->data;
 				</div>
 			</section>
 
-			<section class="common-section-pdf" class="sectionAnim_container">
+			<section class="common-section-pdf sectionAnim_container">
 				<div class="wrapper">
 					<?= RichText::asHtml($document->pres_title); ?>
-					<div class="container-el elAnim__fade anim__delayMedium_2">
-						<?php foreach ($document->pres_container_el as $pres) { ?>
-						  <div class="el">
+					<div class="container-el">
+						<?php $i = 2;
+						 	foreach ($document->pres_container_el as $pres) { ?>
+						  <div class="el elAnim__fade anim__delayMedium_<?php echo $i; ?>">
 							<div class="container-logo">
 								<div class="logo">
 									<img class="logo" src="<?= $pres->pres_logo_1->url; ?>" alt="">
@@ -77,7 +78,7 @@ $document = $WPGLOBAL['document']->data;
 								<?= RichText::asText($pres->pres_text); ?>
 							</q>
 							<a href="<?= $pres->pres_link_pdf->url; ?>" target="_blank">
-							   	<span class="btn-text"><?= RichText::asText($pres->pres_link_text); ?></span>
+							   	<span class="link-text"><?= RichText::asText($pres->pres_link_text); ?></span>
 								<span class="link-arrow">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
 										<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
@@ -85,7 +86,7 @@ $document = $WPGLOBAL['document']->data;
 								</span>
 							</a>
 						</div>
-						<?php } ?>
+						<?php $i+=2; } ?>
 					</div>
 					<div class="container-btn">
 						<a href="<?= $document->pres_button_lik->url; ?>">
@@ -102,21 +103,22 @@ $document = $WPGLOBAL['document']->data;
 				</div>
 			</section>
 
-			<section class="common-section-pdf" class="sectionAnim_container">
+			<section class="common-section-pdf sectionAnim_container">
 				<img class="obj-1" src="/img/pres/obj-1.svg">
 				<img class="obj-2" src="/img/pres/obj-2.svg">
 				<div class="wrapper">
 					<?= RichText::asHtml($document->medias_title); ?>
 					<div class="container-el">
-						<?php foreach ($document->medias_container_el as $medias) { ?>
-						  <div class="el">
+						<?php $i = 2; 
+							foreach ($document->medias_container_el as $medias) { ?>
+						  <div class="el elAnim__fade anim__delayMedium_<?php echo $i; ?>">
 							<img src="<?= $pres->pres_logo->url; ?>" alt="">
 							<h3><?= RichText::asText($medias->medias_subtitle); ?></h3>
 							<q>
 								<?= RichText::asText($medias->medias_text); ?>
 							</q>
 							<a href="<?= $pres->pres_link_pdf->url; ?>" target="_blank">
-							   	<span class="btn-text"><?= RichText::asText($medias->medias_link_text); ?></span>
+							   	<span class="link-text"><?= RichText::asText($medias->medias_link_text); ?></span>
 								<span class="link-arrow">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
 										<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
@@ -124,7 +126,7 @@ $document = $WPGLOBAL['document']->data;
 								</span>
 							</a>
 						</div>
-						<?php } ?>
+						<?php $i+=2; } ?>
 					</div>
 					<div class="container-btn">
 						<a href="<?= $document->medias_button_lik->url; ?>">

@@ -25,7 +25,7 @@ $document = $WPGLOBAL['document']->data;
 
 		<main>
 
-			<section id="section-cover">
+			<section id="section-cover" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="container-text">
 						<?= RichText::asHtml($document->cover_title); ?>

@@ -23,12 +23,12 @@ $document = $WPGLOBAL['document']->data;
 
 		<main>
 
-			<section id="section-cover">
+			<section id="section-cover" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="container-text" class="sectionAnim_container">
 						<?= RichText::asHtml($document->cover_title); ?>
 						<div class="sep elAnim__slide anim__delayMedium_2"></div>
-						<p>
+						<p class="elAnim__slide anim__delayMedium_3">
 							<?= RichText::asText($document->cover_text); ?>
 						</p>
 						<a href="<?= $document->cover_button_link->url; ?>" class="elAnim__slide anim__delayMedium_4">
@@ -118,7 +118,7 @@ $document = $WPGLOBAL['document']->data;
 						<img class="elAnim__slide anim__delayMedium_2" src="<?= $document->quote_img->url; ?>" alt="">
 					</div>
 					<div class="container-quote">
-						<img class="obj-1" src="/img/common/icn-quote-red.svg" alt="">
+						<img class="obj-1 elAnim__slide anim__delayMedium_2" src="/img/common/icn-quote-red.svg" alt="">
 						<div class="container-el">
 							<div class="el">
 								<q class="elAnim__slide anim__delayMedium_3">

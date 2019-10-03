@@ -23,16 +23,16 @@ $document = $WPGLOBAL['document']->data;
 
     <main>
 
-      <section id="section-cover">
+      <section id="section-cover" class="sectionAnim_container">
         <div class="wrapper">
           <?= RichText::asHtml($document->cover_title); ?>
           <div class="container-text">
-            <p>
+            <p class="elAnim__slide anim__delayMedium_2">
               <?= RichText::asText($document->cover_text); ?>
             </p>
             <div class="container-quotes">
-              <img class="obj-1" src="/img/common/icn-quote-white.svg" alt=""> 
-              <div class="container-el">
+              <img class="obj-1 elAnim__slide anim__delayMedium_3" src="/img/common/icn-quote-white.svg" alt=""> 
+              <div class="container-el elAnim__slide anim__delayMedium_5">
                 <?php $i = 0;
                   foreach ($document->cover_container_quotes as $quote) { ?>
                   <div class="el <?php if($i == 0) { echo 'active'; } ?>">
@@ -42,7 +42,7 @@ $document = $WPGLOBAL['document']->data;
                   </div>
                 <?php $i++; } ?>
               </div>
-              <div class="container-nav">
+              <div class="container-nav elAnim__slide anim__delayMedium_6">
                 <div class="nav prev">
                   <span class="link-arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
@@ -60,7 +60,7 @@ $document = $WPGLOBAL['document']->data;
               </div>
             </div>
           </div>
-          <div class="container-img">
+          <div class="container-img elAnim__slide anim__delayMedium_4">
             <?php $i = 0;
               foreach ($document->cover_container_quotes as $quote) { ?>
               <div class="el <?php if($i == 0) { echo 'active'; } else { echo 'hide-before'; } ?>">
@@ -75,12 +75,13 @@ $document = $WPGLOBAL['document']->data;
         </div>
       </section>
 
-      <section id="section-clients">
+      <section id="section-clients" class="sectionAnim_container">
         <div class="wrapper">
           <?= RichText::asHtml($document->clients_title); ?>
           <div class="container-el">
-            <?php foreach ($document->clients_container_clients as $client) { ?>
-              <div class="el">
+            <?php $i = 1;
+              foreach ($document->clients_container_clients as $client) { ?>
+              <div class="el elAnim__slide anim__delayMedium_<?php echo $i; ?>">
                 <img src="<?= $client->client_logo->url; ?>" alt="">
                 <q>
                   <?= RichText::asText($client->client_text); ?>
@@ -95,17 +96,17 @@ $document = $WPGLOBAL['document']->data;
                   </div>
                 </div>
               </div>
-            <?php } ?>
+            <?php $i+=2; } ?>
           </div>
         </div>
       </section>
 
-      <section id="section-logos">
+      <section id="section-logos" class="sectionAnim_container">
         <div class="wrapper">
-          <div class="container-text">
+          <div class="container-text elAnim__slide anim__delayMedium_1">
             <?= RichText::asHtml($document->logos_title); ?>
           </div>
-          <div class="container-logos">
+          <div class="container-logos elAnim__slide anim__delayMedium_2">
             <img src="<?= $document->logos_img->url; ?>" alt="">
           </div>
         </div>
@@ -118,3 +119,8 @@ $document = $WPGLOBAL['document']->data;
     <script type="text/javascript" src="/script/minify/clients-min.js"></script>
   </body>
 </html>
+
+<script type="text/javascript">
+    $('#section-cover h1').addClass('elAnim__slide anim__delayMedium_1');
+    $('#section-clients h2').addClass('elAnim__slide anim__delayMedium_1');
+</script>

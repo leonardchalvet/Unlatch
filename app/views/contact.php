@@ -21,7 +21,7 @@ $document = $WPGLOBAL['document']->data;
 
 		<main>
 
-			<section id="section-contact">
+			<section id="section-contact" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="header">
 						<a href="<?= $document->content_logo_link->url; ?>" class="logo">
