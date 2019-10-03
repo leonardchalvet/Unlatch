@@ -140,19 +140,128 @@
 						height: 190px;
 						filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 					}
-					.sk-4{
-						position: absolute;
-						right: 0px;
-						top: 240px;
-						height: 80px;
-						filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#section-features{
+		.container-features{
+			.feature{
+
+				&:nth-child(1){
+					.container-illu{
+						.sk-1{
+							
+							width: 200px;
+							left: 0px;
+							top: 0px;
+							bottom: initial;
+							
+						}
+						.sk-2{
+							
+							left: 140px;
+							top: 100px;
+							height: 40px;
+							
+						}
+						.sk-3{
+							
+							left: 140px;
+							top: 150px;
+							height: 40px;
+							
+						}
 					}
-					.sk-5{
-						position: absolute;
-						right: 130px;
-						top: 280px;
-						height: 80px;
-						filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
+				}
+
+				&:nth-child(2){
+					.container-illu{
+						.sk-1{
+							
+							width: 100%;
+							right: 0px;
+							top: 0px;
+							
+						}
+						.sk-2{
+							
+							right: 0px;
+							top: 70px;
+							height: 40px;
+							
+						}
+						.sk-3{
+							
+							right: 100px;
+							top: 110px;
+							height: 40px;
+							
+						}
+						.sk-4{
+							
+							right: 0px;
+							top: 180px;
+							height: 40px;
+							
+						}
+						.sk-5{
+							
+							right: 100px;
+							top: 200px;
+							height: 40px;
+							
+						}
+					}
+				}
+
+				&:nth-child(3){
+					.container-illu{
+						.sk-2{
+							
+							height: 100%;
+							width: initial;
+							left: 0px;
+							top: 0px;
+						}
+						.sk-1{
+							
+							z-index: 1;
+							left: 100px;
+							bottom: 30px;
+							height: 40px;
+							
+						}
+					}
+				}
+
+				&:nth-child(4){
+					.container-illu{
+						.sk-1{
+							
+							height: 100%;
+							left: 0px;
+							top: 0px;
+							
+						}
+						.sk-2{
+							
+							left: 140px;
+							bottom: 50px;
+							height: 30px;
+							
+						}
+						.sk-3{
+							
+							right: 0px;
+							top: 0px;
+							height: 120px;
+							
+						}
 					}
 				}
 			}
