@@ -340,6 +340,7 @@ main
 
 		/*---------- LINK ----------*/
 		@mixin styleLink_common{
+			cursor: pointer;
 			text-decoration: none;
 			display: inline-flex;
 			align-items: center;
@@ -526,6 +527,7 @@ main
 				transform: translateY(20px);
 				opacity: 0;
 		  		transition: transform 1000ms cubic-bezier(0.070, 0.965, 0.560, 1.000), opacity 1000ms cubic-bezier(0.070, 0.965, 0.560, 1.000);
+		  		transition-delay: $i * 0.1s;
 		    }
 		}
 	}

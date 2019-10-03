@@ -265,6 +265,7 @@
 						@include styleParagraphMedium;
 					}
 					a{
+						text-decoration: none;
 						@include styleParagraphMedium;
 						color: $colorMain_1_strong;
 						font-family: $font_1_semibold;
@@ -275,7 +276,7 @@
 				p{
 					@include styleParagraphMedium;
 					span{
-						color: $colorMain_4_strong;
+						color: #000;
 						font-family: $font_1_semibold;
 					}
 				}
@@ -283,10 +284,16 @@
 					display: flex;
 					flex-flow: row wrap;
 					align-items: center;
+					justify-content: flex-end;
+					margin-top: 15px;
 					a{
 						text-decoration: none;
 						&:not(:last-child){
 							margin-right: 15px;
+						}
+						img{
+							filter: grayscale(1);
+							height: 15px;
 						}
 					}
 				}
