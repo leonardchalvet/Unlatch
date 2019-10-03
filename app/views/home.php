@@ -255,7 +255,7 @@ $document = $WPGLOBAL['document']->data;
               <?php foreach ($document->features_features as $feature) { ?>
                 <div class="img">
                   <img src="<?= $feature->feature_image->url; ?>" alt="">
-                  <a href="<?= $document->feature_link->url; ?>">
+                  <a class="openLightbox">
                     <span class="link-text">
                       <?= RichText::asText($document->features_link_text); ?>
                     </span>

@@ -30,6 +30,7 @@ main{
 		p {
 			width: calc(100% - 70px);
 			@include styleParagraphBig;
+			color: $colorMain_5;
 		}
 		.container-quotes{
 			margin-top: 40px;
@@ -104,8 +105,8 @@ main{
 				right: 0;
 				bottom: 0;
 				z-index: 1;
-				width: 120px;
-				height: 80px;
+				width: 180px;
+				height: 100px;
 				display: flex;
 				flex-flow: row wrap;
 				.nav{
@@ -166,14 +167,10 @@ main{
 				bottom: 0;
 				background-color: #FFF;
 				.name {
-					@include styleH3_bold;
-					font-size: 26px;
-					line-height: 28px;
+					@include styleH4_bold;
 				}
 				.job {
-					@include styleH3_light;
-					font-size: 20px;
-					line-height: 22px;
+					@include styleParagraphBig;
 				}
 			}
 

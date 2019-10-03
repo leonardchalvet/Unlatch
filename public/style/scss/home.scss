@@ -758,6 +758,7 @@ main{
 			width: 574px;
 			position: relative;
 			.img{
+				display: none;
 				position: absolute;
 				top: 0px;
 				left: 0px;
@@ -770,6 +771,7 @@ main{
 					box-shadow: 0 2px 50px 0 rgba(0,0,0,0.09);
 				}
 				&.active{
+					display: block;
 					opacity: 1;
 				}
 				a{
