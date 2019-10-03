@@ -256,8 +256,12 @@ main{
 					position: absolute;
 					right: 0px;
 					top: 0px;
+					transition: all 0.25s ease;
 					img{
 						width: 20px;
+					}
+					&:hover{
+						opacity: 0.6;
 					}
 				}
 			}
@@ -332,6 +336,7 @@ main{
 			}
 			.el-5{
 				border-left: 1px solid $colorMain_4_medium;
+				border-bottom: 1px solid $colorMain_4_medium;
 				h4{
 					@include styleH1_light;	
 				}
