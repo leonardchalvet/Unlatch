@@ -492,10 +492,12 @@ main{
 	#section-features{
 		margin-top: 100px;
 
-		.container-text{
-			width: 100%;
-		}
+		.wrapper{
+			>.container-text{
+				width: 100%;
+			}
 
+		}
 		.container-features{
 			margin-top: 60px;
 			.feature{
@@ -525,11 +527,12 @@ main{
 				&:nth-child(odd){
 					.container-illu{
 						order: 1;
+						/*
 						img{
 							left: 0px;
 							right: initial;
 							transform: translateY(-50%);
-						}
+						}*/
 					}
 					&.higlight{
 						.container-background{
@@ -542,11 +545,12 @@ main{
 				&:nth-child(even){
 					.container-illu{
 						order: 1;
+						/*
 						img{
 							right: 0px;
 							left: initial;
 							transform: translateY(-50%);
-						}
+						}*/
 					}
 					&.higlight{
 						.container-background{
