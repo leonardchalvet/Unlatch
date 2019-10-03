@@ -131,13 +131,9 @@ main{
 	.container-text{
 		text-align: center;
 		h2{
+			@include styleH4_light;
 			em{
-				&:nth-child(1){
-					@include styleH4_bold;
-				}
-				&:nth-child(2){
-					@include styleH4_light;
-				}
+				@include styleH4_bold;
 			}
 		}
 	}

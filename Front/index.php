@@ -54,8 +54,8 @@
 				<div class="wrapper">
 					<div class="container-text elAnim__slide anim__delayMedium_1">
 						<h2>
-							<span>+ de 180 entreprises</span>
-							<span>font confiance à Unlatch</span>
+							<em>+ de 180 entreprises</em>
+							font confiance à Unlatch
 						</h2>
 					</div>
 					<div class="container-el elAnim__slide anim__delayMedium_3">
