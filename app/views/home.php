@@ -32,9 +32,7 @@ $document = $WPGLOBAL['document']->data;
           <div class="container-text">
             <?= RichText::asHtml($document->cover_title); ?>
             <div class="sep elAnim__slide anim__delayMedium_2"></div>
-            <p class="elAnim__slide anim__delayMedium_3">
-              <?= RichText::asHtml($document->cover_text); ?>
-            </p>
+            <?= RichText::asHtml($document->cover_text); ?>
             <div class="container-btn elAnim__slide anim__delayMedium_4">
               <a href="<?= $document->cover_btn_link->url; ?>">
                 <span class="btn-text"><?= RichText::asHtml($document->cover_btn_txt); ?></span>
@@ -71,7 +69,7 @@ $document = $WPGLOBAL['document']->data;
 
       <section id="section-metier" class="sectionAnim_container">
         <div class="wrapper">
-          <div class="container-text">
+          <div class="container-text elAnim__slide anim__delayMedium_1">
             <?= RichText::asHtml($document->job_title); ?>
           </div>
           <div class="container-el">
@@ -124,8 +122,15 @@ $document = $WPGLOBAL['document']->data;
               </span>
             </a>
           </div>
-          <div class="container-illu">
-            <img src="<?= $document->pres_image->url; ?>" alt="">
+          <div class="container-illu elAnim__sk">
+            <?php if(empty($document->pres_image->url)) { ?>
+              <img class="sk-1 anim__delayMedium_1" src="/img/home/section-pres/skeleton/Dashboard-List@4x.png" alt="">
+              <img class="sk-2 anim__delayMedium_2" src="/img/home/section-pres/skeleton/Bank@4x.png">
+              <img class="sk-3 anim__delayMedium_3" src="/img/home/section-pres/skeleton/Profil@4x.png">
+              <img class="sk-4 anim__delayMedium_4" src="/img/home/section-pres/skeleton/Profil-2@4x.png">
+            <?php } else { ?>
+              <img class="img" src="<?= $document->pres_image->url; ?>" alt="">
+            <?php } ?>
           </div>
         </div>
       </section>
@@ -293,9 +298,11 @@ $document = $WPGLOBAL['document']->data;
     <script type="text/javascript" src="/script/minify/index-min.js"></script>
     <script type="text/javascript">
       $('#section-cover h1').addClass('elAnim__slide anim__delayMedium_1');
+      $('#section-cover p').addClass('elAnim__slide anim__delayMedium_3');
       $('#section-metier h2').addClass('elAnim__slide anim__delayMedium_1');
       $('#section-pres h2').addClass('elAnim__slide anim__delayMedium_1');
       $('#section-pres p').addClass('elAnim__slide anim__delayMedium_2');
+      $('#section-features h2').addClass('elAnim__slide anim__delayMedium_1');
       $('#common-section-banner h2').addClass('elAnim__slide anim__delayMedium_2');
     </script>
 

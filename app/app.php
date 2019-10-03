@@ -33,7 +33,7 @@ $app->get('/', function ($request, $response) use ($app, $prismic) {
     $lightbox = $api->getByUID('lightbox', 'lightbox');
 
     //PART 3 - Call home page (ask to client for default languages)
-    $document = $api->getByID(''); //For get ID, print_r($document) in home views, ctrl-c [id]
+    $document = $api->getByID('XYoKVxIAACUAZYtk'); //For get ID, print_r($document) in home views, ctrl-c [id]
 
     render($app, 'home', array('document' => $document, 'lightbox' => $lightbox, 'header' => $header, 'footer' => $footer));
 });
@@ -75,17 +75,17 @@ $app->get('/{uid}', function ($request, $response, $args) use ($app, $prismic) {
     $api = $prismic->get_api(); // PART 1 - Call api
 
     //PART 2 - Call Header & Footer
-    $header = $api->getByUID('header', 'header');
-    $footer = $api->getByUID('footer', 'footer');
+    $header   = $api->getByUID('header',   'header');
+    $footer   = $api->getByUID('footer' ,  'footer');
+    $lightbox = $api->getByUID('lightbox', 'lightbox');
     
     //PART 3 - Call current page
     $document = NULL;
     $nType = 0;
-    $arrayTypes = ['']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
-    $arrayView = ['']; // NAME IN "VIEWS" FOLDER, ALWAYS SAME POSITION BETWEEN "arrayTypes" & "arrayView"
+    $arrayTypes = ['home', 'blog', 'clients', 'pres', 'services', 'about', 'legal_notices', 'solutions', 'contact', 'features', 'p404']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
+    $arrayView  = ['home', 'blog', 'clients', 'pres', 'services', 'about', 'legal_notices', 'solutions', 'contact', 'feature', '404']; // NAME IN "VIEWS" FOLDER, ALWAYS SAME POSITION BETWEEN "arrayTypes" & "arrayView"
     foreach ($arrayTypes as $type) {
         $document = $api->getByUID($type, $args['uid']);
-        
         $nType++;
         if($document != NULL) {
             break;
@@ -94,7 +94,7 @@ $app->get('/{uid}', function ($request, $response, $args) use ($app, $prismic) {
 
     //PART 4 - Call good view
     if($document != NULL) {
-      render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header, 'footer' => $footer));
+      render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
     }
     else {
       header('Location: /'); // 404 or /

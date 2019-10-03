@@ -8,6 +8,7 @@
 
 #section-blog{
 	position: relative;
+	padding-bottom: 60px;
 	.wrapper{
 		@include styleGrid1;
 		padding-top: 145px;
@@ -50,6 +51,8 @@
 		.el-blog{
 			margin-bottom: 120px;
 			width: calc((100% / 3) - 18px);
+			text-decoration: none;
+			display: block;
 			.cover{
 				height: 270px;
 				position: relative;
@@ -115,6 +118,7 @@
 				h3{
 					margin-top: 14px;
 					@include styleH3_light;
+					color: $colorMain_3_strong;
 				}
 				p{
 					margin-top: 16px;

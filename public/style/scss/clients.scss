@@ -19,7 +19,7 @@ main{
 	h1{
 		width: 100%;
 		@include styleH1_light;
-		span{
+		em{
 			display: block;
 			@include styleH1_bold;
 		}
@@ -202,7 +202,7 @@ main{
 	h2 {
 		text-align: center;
 		@include styleH2_light;	
-		span {
+		em {
 			@include styleH2_bold;
 		}
 	}
@@ -286,7 +286,7 @@ main{
 		margin: auto;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold
 			}
 		}

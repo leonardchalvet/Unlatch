@@ -23,22 +23,22 @@ $document = $WPGLOBAL['document']->data;
 
 		<main>
 
-			<section id="section-cover">
+			<section id="section-cover" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="container-text">
 						<?= RichText::asHtml($document->cover_title); ?>
-						<p>
+						<p class="sectionAnim_container">
 							<?= RichText::asText($document->cover_text); ?>
 						</p>
 						<div class="container-quotes">
-							<img class="obj-1" src="/img/common/icn-quote-red.svg" alt="">
-							<h3>
+							<img class="obj-1 elAnim__slide anim__delayMedium_3" src="/img/common/icn-quote-red.svg" alt="">
+							<h3 class="elAnim__slide anim__delayMedium_4">
 								<?= RichText::asText($document->cover_quote_title); ?>
 							</h3>
-							<q>
+							<q class="elAnim__slide anim__delayMedium_5">
 								<?= RichText::asText($document->cover_quote_text); ?>
 							</q>
-							<div class="container-logo">
+							<div class="container-logo elAnim__slide anim__delayMedium_6">
 								<div class="logo">
 									<img class="logo" src="<?= $document->cover_quote_logo_1->url; ?>" alt="">
 								</div>
@@ -50,16 +50,16 @@ $document = $WPGLOBAL['document']->data;
 							</div>
 						</div>
 					</div>
-					<div class="container-img">
+					<div class="container-img elAnim__slide anim__delayMedium_5">
 						<img src="<?= $document->cover_img->url; ?>" alt="">
 					</div>
 				</div>
 			</section>
 
-			<section class="common-section-pdf">
+			<section class="common-section-pdf" class="sectionAnim_container">
 				<div class="wrapper">
 					<?= RichText::asHtml($document->pres_title); ?>
-					<div class="container-el">
+					<div class="container-el elAnim__fade anim__delayMedium_2">
 						<?php foreach ($document->pres_container_el as $pres) { ?>
 						  <div class="el">
 							<div class="container-logo">
@@ -102,7 +102,7 @@ $document = $WPGLOBAL['document']->data;
 				</div>
 			</section>
 
-			<section class="common-section-pdf">
+			<section class="common-section-pdf" class="sectionAnim_container">
 				<img class="obj-1" src="/img/pres/obj-1.svg">
 				<img class="obj-2" src="/img/pres/obj-2.svg">
 				<div class="wrapper">
@@ -148,3 +148,8 @@ $document = $WPGLOBAL['document']->data;
 		<script type="text/javascript" src="/script/minify/common-min.js"></script>
 	</body>
 </html>
+
+<script type="text/javascript">
+	$('#section-cover h1').addClass('elAnim__slide anim__delayMedium_1');
+	$('.common-section-pdf h2').addClass('elAnim__slide anim__delayMedium_1');
+</script>

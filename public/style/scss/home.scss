@@ -30,16 +30,11 @@ main{
 	.container-text{
 		width: 420px;
 		h1{
-			span{
-				&:nth-child(1){
-					@include styleH1_light;
-				}
-				&:nth-child(2){
-					@include styleH1_bold;
-				}
-				color: #FFF;
+			@include styleH1_light;
+			em{
+				@include styleH1_bold;
 			}
-			
+			color: #FFF;
 		}
 		.sep{
 			margin: 40px 0px 40px 0px;
@@ -125,7 +120,7 @@ main{
 	.container-text{
 		text-align: center;
 		h2{
-			span{
+			em{
 				&:nth-child(1){
 					@include styleH4_bold;
 				}
@@ -169,7 +164,7 @@ main{
 	.container-text{
 		text-align: center;
 		h2{
-			span{
+			em{
 				&:nth-child(1){
 					@include styleH2_light;
 				}
@@ -287,7 +282,7 @@ main{
 		h2{
 			color: #FFF;
 			@include styleH3_light;
-			span{
+			em{
 				@include styleH3_bold;
 			}
 		}
@@ -303,10 +298,34 @@ main{
 	}
 	.container-illu{
 		width: 575px;
-		img{
-			height: 365.62px;
+		position: relative;
+		.img{
 			width: 100%;
-			box-shadow: 0 2px 50px 0 rgba(0,0,0,0.09);
+		}
+		.sk-1{
+			width: 100%;
+			filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+		}
+		.sk-2{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			height: 100%;
+			filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+		}
+		.sk-3{
+			position: absolute;
+			bottom: 20%;
+			right: -20px;
+			height: 70px;
+			filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
+		}
+		.sk-4{
+			position: absolute;
+			bottom: 40%;
+			right: -20px;
+			height: 70px;
+			filter: drop-shadow(1px 14px 6px rgba(0,0,0,0.11));
 		}
 	}
 }
@@ -605,8 +624,8 @@ main{
 	}
 	.container-text{
 		h2{
-			@include styleH2_light
-			span{
+			@include styleH2_light;
+			em{
 				@include styleH2_bold;
 			}
 		}
@@ -733,7 +752,6 @@ main{
 				text-align: center;
 				img{
 					width: 100%;
-					height: 300px;
 					box-shadow: 0 2px 50px 0 rgba(0,0,0,0.09);
 				}
 				&.active{

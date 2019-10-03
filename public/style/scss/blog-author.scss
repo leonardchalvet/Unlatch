@@ -8,6 +8,7 @@
 
 #section-blog{
 	position: relative;
+	padding-bottom: 60px;
 	.wrapper{
 		@include styleGrid1;
 		padding-top: 145px;
@@ -52,7 +53,7 @@
 				flex: 1;
 				h1{
 					@include styleH1_light;
-					span{
+					em{
 						@include styleH1_bold;
 					}
 				}
@@ -71,6 +72,8 @@
 		justify-content: space-between;
 		align-items: flex-start;
 		.el-blog{
+			text-decoration: none;
+			display: block;
 			margin-bottom: 120px;
 			width: calc((100% / 3) - 18px);
 			.cover{
@@ -138,6 +141,7 @@
 				h3{
 					margin-top: 14px;
 					@include styleH3_light;
+					color: $colorMain_3_strong;
 				}
 				p{
 					margin-top: 16px;

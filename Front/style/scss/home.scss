@@ -131,7 +131,7 @@ main{
 	.container-text{
 		text-align: center;
 		h2{
-			span{
+			em{
 				&:nth-child(1){
 					@include styleH4_bold;
 				}
@@ -175,7 +175,7 @@ main{
 	.container-text{
 		text-align: center;
 		h2{
-			span{
+			em{
 				&:nth-child(1){
 					@include styleH2_light;
 				}
@@ -304,7 +304,7 @@ main{
 		h2{
 			color: #FFF;
 			@include styleH3_light;
-			span{
+			em{
 				@include styleH3_bold;
 			}
 		}
@@ -647,8 +647,8 @@ main{
 	}
 	.container-text{
 		h2{
-			@include styleH2_light
-			span{
+			@include styleH2_light;
+			em{
 				@include styleH2_bold;
 			}
 		}

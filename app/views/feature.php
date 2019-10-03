@@ -1,6 +1,7 @@
 <?php 
 use Prismic\Dom\RichText;
 $document = $WPGLOBAL['document']->data;
+$nbT = $document->global_skeleton;
 ?>
 <html>
   <head>
@@ -46,18 +47,142 @@ $document = $WPGLOBAL['document']->data;
 				</div>
 			</section>
 
-			<section id="section-features">
+			<section id="section-features" class="feature-<?php echo $nbT; ?>">
 				<div class="wrapper">
 					<div class="container-text">
 						<?= RichText::asHtml($document->features_title); ?>
 					</div>
 					<div class="container-features">
-						<?php foreach ($document->features_container_features as $feature) { ?>
-		                  	<div class="feature <?php if($feature->feature_highlight == 'yes') { 
-													echo 'higlight'; 
-												} ?>">
+						<?php $i = 1; 
+							foreach ($document->features_container_features as $feature) { ?>
+		                  	<div class="feature elAnim__sk <?php if($feature->feature_highlight == 'yes') { 
+																	echo 'higlight'; 
+																 } ?>">
 								<div class="container-illu">
-									<img src="<?= $feature->highlight_img->url; ?>" alt="">
+									<?php if(empty($feature->highlight_img->url)) { 
+
+										if($nbT == 1) {
+											if($i == 1) {
+												echo '<img class="sk-1" src="/img/features/feature-1/1/Dashboard@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-1/1/Bien\'ici@4x.png" alt="">
+													  <img class="sk-3" src="/img/features/feature-1/1/Leboncoin-Immobilier@4x.png" alt="">
+													  <img class="sk-4" src="/img/features/feature-1/1/Seloger\'neuf@4x.png" alt="">';
+											}
+											else if($i == 2) {
+												echo '<img class="sk-1" src="/img/features/feature-1/2/img.png" alt="">';
+											}
+											else if($i == 3) {
+												echo '<img class="sk-1" src="/img/features/feature-1/3/Dashboard-NEW@4x.png" alt="">
+												      <img class="sk-2" src="/img/features/feature-1/3/Icon-text-1@4x.png" alt="">
+													  <img class="sk-3" src="/img/features/feature-1/3/Icon-text-2@4x.png" alt="">';
+											}
+											else if($i == 4) {
+												echo '<img class="sk-1" src="/img/features/feature-1/4/1@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-1/4/2@4x.png" alt="">
+													  <img class="sk-3" src="/img/features/feature-1/4/3@4x.png" alt="">
+									  				  <img class="sk-4" src="/img/features/feature-1/4/4@4x.png" alt="">
+													  <img class="sk-5" src="/img/features/feature-1/4/5@4x.png" alt="">';
+											}
+										}
+										else if($nbT == 2) {
+											if($i == 1) {
+												echo '<img class="sk-1"  src="/img/features/feature-2/1/Dashboard@4x.png" alt="">
+													  <img class="sk-2"  src="/img/features/feature-2/1/Icon-text-1@4x.png" alt="">
+													  <img class="sk-3"  src="/img/features/feature-2/1/Icon-text-2@4x.png" alt="">';
+											}
+											else if($i == 2) {
+												echo '<img class="sk-1" src="/img/features/feature-2/2/Prescripteurs-2@4x.png" alt="">';
+											}
+											else if($i == 3) {
+												echo '<img class="sk-1" src="/img/features/feature-2/3/Card.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-2/3/Layout-Profil@4x.png" alt="">';
+											}
+										}
+										else if($nbT == 3) {
+											if($i == 1) {
+												echo '<img class="sk-1" src="/img/features/feature-3/1/Bank@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-3/1/Acquéreurs@4x.png" alt="">
+													  <img class="sk-3" src="/img/features/feature-3/1/Icon-text-1@4x.png" alt="">
+													  <img class="sk-4" src="/img/features/feature-3/1/Icon-text-2@4x.png" alt="">
+													  <img class="sk-5" src="/img/features/feature-3/1/Promoteur@4x.png" alt="">';
+											}
+											else if($i == 2) {
+												echo '<img class="sk-1" src="/img/features/feature-3/2/Bank@2x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-3/2/Icon-text-1@2x.png" alt="">
+													  <img class="sk-3" src="/img/features/feature-3/2/Icon-text-2@2x.png" alt="">
+													  <img class="sk-4" src="/img/features/feature-3/2/Sign-in@2x.png" alt="">';
+											}
+											else if($i == 3) {
+												echo '<img class="sk-1" src="/img/features/feature-3/3/AR24@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-3/3/Bank@4x.png" alt="">
+													  <img class="sk-3" src="/img/features/feature-3/3/Layout-Profil@4x.png" alt="">';
+											}
+											else if($i == 4) {
+												echo '<img class="sk-1" src="/img/features/feature-3/4/Bank@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-3/4/Icon-text@4x.png" alt="">
+													  <img class="sk-3" src="/img/features/feature-3/4/Rectangle.png" alt="">';
+											}
+										}
+										else if($nbT == 4) {
+											if($i == 1) {
+												echo '<img class="sk-1" src="/img/features/feature-4/1/Dashboard-List@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-4/1/Icon-text@4x.png" alt="">';
+											}
+											else if($i == 2) {
+												echo '<img class="sk-1" src="/img/features/feature-4/2/Dashboard-NEW@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-4/2/Icon-text-1@4x.png" alt="">
+													  <img class="sk-3" src="/img/features/feature-4/2/Icon-text-2@4x.png" alt="">';
+											}
+											else if($i == 3) {
+												echo '<img class="sk-1" src="/img/features/feature-4/3/ADV-3@4x.png" alt="">';
+											}
+											else if($i == 4) {
+												echo '<img class="sk-1" src="/img/features/feature-4/4/Bank-1@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-4/4/Bank-2@4x.png" alt="">
+													  <img class="sk-3" src="/img/features/feature-4/4/Icon-text@4x.png" alt="">
+													  <img class="sk-4" src="/img/features/feature-4/4/Profil-1@4x.png" alt="">
+													  <img class="sk-5" src="/img/features/feature-4/4/Profil2@4x.png" alt="">';
+											}
+										}
+										else if($nbT == 5) {
+											if($i == 1) {
+												echo '<img class="sk-1" src="/img/features/feature-5/1/Bank@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-5/1/Icon-text@4x.png" alt="">
+													  <img class="sk-3" src="/img/features/feature-5/1/ID@4x.png" alt="">';
+											}
+											else if($i == 2) {
+												echo '<img class="sk-1" src="/img/features/feature-5/2/Client-Aquéreur-2@4x.png" alt="">';
+											}
+											else if($i == 3) {
+												echo '<img class="sk-1" src="/img/features/feature-5/3/Iphone@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-5/3/IOS@4x.png" alt="">
+													  <img class="sk-3" src="/img/features/feature-5/3/Android@4x.png" alt="">';
+											}
+											else if($i == 4) {
+												echo '<img class="sk-1" src="/img/features/feature-5/4/Dashboard@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-5/4/Color@4x.png" alt="">
+													  <img class="sk-3" src="/img/features/feature-5/4/Icon-text@4x.png" alt="">
+													  <img class="sk-4" src="/img/features/feature-5/4/Icon-text-1@4x.png" alt="">';
+											}
+										}
+										else if($nbT == 6) {
+											if($i == 1) {
+												echo '<img class="sk-1" src="/img/features/feature-6/1/Dashboard-Data@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-6/1/Layout-Icon@4x.png" alt="">';
+											}
+											else if($i == 2) {
+												echo '<img class="sk-1" src="/img/features/feature-6/2/Business-Intelligence-2@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-6/2/Layout-Icon@4x.png" alt="">';
+											}
+											else if($i == 3) {
+												echo '<img class="sk-1" src="/img/features/feature-6/3/Layout-Icon@4x.png" alt="">
+													  <img class="sk-2" src="/img/features/feature-6/3/Graph@4x.png" alt="">';
+											}
+										}
+									}
+									else { ?>
+										<img class="img" src="<?= $feature->highlight_img->url; ?>" alt="">
+									<?php } ?>
 								</div>
 								<div class="container-text">
 									<?= RichText::asHtml($feature->highlight_title); ?>

@@ -1,6 +1,7 @@
 <?php 
 use Prismic\Dom\RichText;
 $document = $WPGLOBAL['document']->data;
+$nbT = $document->global_template;
 ?>
 <html>
   <head>
@@ -13,7 +14,7 @@ $document = $WPGLOBAL['document']->data;
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" type="text/css" href="/style/css/solution_<?php echo $document->global_template; ?>.css">
+		<link rel="stylesheet" type="text/css" href="/style/css/solution_<?php echo $nbT; ?>.css">
 
 	</head>
 	
@@ -22,53 +23,99 @@ $document = $WPGLOBAL['document']->data;
 		<?php include('common-header.php') ?>
 
 		<main>
-			<section id="section-cover">
+			<section id="section-cover" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="container-text">
-						<div class="title">
+						<div class="title elAnim__slide anim__delayMedium_1">
 							<span><?= RichText::asText($document->cover_name); ?></span>
 						</div>
 						<?= RichText::asHtml($document->cover_title); ?>
-						<p>
+						<p class="elAnim__slide anim__delayMedium_3">
 							<?= RichText::asText($document->cover_text); ?>
 						</p>
-						<a href="<?= $document->cover_button_link->url; ?>">
+						<a href="<?= $document->cover_button_link->url; ?>" class="elAnim__slide anim__delayMedium_4">
 							<span class="btn-text">
 								<?= RichText::asText($document->cover_button_text); ?>
 							</span>
 						</a>
 					</div>
-					<img class="obj-1" src="/img/common-solutions/section-cover/obj-1.svg" alt="">
-					<img class="obj-2" src="/img/common-solutions/section-cover/obj-2.svg" alt="">
-					<div class="container-img">
+					<img class="obj-1 elAnim__slide anim__delayMedium_5" src="/img/common-solutions/section-cover/obj-1.svg" alt="">
+					<img class="obj-2 elAnim__slide anim__delayMedium_6" src="/img/common-solutions/section-cover/obj-2.svg" alt="">
+					<div class="container-img elAnim__slide anim__delayMedium_7">
 						<img src="<?= $document->cover_img->url; ?>" alt="">
 					</div>
 				</div>
 			</section>
 
-			<section id="section-features">
+			<section id="section-features" class="sectionAnim_container">
 				<div class="wrapper">
-					<div class="container-text">
+					<div class="container-text sectionAnim_container">
 						<?= RichText::asHtml($document->features_title); ?>
 					</div>
 					<div class="container-features">
-						<?php foreach ($document->body as $slice) { ?>
+						<?php $i = 1; 
+							foreach ($document->body as $slice) { ?>
+							<div class="feature sectionAnim_container <?php if($slice->primary->feature_highlight == 'yes') { echo 'higlight'; } ?>">
+								<div class="container-illu elAnim__sk">
+									<?php if(empty($slice->primary->feature_img->url)) { 
 
-							<div class="feature <?php if($slice->primary->feature_highlight == 'yes') { echo 'higlight'; } ?>">
-								<div class="container-illu">
-									<img src="<?= $slice->primary->feature_img->url; ?>" alt="">
+										if($nbT == 1) {
+											if($i == 1) {
+												echo '<img class="sk-1" src="/img/common-solutions/solution-1/1/Bank@4x.png" alt="">
+													  <img class="sk-2" src="/img/common-solutions/solution-1/1/Icon-text-1@4x.png" alt="">
+													  <img class="sk-3" src="/img/common-solutions/solution-1/1/Icon-text-2@4x.png" alt="">';
+											}
+											else if($i == 2) {
+												echo '<img class="sk-1" src="/img/common-solutions/solution-1/2/Dashboard-List@4x.png" alt="">
+													  <img class="sk-2" src="/img/common-solutions/solution-1/2/1@4x.png" alt="">
+													  <img class="sk-3" src="/img/common-solutions/solution-1/2/2@4x.png" alt="">
+													  <img class="sk-4" src="/img/common-solutions/solution-1/2/3@4x.png" alt="">
+													  <img class="sk-5" src="/img/common-solutions/solution-1/2/4@4x.png" alt="">';
+											}
+											else if($i == 3) {
+												echo '<img class="sk-1" src="/img/common-solutions/solution-1/3/Icon-text@4x.png" alt="">
+													  <img class="sk-2" src="/img/common-solutions/solution-1/3/Image@4x.png" alt="">';
+											}
+											else if($i == 4) {
+												echo '<img class="sk-1" src="/img/common-solutions/solution-1/4/Bank@4x.png" alt="">
+													  <img class="sk-2" src="/img/common-solutions/solution-1/4/Layout-Icon@4x.png" alt="">
+													  <img class="sk-3" src="/img/common-solutions/solution-1/4/Pie-global@4x.png" alt="">';
+											}
+										}
+										else if($nbT == 2) {
+											if($i == 1) {
+												echo '<img class="sk-1" src="/img/common-solutions/solution-2/1/Bank@4x.png" alt="">
+												      <img class="sk-2" src="/img/common-solutions/solution-2/1/Icon-text-1@4x.png" alt="">
+													  <img class="sk-3" src="/img/common-solutions/solution-2/1/Icon-text-2@4x.png" alt="">
+													  <img class="sk-4" src="/img/common-solutions/solution-2/1/Sign@4x.png" alt="">';
+											}
+											else if($i == 2) {
+												echo '<img class="sk-1" src="/img/common-solutions/solution-2/2/Image@4x.png" alt="">
+													  <img class="sk-2" src="/img/common-solutions/solution-2/2/Icon-text@4x.png" alt="">';
+											}
+											else if($i == 3) {
+												echo '<img class="sk-1" src="/img/common-solutions/solution-2/3/Bank@4x.png" alt="">
+													  <img class="sk-2" src="/img/common-solutions/solution-2/3/Icon-text@4x.png" alt="">
+													  <img class="sk-3" src="/img/common-solutions/solution-2/3/Notifs@4x.png" alt="">';
+											}
+										}
+
+									} else { ?>
+										<img class="img" src="<?= $slice->primary->feature_img->url; ?>" alt="">
+									<?php } ?>
 								</div>
 								<div class="container-text">
 									<?= RichText::asHtml($slice->primary->feature_title); ?>
-									<p>
+									<p class="elAnim__slide anim__delayMedium_2">
 										<?= RichText::asText($slice->primary->feature_text); ?>
 									</p>
 									<ul>
-										<?php foreach ($slice->items as $item) { ?>
-											<li>
+										<?php $j = 3; 
+											foreach ($slice->items as $item) { ?>
+											<li class="elAnim__slide anim__delayMedium_<?php echo $j; ?>">
 												<a href="<?= $item->feature_link->url; ?>"><?= RichText::asText($item->feature_link_text); ?></a>
 											</li>
-										<?php } ?>
+										<?php $j++; } ?>
 									</ul>
 								</div>
 								<?php if($slice->primary->feature_highlight == 'yes') { ?>
@@ -82,125 +129,29 @@ $document = $WPGLOBAL['document']->data;
 						<?php
 							$i++;
 						} ?>
-						<!--
-						<div class="feature">
-							<div class="container-illu">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
-							</div>
-							<div class="container-text">
-								<h3>
-									Accélérez vos <span>ventes immobilières.</span>
-								</h3>
-								<p>
-									L’objectif de Unlatch est de réduire le délai entre la réservation et la signature de l’acte authentique de vente chez le notaire. Vos commerciaux ne pourront plus s’en passer :
-								</p>
-								<ul>
-									<li>
-										<a href="">Gestion de la relation client (CRM)</a>
-									</li>
-									<li>
-										<a href="">Espace prescripteurs</a>
-									</li>
-									<li>
-										<a href="">Digitalisation de la vente immobilière</a>
-									</li>
-									<li>
-										<a href="">Suivi des ventes immobilières</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="feature">
-							<div class="container-illu">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
-							</div>
-							<div class="container-text">
-								<h3>
-									<span>Collaborez</span> avec les différents intervenants.
-								</h3>
-								<p>
-									Véritable plateforme collaborative. Unlatch facilite le travail et le suivi des différents intervenants (dirigeants, vendeurs, administration des ventes, commercialisateurs externes, notaires).
-								</p>
-								<ul>
-									<li>
-										<a href="">Gestion de la relation client (CRM)</a>
-									</li>
-									<li>
-										<a href="">Espace prescripteurs</a>
-									</li>
-									<li>
-										<a href="">Digitalisation de la vente immobilière</a>
-									</li>
-									<li>
-										<a href="">Suivi des ventes immobilières</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="feature higlight">
-							<div class="container-illu">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
-							</div>
-							<div class="container-text">
-								<h3>
-									<span>Rendez heureux</span> vos clients acquéreurs.
-								</h3>
-								<p>
-									Avec Unlatch, vos clients bénéficient dès la réservation du bien immobilier d’un espace personnalisé à vos couleurs pour compléter leur dossier et suivre l’avancement des travaux.
-								</p>
-								<ul>
-									<li>
-										<a href="">Espace Client Acheteur</a>
-									</li>
-								</ul>
-							</div>
-							<div class="container-background">
-								<img class="obj-1" src="img/common-solutions/section-features/obj-1.svg" alt="">
-								<img class="obj-2" src="img/common-solutions/section-features/obj-2.svg" alt="">
-							</div>
-						</div>
-						<div class="feature">
-							<div class="container-illu">
-								<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
-							</div>
-							<div class="container-text">
-								<h3>
-									<span>Analysez finement</span> vos ventes immobilières.
-								</h3>
-								<p>
-									Créez facilement des dashboards incroyables pour piloter votre activité commerciale. Générez des reporting en pdf pour vos présentations.
-								</p>
-								<ul>
-									<li>
-										<a href="">Business Intelligence</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						-->
 					</div>
 				</div>
 			</section>
 
-			<section id="section-quotes">
+			<section id="section-quotes" class="sectionAnim_container">
 				<div class="wrapper">
-					<div class="container-img">
+					<div class="container-img elAnim__slide anim__delayMedium_1">
 						<img src="<?= $document->quotes_img->url; ?>" alt="">
 					</div>
 					<div class="container-quotes">
-						<img class="obj-1" src="/img/common/icn-quote-white.svg" alt="">
+						<img class="obj-1 elAnim__slide anim__delayMedium_2" src="/img/common/icn-quote-white.svg" alt="">
 						<div class="container-el">
 							<div class="el">
-								<q>
-									<?= RichText::asText($document->quotes_text); ?>
+								<q class="elAnim__slide anim__delayMedium_3">
+								 	<?= RichText::asText($document->quotes_text); ?>
 								</q>
-								<div class="container-infos">
+								<div class="container-infos elAnim__slide anim__delayMedium_4">
 									<div class="name"><?= RichText::asText($document->quotes_names); ?></div>
 									<div class="job"><?= RichText::asText($document->quotes_job); ?></div>
 								</div>
 							</div>
 						</div>
-						<div class="container-action">
+						<div class="container-action elAnim__slide anim__delayMedium_5">
 							<div class="container-link">
 								<a href="<?= $document->quotes_link->url; ?>">
 									<span class="link-text">
@@ -218,27 +169,27 @@ $document = $WPGLOBAL['document']->data;
 				</div>
 			</section>
 
-			<section id="section-logos">
+			<section id="section-logos" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="container-text">
 						<?= RichText::asHtml($document->logos_title); ?>
 					</div>
-					<div class="container-logos">
+					<div class="container-logos elAnim__fade anim__delayMedium_2">
 						<img src="<?= $document->logos_img->url; ?>" alt="">
 					</div>
 				</div>
 			</section>
 
-			<section id="common-section-banner">
-		        <img class="obj-2" src="/img/common/section-banner/obj-2.svg" alt="">
-		        <img class="obj-3" src="/img/common/section-banner/obj-3.svg" alt="">
+			<section id="common-section-banner" class="sectionAnim_container">
+		        <img class="obj-2 elAnim__slide anim__delayMedium_5" src="/img/common/section-banner/obj-2.svg" alt="">
+		        <img class="obj-3 elAnim__slide anim__delayMedium_6" src="/img/common/section-banner/obj-3.svg" alt="">
 		        <div class="wrapper">
 		          <div class="container-img elAnim__slide anim__delayMedium_1">
 		            <img src="<?= $document->banner_photo->url; ?>" alt="">
 		          </div>
 		          <div class="container-text">
 		            <?= RichText::asHtml($document->banner_title); ?>
-		            <p>
+		            <p class="elAnim__slide anim__delayMedium_2">
 		            	<?= RichText::asText($document->banner_text); ?>
 		            </p>
 		            <a href="<?= $document->banner_button_link->url; ?>" class="elAnim__slide anim__delayMedium_3">
@@ -257,3 +208,10 @@ $document = $WPGLOBAL['document']->data;
 		<script type="text/javascript" src="/script/minify/common-min.js"></script>
 	</body>
 </html>
+<script type="text/javascript">
+	$('#section-cover h1').addClass('elAnim__slide anim__delayMedium_2');
+	$('#section-features h2').addClass('elAnim__slide anim__delayMedium_1');
+	$('#section-features h3').addClass('elAnim__slide anim__delayMedium_1');
+	$('#section-logos h2').addClass('elAnim__slide anim__delayMedium_1');
+	$('#common-section-banner h2').addClass('elAnim__slide anim__delayMedium_1');
+</script>

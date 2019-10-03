@@ -14,6 +14,17 @@ foreach ($document->container_authors as $author) {
     $i++;
 }
 $documentA = $document->container_authors[$i];
+
+$p = isset($_GET['p']) ? intval($_GET['p']) : 1;
+$nbMax = 9;
+$pStart = ($p - 1) * $nbMax;
+$nbMaxA = $nbMax * $p;
+$nbA = 0;
+foreach ($articles as $article) { 
+	if($cta == $article->data->profil_url[0]->text) {
+		$nbA++;
+	}
+}
 ?>
 <html>
   	<head>
@@ -66,71 +77,94 @@ $documentA = $document->container_authors[$i];
 					
 					<div class="container-blog">
 						<?php $i = 1; 
+
+						$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
+						                "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
+						                $_SERVER['REQUEST_URI']; 
+
+						$linkS = explode('/', $link);
+						$newLink = $linkS[0] . '//' . $linkS[2] . '/' . $linkS[3] . '/blog';
+
 						foreach ($articles as $article) {
-							if($idA != $article->id && $i <= 8 && $cta == $article->data->profil_url[0]->text ) { 
-								$article = $article->data; ?>
-								<div class="el-blog">
-									<div class="cover">
-										<div class="bdg">
-											<span><?= strtoupper(RichText::asText($article->common_categorie)); ?></span>
+							$uid = $article->uid;
+							if($cta == $article->data->profil_url[0]->text) {
+								if($idA != $article->id && $i >= $pStart && $i < $nbMaxA ) { 
+									$article = $article->data; ?>
+									<a class="el-blog" href="<?php echo $newLink.'/'.RichText::asText($article->global_categorie).'/'.$uid; ?>">
+										<div class="cover">
+											<div class="bdg">
+												<span><?= strtoupper(RichText::asText($article->common_categorie)); ?></span>
+											</div>
+											<div class="btn">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
+													<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
+												</svg>
+											</div>
+											<img src="<?= $article->common_first_img->url; ?>" alt="">
 										</div>
-										<div class="btn">
-											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
-												<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
-											</svg>
+										<div class="text">
+											<div class="infos">
+												<div class="name"><?= RichText::asText($article->profil_name); ?></div>
+												<div class="sep"></div>
+												<div class="date"><?= RichText::asText($article->common_date); ?></div>
+											</div>
+											<h3>
+												<?= RichText::asText($article->common_title); ?>
+											</h3>
+											<p>
+												<?= RichText::asText($article->common_little_description); ?>
+											</p>
 										</div>
-										<img src="<?= $article->common_first_img->url; ?>" alt="">
-									</div>
-									<div class="text">
-										<div class="infos">
-											<div class="name"><?= RichText::asText($article->profil_name); ?></div>
-											<div class="sep"></div>
-											<div class="date"><?= RichText::asText($article->common_date); ?></div>
-										</div>
-										<h3>
-											<?= RichText::asText($article->common_title); ?>
-										</h3>
-										<p>
-											<?= RichText::asText($article->common_little_description); ?>
-										</p>
-									</div>
-								</div>
-						<?php $i++; } } ?>
+									</a>
+						<?php } $i++; } } ?>
 					</div>
 
 					<div class="nav-index">
-						<a href="" class="nav-prev">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
-								<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
-							</svg>
-							<div class="text">
-								<?= RichText::asText($document->common_prev); ?>
-							</div>
-						</a>
+						<?php if($p != 1) { ?>
+							<a href="<?php echo $newLink.'/'.explode('?', $linkS[5])[0].'?p='.($p-1); ?>" class="nav-prev">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
+									<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
+								</svg>
+								<div class="text">
+									<?= RichText::asText($document->common_prev); ?>
+								</div>
+							</a>
+						<?php } ?>
 
 						<ul>
-							<li class="active">
-								<a href="">1</a>
-							</li>
-							<li>
-								<a href="">2</a>
-							</li>
-							<li>
-								<a href="">...</a>
-							</li>
-							<li>
-								<a href="">10</a>
-							</li>
+							<?php if( ceil($nbA/$nbMax) <= 4 ) { 
+								for ($i = 1 ; $i <= ceil($nbA/$nbMax) ; $i++) { ?>
+									<li <?php if($i==$p) { echo 'class="active"'; } ?>>
+										<a href="<?php echo $newLink.'/'.explode('?', $linkS[5])[0].'?p='.$i; ?>"><?php echo $i; ?></a>
+									</li>
+							<?php }
+							} 
+							else { ?>
+								<li class="active">
+									<a href="<?php echo $newLink.'/'.explode('?', $linkS[5])[0].'?p='.$i; ?>">1</a>
+								</li>
+								<li>
+									<a href="<?php echo $newLink.'/'.explode('?', $linkS[5])[0].'?p='.$i; ?>">2</a>
+								</li>
+								<li>
+									<a>...</a>
+								</li>
+								<li>
+									<a href="<?php echo $newLink.'/'.explode('?', $linkS[5])[0].'?p='.ceil($nbA/$nbMaxA); ?>"><?php echo ceil($nbA/$nbMax); ?></a>
+								</li>
+							<?php } ?>
 						</ul>
 
-						<a href="" class="nav-next">
-							<div class="text">
-								<?= RichText::asText($document->common_next); ?>
-							</div>
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
-								<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
-							</svg>
-						</a>
+						<?php if($p < ceil($nbA/$nbMax)) { ?>
+							<a href="<?php echo $newLink.'/'.explode('?', $linkS[5])[0].'?p='.($p+1); ?>" class="nav-next">
+								<div class="text">
+									<?= RichText::asText($document->common_next); ?>
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
+									<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
+								</svg>
+							</a>
+						<?php } ?>
 					</div>
 				</div>
 
@@ -144,3 +178,55 @@ $documentA = $document->container_authors[$i];
 
 	<script type="text/javascript" src="/script/minify/common-min.js"></script>
 </html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		let saveContainerEl = $('#header-blog-desktop .wrapper .container-link .search .dropdown').html();
+        
+		let url = window.location.href;
+		let urlS = url.split('/');
+		history.pushState({ path: this.path }, '', url.split('?')[0]);
+
+        $('#header-blog-desktop .wrapper .container-link .search .container-input input').on("keyup", function() {
+        	let value = $(this).val().toLowerCase();
+            if(value.length > 0) {
+	            request(readDateSearch, '/' + $.trim(urlS[3]) + '/livesearch?value=' + value);
+	        }
+	        else {
+	        	$('#header-blog-desktop .wrapper .container-link .search .dropdown').empty();
+				$('#header-blog-desktop .wrapper .container-link .search .dropdown').append(saveContainerEl);
+	        }
+        });
+
+        // AJAX
+        function getXMLHttpRequest() { 
+		    let objXMLHttp = null;
+		    if (window.XMLHttpRequest) {
+		        objXMLHttp = new XMLHttpRequest();
+		    }
+		    else if (window.ActiveXObject) {
+		        objXMLHttp = new ActiveXObject("Microsoft.XMLHTTP");
+		    }
+		    return objXMLHttp;
+		}
+
+        function request(callback, get) {
+			let xhr = getXMLHttpRequest();
+			
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+					callback(xhr.responseText);
+				}
+			};
+
+			xhr.open("GET", get, true);
+			xhr.send(null);
+		}
+
+		function readDateSearch(sData) {
+            $('#header-blog-desktop .wrapper .container-link .search .dropdown').empty();
+			$('#header-blog-desktop .wrapper .container-link .search .dropdown').append(sData);
+		}
+    });
+</script>
