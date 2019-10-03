@@ -199,8 +199,8 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h2 class="elAnim__slide anim__delayMedium_1">
-							<span>Quel est votre</span>
-							<span>métier ?</span>
+							<em>Quel est votre</em>
+							métier ?
 						</h2>
 					</div>
 					<div class="container-el">
