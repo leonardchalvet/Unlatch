@@ -501,7 +501,7 @@
 						</div>
 						<div class="container-img elAnim__slide anim__delayMedium_3">
 							<div class="img">
-								<img src="" alt="">
+								<img src="img/img-test/background-3.jpg" alt="">
 								<a href="">
 									<span class="link-text">
 										Voir tous les témoignages
@@ -515,7 +515,7 @@
 							</div>
 							
 							<div class="img">
-								<img src="" alt="">
+								<img src="img/img-test/background-3.jpg" alt="">
 								<a href="">
 									<span class="link-text">
 										Voir tous les témoignages
@@ -529,7 +529,7 @@
 							</div>
 
 							<div class="img">
-								<img src="" alt="">
+								<img src="img/img-test/background-3.jpg" alt="">
 								<a href="">
 									<span class="link-text">
 										Voir tous les témoignages
@@ -555,7 +555,7 @@
 					</div>
 					<div class="container-text">
 						<h2 class="elAnim__slide anim__delayMedium_2">
-							<span>Discutez</span> avec l'un de nos conseillers ?
+							<em>Discutez</em> avec l'un de nos conseillers ?
 						</h2>
 						<a href="" class="elAnim__slide anim__delayMedium_3">
 							<span class="btn-text">Demander une démo</span>

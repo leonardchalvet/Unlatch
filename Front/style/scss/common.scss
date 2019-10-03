@@ -429,10 +429,19 @@ main
 		  	padding: 7px 22px 7px 22px;
 		  	border: 1px solid $colorMain_1_strong;
 			border-radius: 6px;
+			transition: all 0.25s ease;
 		  	.btn-text{
 		  		@include styleParagraphSmall;
 		  		font-family: $font_1_semibold;
 		  		color: $colorMain_1_strong;
+		  		transition: all 0.25s ease;
+		  	}
+
+		  	&:hover{
+		  		background-color: $colorMain_1_strong;
+		  		.btn-text{
+		  			color: #FFF;
+		  		}
 		  	}
 		}
 
@@ -575,7 +584,7 @@ main
 		flex: 1;
 		h2{
 			@include styleH2_light;
-			span{
+			em{
 				@include styleH2_bold;
 			}
 		}
@@ -626,8 +635,12 @@ main
 			display: none;
 		}
 		.container-text{
+			padding: 60px 0px 60px 0px;
 			position: relative;
 			text-align: center;
+			.container-infos{
+				display: none;
+			}
 		}
 		.obj-2{
 			width: 90px;
@@ -799,6 +812,7 @@ main
         }
         p {
             @include styleParagraphMedium;
+            color: $colorMain_5;
         }
         form {
             margin-top: 25px;

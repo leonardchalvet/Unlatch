@@ -125,7 +125,7 @@
 								<img src="img/common-feature/section-pres/icn-1.svg" alt="">
 							</div>
 							<div class="text">
-								<h4><span>Simple</span> à utiliser</h4>
+								<h4><em>Simple</em> à utiliser</h4>
 								<p>
 									Nous donnons la priorité aux besoins des vendeurs et facilitons la saisie des activités afin que notre CRM immobilier neuf soit toujours à jour. Avec nous, dites au revoir aux formations interminables. 
 								</p>
@@ -136,7 +136,7 @@
 								<img src="img/common-feature/section-pres/icn-2.svg" alt="">
 							</div>
 							<div class="text">
-								<h4><span>Performant</span></h4>
+								<h4><em>Performant</em></h4>
 								<p>
 									La gestion très fine des droits que nous avons mis en place sur notre CRM immobilier neuf nous permet de respecter parfaitement votre organisation hiérarchique, géographique et fonctionnelle. 
 								</p>
@@ -147,7 +147,7 @@
 								<img src="img/common-feature/section-pres/icn-3.svg" alt="">
 							</div>
 							<div class="text">
-								<h4><span>Intelligent</span></h4>
+								<h4><em>Intelligent</em></h4>
 								<p>
 									Afin de vous faciliter le travail, nous avons développé une intelligence artificielle qui génère des recommandations et des prédictions sur vos prospects. Notre CRM immobilier neuf devient sans cesse plus intelligent grâce à vos données.
 								</p>

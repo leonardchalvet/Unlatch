@@ -19,16 +19,16 @@
 
 		<main>
 
-			<section id="section-cover">
+			<section id="section-cover" class="sectionAnim_container">
 				<div class="wrapper">
-					<h1>Ils nous font <em>confiance</em></h1>
+					<h1 class="elAnim__slide anim__delayMedium_1">Ils nous font <em>confiance</em></h1>
 					<div class="container-text">
-						<p>
+						<p class="elAnim__slide anim__delayMedium_2">
 							Lancé en 2017, le logiciel LegaLife Immobilier a réussi à convaincre plus de 130 promoteurs immobiliers grâce à une solution complète et très simple d’utilisation pour les différents intervenants de la vente immobilière. Voici ce que pensent nos clients !
 						</p>
-						<div class="container-quotes">
-							<img class="obj-1" src="img/common/icn-quote-white.svg" alt="">	
-							<div class="container-el">
+						<div class="container-quotes elAnim__slide anim__delayMedium_3">
+							<img class="obj-1 elAnim__slide anim__delayMedium_4" src="img/common/icn-quote-white.svg" alt="">	
+							<div class="container-el elAnim__slide anim__delayMedium_5">
 								<div class="el active">
 									<q>
 										Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré
@@ -45,7 +45,7 @@
 									</q>
 								</div>
 							</div>
-							<div class="container-nav">
+							<div class="container-nav elAnim__slide anim__delayMedium_6">
 								<div class="nav prev">
 									<span class="link-arrow">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
@@ -63,7 +63,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="container-img">
+					<div class="container-img elAnim__slide anim__delayMedium_4">
 						<div class="el active">
 							<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
 							<div class="container-infos">

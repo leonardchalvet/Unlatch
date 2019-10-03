@@ -26,7 +26,7 @@
 						<p class="elAnim__slide anim__delayMedium_2">
 							Retrouvez sur cette page les communiqués de Presse d'Unlatch ainsi que les médias qui parlent de nous.
 						</p>
-						<div class="container-quotes">
+						<div class="container-quotes elAnim__slide anim__delayMedium_2">
 							<img class="obj-1 elAnim__slide anim__delayMedium_3" src="img/common/icn-quote-red.svg" alt="">
 							<h3 class="elAnim__slide anim__delayMedium_4">
 								Ces technologie qui mettent l’immobilier en mouvement
@@ -67,8 +67,35 @@
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
 							</q>
-							<a href="https://www.peipotato.org/sites/default/files/2017-10/Test%20PDF.pdf" target="_blank">
-							   	<span class="btn-text">Télécharger le PDF</span>
+							<a href="" class="elAnim__slide anim__delayMedium_3">
+								<span class="link-text">
+									Télécharger la plaquette
+								</span>
+								<span class="link-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
+										<use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
+									</svg>
+								</span>
+							</a>
+							
+						</div>
+						<div class="el">
+							<div class="container-logo">
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+								<div class="logo">
+									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
+								</div>
+							</div>
+							<h3>Ces technologie qui mettent l’immobilier en mouvement</h3>
+							<q>
+								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
+							</q>
+							<a href="" class="elAnim__slide anim__delayMedium_3">
+								<span class="link-text">
+									Télécharger la plaquette
+								</span>
 								<span class="link-arrow">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
 										<use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
@@ -89,8 +116,10 @@
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
 							</q>
-							<a href="https://www.peipotato.org/sites/default/files/2017-10/Test%20PDF.pdf" target="_blank">
-							   	<span class="btn-text">Télécharger le PDF</span>
+							<a href="" class="elAnim__slide anim__delayMedium_3">
+								<span class="link-text">
+									Télécharger la plaquette
+								</span>
 								<span class="link-arrow">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
 										<use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
@@ -111,30 +140,10 @@
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
 							</q>
-							<a href="https://www.peipotato.org/sites/default/files/2017-10/Test%20PDF.pdf" target="_blank">
-							   	<span class="btn-text">Télécharger le PDF</span>
-								<span class="link-arrow">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
-										<use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
-									</svg>
+							<a href="" class="elAnim__slide anim__delayMedium_3">
+								<span class="link-text">
+									Télécharger la plaquette
 								</span>
-							</a>
-						</div>
-						<div class="el">
-							<div class="container-logo">
-								<div class="logo">
-									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
-								</div>
-								<div class="logo">
-									<img class="logo" src="img/home/section-logos/logo-haagendazs.png" alt="">
-								</div>
-							</div>
-							<h3>Ces technologie qui mettent l’immobilier en mouvement</h3>
-							<q>
-								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
-							</q>
-							<a href="https://www.peipotato.org/sites/default/files/2017-10/Test%20PDF.pdf" target="_blank">
-							   	<span class="btn-text">Télécharger le PDF</span>
 								<span class="link-arrow">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
 										<use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
@@ -174,8 +183,10 @@
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
 							</q>
-							<a href="https://www.peipotato.org/sites/default/files/2017-10/Test%20PDF.pdf" target="_blank">
-							   	<span class="btn-text">Télécharger le PDF</span>
+							<a href="" class="elAnim__slide anim__delayMedium_3">
+								<span class="link-text">
+									Télécharger la plaquette
+								</span>
 								<span class="link-arrow">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
 										<use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
@@ -193,8 +204,10 @@
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
 							</q>
-							<a href="https://www.peipotato.org/sites/default/files/2017-10/Test%20PDF.pdf" target="_blank">
-							   	<span class="btn-text">Télécharger le PDF</span>
+							<a href="" class="elAnim__slide anim__delayMedium_3">
+								<span class="link-text">
+									Télécharger la plaquette
+								</span>
 								<span class="link-arrow">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
 										<use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
@@ -212,8 +225,10 @@
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
 							</q>
-							<a href="https://www.peipotato.org/sites/default/files/2017-10/Test%20PDF.pdf" target="_blank">
-							   	<span class="btn-text">Télécharger le PDF</span>
+							<a href="" class="elAnim__slide anim__delayMedium_3">
+								<span class="link-text">
+									Télécharger la plaquette
+								</span>
 								<span class="link-arrow">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
 										<use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
@@ -231,8 +246,10 @@
 							<q>
 								Nous avons été le premier promoteur à faire confiance aux équipes de LegaLife. Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré.
 							</q>
-							<a href="https://www.peipotato.org/sites/default/files/2017-10/Test%20PDF.pdf" target="_blank">
-							   	<span class="btn-text">Télécharger le PDF</span>
+							<a href="" class="elAnim__slide anim__delayMedium_3">
+								<span class="link-text">
+									Télécharger la plaquette
+								</span>
 								<span class="link-arrow">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
 										<use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
