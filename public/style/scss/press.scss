@@ -30,6 +30,7 @@ main{
 			margin-top: 40px;
 			@include styleParagraphBig;
 			width: calc(100% - 50px);
+			color: $colorMain_5;
 		}
 		.container-quotes{
 			padding: 70px 60px;
@@ -114,7 +115,7 @@ main{
 
 .common-section-pdf {
 	position: relative;
-	padding-top: 70px;
+	padding-top: 140px;
 	padding-bottom: 140px;
 	.obj-1 {
 		position: absolute;
@@ -205,44 +206,8 @@ main{
 				color: $colorMain_5;
 			}
 			a {
-				cursor: pointer;
 				margin-top: 50px;
-				display: flex;
-				align-items: center;
-				width: fit-content;
-				text-decoration: none;
-				color: #000;
-				.btn-text {
-					@include styleH4_bold;
-					font-size: 20px;
-					line-height: 22px;
-					background-color: none;
-					border: none;
-					outline: none;
-					margin-right: 20px;
-				}
-				.link-arrow {
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					width: 32px;
-					height: 32px;
-					background-color: #FFF;
-					border: 1.5px solid $colorMain_1_strong;
-					svg {
-						width: 9px;
-						height: 15px;
-						stroke: $colorMain_1_strong;
-					}
-				}
-				&:hover {
-					.link-arrow {
-						background-color: $colorMain_1_strong;
-						svg {
-							stroke: #FFF;
-						}
-					}
-				}
+				@include styleLink_1;
 			}
 		}
 	}
