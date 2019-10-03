@@ -16,7 +16,7 @@ foreach ($document->container_categories as $categorie) {
 $documentC = $document->container_categories[$i];
 
 $p = isset($_GET['p']) ? intval($_GET['p']) : 1;
-$nbMax = 6; //9
+$nbMax = 9;
 $pStart = ($p - 1) * $nbMax;
 $nbMaxA = $nbMax * $p;
 $nbA = 0;
