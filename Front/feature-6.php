@@ -88,6 +88,7 @@
 							<div class="container-illu">
 								<img class="sk-1" src="img/features/feature-6/3/Layout-Icon@4x.png" alt="">
 								<img class="sk-2" src="img/features/feature-6/3/Graph@4x.png" alt="">
+								<img class="sk-3" src="img/features/feature-6/3/ctr.png" alt="">
 							</div>
 							<div class="container-text">
 								<h3>

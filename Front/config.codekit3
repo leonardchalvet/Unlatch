@@ -1785,6 +1785,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/features/feature-6/3/ctr.png": {
+		"ft": 32768,
+		"iS": 25625,
+		"oA": 0,
+		"oAP": "/img/features/feature-6/3/ctr.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/features/feature-6/3/Graph@4x.png": {
 		"ft": 32768,
 		"iS": 46036,

@@ -96,14 +96,14 @@
 					</svg>	
 				</div>
 				<div class="dropdown">
-					<div class="lg">
+					<a class="lg">
 						<img src="img/common/footer/flag/fr.svg">
 						<span>Français</span>	
-					</div>
-					<div class="lg">
+					</a>
+					<a class="lg">
 						<img src="img/common/footer/flag/en.svg">
 						<span>Anglais</span>
-					</div>
+					</a>
 				</div>
 			</div>
 
