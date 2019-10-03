@@ -16,7 +16,7 @@ foreach ($document->container_authors as $author) {
 $documentA = $document->container_authors[$i];
 
 $p = isset($_GET['p']) ? intval($_GET['p']) : 1;
-$nbMax = 9;
+$nbMax = 7;
 $pStart = ($p - 1) * $nbMax;
 $nbMaxA = $nbMax * $p;
 $nbA = 0;

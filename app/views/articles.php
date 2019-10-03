@@ -17,6 +17,15 @@ $articles = $WPGLOBAL['articles']->results;
 
 		<link rel="stylesheet" type="text/css" href="/style/css/blog-post.css">
 
+		<meta property="og:title"       content="<?= RichText::asText($document->meta_thumbnail_title); ?>" />
+		<meta property="og:description" content="<?= RichText::asText($document->meta_thumbnail_description); ?>" />
+		<meta property="og:image"       content="<?= $document->meta_thumbnail_image->url; ?>" />
+
+		<meta name="twitter:card"        content="summary_large_image" />
+		<meta name="twitter:title"       content="<?= RichText::asText($document->meta_thumbnail_title); ?>" />
+		<meta name="twitter:description" content="<?= RichText::asText($document->meta_thumbnail_description); ?>" />
+		<meta name="twitter:image"       content="<?= $document->meta_thumbnail_image->url; ?>" />
+
 	</head>
 	
 	<body>

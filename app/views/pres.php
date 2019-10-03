@@ -56,13 +56,13 @@ $document = $WPGLOBAL['document']->data;
 				</div>
 			</section>
 
-			<section class="common-section-pdf sectionAnim_container">
+			<section class="common-section-pdf pdf-1 sectionAnim_container">
 				<div class="wrapper">
 					<?= RichText::asHtml($document->pres_title); ?>
 					<div class="container-el">
-						<?php $i = 2;
+						<?php $i = 2; $nbA = 1;
 						 	foreach ($document->pres_container_el as $pres) { ?>
-						  <div class="el elAnim__fade anim__delayMedium_<?php echo $i; ?>">
+						  <div class="el elAnim__fade anim__delayMedium_<?php echo $i; ?>" <?php if($nbA > 4) { echo 'style="display:none"'; } ?>>
 							<div class="container-logo">
 								<div class="logo">
 									<img class="logo" src="<?= $pres->pres_logo_1->url; ?>" alt="">
@@ -86,32 +86,34 @@ $document = $WPGLOBAL['document']->data;
 								</span>
 							</a>
 						</div>
-						<?php $i+=2; } ?>
+						<?php $i+=2; $nbA++; } ?>
 					</div>
-					<div class="container-btn">
-						<a href="<?= $document->pres_button_lik->url; ?>">
-							<span class="btn-text">
-								<?= RichText::asText($document->pres_button_text); ?>
-							</span>
-							<span class="link-arrow">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
-									<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
-								</svg>
-							</span>
-						</a>
-					</div>
+					<?php if($nbA-1 > 4) { ?>
+						<div class="container-btn">
+							<a>
+								<span class="btn-text">
+									<?= RichText::asText($document->pres_button_text); ?>
+								</span>
+								<span class="link-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
+										<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
+									</svg>
+								</span>
+							</a>
+						</div>
+					<?php } ?>
 				</div>
 			</section>
 
-			<section class="common-section-pdf sectionAnim_container">
+			<section class="common-section-pdf pdf-2 sectionAnim_container">
 				<img class="obj-1" src="/img/pres/obj-1.svg">
 				<img class="obj-2" src="/img/pres/obj-2.svg">
 				<div class="wrapper">
 					<?= RichText::asHtml($document->medias_title); ?>
 					<div class="container-el">
-						<?php $i = 2; 
+						<?php $i = 2; $nbA = 1;
 							foreach ($document->medias_container_el as $medias) { ?>
-						  <div class="el elAnim__fade anim__delayMedium_<?php echo $i; ?>">
+						  <div class="el elAnim__fade anim__delayMedium_<?php echo $i; ?>" <?php if($nbA > 4) { echo 'style="display:none"'; } ?>>
 							<img src="<?= $pres->pres_logo->url; ?>" alt="">
 							<h3><?= RichText::asText($medias->medias_subtitle); ?></h3>
 							<q>
@@ -126,20 +128,22 @@ $document = $WPGLOBAL['document']->data;
 								</span>
 							</a>
 						</div>
-						<?php $i+=2; } ?>
+						<?php $i+=2; $nbA++; } ?>
 					</div>
-					<div class="container-btn">
-						<a href="<?= $document->medias_button_lik->url; ?>">
-							<span class="btn-text">
-								<?= RichText::asText($document->medias_button_text); ?>
-							</span>
-							<span class="link-arrow">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
-									<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
-								</svg>
-							</span>
-						</a>
-					</div>
+					<?php if($nbA-1 > 4) { ?>
+						<div class="container-btn">
+							<a>
+								<span class="btn-text">
+									<?= RichText::asText($document->medias_button_text); ?>
+								</span>
+								<span class="link-arrow">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
+										<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
+									</svg>
+								</span>
+							</a>
+						</div>
+					<?php } ?>
 				</div>
 			</section>
 			
@@ -154,4 +158,14 @@ $document = $WPGLOBAL['document']->data;
 <script type="text/javascript">
 	$('#section-cover h1').addClass('elAnim__slide anim__delayMedium_1');
 	$('.common-section-pdf h2').addClass('elAnim__slide anim__delayMedium_1');
+
+	$('.common-section-pdf.pdf-1 .container-btn a').click(function(){
+		$('.common-section-pdf.pdf-1 .container-el .el').css('display', 'block');
+		$('.common-section-pdf.pdf-1 .container-btn').css('display', 'none');
+	})
+
+	$('.common-section-pdf.pdf-2 .container-btn a').click(function(){
+		$('.common-section-pdf.pdf-2 .container-el .el').css('display', 'block');
+		$('.common-section-pdf.pdf-2 .container-btn').css('display', 'none');
+	})
 </script>

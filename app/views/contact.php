@@ -68,18 +68,18 @@ $document = $WPGLOBAL['document']->data;
 								<?= RichText::asText($document->form_text); ?>
 							</p>
 						</div>
-						<form action="" class="elAnim__slide anim__delayMedium_2">
+						<form action="/sendcontact.php" method="post" class="elAnim__slide anim__delayMedium_2">
 							<?php $i = 0; 
 								foreach ($document->form_container_input as $input) { 
 								if($input->form_dropdown == 'no') { ?>
 									<div class="label label-text">
-										<input type="text" name="<?= RichText::asText($input->form_name); ?>">
+										<input type="text" name="<?= trim(RichText::asText($input->form_name)); ?>">
 										<div class="name"><?= RichText::asText($input->form_placeholder); ?></div>
 									</div>	
 								<?php } else { ?>
 									<div class="label label-dropdown">
 										<div class="container-input">
-											<input readonly type="text" name="<?= RichText::asText($input->form_name); ?>">
+											<input readonly type="text" name="<?= trim(RichText::asText($input->form_name)); ?>">
 											<div class="name"><?= RichText::asText($input->form_placeholder); ?></div>
 											<img class="arrow" src="/img/common/arrow-3.svg" alt="">
 										</div>
@@ -91,7 +91,15 @@ $document = $WPGLOBAL['document']->data;
 									</div>
 								<?php $i++; } ?>
 							<?php } ?>
-							<input type="text" name="allmail" value="" style="display: none;">
+
+							<?php 
+							$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
+						                "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
+						                $_SERVER['REQUEST_URI']; 
+							?>
+
+							<input type="text" name="page" value="<?php echo $link; ?>" style="display: none;">
+							<input type="text" name="allmail" value="<?= trim(RichText::asText($document->all_email)); ?>" style="display: none;">
 							<button>
 								<span class="btn-text"><?= RichText::asText($document->form_button_text); ?></span>
 							</button>
@@ -111,4 +119,52 @@ $document = $WPGLOBAL['document']->data;
 <script type="text/javascript">
 	$('#section-contact .container-text .container-cover h1').addClass('elAnim__slide anim__delayMedium_2');
 	$('#section-contact .container-text .container-cover p').addClass('elAnim__slide anim__delayMedium_3');
+</script>
+
+<script type="text/javascript">
+
+	function isEmpty(el){
+		return !$.trim(el.val());
+	}
+
+	function verifEmail(c) {
+		let regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+		return regex.test(c.val());
+	}
+
+	function verifNumber(c) {
+		c = $.trim(c.val().replace(/ /g,''));
+		return $.isNumeric(c);
+	}
+
+	let stateForm = false;
+	$('form').on('submit', function() {
+
+		if(stateForm) return true;
+
+		let returnF = true;
+
+		$(this).find('input').each(function(){
+			
+			if( isEmpty($(this)) ) {
+				returnF = false;
+				$(this).parent().addClass('error');
+				$(this).parent().parent().addClass('error');
+			}
+			else {
+				$(this).parent().removeClass('error');
+				$(this).parent().parent().removeClass('error');
+			}
+		})
+
+		if(returnF) {
+			$('form button').addClass('active');
+			stateForm = true;
+			setTimeout(function(){
+				$('form').submit();
+			}, 2000)
+		}
+
+		return false;
+	})
 </script>

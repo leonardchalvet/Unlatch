@@ -4,7 +4,7 @@ $document = $WPGLOBAL['document']->data;
 $articles = $WPGLOBAL['articles']->results;
 
 $p = isset($_GET['p']) ? intval($_GET['p']) : 1;
-$nbMax = 9;
+$nbMax = 11;
 $pStart = ($p - 1) * $nbMax;
 $nbMaxA = $nbMax * $p;
 $nbA = 0;
