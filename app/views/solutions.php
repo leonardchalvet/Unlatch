@@ -33,11 +33,13 @@ $nbT = $document->global_template;
 						<p class="elAnim__slide anim__delayMedium_3">
 							<?= RichText::asText($document->cover_text); ?>
 						</p>
-						<a href="<?= $document->cover_button_link->url; ?>" class="elAnim__slide anim__delayMedium_4">
-							<span class="btn-text">
-								<?= RichText::asText($document->cover_button_text); ?>
-							</span>
-						</a>
+						<div class="container-btn elAnim__slide anim__delayMedium_4">
+							<a href="<?= $document->cover_button_link->url; ?>" >
+								<span class="btn-text">
+									<?= RichText::asText($document->cover_button_text); ?>
+								</span>
+							</a>
+						</div>
 					</div>
 					<img class="obj-1 elAnim__slide anim__delayMedium_5" src="/img/common-solutions/section-cover/obj-1.svg" alt="">
 					<img class="obj-2 elAnim__slide anim__delayMedium_6" src="/img/common-solutions/section-cover/obj-2.svg" alt="">
@@ -192,9 +194,11 @@ $nbT = $document->global_template;
 		            <p class="elAnim__slide anim__delayMedium_2">
 		            	<?= RichText::asText($document->banner_text); ?>
 		            </p>
-		            <a href="<?= $document->banner_button_link->url; ?>" class="elAnim__slide anim__delayMedium_3">
-		              <span class="btn-text"><?= RichText::asText($document->banner_buttton_text); ?></span>
-		            </a>
+		            <div class="container-btn elAnim__slide anim__delayMedium_3">
+			            <a href="<?= $document->banner_button_link->url; ?>" >
+			              <span class="btn-text"><?= RichText::asText($document->banner_buttton_text); ?></span>
+			            </a>
+			        </div>
 		            <div class="container-infos elAnim__slide anim__delayMedium_4">
 		              <p><?= RichText::asText($document->banner_information); ?></p>
 		            </div>

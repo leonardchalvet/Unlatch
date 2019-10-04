@@ -89,7 +89,7 @@ $document = $WPGLOBAL['document']->data;
 						<?php $i+=2; $nbA++; } ?>
 					</div>
 					<?php if($nbA-1 > 4) { ?>
-						<div class="container-btn">
+						<div class="container-btn elAnim__slide anim__delayMedium_3">
 							<a>
 								<span class="btn-text">
 									<?= RichText::asText($document->pres_button_text); ?>
@@ -131,7 +131,7 @@ $document = $WPGLOBAL['document']->data;
 						<?php $i+=2; $nbA++; } ?>
 					</div>
 					<?php if($nbA-1 > 4) { ?>
-						<div class="container-btn">
+						<div class="container-btn elAnim__slide anim__delayMedium_3">
 							<a>
 								<span class="btn-text">
 									<?= RichText::asText($document->medias_button_text); ?>

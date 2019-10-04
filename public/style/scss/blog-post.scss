@@ -404,10 +404,12 @@
 }
 
 
-@media screen and (max-width: $breakPoint_mobile){
-
-	#section-head{
+@media screen and (max-width: $breakPoint_tablet){
+	main{
 		padding-top: 75px;
+	}
+	#section-head{
+		padding-top: 40px;
 		.obj-1,
 		.obj-2{
 			display: none;
@@ -444,20 +446,20 @@
 			> p{
 				> img{
 					width: calc(100% + 100px);
-					margin-left: -25px;
+					margin-left: -50px;
 				}
 			}
 			> img{
 				width: calc(100% + 100px);
-				margin-left: -25px;
+				margin-left: -50px;
 			}
 			iframe{
 				width: calc(100% + 100px);
-				margin-left: -25px;
+				margin-left: -50px;
 			}
 			.container-author{
 				width: calc(100% + 100px);
-				margin-left: -25px;
+				margin-left: -50px;
 				padding: 0px 25px 50px 25px;
 			}
 		}

@@ -281,9 +281,11 @@ $document = $WPGLOBAL['document']->data;
           </div>
           <div class="container-text">
             <?= RichText::asHtml($document->banner_title); ?>
-            <a href="<?= $document->banner_button_link->url; ?>" class="elAnim__slide anim__delayMedium_3">
-              <span class="btn-text"><?= RichText::asText($document->banner_buttton_text); ?></span>
-            </a>
+            <div class="container-btn elAnim__slide anim__delayMedium_3">
+              <a href="<?= $document->banner_button_link->url; ?>" >
+                <span class="btn-text"><?= RichText::asText($document->banner_buttton_text); ?></span>
+              </a>
+            </div>
             <div class="container-infos elAnim__slide anim__delayMedium_4">
               <p><?= RichText::asText($document->banner_information); ?></p>
             </div>

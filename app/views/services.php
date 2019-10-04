@@ -21,6 +21,8 @@ $document = $WPGLOBAL['document']->data;
 
 		<?php include('common-header.php') ?>
 
+		<?php include('common-lightbox.php') ?>
+
 		<main>
 
 			<section id="section-cover" class="sectionAnim_container">
@@ -31,11 +33,13 @@ $document = $WPGLOBAL['document']->data;
 						<p class="elAnim__slide anim__delayMedium_3">
 							<?= RichText::asText($document->cover_text); ?>
 						</p>
-						<a href="<?= $document->cover_button_link->url; ?>" class="elAnim__slide anim__delayMedium_4">
-							<span class="btn-text">
-								<?= RichText::asText($document->cover_button_text); ?>
-							</span>
-						</a>
+						<div class="container-btn elAnim__slide anim__delayMedium_4">
+							<a href="<?= $document->cover_button_link->url; ?>" >
+								<span class="btn-text">
+									<?= RichText::asText($document->cover_button_text); ?>
+								</span>
+							</a>
+						</div>
 					</div>
 					<img class="obj-1 elAnim__slide anim__delayMedium_5" src="/img/services/section-cover/obj-1.svg" alt="">
 					<img class="obj-2 elAnim__slide anim__delayMedium_6" src="/img/services/section-cover/obj-2.svg" alt="">
@@ -92,7 +96,7 @@ $document = $WPGLOBAL['document']->data;
 									<?= RichText::asText($document->services_button_text); ?>
 								</span>
 							</a>
-							<a href="<?= $document->services_link->url; ?>" class="link">
+							<a class="link openLightbox">
 								<span class="link-text">
 									<?= RichText::asText($document->services_link_text); ?>
 								</span>

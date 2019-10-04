@@ -1089,7 +1089,7 @@ main{
 }
 
 
-@media screen and (max-width: $breakPoint_mobile){
+@media screen and (max-width: $breakPoint_tablet){
 	main{
 		padding-top: 75px;
 	}
@@ -1099,6 +1099,7 @@ main{
 			width: 100%;
 		}
 		.wrapper{
+			padding-top: 40px;
 			padding-bottom: 0px;
 		}
 		.container-text{
@@ -1130,16 +1131,18 @@ main{
 			margin-top: 60px;
 			.feature{
 				position: relative;
+				justify-content: center;
 				&:not(:last-child){
 					margin-bottom: 60px;
 				}
 				.container-illu{
 					position: relative;
 					order: 1;
-					width: 100%;
+					width: 300px;
 					height: 300px;
 				}
 				.container-text{
+					width: 100%;
 					order: 2;
 					margin-top: 40px;
 				}
@@ -1784,6 +1787,7 @@ main{
 	#section-pres{
 		.container-el{
 			.el{
+				width: 100%;
 				&:nth-child(1){
 					padding-bottom: 60px;
 				}
@@ -1812,6 +1816,9 @@ main{
 		.container-quotes{
 			width: 100%;
 			margin-top: 40px;
+			&:after{
+				content: initial;
+			}
 			.obj-1{
 				display: none;
 			}
