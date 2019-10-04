@@ -29,11 +29,14 @@
 						<p class="elAnim__slide anim__delayMedium_3">
 							Notre service inclue la configuration de votre compte, la formation de vos équipes, l’automatisation de qualité de vos contrats de vente et un support téléphonique.
 						</p>
-						<a href="" class="elAnim__slide anim__delayMedium_4">
-							<span class="btn-text">
-								Demander une démo
-							</span>
-						</a>
+						<div class="container-btn elAnim__slide anim__delayMedium_4">
+							<a href="">
+								<span class="btn-text">
+									Demander une démo
+								</span>
+							</a>
+						</div>
+						
 					</div>
 					<img class="obj-1 elAnim__slide anim__delayMedium_5" src="img/services/section-cover/obj-1.svg" alt="">
 					<img class="obj-2 elAnim__slide anim__delayMedium_6" src="img/services/section-cover/obj-2.svg" alt="">

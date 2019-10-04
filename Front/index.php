@@ -557,9 +557,12 @@
 						<h2 class="elAnim__slide anim__delayMedium_2">
 							<em>Discutez</em> avec l'un de nos conseillers ?
 						</h2>
-						<a href="" class="elAnim__slide anim__delayMedium_3">
-							<span class="btn-text">Demander une démo</span>
-						</a>
+						<div class="container-btn elAnim__slide anim__delayMedium_3">
+							<a href="">
+								<span class="btn-text">Demander une démo</span>
+							</a>
+						</div>
+						
 						<div class="container-infos elAnim__slide anim__delayMedium_4">
 							<p>Amélie, Directrice Commerciale chez Unlatch</p>
 						</div>

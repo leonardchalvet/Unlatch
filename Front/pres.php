@@ -258,8 +258,8 @@
 							</a>
 						</div>
 					</div>
-					<div class="container-btn">
-						<a href="" class="elAnim__slide anim__delayMedium_3">
+					<div class="container-btn elAnim__slide anim__delayMedium_3">
+						<a href="">
 							<span class="btn-text">
 								Voir tous les communiqués
 							</span>
