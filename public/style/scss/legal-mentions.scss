@@ -95,10 +95,17 @@ main{
 		img{
 			opacity: 0.8;
 			position: absolute;
-			left: 0px;
 			top: 0px;
+			left: 0px;
+			/* ONLY SAFARI */
+			@media not all and (min-resolution:.001dpcm)
+			{ @supports (-webkit-appearance:none) {
+
+			    left: initial;
+				right: 0px;
+			}}
 			height: 100%;
-			animation-duration: 20s;
+			animation-duration: 30s;
   			animation-name: slideLoop;
   			animation-iteration-count: infinite;
   			animation-timing-function: linear;

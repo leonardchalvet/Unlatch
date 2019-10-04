@@ -350,7 +350,7 @@ $(window).on('load', function() {
 	);
 	/* SECTION LOGO CAROUSSEL */
 
-	if (window.matchMedia("(min-width: 600px)").matches) {
+	if (window.matchMedia("(min-width: 1250px)").matches) {
 		sectionFtrCaroussel(
 			10000,
 			'#section-features',  

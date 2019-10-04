@@ -375,13 +375,14 @@ main{
 	}
 }
 
-@media screen and (max-width: $breakPoint_mobile){
+@media screen and (max-width: $breakPoint_tablet){
 	main{
 		padding-top: 75px;
 	}
 
 	#section-cover{
 		.wrapper{
+			padding-top: 40px;
 			padding-bottom: 0px;
 		}
 		.container-text{
