@@ -629,6 +629,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/common-solutions/solution-1/2/Dashboard-List@4x.png": {
+		"ft": 32768,
+		"iS": 25879,
+		"oA": 0,
+		"oAP": "/img/common-solutions/solution-1/2/Dashboard-List@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/common-solutions/solution-1/3/Icon-text@4x.png": {
 		"ft": 32768,
 		"iS": 13156,
@@ -1178,6 +1189,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/features/feature-1/2/img.png": {
+		"ft": 32768,
+		"iS": 79696,
+		"oA": 0,
+		"oAP": "/img/features/feature-1/2/img.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/features/feature-1/3/Dashboard-NEW@4x.png": {
+		"ft": 32768,
+		"iS": 59376,
+		"oA": 0,
+		"oAP": "/img/features/feature-1/3/Dashboard-NEW@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/features/feature-1/3/Icon-text-1@4x.png": {
 		"ft": 32768,
 		"iS": 8215,
@@ -1257,7 +1290,7 @@
 		},
 	"/img/features/feature-2/1/Dashboard@4x.png": {
 		"ft": 32768,
-		"iS": 151171,
+		"iS": 137801,
 		"oA": 0,
 		"oAP": "/img/features/feature-2/1/Dashboard@4x.png",
 		"oF": 0,
@@ -1290,7 +1323,7 @@
 		},
 	"/img/features/feature-2/2/Prescripteurs-2@4x.png": {
 		"ft": 32768,
-		"iS": 360645,
+		"iS": 293383,
 		"oA": 0,
 		"oAP": "/img/features/feature-2/2/Prescripteurs-2@4x.png",
 		"oF": 0,
@@ -1321,7 +1354,7 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/features/feature-3/1/Acquéreurs@4x.png": {
+	"/img/features/feature-3/1/Acquéreurs@4x.png": {
 		"ft": 32768,
 		"iS": 50116,
 		"oA": 0,
@@ -1370,6 +1403,17 @@
 		"iS": 35864,
 		"oA": 0,
 		"oAP": "/img/features/feature-3/1/Promoteur@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/features/feature-3/2/Bank@2x.png": {
+		"ft": 32768,
+		"iS": 59376,
+		"oA": 0,
+		"oAP": "/img/features/feature-3/2/Bank@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1475,11 +1519,33 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/features/feature-4/1/Dashboard-List@4x.png": {
+		"ft": 32768,
+		"iS": 51131,
+		"oA": 0,
+		"oAP": "/img/features/feature-4/1/Dashboard-List@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/features/feature-4/1/Icon-text@4x.png": {
 		"ft": 32768,
 		"iS": 8430,
 		"oA": 0,
 		"oAP": "/img/features/feature-4/1/Icon-text@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/features/feature-4/2/Dashboard-NEW@4x.png": {
+		"ft": 32768,
+		"iS": 59376,
+		"oA": 0,
+		"oAP": "/img/features/feature-4/2/Dashboard-NEW@4x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1502,6 +1568,17 @@
 		"iS": 9138,
 		"oA": 0,
 		"oAP": "/img/features/feature-4/2/Icon-text-2@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/features/feature-4/3/ADV-3@4x.png": {
+		"ft": 32768,
+		"iS": 56793,
+		"oA": 0,
+		"oAP": "/img/features/feature-4/3/ADV-3@4x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1596,7 +1673,7 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/features/feature-5/2/Client-Aquéreur-2@4x.png": {
+	"/img/features/feature-5/2/Client-Aquéreur-2@4x.png": {
 		"ft": 32768,
 		"iS": 123561,
 		"oA": 0,
@@ -1700,6 +1777,17 @@
 		"iS": 9665,
 		"oA": 0,
 		"oAP": "/img/features/feature-6/1/Layout-Icon@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/features/feature-6/2/Business-Intelligence-2@4x.png": {
+		"ft": 32768,
+		"iS": 43500,
+		"oA": 0,
+		"oAP": "/img/features/feature-6/2/Business-Intelligence-2@4x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2165,6 +2253,17 @@
 		"iS": 10376,
 		"oA": 0,
 		"oAP": "/img/home/section-pres/skeleton/Bank@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/home/section-pres/skeleton/Dashboard-List@4x.png": {
+		"ft": 32768,
+		"iS": 55083,
+		"oA": 0,
+		"oAP": "/img/home/section-pres/skeleton/Dashboard-List@4x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
