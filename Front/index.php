@@ -19,6 +19,8 @@
 
 		<?php include('common-header.php') ?>
 
+		<?php include('common-lightbox.php') ?>
+
 		<main>
 
 			

@@ -90,6 +90,8 @@
 			</section>
 
 			<section id="section-clients">
+				<img class="obj-1" src="img/clients/obj-1.svg" alt="">
+				<img class="obj-2" src="img/clients/obj-2.svg" alt="">
 				<div class="wrapper">
 					<h2>Ce qu'en pense nos <em>clients</em></h2>
 					<div class="container-el">

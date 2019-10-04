@@ -3,9 +3,12 @@
 	<div class="wrapper">
 		
 		<div class="container-link">
-			<a class="logo" href="">
-				<img src="img/common/footer/logo-white.svg" alt="">
-			</a>
+			<div class="container-logo">
+				<a class="logo" href="">
+					<img src="img/common/footer/logo-white.svg" alt="">
+				</a>
+				<h5>Solutions pour immobilier neuf</h5>
+			</div>
 			<ul>
 				<li>
 					<a href="">Solutions</a>

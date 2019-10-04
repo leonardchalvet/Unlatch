@@ -10,10 +10,16 @@ footer{
 		align-items: flex-start;
 		justify-content: space-between;
 
-		.logo{
-			width: 135px;
-			img{
-				width: 100%;
+		.container-logo {
+			.logo {
+				img{
+					width: 135px;
+				}
+			}
+			h5 {
+				margin-top: 15px;
+				@include styleParagraphBig;
+				color: #FFF;
 			}
 		}
 		ul{
@@ -26,10 +32,11 @@ footer{
 
 				&:first-child{
 					a{
+						display: inline-block;
 						@include styleParagraphMedium;
 						color: #FFF;
 						font-family: $font_1_semibold;
-						margin-bottom: 20px;
+						margin-bottom: 14px;
 					}
 					
 				}
