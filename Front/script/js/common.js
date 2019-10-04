@@ -27,11 +27,23 @@ $window = $(window);
 $window.scroll(function() {
     if ( $window.scrollTop() >= 1 ) {
         $('#header-desktop').addClass('scroll');
+        $('#header-blog-mobile').addClass('scroll');
     } else {
     	$('#header-desktop').removeClass('scroll');
+    	$('#header-blog-mobile').removeClass('scroll');
     };
 });
 
+$('#header-blog-mobile .head .container-action').click(function(){
+	if(!$('#header-blog-mobile').hasClass('open')) {
+		$('#header-blog-mobile').addClass('open');
+		$('body').addClass('block');
+	}
+	else {
+		$('#header-blog-mobile').removeClass('open');
+		$('body').removeClass('block');
+	}
+})
 
 for(let i = 1 ; i < 10 ; i++) {
 	$('#header-desktop .link-' + i).click(function(){

@@ -31,3 +31,37 @@
 		</a>
 	</div>
 </header>
+
+<header id="header-blog-mobile">
+	<div class="head">
+		<div class="wrapper">
+			<a class="logo" href="">
+				<img src="img/common/logo-black.svg" alt="">
+				<div class="bdg">
+					<span>blog</span>
+				</div>
+			</a>
+			<div class="container-action">
+				<div class="burger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-link">
+		<div class="wrapper">
+			<a href="">Immobilier</a>
+			<a href="">Tech</a>
+			<a href="">Univers</a>
+			<a href="">Découvrir Unlatch</a>
+			<div class="search">
+				<div class="container-input">
+					<input type="text" placeholder="Recherche">
+				</div>
+				<div class="dropdown"></div>
+			</div>
+		</div>
+	</div>
+</header>
