@@ -8,9 +8,12 @@ $footer = $WPGLOBAL['footer']->data;
 	<div class="wrapper">
 		
 		<div class="container-link">
-			<a class="logo" href="">
-				<img src="<?= $footer->logo->url; ?>" alt="">
-			</a>
+			<div class="container-logo">
+				<a class="logo" href="">
+					<img src="<?= $footer->logo->url; ?>" alt="">
+				</a>
+				<h5><?= RichText::asText($footer->logo_text); ?></h5>
+			</div>
 			<?php foreach ($footer->body as $slice) { ?>
 				<ul>
 					<li>

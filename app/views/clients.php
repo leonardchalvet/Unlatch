@@ -76,6 +76,8 @@ $document = $WPGLOBAL['document']->data;
       </section>
 
       <section id="section-clients" class="sectionAnim_container">
+        <img class="obj-1" src="/img/clients/obj-1.svg" alt="">
+        <img class="obj-2" src="/img/clients/obj-2.svg" alt="">
         <div class="wrapper">
           <?= RichText::asHtml($document->clients_title); ?>
           <div class="container-el">

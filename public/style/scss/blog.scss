@@ -50,9 +50,9 @@
 				}
 			}
 			.cover{
-				
 				position: relative;
 				width: 100%;
+				overflow: hidden;
 				.bdg{
 					position: absolute;
 					z-index: 1;
@@ -73,6 +73,7 @@
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
+					transition: transform .5s ease;
 				}
 				.btn{
 					position: absolute;
@@ -121,6 +122,9 @@
 					@include styleParagraphSmall;
 					color: $colorMain_5;
 				}
+			}
+			&:hover .cover img {
+				transform: scale(1.2);
 			}
 		}
 	}

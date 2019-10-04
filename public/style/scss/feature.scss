@@ -1028,11 +1028,12 @@ main{
 			background-color: #FFF;
 			position: relative;
 			z-index: 1;
-			width: 100%;
+			width: fit-content;
 			height: 100px;
 			display: flex;
 			flex-flow: row wrap;
 			padding-left: 100px;
+			padding-right: 100px;
 			.container-link{
 				flex: 1;
 				display: flex;

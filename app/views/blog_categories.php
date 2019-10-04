@@ -177,20 +177,23 @@ foreach ($articles as $article) {
 <script type="text/javascript">
 	$(document).ready(function(){
 
-		let saveContainerEl = $('#header-blog-desktop .wrapper .container-link .search .dropdown').html();
+		let saveContainerEl = $('.header-blog .container-input .dropdown').html();
         
 		let url = window.location.href;
 		let urlS = url.split('/');
 		history.pushState({ path: this.path }, '', url.split('?')[0]);
 
-        $('#header-blog-desktop .wrapper .container-link .search .container-input input').on("keyup", function() {
+        $('.header-blog .container-input input').on("keyup", function() {
         	let value = $(this).val().toLowerCase();
-            if(value.length > 0) {
+        	if(value.length > 0) {
 	            request(readDateSearch, '/' + $.trim(urlS[3]) + '/livesearch?value=' + value);
 	        }
 	        else {
 	        	$('#header-blog-desktop .wrapper .container-link .search .dropdown').empty();
 				$('#header-blog-desktop .wrapper .container-link .search .dropdown').append(saveContainerEl);
+
+				$('#header-blog-mobile .container-link .search .dropdown').empty();
+				$('#header-blog-mobile .container-link .search .dropdown').append(saveContainerEl);
 	        }
         });
 
@@ -220,8 +223,11 @@ foreach ($articles as $article) {
 		}
 
 		function readDateSearch(sData) {
-            $('#header-blog-desktop .wrapper .container-link .search .dropdown').empty();
+			$('#header-blog-desktop .wrapper .container-link .search .dropdown').empty();
 			$('#header-blog-desktop .wrapper .container-link .search .dropdown').append(sData);
+
+			$('#header-blog-mobile .container-link .search .dropdown').empty();
+			$('#header-blog-mobile .container-link .search .dropdown').append(sData);
 		}
     });
 </script>

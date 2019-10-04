@@ -27,18 +27,32 @@ $window = $(window);
 $window.scroll(function() {
     if ( $window.scrollTop() >= 1 ) {
         $('#header-desktop').addClass('scroll');
+        $('#header-blog-mobile').addClass('scroll');
     } else {
     	$('#header-desktop').removeClass('scroll');
+    	$('#header-blog-mobile').removeClass('scroll');
     };
 });
 
+$('#header-blog-mobile .head .container-action').click(function(){
+	if(!$('#header-blog-mobile').hasClass('open')) {
+		$('#header-blog-mobile').addClass('open');
+		$('body').addClass('block');
+	}
+	else {
+		$('#header-blog-mobile').removeClass('open');
+		$('body').removeClass('block');
+	}
+})
 
 for(let i = 1 ; i < 10 ; i++) {
 	$('#header-desktop .link-' + i).click(function(){
 		$('#header-desktop .container-link li').removeClass('active');
 		$(this).closest('li').addClass('active');
 		for(let j = 1 ; j < 10 ; j++) {
-			$('#header-desktop').removeClass('open-dropdown-' + j);
+			if(j != i) {
+				$('#header-desktop').removeClass('open-dropdown-' + j);
+			}
 		}
 		if ($('#header-desktop').hasClass('open-dropdown-' + i)) {
 			$('#header-desktop').removeClass('open-dropdown-' + i);
@@ -50,7 +64,6 @@ for(let i = 1 ; i < 10 ; i++) {
 
 
 $(document).click(function(){
-
 	if (!$(event.target).closest('#header-desktop').length) {
 		for(let i = 1 ; i < 10 ; i++) {
 			$('#header-desktop .container-link li').removeClass('active');
@@ -108,10 +121,22 @@ $('#header-blog-desktop .search input').focusin(function(){
 	$('#header-blog-desktop .search .dropdown').addClass('show');
 })
 
-$('#header-blog-desktop .search .dropdown a').click(function(event){
+$('#header-blog-desktop .search .dropdown a').click(function(){
 	$('#header-blog-desktop .search .dropdown').removeClass('show');
 })
 
+$(document).click(function(){
+	if (!$(event.target).closest('#header-blog-desktop .search').length) {
+		if($('#header-blog-desktop .search .dropdown').hasClass('show')) {
+			$('#header-blog-desktop .search .dropdown a').click();
+		}
+	}
+	if (!$(event.target).closest('footer .foot .container-lg').length) {
+		if($('footer .foot .container-lg').hasClass('active')) {
+			$('footer .foot .container-lg >.lg').click();
+		}
+	}
+})
 
 /*============================================================================
 ================================= END COMMON =================================
