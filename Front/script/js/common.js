@@ -114,6 +114,11 @@ $('#header-blog-desktop .search .dropdown a').click(function(){
 })
 
 $(document).click(function(){
+	if (!$(event.target).closest('#header-blog-desktop .search').length) {
+		if($('#header-blog-desktop .search .dropdown').hasClass('show')) {
+			$('#header-blog-desktop .search .dropdown a').click();
+		}
+	}
 	if (!$(event.target).closest('footer .foot .container-lg').length) {
 		if($('footer .foot .container-lg').hasClass('active')) {
 			$('footer .foot .container-lg >.lg').click();

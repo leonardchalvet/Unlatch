@@ -48,18 +48,23 @@
 				text-decoration: none;
 				@include styleParagraphSmall;
 				color: $colorMain_3_strong;
+				&:hover {
+					color: #404040;
+				}
 			}
 			.search{
 				position: relative;
 				.container-input{
 					position: relative;
 					input{
-						width: 150px;
-						padding-right: 14px;
+						position: relative;
+						z-index: 2;
+						width: 125px;
 						outline: none;
 						border: none;
 						@include styleParagraphSmall;
 						color: $colorMain_3_strong;
+						background-color: transparent;
 						
 						&::placeholder{
 							@include styleParagraphSmall;
@@ -85,11 +90,14 @@
 						}
 					}
 					img{
+						cursor: pointer;
 						position: absolute;
+						z-index: 1;
 						right: 0px;
 						top: 50%;
 						transform: translateY(-50%);
 						width: 14px;
+						background-color: #FFF;
 					}
 				}
 				.dropdown{
@@ -126,7 +134,7 @@
 		.btn{
 			self-position: self-end;
 			@include styleButtonBig_2;
-			padding: 7px 30px 7px 30px;
+			padding: 9px 30px 7px 30px;
 		}
 	}
 }

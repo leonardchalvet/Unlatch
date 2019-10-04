@@ -22,7 +22,7 @@
 			<section id="section-head">
 				
 				<img class="obj-1" src="img/blog-post/obj-1.svg" alt="">
-				<img class="obj-2" src="img/blog-post/obj-1.svg" alt="">
+				<img class="obj-2" src="img/blog-post/obj-2.svg" alt="">
 
 				<div class="wrapper">
 					<div class="container-path">
