@@ -351,7 +351,7 @@
 					<span>01 84 60 50 93 </span>
 				</a>
 				<a class="signup">
-					<span>ESSAI GRATUIT</span>
+					<span class="btn-text">ESSAI GRATUIT</span>
 				</a>
 			</div>
 		</div>

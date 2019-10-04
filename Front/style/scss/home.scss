@@ -271,13 +271,13 @@ main{
 		background-color: $colorMain_3_strong;
 		.obj-1{
 			position: absolute;
-			right: 0px;
+			right: -1px;
 			top: 0px;
 			width: 275px;
 		}
 		.obj-2{
 			position: absolute;
-			right: 274px;
+			right: 273px;
 			top: 390px;
 			width: 225px;
 		}
@@ -790,12 +790,15 @@ main{
 @media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){}
 
 
-@media screen and (max-width: $breakPoint_mobile){
+@media screen and (max-width: $breakPoint_tablet){
 	main{
 		padding-top: 75px;
 	}
 	#section-cover{
 		padding-top: 40px;
+		&:before{
+			width: 100%;
+		}
 		.wrapper{
 			padding-bottom: 40px;
 		}
@@ -913,6 +916,9 @@ main{
 		.container-quotes{
 			width: 100%;
 			margin-top: 40px;
+			&:after{
+				content: initial;
+			}
 			.obj-1{
 				display: none;
 			}
@@ -973,7 +979,8 @@ main{
 				width: 100%;
 				.el{
 					padding-left: 25px;
-					padding-bottom: 0px;
+					padding-top: 0px;
+					padding-bottom: 25px;
 					.text{
 						height: 0px;
 						position: initial;

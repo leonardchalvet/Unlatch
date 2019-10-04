@@ -30,11 +30,13 @@
 						<p class="elAnim__slide anim__delayMedium_3">
 							Unlatch vous permet de rester organisé et de faciliter votre reporting auprès de vos clients promoteurs immobiliers.
 						</p>
-						<a href="" class="elAnim__slide anim__delayMedium_4">
-							<span class="btn-text">
-								Demander une démo
-							</span>
-						</a>
+						<div class="container-btn elAnim__slide anim__delayMedium_4">
+							<a href="" >
+								<span class="btn-text">
+									Demander une démo
+								</span>
+							</a>
+						</div>
 					</div>
 					<img class="obj-1 elAnim__slide anim__delayMedium_5" src="img/common-solutions/section-cover/obj-1.svg" alt="">
 					<img class="obj-2 elAnim__slide anim__delayMedium_6" src="img/common-solutions/section-cover/obj-2.svg" alt="">
