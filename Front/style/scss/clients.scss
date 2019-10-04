@@ -259,6 +259,7 @@ main{
 					}
 				}
 				.col {
+					flex: 1;
 					.name {
 						@include styleH4_bold;
 					}
@@ -291,7 +292,7 @@ main{
 	.container-logos{
 		
 		margin: auto;
-		margin-top: 40px;
+		margin-top: 75px;
 		height: 300px;
 		width: 100%;
 		position: relative;
@@ -309,6 +310,7 @@ main{
 			height: 100%;
 			animation-duration: 30s;
   			animation-name: slideLoop;
+  			animation-direction: alternate;
   			animation-iteration-count: infinite;
   			animation-timing-function: linear;
 		}

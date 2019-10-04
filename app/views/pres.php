@@ -114,7 +114,9 @@ $document = $WPGLOBAL['document']->data;
 						<?php $i = 2; $nbA = 1;
 							foreach ($document->medias_container_el as $medias) { ?>
 						  <div class="el elAnim__fade anim__delayMedium_<?php echo $i; ?>" <?php if($nbA > 4) { echo 'style="display:none"'; } ?>>
-							<img src="<?= $pres->pres_logo->url; ?>" alt="">
+							<div class="container-logo">
+								<img class="logo" src="<?= $medias->medias_logo->url; ?>" alt="">
+							</div>
 							<h3><?= RichText::asText($medias->medias_subtitle); ?></h3>
 							<q>
 								<?= RichText::asText($medias->medias_text); ?>

@@ -108,9 +108,7 @@ $document = $WPGLOBAL['document']->data;
 									<img src="<?= $fondateur->fondateur_icn->url; ?>" alt="">
 								</a>
 							</div>
-							<p>
-								<?= RichText::asText($fondateur->fondateur_text); ?>
-							</p>
+							<?= RichText::asHtml($fondateur->fondateur_text); ?>
 						</div>
 						<?php $i++; } ?>
 					</div>
