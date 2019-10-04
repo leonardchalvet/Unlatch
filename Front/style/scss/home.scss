@@ -787,8 +787,6 @@ main{
 }
 
 
-@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){}
-
 
 @media screen and (max-width: $breakPoint_tablet){
 	main{
@@ -848,9 +846,20 @@ main{
 
 	#section-pres{
 		padding: 60px 0px 60px 0px;
-
-		.container-illu{
+		.wrapper{
+			justify-content: center;
+		}
+		.background{
+			.obj-1,
+			.obj-2{
+				display: none;
+			}
+		}
+		.container-text{
 			width: 100%;
+		}
+		.container-illu{
+			width: 400px;
 			margin-top: 40px;
 			margin-right: 0px;
 			.sk-1{
