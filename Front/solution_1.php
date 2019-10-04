@@ -106,7 +106,7 @@
 									<li class="elAnim__slide anim__delayMedium_4">
 										<a href="">Espace prescripteurs</a>
 									</li>
-									<li class="elAnim__slide anim__delayMedium_5">
+									<li class="elAnim__slide kanim__delayMedium_5">
 										<a href="">Digitalisation de la vente immobilière</a>
 									</li>
 									<li class="elAnim__slide anim__delayMedium_6">
