@@ -849,11 +849,6 @@ main
                             background-color: #000;
                         }
                     }
-                    &.error {
-                        .line {
-
-                        }
-                    }
                 }
                 .line {
                     position: absolute;
@@ -864,6 +859,11 @@ main
                     background-color: $colorMain_4_medium;
                     transition: all .25s ease;
                 }
+                &.error{
+					.line {
+						background-color: $colorMain_1_strong;
+					}
+				}
             }
             button {
                 margin-top: 30px;
