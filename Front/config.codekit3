@@ -389,6 +389,26 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
+	"/img/clients/obj-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/clients/obj-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/clients/obj-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/clients/obj-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/img/common-feature/section-cover/obj-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1314,10 +1334,10 @@
 		},
 	"/img/features/feature-2/3/Card.png": {
 		"ft": 32768,
-		"iS": 1886696,
+		"iS": 1893253,
 		"oA": 0,
 		"oAP": "/img/features/feature-2/3/Card.png",
-		"oF": 1,
+		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
@@ -1787,12 +1807,12 @@
 		},
 	"/img/features/feature-6/3/ctr.png": {
 		"ft": 32768,
-		"iS": 25625,
+		"iS": 71180,
 		"oA": 0,
 		"oAP": "/img/features/feature-6/3/ctr.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
