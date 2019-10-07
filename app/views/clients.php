@@ -30,7 +30,7 @@ $document = $WPGLOBAL['document']->data;
             <p class="elAnim__slide anim__delayMedium_2">
               <?= RichText::asText($document->cover_text); ?>
             </p>
-            <div class="container-quotes">
+            <div class="container-quotes elAnim__slide anim__delayMedium_3">
               <img class="obj-1 elAnim__slide anim__delayMedium_3" src="/img/common/icn-quote-white.svg" alt=""> 
               <div class="container-el elAnim__slide anim__delayMedium_5">
                 <?php $i = 0;

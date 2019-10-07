@@ -94,11 +94,6 @@ $document = $WPGLOBAL['document']->data;
 								<span class="btn-text">
 									<?= RichText::asText($document->pres_button_text); ?>
 								</span>
-								<span class="link-arrow">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
-										<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
-									</svg>
-								</span>
 							</a>
 						</div>
 					<?php } ?>
@@ -137,11 +132,6 @@ $document = $WPGLOBAL['document']->data;
 							<a>
 								<span class="btn-text">
 									<?= RichText::asText($document->medias_button_text); ?>
-								</span>
-								<span class="link-arrow">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
-										<use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
-									</svg>
 								</span>
 							</a>
 						</div>

@@ -16,7 +16,8 @@ $header = $WPGLOBAL['header']->data;
 						<a <?php if($link->hc_link_ifdropdown == 'no') { 
 									echo 'href="' .$link->hc_link->url. '"';
 								 } else {
-								 	echo 'class="link-'.$i.'"';
+								 	//echo 'class="link-'.$i.'"';
+								 	echo 'onclick="openDropdown(' .$i. ')"';
 								 	$i++;
 								 } ?> >
 							<span><?= RichText::asText($link->hc_link_text); ?></span>
