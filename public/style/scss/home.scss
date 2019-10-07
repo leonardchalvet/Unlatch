@@ -9,7 +9,6 @@ main{
 #section-cover{
 	position: relative;
 	padding-top: 87px;
-	
 	&:before{
 		content: '';
 		position: absolute;
@@ -168,6 +167,9 @@ main{
 	padding: 100px 0px 100px 0px;
 	.wrapper{
 		@include styleGrid1;
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		   overflow: hidden;
+		}
 	}
 	.container-text{
 		text-align: center;
@@ -319,7 +321,7 @@ main{
 			width: 100%;
 		}
 		.sk-1{
-			width: 100%;
+			width: 520px;
 			filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 		}
 		.sk-2{

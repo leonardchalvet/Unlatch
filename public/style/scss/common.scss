@@ -6,15 +6,13 @@
 	font-family:Aalto-Sans-Pro-SemiBold;
 	src:url(../../fonts/Aalto-Sans-Pro-SemiBold.otf);
 }
-@font-face {
-	font-family:Aalto-Sans-Pro-Medium;
-	src:url(../../fonts/Aalto-Sans-Pro-Medium.otf);
-}
-@font-face {
-	font-family:Aalto-Sans-Pro-Regular;
-	src:url(../../fonts/Aalto-Sans-Pro-Regular.otf);
-}
 
+html{
+    overflow-y: overlay;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	   padding-top: 110px;
+	}
+}
 body, html, *
 {
 	padding: 0px;
@@ -93,8 +91,8 @@ main
 =            FONTS            =
 =============================*/
 
-	$font_1_light: Aalto-Sans-Pro-Light;
-	$font_1_semibold: Aalto-Sans-Pro-SemiBold;
+	$font_1_light: Aalto-Sans-Pro-Light, Arial;
+	$font_1_semibold: Aalto-Sans-Pro-SemiBold, Arial Black;
 
 /*=====  End of FONTS  ======*/
 

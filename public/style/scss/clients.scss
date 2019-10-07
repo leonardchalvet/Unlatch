@@ -151,6 +151,9 @@ main{
 			position: absolute;
 			height: 100%;
 			width: 100%;
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			  	overflow: hidden;
+			}
 			img{
 				position: relative;
 				height: 100%;
@@ -158,6 +161,9 @@ main{
 				top: 0px;
 				left: 0px;
 				object-fit: cover;
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				   height: initial;
+				}
 			}
 			.container-infos {
 				padding: 25px 50px;
@@ -294,6 +300,9 @@ main{
 #section-logos{
 	padding-top: 260px;
 	padding-bottom: 120px;
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	  	overflow: hidden;
+	}
 	.wrapper{
 		position: relative;
 	}
@@ -316,6 +325,7 @@ main{
 		width: 100%;
 		position: relative;
 		img{
+			opacity: 0.8;
 			position: absolute;
 			top: 0px;
 			left: 0px;

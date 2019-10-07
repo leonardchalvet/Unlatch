@@ -45,23 +45,20 @@ $('#header-blog-mobile .head .container-action').click(function(){
 	}
 })
 
-for(let i = 1 ; i < 10 ; i++) {
-	$('#header-desktop .link-' + i).click(function(){
-		$('#header-desktop .container-link li').removeClass('active');
-		$(this).closest('li').addClass('active');
-		for(let j = 1 ; j < 10 ; j++) {
-			if(j != i) {
-				$('#header-desktop').removeClass('open-dropdown-' + j);
-			}
+function openDropdown(i) {
+	$('#header-desktop .container-link li').removeClass('active');
+	$('#header-desktop .link-' + i).closest('li').addClass('active');
+	for(let j = 1 ; j < 10 ; j++) {
+		if(j != i) {
+			$('#header-desktop').removeClass('open-dropdown-' + j);
 		}
-		if ($('#header-desktop').hasClass('open-dropdown-' + i)) {
-			$('#header-desktop').removeClass('open-dropdown-' + i);
-		} else {
-			$('#header-desktop').addClass('open-dropdown-' + i);
-		}
-	})
+	}
+	if ($('#header-desktop').hasClass('open-dropdown-' + i)) {
+		$('#header-desktop').removeClass('open-dropdown-' + i);
+	} else {
+		$('#header-desktop').addClass('open-dropdown-' + i);
+	}
 }
-
 
 $(document).click(function(){
 	if (!$(event.target).closest('#header-desktop').length) {

@@ -412,6 +412,9 @@ main{
 
 #section-logos{
 	margin-top: 80px;
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	  	overflow: hidden;
+	}
 	.wrapper{
 		position: relative;
 	}
@@ -532,8 +535,13 @@ main{
 				&.higlight{
 					margin: 100px 0px 100px 0px;
 					.container-background{
-						left: 0px;
-						width: 100%;
+						right: -25px;
+						left: initial;
+						width: calc(100% + 50px);
+						.obj-1,
+						.obj-2{
+							display: none;
+						}
 					}
 				}
 
@@ -564,6 +572,10 @@ main{
 							left: initial;
 							transform: translateY(-50%);
 						}*/
+
+					}
+					.container-text{
+						text-align: left;
 					}
 					&.higlight{
 						.container-background{
