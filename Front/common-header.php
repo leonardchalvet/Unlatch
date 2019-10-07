@@ -227,7 +227,7 @@
 	<div class="head">
 		<div class="wrapper">
 			<a class="logo" href="">
-				<img src="img/common/logo-black.svg" alt="">
+				<img src="img/common/logo-1.svg" alt="">
 			</a>
 			<div class="container-action">
 				<div class="container-burger">

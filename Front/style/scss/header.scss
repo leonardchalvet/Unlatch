@@ -39,11 +39,10 @@
 			position: absolute;
 			left: 0px;
 			top: 50%;
-			transform: translateY(-50%);
+			transform: translateY(calc(-50% + 3px));
 			
 			img{
-				height: 25px;
-				
+				height: 35px;
 			}
 		}
 		.container-link{
@@ -251,7 +250,7 @@
 				text-decoration: none;
 				display: block;
 				img{
-					height: 20px;
+					height: 30px;
 				}
 			}
 			.container-action{
