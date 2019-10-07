@@ -162,7 +162,7 @@ $document = $WPGLOBAL['document']->data;
 			stateForm = true;
 			setTimeout(function(){
 				$('form').submit();
-			}, 2000)
+			}, 500)
 		}
 
 		return false;
