@@ -263,6 +263,9 @@
 				}
 				.text{
 					flex: 1;
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					  	flex: auto;
+					}
 					margin-left: 15px;
 					.name{
 						@include styleParagraphBig;

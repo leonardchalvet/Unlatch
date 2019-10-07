@@ -9,7 +9,6 @@ main{
 #section-cover{
 	position: relative;
 	padding-top: 87px;
-	
 	&:before{
 		content: '';
 		position: absolute;
@@ -168,6 +167,9 @@ main{
 	padding: 100px 0px 100px 0px;
 	.wrapper{
 		@include styleGrid1;
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		   overflow: hidden;
+		}
 	}
 	.container-text{
 		text-align: center;

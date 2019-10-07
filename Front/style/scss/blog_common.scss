@@ -25,6 +25,9 @@
 			text-decoration: none;
 			img{
 				height: 25px;
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				  	width: 200px;
+				}
 			}
 			.bdg{
 				margin-left: 5px;

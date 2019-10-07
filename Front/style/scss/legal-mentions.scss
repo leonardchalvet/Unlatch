@@ -70,6 +70,9 @@ main{
 #section-logos{
 	margin-bottom: 70px;
 	margin-top: 120px;
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	  	overflow: hidden;
+	}
 	.wrapper{
 		position: relative;
 	}

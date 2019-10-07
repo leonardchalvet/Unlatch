@@ -157,11 +157,6 @@
 							<span class="btn-text">
 								Voir tous les communiqués
 							</span>
-							<span class="link-arrow">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
-									<use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
-								</svg>
-							</span>
 						</a>
 					</div>
 				</div>
@@ -262,11 +257,6 @@
 						<a href="">
 							<span class="btn-text">
 								Voir tous les communiqués
-							</span>
-							<span class="link-arrow">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 13">
-									<use xlink:href="img/common/arrow-1.svg#arrow-1"></use>
-								</svg>
 							</span>
 						</a>
 					</div>
