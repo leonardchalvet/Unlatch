@@ -193,6 +193,31 @@
 	}
 }
 
+@media screen and (max-width: $breakPoint_tablet){
+	main{
+		padding-top: 75px;
+	}
+	#section-blog{
+		.wrapper{
+			padding-top: 40px;
+		}
+		.container-blog{
+			.el-text{
+				width: 100%;
+				margin-bottom: 80px;
+			}
+			.el-blog{
+				&:not(:nth-child(-n+2)),
+				&:nth-child(-n+2) {
+					width: 100%;
+					&:not(last-child){
+						margin-bottom: 60px;
+					}
+				}
+			}
+		}
+	}
+}
 
 /*====================================
 =            END PAGE BLOG           =

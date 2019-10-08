@@ -59,12 +59,16 @@ main{
 		height: 565px;
 		width: 630px;
 		overflow: hidden;
-		.obj-1{
+		.obj-1,
+		.obj-1-mobile{
 			position: absolute;
 			z-index: 1;
 			bottom: -1px;
 			right: 0px;
 			width: 100%;
+		}
+		.obj-1-mobile{
+			display: none;
 		}
 		iframe{
 			position: absolute;
@@ -807,7 +811,7 @@ main{
 			width: 100%;
 		}
 		.wrapper{
-			padding-bottom: 40px;
+			padding-bottom: 0px;
 		}
 		.container-text{
 			width: 100%;
@@ -819,7 +823,23 @@ main{
 			}
 		}
 		.container-video{
-			display: none;
+			margin-top: 40px;
+			position: relative;
+			right: initial;
+			bottom: initial;
+			width: 100%;
+			height: 300px;
+			iframe{
+				width: 200%;
+			}
+			.obj-1{
+				display: none;
+			}
+			.obj-1-mobile{
+				display: block;
+				bottom: initial;
+				top: -40%;
+			}
 		}
 	}
 	#section-logos{
@@ -851,6 +871,7 @@ main{
 				display: none;
 			}
 			.el{
+				display: block;
 				&:before{
 					content: initial;
 				}
@@ -859,10 +880,12 @@ main{
 					margin-bottom: 80px;
 				}
 				.icn{
-					width: 40px;
-					margin-right: 20px;
+					width: 60px;
+					margin-right: 0px;
+					margin-bottom: 20px;
 				}
 				.text {
+					width: 100%;
 					p {
 						margin-top: 10px;
 					}
@@ -874,6 +897,7 @@ main{
 		}
 	}
 	#section-pres{
+		margin-top: 60px;
 		padding: 60px 0px 60px 0px;
 		.wrapper{
 			justify-content: center;
@@ -886,10 +910,13 @@ main{
 		}
 		.container-text{
 			width: 100%;
+			order: 2;
+			margin-top: 40px;
 		}
 		.container-illu{
+			order: 1;
 			width: 400px;
-			margin-top: 40px;
+			margin-top: -120px;
 			margin-right: 0px;
 			.sk-1{
 				width: 100%;
@@ -911,13 +938,15 @@ main{
 		}
 	}
 	#section-stats{
-		padding: 60px 0px 60px 0px;
+		padding: 0px;
 		.container-col{
+			display: block;
 			.col{
-				width: 100%;
+				width: calc(100% + 50px);
+				margin-left: -25px;
 				.container-el{
 					.el{
-						padding: 30px 0px 30px 0px;
+						padding: 55px 25px 55px 25px;
 						border: none;
 						&:before{
 							content: initial;
@@ -926,24 +955,25 @@ main{
 							margin-top: 20px;
 						}
 					}
-					.el-1,
+					.el-1{
+						background-color: $colorMain_1_strong;
+					}
+					.el-3,
+					.el-5{
+						background-color: $colorMain_4_strong;
+					}
 					.el-6{
-						h4,
-						p{
-							color: initial;
-						}
+						background-color: $colorMain_3_strong;
 					}
 				}
 			}
 		}
-	}
-	#section-quotes{
-		.container-img{
-			height: 400px;
+		.container-btn{
+			margin-top: 45px;
 		}
 	}
 	#section-quotes{
-		margin-top: 40px;
+		margin-top: 70px;
 		.wrapper{
 			display: block;
 		}
@@ -1062,6 +1092,17 @@ main{
 	}
 	#common-section-banner{
 		margin-top: 20px;
+	}
+}
+@media screen and (max-width: $breakPoint_mobile){
+	#section-cover{
+		.container-video{
+			height: 290px;
+			.obj-1-mobile{
+				top: initial;
+				bottom: 0px;
+			}
+		}
 	}
 }	
 /*====================================

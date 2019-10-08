@@ -184,8 +184,6 @@ foreach ($articles as $article) {
 
 <script type="text/javascript">
 	$(document).ready(function(){
-
-		let saveContainerEl = $('.header-blog .container-input .dropdown').html();
         
 		let url = window.location.href;
 		let urlS = url.split('/');
@@ -198,10 +196,8 @@ foreach ($articles as $article) {
 	        }
 	        else {
 	        	$('#header-blog-desktop .wrapper .container-link .search .dropdown').empty();
-				$('#header-blog-desktop .wrapper .container-link .search .dropdown').append(saveContainerEl);
-
 				$('#header-blog-mobile .container-link .search .dropdown').empty();
-				$('#header-blog-mobile .container-link .search .dropdown').append(saveContainerEl);
+				$('.header-blog .container-link .search .dropdown').removeClass('show');
 	        }
         });
 
@@ -231,6 +227,9 @@ foreach ($articles as $article) {
 		}
 
 		function readDateSearch(sData) {
+
+			$('.header-blog .container-link .search .dropdown').addClass('show');
+
 			$('#header-blog-desktop .wrapper .container-link .search .dropdown').empty();
 			$('#header-blog-desktop .wrapper .container-link .search .dropdown').append(sData);
 
