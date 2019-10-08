@@ -6,13 +6,13 @@
 			</a>
 			<ul class="container-link">
 				<li>
-					<a onclick="openDropdown(1)">
+					<a class="link-1" onclick="openDropdown(1)">
 						<span>Solutions</span>
 						<img src="img/common/arrow-2.svg" alt="">
 					</a>
 				</li>
 				<li>
-					<a onclick="openDropdown(2)">
+					<a class="link-2" onclick="openDropdown(2)">
 						<span>Fonctionnalités</span>
 						<img src="img/common/arrow-2.svg" alt="">
 					</a>
@@ -23,7 +23,7 @@
 					</a>
 				</li>
 				<li>
-					<a onclick="openDropdown(3)">
+					<a class="link-3" onclick="openDropdown(3)">
 						<span>Entreprise</span>
 						<img src="img/common/arrow-2.svg" alt="">
 					</a>

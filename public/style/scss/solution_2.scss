@@ -27,10 +27,10 @@
 					left: calc(0px - ((100vw - #{$grid_desktop_1}) / 2));
 				}
 				.obj-1{
-					right: 230px;
+					right: 330px;
 				}
 				.obj-2{
-					right: 0px;
+					right: 110px;
 					top: 50%;
 				}
 			}
@@ -74,8 +74,7 @@
 						position: absolute;
 						width: 430px;
 						left: 0px;
-						top: -80px;
-						filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
+						top: -70px;
 					}
 					.sk-2{
 						position: absolute;

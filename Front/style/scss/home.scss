@@ -988,7 +988,7 @@ main{
 			transform: translateX(-25px);
 			&:after{
 				width: 100%;
-				height: calc(100% - 90px);
+				height: calc(100% - 125px);
 			}
 			.obj-1{
 				position: relative;
@@ -1031,7 +1031,7 @@ main{
 				.container-link{
 					order: 2;
 					width: 100%;
-					margin-top: 70px;
+					margin-top: 80px;
 				}
 				.container-nav{
 					order: 1;
@@ -1052,7 +1052,6 @@ main{
 				.el{
 					padding-left: 25px;
 					padding-top: 0px;
-					padding-bottom: 25px;
 					.text{
 						height: 0px;
 						position: initial;
@@ -1060,8 +1059,16 @@ main{
 						padding-left: 0px;
 						
 						margin-top: 0px;
+						.container-line {
+							top: 60px;
+							height: calc(100% - 115px);
+						}
+					}
+					&:not(.active) {
+						padding-bottom: 25px;
 					}
 					&.active{
+						padding-bottom: 50px;
 						.text{
 							height: initial;
 							margin-top: 25px;
@@ -1077,11 +1084,11 @@ main{
 			.container-img{
 				order: 1;
 				width: 100%;
-				height: 350px;
+				height: 450px;
 				margin-bottom: 0px;
 				.img{
 					img{
-						height: 200px;
+						height: 300px;
 						width: 100%;
 						object-fit: cover;
 					}
@@ -1102,6 +1109,19 @@ main{
 				top: initial;
 				bottom: 0px;
 			}
+		}
+	}
+
+	#common-section-banner {
+		.container-text {
+			padding-bottom: 20px;
+			h2 {
+				text-align: center;
+			}
+		}
+		.container-btn {
+			display: flex;
+			justify-content: center;
 		}
 	}
 }	

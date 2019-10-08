@@ -130,8 +130,12 @@ $nbT = $document->global_template;
 								</div>
 								<?php if($slice->primary->feature_highlight == 'yes') { ?>
 									<div class="container-background">
-										<img class="obj-1" src="/img/common-solutions/section-features/obj-1.svg" alt="">
-										<img class="obj-2" src="/img/common-solutions/section-features/obj-2.svg" alt="">
+										<?php if($nbT == 1) { ?>
+											<img class="obj-1 elAnim__slide anim__delayMedium_5" src="/img/common-solutions/section-features/obj-1.svg" alt="">
+										<?php } else { ?>
+											<img class="obj-1 elAnim__slide anim__delayMedium_5" src="/img/common-solutions/section-features/obj-3.svg" alt="">
+										<?php } ?>
+										<img class="obj-2 elAnim__slide anim__delayMedium_6" src="/img/common-solutions/section-features/obj-2.svg" alt="">
 									</div>
 								<?php } ?>
 							</div>

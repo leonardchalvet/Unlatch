@@ -106,7 +106,7 @@
 								</ul>
 							</div>
 							<div class="container-background">
-								<img class="obj-1 elAnim__slide anim__delayMedium_5" src="img/common-solutions/section-features/obj-1.svg" alt="">
+								<img class="obj-1 elAnim__slide anim__delayMedium_5" src="img/common-solutions/section-features/obj-3.svg" alt="">
 								<img class="obj-2 elAnim__slide anim__delayMedium_6" src="img/common-solutions/section-features/obj-2.svg" alt="">
 							</div>
 						</div>

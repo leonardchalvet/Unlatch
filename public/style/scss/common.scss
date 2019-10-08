@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6, i, em
 	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 }
-body.block
+html.block
 {
 	overflow:hidden;
 }
@@ -649,7 +649,18 @@ main
 		width: 130px;
 	}
 }
-@media screen and (max-width: $breakPoint_tablet){
+@media screen and (min-width: 450px) and (max-width: $breakPoint_tablet){
+	#common-section-banner{
+		.container-img{
+			flex: 1;
+			order: 2;
+			img{
+				width: 220px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 450px){
 	#common-section-banner{
 		.container-img{
 			order: 2;

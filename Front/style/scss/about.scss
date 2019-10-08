@@ -185,6 +185,15 @@ main{
 		/*clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 10%, 80% 10%, 80% 0);*/
 		width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}) / 2)));
 		background-color: $colorMain_3_strong;
+		&:after {
+			content: " ";
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 175px;
+			height: 55px;
+			background-color: #FFFFFF;
+		}
 	}
 	.wrapper{
 		@include styleGrid1;

@@ -24,11 +24,12 @@
 					right: calc(0px - ((100vw - #{$grid_desktop_1}) / 2));
 				}
 				.obj-1{
+					top: 25%;
 					left: 0px;
 				}
 				.obj-2{
 					left: 230px;
-					top: 0%;
+					top: -10%;
 				}
 			}
 

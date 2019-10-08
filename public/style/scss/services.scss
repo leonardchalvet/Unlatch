@@ -227,12 +227,22 @@ main{
 		bottom: 0px;
 		height: 620px;	
 		width: 476px;
-		img{
+		.sk-1{
 			position: absolute;
+			z-index: 1;
 			top: 0px;
 			left: 0px;
 			height: 100%;
 			width: 100%;
+			object-fit: cover;
+		}
+		.sk-2{
+			position: absolute;
+			z-index: 2;
+			bottom: 25px;
+			left: 25px;
+			height: 60px;
+			width: 265px;
 			object-fit: cover;
 		}
 	}

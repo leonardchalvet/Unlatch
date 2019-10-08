@@ -541,6 +541,16 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
+	"/img/common-solutions/section-features/obj-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common-solutions/section-features/obj-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/img/common-solutions/section-logos/list-logo.png": {
 		"ft": 32768,
 		"iS": 1152592,
@@ -1272,6 +1282,17 @@
 		"iS": 33561,
 		"oA": 0,
 		"oAP": "/img/features/feature-1/1/Seloger'neuf@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/features/feature-1/2/Icon-text@4x.png": {
+		"ft": 32768,
+		"iS": 19392,
+		"oA": 0,
+		"oAP": "/img/features/feature-1/2/Icon-text@4x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2599,6 +2620,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/services/section-services/illu-2.png": {
+		"ft": 32768,
+		"iS": 26261,
+		"oA": 0,
+		"oAP": "/img/services/section-services/illu-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/services/section-services/obj-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -2766,6 +2798,66 @@
 		"oAP": "/solution_2.php",
 		"oF": 0
 		},
+	"/style/css/404.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/404-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/about.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/about-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/blog-author.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog-author-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/blog-categories.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog-categories-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/blog-post.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog-post-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/blog.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/blog-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/style/css/blog_common.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2773,6 +2865,96 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style/css/blog_common-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/clients.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/clients-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/contact.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/contact-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/feature.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/feature-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/home.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/home-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/legal-mentions.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/legal-mentions-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/press.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/press-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/services.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/services-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/solution_1.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/solution_1-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/solution_2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/solution_2-min.css",
 		"oF": 0,
 		"oS": 3
 		},

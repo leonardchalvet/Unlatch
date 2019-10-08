@@ -71,6 +71,7 @@
 						<div class="feature higlight">
 							<div class="container-illu">
 								<img class="sk-1" src="img/features/feature-1/2/img.png" alt="">
+								<img class="sk-2" src="img/features/feature-1/2/Icon-text@4x.png" alt="">
 							</div>
 							<div class="container-text">
 								<h3>

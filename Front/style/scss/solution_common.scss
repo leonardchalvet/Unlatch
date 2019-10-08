@@ -217,8 +217,8 @@ main{
 			}
 
 			&.higlight{
-				margin: 200px 0px 200px 0px;
-				padding: 70px 0px 70px 0px;
+				margin: 300px 0px 200px 0px;
+				padding: 110px 0px 81px 0px;
 				.container-text{
 					p{
 						color: $colorMain_3_strong;
@@ -228,7 +228,7 @@ main{
 					position: absolute;
 					top: 0px;
 					height: 100%;
-					width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}) / 2)) - 150px);
+					width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}) / 2)) - 140px);
 					background-color: $colorMain_2_strong;
 				}
 				.obj-1{
