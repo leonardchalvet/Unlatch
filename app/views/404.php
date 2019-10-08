@@ -21,7 +21,7 @@ $document = $WPGLOBAL['document']->data;
 		<link rel="manifest" href="/img/favicon/site.webmanifest">
 		<link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#ff4d37">
 		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="theme-color" content="#ffffff">		
+		<meta name="theme-color" content="#ffffff">
 
 	</head>
 	

@@ -143,10 +143,16 @@ main{
 		flex-flow: row wrap;
 		align-items: center;
 		margin-top: 45px;
+		@supports (-ms-ime-align:auto) {
+		    justify-content: space-between;
+		}
 		.el{
 			position: relative;
 			height: 30px;
 			width: calc(100% / 6);
+			@supports (-ms-ime-align:auto) {
+			    width: calc(100% / 7);
+			}
 			img{
 				position: absolute;
 				top: 50%;
@@ -347,7 +353,6 @@ main{
 		}
 	}
 }
-
 #section-stats{
 	.wrapper{
 		@include styleGrid1;
@@ -469,7 +474,6 @@ main{
 		}
 	}
 }
-
 #section-quotes{
 	margin-top: 110px;
 	position: relative;
@@ -633,7 +637,6 @@ main{
 		}
 	}
 }
-
 #section-features{
 	margin-top: 110px;
 	.wrapper{
@@ -671,9 +674,12 @@ main{
 						cursor: pointer;
 						transition: all 0.25s ease;
 					}
-					&:hover{
-						color: $colorMain_1_strong;
+					@media screen and (max-width: $breakPoint_tablet){
+						&:hover{
+							color: $colorMain_1_strong;
+						}
 					}
+					
 				}
 				.text{
 					opacity: 0;
@@ -805,6 +811,12 @@ main{
 		}
 		.container-text{
 			width: 100%;
+			.sep {
+				margin: 30px 0px;
+			}
+			.container-btn {
+				margin-top: 40px;
+			}
 		}
 		.container-video{
 			display: none;
@@ -812,18 +824,25 @@ main{
 	}
 	#section-logos{
 		padding: 60px 0px 40px 0px;
+		.obj-1,
+		.obj-2,
 		.obj-3,
 		.obj-4{
 			display: none;
+		}
+		h2 em {
+			display: block;
 		}
 		.container-el{
 			.el{
 				width: calc(100% / 3);
 				margin-bottom: 30px;
+				&:nth-child(1n + 4) {
+					display: none;
+				}
 			}
 		}
 	}
-
 	#section-metier{
 		padding: 60px 0px 60px 0px;
 		.container-el{
@@ -837,16 +856,23 @@ main{
 				}
 				width: 100%;
 				&:nth-child(1){
-					margin-bottom: 60px;
+					margin-bottom: 80px;
 				}
 				.icn{
 					width: 40px;
 					margin-right: 20px;
 				}
+				.text {
+					p {
+						margin-top: 10px;
+					}
+					a {
+						margin-top: 10px;
+					}
+				}
 			}
 		}
 	}
-
 	#section-pres{
 		padding: 60px 0px 60px 0px;
 		.wrapper{
@@ -871,19 +897,19 @@ main{
 			.sk-2{
 				top: 40px;
 				right: -10px;
-				width: 120px;
+				width: 130px;
 			}
 			.sk-3{
-				height: 40px;
-				right: 60px;
+				height: 45px;
+				right: 80px;
+				bottom: 40%;
 			}
 			.sk-4{
-				height: 40px;
+				height: 45px;
 				right: 40px;
 			}
 		}
 	}
-
 	#section-stats{
 		padding: 60px 0px 60px 0px;
 		.container-col{
@@ -891,10 +917,13 @@ main{
 				width: 100%;
 				.container-el{
 					.el{
-						padding: 20px 0px 20px 0px;
+						padding: 30px 0px 30px 0px;
 						border: none;
 						&:before{
 							content: initial;
+						}
+						p {
+							margin-top: 20px;
 						}
 					}
 					.el-1,
@@ -908,13 +937,11 @@ main{
 			}
 		}
 	}
-
 	#section-quotes{
 		.container-img{
 			height: 400px;
 		}
 	}
-
 	#section-quotes{
 		margin-top: 40px;
 		.wrapper{
@@ -926,15 +953,21 @@ main{
 			margin-left: -25px;
 		}
 		.container-quotes{
-			width: 100%;
-			margin-top: 40px;
+			padding: 50px 25px;
+			width: calc(100% + 50px);
+			transform: translateX(-25px);
 			&:after{
-				content: initial;
+				width: 100%;
+				height: calc(100% - 90px);
 			}
 			.obj-1{
-				display: none;
+				position: relative;
+				transform: none;
+				top: auto;
+				left: auto;
 			}
 			.container-el{
+				margin-top: 50px;
 				height: initial;
 				.el{
 					height: initial;
@@ -947,7 +980,6 @@ main{
 						position: relative;
 						top: initial;
 						transform: translateY(0px);
-						color: $colorMain_3_strong;
 					}
 					&.active{
 						display: block;
@@ -956,31 +988,29 @@ main{
 						margin-top: 40px;
 						position: relative;
 						bottom: initial;
-						.name{
-							color: $colorMain_3_strong;
-						}
-						.job{
-							color: $colorMain_3_strong;
-						}
 					}
 				}
 			}
 			.container-action{
 				margin-top: 40px;
 				height: initial;
-				display: block;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				background-color: transparent;
 				.container-link{
+					order: 2;
 					width: 100%;
-					margin-bottom: 40px;
+					margin-top: 70px;
 				}
 				.container-nav{
+					order: 1;
 					height: 60px;
 					width: 120px;
 				}
 			}
 		}
 	}
-	
 	#section-features{
 		margin-top: 0px;
 		padding: 60px 0px 60px 0px;
@@ -1007,6 +1037,11 @@ main{
 							margin-top: 25px;
 						}
 					}
+					.head {
+						&:hover{
+							color: initial;
+						}
+					}
 				}
 			}
 			.container-img{
@@ -1025,7 +1060,6 @@ main{
 			}
 		}
 	}
-
 	#common-section-banner{
 		margin-top: 20px;
 	}
