@@ -652,22 +652,33 @@ main
 @media screen and (max-width: $breakPoint_tablet){
 	#common-section-banner{
 		.container-img{
-			display: none;
+			order: 2;
+			width: 100%;
+			height: initial;
+			text-align: center;
+			img{
+				position: relative;
+				left: initial;
+				bottom: initial;
+				transform: translate(0px);
+				width: 200px;
+			}
 		}
 		.container-text{
+			order: 1;
 			padding: 60px 0px 60px 0px;
 			position: relative;
-			text-align: center;
+			text-align: left;
 			.container-infos{
-				display: none;
+				
 			}
 		}
 		.obj-2{
-			width: 60px;
+			width: 155px;
 		}
 		.obj-3{
-			right: 60px;
-			width: 60px;
+			right: 154px;
+			width: 155px;
 		}
 	}
 }
