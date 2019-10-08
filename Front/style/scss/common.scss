@@ -649,7 +649,18 @@ main
 		width: 130px;
 	}
 }
-@media screen and (max-width: $breakPoint_tablet){
+@media screen and (min-width: 450px) and (max-width: $breakPoint_tablet){
+	#common-section-banner{
+		.container-img{
+			flex: 1;
+			order: 2;
+			img{
+				width: 220px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 450px){
 	#common-section-banner{
 		.container-img{
 			order: 2;
