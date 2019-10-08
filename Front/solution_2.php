@@ -87,6 +87,7 @@
 						<div class="feature higlight sectionAnim_container">
 							<div class="container-illu elAnim__sk">
 								<img class="sk-1" src="img/common-solutions/solution-2/2/Image@4x.png" alt="">
+								<img class="sk-2" src="img/common-solutions/solution-2/2/Icon-text@4x.png" alt="">
 							</div>
 							<div class="container-text">
 								<h3 class="elAnim__slide anim__delayMedium_1">

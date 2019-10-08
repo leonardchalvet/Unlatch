@@ -327,6 +327,66 @@ function sectionQuotesCaroussel(Delay, Section, El, Img, Nav){
     
 
 };
+
+function sectionQuotesCaroussel_mobile(Section, El, Img, Nav){
+
+	El = Section + ' ' + El;
+	Img = Section + ' ' + Img;
+	Nav = Section + ' ' + Nav;
+
+	var numberEl = $(El).length;
+	var countEl = 1;
+	
+	var drtc;
+
+	function prg(drtc){
+
+		var elImg = Img;
+
+		if (drtc === 'next') {
+			countEl++;
+		} else if (drtc === 'prev') {
+			countEl--;
+		};
+
+		if (countEl <= numberEl && countEl >= 1) {
+
+			$(El + '.active').removeClass('active');
+			$(elImg + '.active').removeClass('active').addClass('hide-after');
+
+			$(El + ':nth-child('+countEl+')').addClass('active');
+			$(elImg + ':nth-child('+countEl+')').removeClass('hide-before').addClass('active');
+
+
+			setTimeout(function() {
+				$(elImg + '.hide-after').removeClass('hide-after').addClass('hide-before');
+			}, 1000);
+		} else if (countEl < 1) {
+			countEl = numberEl;
+			prg();
+		} else {
+			countEl = 1;
+			prg();
+		};
+		
+	};
+
+	function init(){	    
+		$(El + ':nth-child(1)').addClass('active');
+		$(Img + ':nth-child(1)').addClass('active');
+		$(Img + '.active').nextAll().addClass('hide-before');
+	};
+
+	$(Nav + ':nth-child(1)').click(function(){
+		prg('next');
+	})
+	$(Nav + ':nth-child(2)').click(function(){
+		prg('prev');
+	})
+
+	init();
+
+};
 /*=================================================================================
 ================================= END BEFORE LOAD =================================
 =================================================================================*/
@@ -357,6 +417,14 @@ $(window).on('load', function() {
 			".container-el .el", 
 			".container-img .img"
 		);
+
+		sectionQuotesCaroussel(
+			10000,
+			'#section-quotes',  
+			".container-el .el",
+			".container-img img", 
+			'.container-nav .nav'
+		);
 	} else {
 	  	sectionFtrCaroussel_mobile(
 			10000,
@@ -364,14 +432,14 @@ $(window).on('load', function() {
 			".container-el .el", 
 			".container-img .img"
 		);
+		sectionQuotesCaroussel_mobile(
+			'#section-quotes',  
+			".container-el .el",
+			".container-img img", 
+			'.container-nav .nav'
+		);
 	}
 	
 
-	sectionQuotesCaroussel(
-		10000,
-		'#section-quotes',  
-		".container-el .el",
-		".container-img img", 
-		'.container-nav .nav'
-	);
+	
 })

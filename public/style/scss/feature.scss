@@ -85,7 +85,7 @@ main{
 	.obj-1{
 		position: absolute;
 		bottom: 0px;
-		width: 175px;
+		width: 200px;
 		right: calc(190px - ((100vw - #{$grid_desktop_1}) / 2));
 	}
 	.obj-2{
@@ -102,7 +102,7 @@ main{
 	.wrapper{
 		@include styleGrid1;
 		>.container-text{
-			width: 750px;
+			width: 800px;
 			margin: auto;
 			text-align: center;
 			h2{

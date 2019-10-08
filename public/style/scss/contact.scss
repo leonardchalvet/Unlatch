@@ -108,8 +108,7 @@
 						content: '';
 						position: absolute;
 						left: 0px;
-						top: 50%;
-						transform: translateY(-50%);
+						top: 12px;
 						width: 20px;
 						height: 2px;
 						background-color: $colorMain_1_strong;
@@ -299,12 +298,14 @@
 @media screen and (max-width: $breakPoint_tablet){
 	#section-contact{
 		.wrapper{
-			display: block;
+
 		}
 		.container-text{
+			order: 2;
 			width: 100%;
-			padding-bottom: 60px;
+			padding-bottom: 50px;
 			.container-cover{
+				padding-top: 60px;
 				&:before{
 					width: calc(100% + 50px);
 					right: initial;
@@ -322,12 +323,25 @@
 				padding-right: 0px;
 				.container-logo{
 					margin-top: 60px;
+					.list-logo {
+						img {
+							max-width: calc(100% / 3);
+							padding-right: 10px;
+							padding-left: 10px;
+							&:nth-child(1),
+							&:nth-child(2),
+							&:nth-child(3) {
+								margin-bottom: 20px;
+							}
+						}
+					}
 				}
 			}
 		}
 		.container-form{
+			order: 1;
 			width: 100%;
-			padding: 60px 0px 60px 0px;
+			padding: 80px 0px 60px 0px;
 			&:before{
 				width: calc(100% + 50px);
 				right: initial;
