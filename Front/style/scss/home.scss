@@ -668,9 +668,12 @@ main{
 						cursor: pointer;
 						transition: all 0.25s ease;
 					}
-					&:hover{
-						color: $colorMain_1_strong;
+					@media screen and (max-width: $breakPoint_tablet){
+						&:hover{
+							color: $colorMain_1_strong;
+						}
 					}
+					
 				}
 				.text{
 					opacity: 0;
