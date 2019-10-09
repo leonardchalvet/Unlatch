@@ -460,6 +460,9 @@ main{
 	#section-services{
 		margin-top: 0px;
 		padding: 60px 0px 60px 0px;
+		&:before{
+			width: 100%;
+		}
 		.obj-1{
 			display: none;
 		}
@@ -469,19 +472,22 @@ main{
 		.container-text{
 			width: 100%;
 			padding: 0px;
+			text-align: center;
 			.container-actions{
+				justify-content: center;
 				.link{
 					margin-top: 40px;
 				}
 			}
 		}
+
 		.container-img{
 			display: none;
 		}
 	}
 
 	#section-quote{
-		margin-top: 40px;
+		margin-top: 0px;
 		.wrapper{
 			display: block;
 		}
@@ -494,9 +500,6 @@ main{
 			width: 100%;
 			margin-top: 40px;
 			padding-left: 0px;
-			.obj-1{
-				display: none;
-			}
 			.container-el{
 				height: initial;
 				.el{
@@ -504,8 +507,9 @@ main{
 					top: initial;
 					left: initial;
 					position: relative;
-					
 					q{
+						display: block;
+						text-align: center;
 						position: relative;
 						top: initial;
 						transform: translateY(0px);
