@@ -167,7 +167,8 @@ foreach ($articles as $article) { $nbA++; }
 	        else {
 	        	$('#header-blog-desktop .wrapper .container-link .search .dropdown').empty();
 				$('#header-blog-mobile .container-link .search .dropdown').empty();
-				//$('.header-blog .container-link .search .dropdown').removeClass('show');
+
+				$('.header-blog .container-link .search .dropdown').removeClass('show');
 	        }
         });
 
@@ -205,6 +206,7 @@ foreach ($articles as $article) { $nbA++; }
 
 			$('#header-blog-mobile .container-link .search .dropdown').empty();
 			$('#header-blog-mobile .container-link .search .dropdown').append(sData);
+
 		}
     });
 </script>

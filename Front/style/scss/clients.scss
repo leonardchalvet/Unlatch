@@ -398,6 +398,7 @@ main{
 			margin-bottom: 25px;
 		}
 		.container-text {
+			width: 100%;
 			p {
 				padding: 0 25px;
 				width: 100%;
@@ -408,12 +409,23 @@ main{
 					left: 25px;
 				}
 				.container-el {
-					height: 860px;
+					height: auto;
+					padding-bottom: 250px;
 					.el {
+						height: auto;
+						&.active {
+							position: relative;
+						}
 						q {
+							padding: 0 25px;
+							position: relative;
+							display: inline-block;
+							transform: none;
+							height: auto;
 							text-align: center;
 							top: 120px;
-							width: calc(100% - 45px);
+							left: auto;
+							width: 100%;
 						}
 					}
 				}
@@ -427,6 +439,7 @@ main{
 		.container-img {
 			transform: translateY(-1px);
 			margin-top: 0px;
+			width: 100%;
 			height: 505px;
 			.el {
 				display: flex;

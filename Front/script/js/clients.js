@@ -5,13 +5,12 @@
 /*=============================================================================
 ================================= BEFORE LOAD =================================
 =============================================================================*/
-function sectionQuotesCaroussel(Delay, Section, El, Img, Nav){
+function sectionQuotesCaroussel(Section, El, Img, Nav){
 
 	El = Section + ' ' + El;
 	Img = Section + ' ' + Img;
 	Nav = Section + ' ' + Nav;
 
-	var valDelay = 0;
 	var numberEl = $(El).length;
 	var countEl = 1;
 	
@@ -41,10 +40,6 @@ function sectionQuotesCaroussel(Delay, Section, El, Img, Nav){
 			}, 1000);
 
 
-			clearInterval(interval);
-			interval = setInterval(function() {
-		      prg('next');
-		    }, valDelay);
 		} else if (countEl < 1) {
 			countEl = numberEl;
 			prg();
@@ -64,7 +59,6 @@ function sectionQuotesCaroussel(Delay, Section, El, Img, Nav){
 	let state = false;
 	$(Nav + ':nth-child(1)').click(function(){
 		if(!state) {
-			clearInterval(interval);
 			prg('next');
 			state = true;
 			setTimeout(function(){
@@ -74,7 +68,6 @@ function sectionQuotesCaroussel(Delay, Section, El, Img, Nav){
 	})
 	$(Nav + ':nth-child(2)').click(function(){
 		if(!state) {
-			clearInterval(interval);
 			prg('prev');
 			state = true;
 			setTimeout(function(){
@@ -83,14 +76,7 @@ function sectionQuotesCaroussel(Delay, Section, El, Img, Nav){
 		}
 	})
 
-	init();
-
-	var interval = setInterval(function() {
-    	prg('next');
-    }, valDelay);
-
-    valDelay = Delay;
-    
+	init();    
 
 };
 /*=================================================================================
@@ -99,7 +85,6 @@ function sectionQuotesCaroussel(Delay, Section, El, Img, Nav){
 $(window).on('load', function() {	
 
 	sectionQuotesCaroussel(
-		10000,
 		'#section-cover',  
 		".container-el .el",
 		".container-img .el", 

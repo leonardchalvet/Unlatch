@@ -222,7 +222,7 @@ main{
 	}
 }
 
-@media screen and (max-width: $breakPoint_mobile) {
+@media screen and (max-width: 900px) {
 
 	#section-cover {
 		.wrapper {
@@ -230,6 +230,7 @@ main{
 		}
 		.container-text {
 			padding: 0 25px;
+			width: 100%;
 			.container-quotes {
 				width: calc(100% + 50px);
 				transform: translateX(-25px);
@@ -240,6 +241,7 @@ main{
 		}
 		.container-img {
 			margin-top: 0px;
+			width: 100%;
 			height: 400px;
 		}
 	}

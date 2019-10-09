@@ -52,15 +52,20 @@
 	</div>
 	<div class="container-link">
 		<div class="wrapper">
-			<a href="">Immobilier</a>
-			<a href="">Tech</a>
-			<a href="">Univers</a>
-			<a href="">Découvrir Unlatch</a>
 			<div class="search">
 				<div class="container-input">
 					<input type="text" placeholder="Recherche">
+					<img src="img/common/search.svg" alt="">
 				</div>
 				<div class="dropdown"></div>
+			</div>
+			<a href="">Immobilier</a>
+			<a href="">Tech</a>
+			<a href="">Univers</a>
+			<div class="container-btn">
+				<a class="btn" href="">
+					<span class="btn-text">Découvrir Unlatch</span>
+				</a>
 			</div>
 		</div>
 	</div>

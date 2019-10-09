@@ -54,19 +54,22 @@ $header = $WPGLOBAL['header']->data;
 	</div>
 	<div class="container-link">
 		<div class="wrapper">
+			<div class="search">
+				<div class="container-input">
+					<input type="text" placeholder="<?= RichText::asText($header->hb_search); ?>">
+					<img src="/img/common/search.svg" alt="">
+				</div>
+				<div class="dropdown"></div>
+			</div>
 			<?php foreach ($header->hb_links as $link) { ?>
 				<a href="<?= $link->hb_link->url; ?>">
 					<?= RichText::asText($link->hb_link_text); ?>
 				</a>
 			<?php } ?>
-			<a href="<?= $header->hb_button_link->url; ?>">
-				<?= RichText::asText($header->hb_button_text); ?>
-			</a>
-			<div class="search">
-				<div class="container-input">
-					<input type="text" placeholder="<?= RichText::asText($header->hb_search); ?>">
-				</div>
-				<div class="dropdown"></div>
+			<div class="container-btn">
+				<a class="btn" href="<?= $header->hb_button_link->url; ?>">
+					<span class="btn-text"><?= RichText::asText($header->hb_button_text); ?></span>
+				</a>
 			</div>
 		</div>
 	</div>
