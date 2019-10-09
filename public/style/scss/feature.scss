@@ -87,6 +87,9 @@ main{
 		bottom: 0px;
 		width: 200px;
 		right: calc(189px - ((100vw - #{$grid_desktop_1}) / 2));
+		@supports (-ms-ime-align: auto) {
+			right: calc(175px - ((100vw - #{$grid_desktop_1}) / 2));
+		}
 	}
 	.obj-2{
 		position: absolute;

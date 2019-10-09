@@ -1,8 +1,10 @@
 footer{
+
 	background-color: $colorMain_3_strong;
 	padding: 50px 0px 0px 0px;
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	   overflow: hidden;
+	   position: relative;
 	}
 	.wrapper{
 		@include styleGrid1;
