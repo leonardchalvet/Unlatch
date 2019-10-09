@@ -118,7 +118,7 @@ $document = $WPGLOBAL['document']->data;
 					</div>
 					<div class="container-img elAnim__slide anim__delayMedium_4">
 						<img class="sk-1" src="<?= $document->services_img->url; ?>" alt="">
-						<img class="sk-2" src="img/services/section-services/illu-2.png" alt="">
+						<img class="sk-2" src="/img/services/section-services/illu-2.png" alt="">
 					</div>
 					<img class="obj-1 elAnim__slide anim__delayMedium_5" src="/img/services/section-services/obj-1.svg" alt="">
 					<img class="obj-2 elAnim__slide anim__delayMedium_6" src="/img/services/section-services/obj-2.svg" alt="">

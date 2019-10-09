@@ -478,30 +478,61 @@ main{
 	}
 
 	#section-stats{
-		padding: 60px 0px 60px 0px;
+		padding: 0px;
 		.container-col{
+			display: block;
 			.col{
-				width: 100%;
+				width: calc(100% + 100px);
+				margin-left: -50px;
 				.container-el{
 					.el{
-						padding: 20px 0px 20px 0px;
+						padding: 55px 50px 55px 50px;
 						border: none;
 						&:before{
 							content: initial;
 						}
+						p {
+							margin-top: 20px;
+						}
 					}
-					.el-1,
+					.el-1{
+						background-color: $colorMain_1_strong;
+					}
+					.el-3,
+					.el-5{
+						background-color: $colorMain_4_strong;
+					}
 					.el-6{
+						background-color: $colorMain_3_strong;
 						h4,
 						p{
-							color: initial;
+							color: #FFF;
 						}
 					}
 				}
 			}
 		}
+		.container-btn{
+			margin-top: 45px;
+		}
 	}
 }
+
+@media screen and (max-width: $breakPoint_mobile){
+	#section-stats{
+		.container-col{
+			.col{
+				width: calc(100% + 50px);
+				margin-left: -25px;
+				.container-el{
+					.el{
+						padding: 55px 25px 55px 25px;
+					}
+				}
+			}
+		}
+	}
+}	
 
 /*=====================================
 =            END PAGE ABOUT           =

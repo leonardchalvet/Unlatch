@@ -80,7 +80,7 @@ $nbT = $document->global_skeleton;
 											}
 											else if($i == 2) {
 												echo '<img class="sk-1" src="/img/features/feature-1/2/img.png" alt="">
-													  <img class="sk-2" src="img/features/feature-1/2/Icon-text@4x.png" alt="">';
+													  <img class="sk-2" src="/img/features/feature-1/2/Icon-text@4x.png" alt="">';
 											}
 											else if($i == 3) {
 												echo '<img class="sk-1" src="/img/features/feature-1/3/Dashboard-NEW@4x.png" alt="">
