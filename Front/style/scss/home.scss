@@ -55,6 +55,12 @@ main{
 	.container-video{
 		position: absolute;
 		right: 0px;
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		   	right: -12px;
+		}
+		@supports (-ms-ime-align: auto) {
+			right: -12px;
+		}
 		bottom: 0px;
 		height: 565px;
 		width: 630px;
@@ -66,6 +72,12 @@ main{
 			bottom: -1px;
 			right: 0px;
 			width: 100%;
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			   	width: 101%;
+			}
+			@supports (-ms-ime-align: auto) {
+				width: 101%;
+			}
 		}
 		.obj-1-mobile{
 			display: none;

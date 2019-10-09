@@ -6,9 +6,15 @@
 	}
 	.obj-1{
 		right: 580px;
+		@supports (-ms-ime-align: auto) {
+			right: 565px;
+		}
 	}
 	.obj-2{
 		right: 400px;
+		@supports (-ms-ime-align: auto) {
+			right: 385px;
+		}
 	}
 	.container-text{
 		padding: 0px;
