@@ -3,6 +3,7 @@
 #section-cover{
 	&:before{
 		right: 0px;
+		width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}) / 2)) - 400px);
 	}
 	.container-text{
 		width: calc(500px + 700px);

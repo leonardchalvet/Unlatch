@@ -1,6 +1,15 @@
 @import 'solution_common.scss';
 
 #section-cover{
+	&:before {
+		width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}) / 2)) - 400px);
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}) / 2)) - 410px);
+		}
+		@supports (-ms-ime-align: auto) {
+			width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}) / 2)) - 410px);
+		}
+	}
 	.container-img{
 		right: 0px;
 	}

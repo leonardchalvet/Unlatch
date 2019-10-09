@@ -20,7 +20,6 @@ main{
 		position: absolute;
 		top: 0px;
 		height: 100%;
-		width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}) / 2)) - 400px);
 		background-color: $colorMain_1_strong;
 	}
 	.container-text{

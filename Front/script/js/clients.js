@@ -61,13 +61,26 @@ function sectionQuotesCaroussel(Delay, Section, El, Img, Nav){
 		$(Img + '.active').nextAll().addClass('hide-before');
 	};
 
+	let state = false;
 	$(Nav + ':nth-child(1)').click(function(){
-		clearInterval(interval);
-		prg('next');
+		if(!state) {
+			clearInterval(interval);
+			prg('next');
+			state = true;
+			setTimeout(function(){
+				state = false;
+			}, 1100)
+		}
 	})
 	$(Nav + ':nth-child(2)').click(function(){
-		clearInterval(interval);
-		prg('prev');
+		if(!state) {
+			clearInterval(interval);
+			prg('prev');
+			state = true;
+			setTimeout(function(){
+				state = false;
+			}, 1100)
+		}
 	})
 
 	init();

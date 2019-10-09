@@ -69,14 +69,14 @@ main{
 		.obj-1-mobile{
 			position: absolute;
 			z-index: 1;
-			bottom: -1px;
+			bottom: -2px;
 			right: 0px;
 			width: 100%;
 			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-			   	width: 101%;
+			   	width: 100.9%;
 			}
 			@supports (-ms-ime-align: auto) {
-				width: 101%;
+				width: 101.4%;
 			}
 		}
 		.obj-1-mobile{
@@ -523,6 +523,38 @@ main{
 				transition: all 1000ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
 				opacity: 1;
 				clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+			}
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				&.active{
+					transition: all 1000ms cubic-bezier(1.000, 0.005, 0.435, 1.000);
+					z-index: 1;
+					opacity: 1;
+				}
+				&.hide-before{
+					opacity: 0;
+					z-index: 0;
+				}
+				&.hide-after{
+					transition: all 1000ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+					opacity: 0;
+					z-index: 0;
+				}	
+			}
+			@supports (-ms-ime-align: auto) {
+				&.active{
+					transition: all 1000ms cubic-bezier(1.000, 0.005, 0.435, 1.000);
+					z-index: 1;
+					opacity: 1;
+				}
+				&.hide-before{
+					opacity: 0;
+					z-index: 0;
+				}
+				&.hide-after{
+					transition: all 1000ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+					opacity: 0;
+					z-index: 0;
+				}	
 			}
 			
 		}
