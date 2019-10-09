@@ -915,6 +915,7 @@ main{
 			justify-content: center;
 		}
 		.background{
+			width: 100%;
 			.obj-1,
 			.obj-2{
 				display: none;
@@ -954,11 +955,11 @@ main{
 		.container-col{
 			display: block;
 			.col{
-				width: calc(100% + 50px);
-				margin-left: -25px;
+				width: calc(100% + 100px);
+				margin-left: -50px;
 				.container-el{
 					.el{
-						padding: 55px 25px 55px 25px;
+						padding: 55px 50px 55px 50px;
 						border: none;
 						&:before{
 							content: initial;
@@ -1120,6 +1121,20 @@ main{
 			.obj-1-mobile{
 				top: initial;
 				bottom: 0px;
+			}
+		}
+	}
+
+	#section-stats{
+		.container-col{
+			.col{
+				width: calc(100% + 50px);
+				margin-left: -25px;
+				.container-el{
+					.el{
+						padding: 55px 25px 55px 25px;
+					}
+				}
 			}
 		}
 	}

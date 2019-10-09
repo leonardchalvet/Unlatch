@@ -44,7 +44,7 @@
 					<div class="container-video">
 						<img class="obj-1" src="img/home/section-cover/obj-1.svg" alt="">
 						<img class="obj-1-mobile" src="img/home/section-cover/obj-1-mobile.svg" alt="">
-						<iframe src="https://player.vimeo.com/video/359528185?&background=1&mute=0" frameborder="0" allowfullscreen></iframe>
+						<iframe src="https://player.vimeo.com/video/359528185?controls=0&background=1" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</section>

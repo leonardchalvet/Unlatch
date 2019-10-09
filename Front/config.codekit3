@@ -541,6 +541,16 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
+	"/img/common-solutions/section-features/obj-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common-solutions/section-features/obj-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/img/common-solutions/section-logos/list-logo.png": {
 		"ft": 32768,
 		"iS": 1152592,
@@ -1145,6 +1155,95 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/favicon/android-chrome-96x96.png": {
+		"ft": 32768,
+		"iS": 949,
+		"oA": 0,
+		"oAP": "/img/favicon/android-chrome-96x96.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/favicon/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 645,
+		"oA": 0,
+		"oAP": "/img/favicon/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/favicon/browserconfig.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/favicon/browserconfig.xml",
+		"oF": 0
+		},
+	"/img/favicon/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 475,
+		"oA": 0,
+		"oAP": "/img/favicon/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/favicon/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 583,
+		"oA": 0,
+		"oAP": "/img/favicon/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/favicon/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/favicon/favicon.ico",
+		"oF": 0
+		},
+	"/img/favicon/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 1455,
+		"oA": 0,
+		"oAP": "/img/favicon/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/favicon/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/favicon/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/favicon/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/favicon/site.webmanifest",
+		"oF": 0
+		},
 	"/img/features/feature-1/1/Bien'ici@4x.png": {
 		"ft": 32768,
 		"iS": 25650,
@@ -1186,6 +1285,17 @@
 		"oF": 1,
 		"oIPL": 1,
 		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/features/feature-1/2/Icon-text@4x.png": {
+		"ft": 32768,
+		"iS": 19392,
+		"oA": 0,
+		"oAP": "/img/features/feature-1/2/Icon-text@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -2510,6 +2620,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/services/section-services/illu-2.png": {
+		"ft": 32768,
+		"iS": 26261,
+		"oA": 0,
+		"oAP": "/img/services/section-services/illu-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/services/section-services/obj-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3116,7 +3237,7 @@
 	"creationDate": 561315058.37998199,
 	"displayValue": "Unlatch",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-ariel",
+	"iconImageName": "/img/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
