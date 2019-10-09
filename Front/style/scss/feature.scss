@@ -308,10 +308,8 @@ main{
 						}
 						.sk-2{
 							position: absolute;
-							width: 215px;
 							height: 60px;
-							left: 50%;
-							transform: translateX(-50%);
+							left: 30%;
 							bottom: 125px;
 							filter: drop-shadow(1px 21px 27px rgba(0,0,0,0.09));
 						}
@@ -1239,6 +1237,10 @@ main{
 						.container-illu{
 							.sk-1{
 								width: 100%;		
+							}
+							.sk-2{
+								left: 30%;
+								height: 40px;
 							}
 
 						}
