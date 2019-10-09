@@ -232,7 +232,6 @@
 		}
 	}
 	.container-link {
-		padding-top: 25px;
 		position: absolute;
 		z-index: 1;
 		width: 100%;
@@ -249,27 +248,14 @@
 			flex-wrap: wrap;
 			width: 100%;
 		}
-		a {
-			padding: 0 15px;
-			display: inline-block;
-			width: 100%;
-			text-decoration: none;
-			@include styleParagraphSmall;
-			color: $colorMain_5;
-			font-family: $font_1_semibold;
-			&:not(:first-child) {
-				margin-top: 25px;
-			}
-		}
 		.search {
-			margin-top: 25px;
 			position: relative;
 			width: 100%;
 			height: 75px;
 			display: flex;
 			align-items: center;
 
-			&:before, &:after {
+			&:after {
 				content: " ";
 				position: absolute;
 				left: 0;
@@ -277,27 +263,62 @@
 				height: 1px;
 				background-color: #D8D8D8;
 			}
-			&:before {
-				top: 0px;
-			}
 			&:after {
 				bottom: 0;
 			}
 			input {
-				padding: 0 15px;
+				padding: 15px 0px 15px 60px;
 				outline: none;
 				border: none;
 				@include styleParagraphBig;
-				color: $colorMain_3_strong;
+				color: #181818;
+			}
+			img {
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				left: 15px;
+				top: 50%;
+				transform: translateY(-50%);
+				filter: grayscale(.5);
 			}
 			.dropdown {
+				display: none;
 				position: absolute;
-				top: calc(100% + 25px);
+				width: 100%;
+				height: calc(100vh - 150px);
+				top: 100%;
+				&.show {
+					display: block;
+				}
 				a {
 					@include styleParagraphBig;
 					color: $colorMain_3_strong;
 				}
 			}
+		}
+		a {
+			&:not(:last-child) {
+				margin-top: 25px;
+				padding: 0 15px;
+				display: inline-block;
+				width: 100%;
+				text-decoration: none;
+				@include styleParagraphBig;
+				color: #181818;
+				font-family: $font_1_semibold;
+			}
+			&.btn {
+				margin-top: 50px;
+				self-position: self-end;
+				@include styleButtonBig_2;
+				padding: 9px 30px 7px 30px;
+			}
+		}
+		.container-btn {
+			width: 100%;
+			display: flex;
+			justify-content: center;
 		}
 	}
 

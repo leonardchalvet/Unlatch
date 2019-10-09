@@ -225,42 +225,49 @@ main{
 @media screen and (max-width: $breakPoint_mobile) {
 
 	#section-cover {
+		.wrapper {
+			padding: 0;
+		}
 		.container-text {
+			padding: 0 25px;
 			.container-quotes {
+				width: calc(100% + 50px);
+				transform: translateX(-25px);
 				padding: 50px 25px;
 				margin-top: 30px;
 				height: auto;
 			}
 		}
 		.container-img {
-			margin-top: 25px;
+			margin-top: 0px;
 			height: 400px;
 		}
 	}
 
 	.common-section-pdf {
-		padding-top: 100px;
-		.obj-1 {
-			top: -50px;
-		}
+		padding-top: 80px;
+		padding-bottom: 40px;
+		.obj-1,
 		.obj-2 {
-			top: 15px;
+			display: none;
 		}
 		.container-el {
-			padding-top: 75px;
+			padding-top: 40px;
 			.el {
 				width: 100%;
 				&:nth-last-child(1n + 2) {
-					margin-bottom: 120px;
+					margin-bottom: 80px;
 				}
 				&:not(:first-child) {
 					&:before {
-						content: " ";
-						height: 1px;
-						width: 100%;
-						left: 0;
-						top: -60px;
+						content: none;
 					}
+				}
+				q {
+					margin-top: 25px;
+				}
+				.info {
+					margin-top: 25px;
 				}
 			}
 		}

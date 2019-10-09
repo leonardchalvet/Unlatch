@@ -390,8 +390,16 @@ main{
 @media screen and (max-width: $breakPoint_mobile) {
 
 	#section-cover {
+		.wrapper {
+			padding: 0;
+		}
+		h1 {
+			padding: 0 25px;
+			margin-bottom: 25px;
+		}
 		.container-text {
 			p {
+				padding: 0 25px;
 				width: 100%;
 			}
 			.container-quotes {
@@ -400,31 +408,44 @@ main{
 					left: 25px;
 				}
 				.container-el {
-					height: 950px;
+					height: 860px;
 					.el {
 						q {
+							text-align: center;
 							top: 120px;
-							width: calc(100% - 55px);
+							width: calc(100% - 45px);
 						}
 					}
+				}
+				.container-nav {
+					left: 50%;
+					bottom: 10px;
+					transform: translateX(-50%);
 				}
 			}
 		}
 		.container-img {
-			margin-top: 25px;
-			height: 350px;
+			transform: translateY(-1px);
+			margin-top: 0px;
+			height: 505px;
 			.el {
+				display: flex;
+				flex-direction: column-reverse;
 				img {
-
+					height: calc(100% - 105px);
 				}
 				.container-infos {
+					position: relative;
+					left: auto;
+					bottom: auto;
 					width: 100%;
 					padding-left: 10px;
+					background-color: $colorMain_1_strong;
 					.name {
-
+						color: #FFFFFF;
 					}
 					.job {
-
+						color: #FFFFFF;
 					}
 				}
 			}
@@ -432,28 +453,37 @@ main{
 	}
 
 	#section-clients {
-		padding-bottom: 100px;
+		padding-top: 80px;
+		padding-bottom: 0;
+		.obj-1,
+		.obj-2 {
+			display: none;
+		}
 		.container-el {
+			padding-top: 40px;
 			.el {
 				width: 100%;
 				&:nth-last-child(1n + 2) {
-					margin-bottom: 120px;
+					margin-bottom: 80px;
 				}
 				&:not(:first-child) {
 					&:before {
-						content: " ";
-						height: 1px;
-						width: 100%;
-						left: 0;
-						top: -60px;
+						content: none;
 					}
+				}
+				q {
+					margin-top: 25px;
+				}
+				.info {
+					margin-top: 25px;
 				}
 			}
 		}
 	}
 
 	#section-logos {
-		padding-top: 350px;
+		padding-top: 105px;
+		padding-bottom: 40px;
 	}
 
 }
