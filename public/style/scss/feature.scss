@@ -1825,7 +1825,7 @@ main{
 	}
 
 	#section-quotes{
-		margin-top: 100px;
+		margin-top: 70px;
 		.wrapper{
 			display: block;
 		}
@@ -1835,15 +1835,21 @@ main{
 			margin-left: -25px;
 		}
 		.container-quotes{
-			width: 100%;
-			margin-top: 40px;
+			padding: 50px 25px;
+			width: calc(100% + 50px);
+			transform: translateX(-25px);
 			&:after{
-				content: initial;
+				width: 100%;
+				height: calc(100% - 125px);
 			}
 			.obj-1{
-				display: none;
+				position: relative;
+				transform: none;
+				top: auto;
+				left: auto;
 			}
 			.container-el{
+				margin-top: 50px;
 				height: initial;
 				.el{
 					height: initial;
@@ -1852,33 +1858,44 @@ main{
 					position: relative;
 					padding-left: 0px;
 					q{
+						display: block;
 						position: relative;
 						top: initial;
+						text-align: center;
 						transform: translateY(0px);
-						color: $colorMain_3_strong;
+					}
+					&.active{
+						display: block;
 					}
 					.container-infos{
 						margin-top: 40px;
 						position: relative;
 						bottom: initial;
-						.name{
-							color: $colorMain_3_strong;
-						}
-						.job{
-							color: $colorMain_3_strong;
-						}
 					}
 				}
 			}
 			.container-action{
-				margin-top: 40px;
-				display: block;
-				padding-left: 0px;
+				margin-top: 120px;
+				width: 100%;
+				padding: 0px;
+				height: initial;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background-color: transparent;
 				justify-content: center;
 				.container-link{
+					flex: initial;
+					order: 2;
 					width: 100%;
-					margin-bottom: 40px;
+					margin-top: 0px;
+					height: initial;
 					justify-content: center;
+				}
+				.container-nav{
+					order: 1;
+					height: 60px;
+					width: 120px;
 				}
 			}
 		}
