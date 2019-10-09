@@ -679,12 +679,16 @@ main
 		}
 		.container-text{
 			order: 1;
-			padding: 60px 0px 60px 0px;
+			padding: 60px 0px 20px 0px;
 			position: relative;
 			text-align: left;
-			.container-infos{
-				
+			h2{
+				text-align: center;
 			}
+		}
+		.container-btn {
+			display: flex;
+			justify-content: center;
 		}
 		.obj-2{
 			width: 155px;
