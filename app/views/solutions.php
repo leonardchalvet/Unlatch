@@ -67,51 +67,26 @@ $nbT = $document->global_template;
 							foreach ($document->body as $slice) { ?>
 							<div class="feature sectionAnim_container <?php if($slice->primary->feature_highlight == 'yes') { echo 'higlight'; } ?>">
 								<div class="container-illu elAnim__sk">
-									<?php if(empty($slice->primary->feature_img->url)) { 
+									<?php if($slice->primary->feature_iskeleton == 'yes') { ?>
+										<img class="sk-1" src="<?= $slice->primary->feature_img_1->url; ?>" alt="">
+										
+										<?php if(!empty($slice->primary->feature_img_2->url)) { ?>
+											<img class="sk-2" src="<?= $slice->primary->feature_img_2->url; ?>" alt="">
+										<?php } ?>
+										
+										<?php if(!empty($slice->primary->feature_img_3->url)) { ?>
+											<img class="sk-3" src="<?= $slice->primary->feature_img_3->url; ?>" alt="">
+										<?php } ?>
 
-										if($nbT == 1) {
-											if($i == 1) {
-												echo '<img class="sk-1" src="/img/common-solutions/solution-1/1/Bank@4x.png" alt="">
-													  <img class="sk-2" src="/img/common-solutions/solution-1/1/Icon-text-1@4x.png" alt="">
-													  <img class="sk-3" src="/img/common-solutions/solution-1/1/Icon-text-2@4x.png" alt="">';
-											}
-											else if($i == 2) {
-												echo '<img class="sk-1" src="/img/common-solutions/solution-1/2/Dashboard-List@4x.png" alt="">
-													  <img class="sk-2" src="/img/common-solutions/solution-1/2/1@4x.png" alt="">
-													  <img class="sk-3" src="/img/common-solutions/solution-1/2/2@4x.png" alt="">
-													  <img class="sk-4" src="/img/common-solutions/solution-1/2/3@4x.png" alt="">
-													  <img class="sk-5" src="/img/common-solutions/solution-1/2/4@4x.png" alt="">';
-											}
-											else if($i == 3) {
-												echo '<img class="sk-1" src="/img/common-solutions/solution-1/3/Icon-text@4x.png" alt="">
-													  <img class="sk-2" src="/img/common-solutions/solution-1/3/Image@4x.png" alt="">';
-											}
-											else if($i == 4) {
-												echo '<img class="sk-1" src="/img/common-solutions/solution-1/4/Bank@4x.png" alt="">
-													  <img class="sk-2" src="/img/common-solutions/solution-1/4/Layout-Icon@4x.png" alt="">
-													  <img class="sk-3" src="/img/common-solutions/solution-1/4/Pie-global@4x.png" alt="">';
-											}
-										}
-										else if($nbT == 2) {
-											if($i == 1) {
-												echo '<img class="sk-1" src="/img/common-solutions/solution-2/1/Bank@4x.png" alt="">
-												      <img class="sk-2" src="/img/common-solutions/solution-2/1/Icon-text-1@4x.png" alt="">
-													  <img class="sk-3" src="/img/common-solutions/solution-2/1/Icon-text-2@4x.png" alt="">
-													  <img class="sk-4" src="/img/common-solutions/solution-2/1/Sign@4x.png" alt="">';
-											}
-											else if($i == 2) {
-												echo '<img class="sk-1" src="/img/common-solutions/solution-2/2/Image@4x.png" alt="">
-													  <img class="sk-2" src="/img/common-solutions/solution-2/2/Icon-text@4x.png" alt="">';
-											}
-											else if($i == 3) {
-												echo '<img class="sk-1" src="/img/common-solutions/solution-2/3/Bank@4x.png" alt="">
-													  <img class="sk-2" src="/img/common-solutions/solution-2/3/Icon-text@4x.png" alt="">
-													  <img class="sk-3" src="/img/common-solutions/solution-2/3/Notifs@4x.png" alt="">';
-											}
-										}
+										<?php if(!empty($slice->primary->feature_img_4->url)) { ?>
+											<img class="sk-4" src="<?= $slice->primary->feature_img_4->url; ?>" alt="">
+										<?php } ?>
 
-									} else { ?>
-										<img class="img" src="<?= $slice->primary->feature_img->url; ?>" alt="">
+										<?php if(!empty($slice->primary->feature_img_5->url)) { ?>
+											<img class="sk-5" src="<?= $slice->primary->feature_img_5->url; ?>" alt="">
+										<?php } ?>
+									<?php } else { ?>
+										<img class="img" src="<?= $slice->primary->feature_img_1->url; ?>" alt="">
 									<?php } ?>
 								</div>
 								<div class="container-text">

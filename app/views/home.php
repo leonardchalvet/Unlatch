@@ -131,13 +131,13 @@ $document = $WPGLOBAL['document']->data;
             </a>
           </div>
           <div class="container-illu elAnim__sk">
-            <?php if(empty($document->pres_image->url)) { ?>
-              <img class="sk-1 anim__delayMedium_1" src="/img/home/section-pres/skeleton/Dashboard-List@4x.png" alt="">
-              <img class="sk-2 anim__delayMedium_2" src="/img/home/section-pres/skeleton/Bank@4x.png">
-              <img class="sk-3 anim__delayMedium_3" src="/img/home/section-pres/skeleton/Profil@4x.png">
-              <img class="sk-4 anim__delayMedium_4" src="/img/home/section-pres/skeleton/Profil-2@4x.png">
+            <?php if($document->pres_iskeleton == 'yes') { ?>
+              <img class="sk-1" src="<?= $document->pres_img_1->url; ?>" alt="">
+              <img class="sk-2" src="<?= $document->pres_img_2->url; ?>" alt="">
+              <img class="sk-3" src="<?= $document->pres_img_3->url; ?>" alt="">
+              <img class="sk-4" src="<?= $document->pres_img_4->url; ?>" alt="">
             <?php } else { ?>
-              <img class="img" src="<?= $document->pres_image->url; ?>" alt="">
+              <img class="img" src="<?= $document->pres_img_1->url; ?>" alt="">
             <?php } ?>
           </div>
         </div>
