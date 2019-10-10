@@ -330,8 +330,7 @@ main{
 }
 
 #section-logos{
-	padding-top: 260px;
-	padding-bottom: 120px;
+	margin-top: 80px;
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	  	overflow: hidden;
 	}
@@ -352,28 +351,27 @@ main{
 	.container-logos{
 		
 		margin: auto;
-		margin-top: 75px;
+		margin-top: 40px;
 		height: 300px;
 		width: 100%;
 		position: relative;
 		img{
-			opacity: 0.8;
+			opacity: 0.7;
 			position: absolute;
-			top: 0px;
 			left: 0px;
-			/* ONLY SAFARI */
-			@media not all and (min-resolution:.001dpcm)
-			{ @supports (-webkit-appearance:none) {
-
-			    left: initial;
-				right: 0px;
-			}}
+			top: 0px;
 			height: 100%;
-			animation-duration: 30s;
+			animation-duration: 20s;
   			animation-name: slideLoop;
-  			animation-direction: alternate;
   			animation-iteration-count: infinite;
-  			animation-timing-function: linear;
+  			animation-timing-function: cubic-bezier(0.370, 0.000, 0.630, 1.000);
+  			animation-direction: alternate;
+  			/* ONLY SAFARI */
+		@media not all and (min-resolution:.001dpcm)
+		{ @supports (-webkit-appearance:none) {
+			animation-duration: 25s;
+		}}
+			
 		}
 		@keyframes slideLoop {
 		  0% {
@@ -381,9 +379,25 @@ main{
 		  }
 
 		  100% {
-			transform: translateX(calc(-100% + 100vw));
+			transform: translateX(calc(0px - (100% - 100vw)));
+
 		  }
 		}
+		/* ONLY SAFARI */
+		@media not all and (min-resolution:.001dpcm)
+		{ @supports (-webkit-appearance:none) {
+		    @keyframes slideLoop {
+			  0% {
+			    transform: translateX(0%);
+			  }
+
+			  100% {
+				transform: translateX(calc(0px - (50% + 50vw)));
+
+			  }
+			}
+		}}
+
 	}
 }
 
@@ -494,9 +508,10 @@ main{
 		}
 	}
 
-	#section-logos {
-		padding-top: 105px;
-		padding-bottom: 40px;
+	#section-logos{
+		.container-text{
+			padding: 0px 25px 0px 25px;
+		}
 	}
 
 }
