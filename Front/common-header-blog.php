@@ -45,7 +45,6 @@
 				<div class="burger">
 					<div class="line"></div>
 					<div class="line"></div>
-					<div class="line"></div>
 				</div>
 			</div>
 		</div>
