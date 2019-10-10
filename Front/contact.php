@@ -21,7 +21,8 @@
 				<div class="wrapper">
 					<div class="header">
 						<a href="" class="logo">
-							<img src="img/common/logo-black.svg" alt="">
+							<img class="logo-black" src="img/common/logo-black.svg" alt="">
+							<img class="logo-white" src="img/common/logo-white.svg" alt="">
 						</a>
 						<div class="close">
 							<img src="img/common/cross.svg" alt="">
@@ -74,7 +75,7 @@
 					<div class="container-form">
 						<div class="head elAnim__slide anim__delayMedium_1">
 							<h2>
-								Demander une <span>démo</span>
+								Demander une <em>démo</em>
 							</h2>
 							<p>
 								Remplissez le formulaire ci-dessous pour qu'un représentant d'Unlatch vous contacte sous peu afin de discuter de vos besoins et vous présenter nos solutions.

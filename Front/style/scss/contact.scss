@@ -26,12 +26,19 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
+		align-items: center;
 		.logo{
 			cursor: pointer;
 			text-decoration: none;
 			display: block;
 			img{
 				height: 25px;
+			}
+			.logo-black{
+				display: block;
+			}
+			.logo-white{
+				display: none;
 			}
 		}
 		.close{
@@ -163,7 +170,7 @@
 			h2{
 				@include styleH2_light;
 				color: #FFF;
-				span{
+				em{
 					@include styleH2_bold;
 				}
 			}
@@ -300,6 +307,16 @@
 		.wrapper{
 
 		}
+		.header{
+			.logo{
+				.logo-black{
+					display: none;
+				}
+				.logo-white{
+					display: block;
+				}
+			}
+		}
 		.container-text{
 			order: 2;
 			width: 100%;
@@ -324,6 +341,7 @@
 				.container-logo{
 					margin-top: 60px;
 					.list-logo {
+						justify-content: flex-start;
 						img {
 							max-width: calc(100% / 3);
 							padding-right: 10px;
