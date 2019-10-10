@@ -230,6 +230,10 @@ foreach ($articles as $article) {
 
 			$('.header-blog .container-link .search .dropdown').addClass('show');
 
+			if(!$.trim(sData)) {
+				sData = '<a>Aucun résultat</a>';
+			}
+
 			$('#header-blog-desktop .wrapper .container-link .search .dropdown').empty();
 			$('#header-blog-desktop .wrapper .container-link .search .dropdown').append(sData);
 
