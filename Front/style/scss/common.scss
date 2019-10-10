@@ -554,8 +554,10 @@ main
 		    	opacity: 1;
 		    	transform: translateY(0px);
 				transition-delay: $i * 0.1s;
-				
-				
+		    }
+		}
+		@for $i from 1 to 10 {
+		    .sk-#{$i} { 
 		    	animation-name: floating;
 			  	animation-iteration-count: infinite;
 			  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
@@ -567,16 +569,44 @@ main
 
 
 	@keyframes floating {
-		  0%{
+		0%{
 		    transform: translateZ(0) translateY(0px);
-		  } 
-		  50%{
+		} 
+		50%{
 		    transform:translateZ(0) translateY(10px);
-		  } 
-		  100%{
+		} 
+		100%{
 		    transform: translateZ(0) translateY(0px);
-		  }       
+		}       
+	}
+
+	/*
+	&.reach .elAnim__sk,
+	&.active .elAnim__sk{
+		@for $i from 1 to 10 {
+		    .sk-#{$i} { 
+		    	opacity: 1;
+		    	transform: translateY(0px);
+				transition-delay: $i * 0.1s;
+		    }
 		}
+		.sk-1{
+			animation-name: backdrop;
+		  	animation-iteration-count: infinite;
+		  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+			animation-duration: 10s; 
+			animation-delay: 0.1s + 1.2s;
+		}
+		@for $i from 2 to 10 {
+		    .sk-#{$i} { 
+		    	animation-name: floating;
+			  	animation-iteration-count: infinite;
+			  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+				animation-duration: 4s + $i; 
+				animation-delay: $i * 0.1s + 1.2s;
+		    }
+		}
+	}*/
 }
 
 
