@@ -33,7 +33,8 @@ $document = $WPGLOBAL['document']->data;
 				<div class="wrapper">
 					<div class="header">
 						<a href="<?= $document->content_logo_link->url; ?>" class="logo">
-							<img src="<?= $document->content_logo->url; ?>" alt="">
+							<img class="logo-black" src="<?= $document->content_logo_black->url; ?>" alt="">
+							<img class="logo-white" src="<?= $document->content_logo_white->url; ?>" alt="">
 						</a>
 						<a href="<?= $document->content_cross_link->url; ?>" class="close">
 							<img src="/img/common/cross.svg" alt="">
