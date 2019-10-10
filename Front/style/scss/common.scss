@@ -514,11 +514,9 @@ main
 	.elAnim__slide {
 	    opacity: 0;
 	    transform: translateY(40px);
-	    transition: transform 1500ms cubic-bezier(0.070, 0.965, 0.560, 1.000), opacity 1000ms cubic-bezier(0.070, 0.965, 0.560, 1.000);
 	}
 	.elAnim__fade{
 	  	opacity: 0;
-	  	transition: opacity 1000ms cubic-bezier(0.070, 0.965, 0.560, 1.000);
 	}
 	.elAnim__sk{
 		@for $i from 1 to 10 {
@@ -539,11 +537,13 @@ main
 
 	&.reach .elAnim__slide,
 	&.active .elAnim__slide, {
+		transition: transform 1500ms cubic-bezier(0.070, 0.965, 0.560, 1.000), opacity 1000ms cubic-bezier(0.070, 0.965, 0.560, 1.000);
 	    opacity: 1;
 	    transform: translateY(0px);
 	}
 	&.reach .elAnim__fade,
 	&.active .elAnim__fade {
+		transition: opacity 1000ms cubic-bezier(0.070, 0.965, 0.560, 1.000);
 	    opacity: 1;
 	}
 
