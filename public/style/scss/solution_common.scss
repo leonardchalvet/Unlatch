@@ -476,7 +476,7 @@ main{
 	#section-cover{
 
 		&:before{
-			width: 100%;
+			width: 100% !important;
 		}
 		.wrapper{
 			padding-top: 40px;
