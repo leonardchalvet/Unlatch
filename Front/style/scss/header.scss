@@ -384,9 +384,14 @@
 			}
 			.signup{
 				margin-top: 10px;
+				cursor: pointer;
 				
 				@include styleButtonSmall_1;
 				display: inline-flex;
+				background-color: $colorMain_1_strong;
+				.btn-text{
+					color: #FFF;
+				}
 			}
 			
 			
