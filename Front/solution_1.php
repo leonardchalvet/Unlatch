@@ -205,7 +205,9 @@
 							<em>+ de 180 promoteurs</em> immobiliers et <em>commercialisateurs</em> utilisent Unlatch
 						</h2>
 					</div>
+
 					<div class="container-logos elAnim__fade anim__delayMedium_1">
+						<img src="img/common-solutions/section-logos/list-logo.png" alt="">
 						<img src="img/common-solutions/section-logos/list-logo.png" alt="">
 					</div>
 				</div>

@@ -81,6 +81,7 @@
 					</div>
 					<div class="container-logos">
 						<img src="img/common-solutions/section-logos/list-logo.png" alt="">
+						<img src="img/common-solutions/section-logos/list-logo.png" alt="">
 					</div>
 				</div>
 			</section>

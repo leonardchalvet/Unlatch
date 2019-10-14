@@ -179,6 +179,7 @@
 					</div>
 					<div class="container-logos elAnim__fade anim__delayMedium_2">
 						<img src="img/common-solutions/section-logos/list-logo.png" alt="">
+						<img src="img/common-solutions/section-logos/list-logo.png" alt="">
 					</div>
 				</div>
 			</section>
