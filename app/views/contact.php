@@ -110,7 +110,13 @@ $document = $WPGLOBAL['document']->data;
 							<input type="text" name="page" value="<?php echo $link; ?>" style="display: none;">
 							<input type="text" name="allmail" value="<?= trim(RichText::asText($document->all_email)); ?>" style="display: none;">
 							<button>
-								<span class="btn-text"><?= RichText::asText($document->form_button_text); ?></span>
+								<span class="btn-text">
+									<?= RichText::asText($document->form_button_text_1); ?>
+								</span>
+								<span class="btn-load"></span>
+								<span class="btn-validation">
+									<?= RichText::asText($document->form_button_text_2); ?>
+								</span>
 							</button>
 						</form>
 					</div>
@@ -167,11 +173,14 @@ $document = $WPGLOBAL['document']->data;
 		})
 
 		if(returnF) {
-			$('form button').addClass('active');
+			$('form button').addClass('style-load');
 			stateForm = true;
 			setTimeout(function(){
+				$('form button').removeClass('style-load').addClass('style-validation');
+			}, 1600)
+			setTimeout(function(){
 				$('form').submit();
-			}, 500)
+			}, 2000)
 		}
 
 		return false;

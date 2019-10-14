@@ -118,6 +118,7 @@ $document = $WPGLOBAL['document']->data;
           </div>
           <div class="container-logos elAnim__slide anim__delayMedium_2">
             <img src="<?= $document->logos_img->url; ?>" alt="">
+            <img src="<?= $document->logos_img->url; ?>" alt="">
           </div>
         </div>
       </section>

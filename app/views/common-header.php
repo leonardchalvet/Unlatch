@@ -125,3 +125,16 @@ $header = $WPGLOBAL['header']->data;
 		</div>
 	</div>
 </header>
+
+<div id="cookies" class="hide">
+	<div class="text">
+		<p>
+			<?= RichText::asText($header->cookies_text); ?>
+		</p>
+	</div>
+	<div class="container-action">
+		<a class="btn">
+			<div class="btn-text"><?= RichText::asText($header->cookies_btn); ?></div>
+		</a>
+	</div>
+</div>

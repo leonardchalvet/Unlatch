@@ -292,9 +292,67 @@
 				text-align: center;
 				outline: none;
 				@include styleButtonBig_2;
+				position: relative;
 				.btn-text{
 					width: 100%;
 					text-align: center;
+				}
+				.btn-load{
+					opacity: 0;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					height: 20px;
+					width: 20px;
+					border: 2px solid #FFF;
+					border-radius: 10px;
+					border-right: 2px solid transparent;
+					animation-duration: 1s;
+		  			animation-name: slideLoop;
+		  			animation-iteration-count: infinite;
+		  			animation-timing-function: linear;
+					@keyframes slideLoop {
+						0% {
+							transform: translate(-50%, -50%) rotate(0deg);
+						}
+						100% {
+							transform: translate(-50%, -50%) rotate(360deg);
+						}
+					}
+				}
+				.btn-validation{
+					position: absolute;
+					left: 0px;
+					width: 100%;
+					text-align: center;
+					@include styleParagraphMedium;
+			  		font-family: $font_1_semibold;
+			  		color: #FFF;
+
+			  		opacity: 0;
+				}
+
+				&.style-load{
+					.btn-text,
+					.btn-validation{
+						opacity: 0;
+					}
+
+					.btn-load{
+						opacity: 1;
+					}
+				}
+
+				&.style-validation{
+					.btn-text,
+					.style-load{
+						opacity: 0;
+					}
+
+					.btn-validation{
+						opacity: 1;
+					}
 				}
 			}
 		}

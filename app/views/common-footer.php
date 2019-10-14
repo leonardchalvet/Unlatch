@@ -51,7 +51,7 @@ $footer = $WPGLOBAL['footer']->data;
 			<div class="container-cdr">
 				<a href="<?= $footer->mentions_legales_link->url; ?>"><?= RichText::asText($footer->mentions_legales); ?></a>
 				<a href="<?= $footer->privacy_legal_link->url; ?>"><?= RichText::asText($footer->privacy_legal); ?></a>
-				<a><?= RichText::asText($footer->copyright); ?></a>
+				<div><?= RichText::asText($footer->copyright); ?></div>
 			</div>
 
 			<div class="container-share">

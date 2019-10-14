@@ -38,7 +38,7 @@ $nbT = $document->global_template;
 							<span><?= RichText::asText($document->cover_name); ?></span>
 						</div>
 						<?= RichText::asHtml($document->cover_title); ?>
-						<p class="elAnim__slide anim__delayMedium_3">
+						<p class="wrapLine">
 							<?= RichText::asText($document->cover_text); ?>
 						</p>
 						<div class="container-btn elAnim__slide anim__delayMedium_4">
@@ -91,7 +91,7 @@ $nbT = $document->global_template;
 								</div>
 								<div class="container-text">
 									<?= RichText::asHtml($slice->primary->feature_title); ?>
-									<p class="elAnim__slide anim__delayMedium_2">
+									<p class="wrapLine">
 										<?= RichText::asText($slice->primary->feature_text); ?>
 									</p>
 									<ul>
@@ -165,6 +165,7 @@ $nbT = $document->global_template;
 					</div>
 					<div class="container-logos elAnim__fade anim__delayMedium_2">
 						<img src="<?= $document->logos_img->url; ?>" alt="">
+						<img src="<?= $document->logos_img->url; ?>" alt="">
 					</div>
 				</div>
 			</section>
@@ -200,9 +201,9 @@ $nbT = $document->global_template;
 	</body>
 </html>
 <script type="text/javascript">
-	$('#section-cover h1').addClass('elAnim__slide anim__delayMedium_2');
-	$('#section-features h2').addClass('elAnim__slide anim__delayMedium_1');
+	$('#section-cover h1').addClass('wrapLine');
+	$('#section-features h2').addClass('wrapLine');
 	$('#section-features h3').addClass('elAnim__slide anim__delayMedium_1');
-	$('#section-logos h2').addClass('elAnim__slide anim__delayMedium_1');
+	$('#section-logos h2').addClass('wrapLine');
 	$('#common-section-banner h2').addClass('elAnim__slide anim__delayMedium_1');
 </script>
