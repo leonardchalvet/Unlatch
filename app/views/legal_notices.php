@@ -46,6 +46,7 @@ $document = $WPGLOBAL['document']->data;
 					</div>
 					<div class="container-logos">
 						<img src="<?= $document->logos_img->url; ?>" alt="">
+						<img src="<?= $document->logos_img->url; ?>" alt="">
 					</div>
 				</div>
 			</section>
