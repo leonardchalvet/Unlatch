@@ -89,7 +89,7 @@ $document = $WPGLOBAL['document']->data;
                 </div>
                 <div class="text">
                   <h3 class="elAnim__slide anim__delayMedium_<?php echo ($i + 2); ?>"><?= RichText::asText($job->job_title_job); ?></h3>
-                  <p class="elAnim__slide anim__delayMedium_<?php echo ($i + 3); ?>">
+                  <p class="wrapLine">
                     <?= RichText::asText($job->job_text_job); ?>
                   </p>
                   <a href="<?= $job->job_link_job->url; ?>" class="elAnim__slide anim__delayMedium_<?php echo ($i + 4); ?>">
@@ -119,7 +119,7 @@ $document = $WPGLOBAL['document']->data;
           <div class="container-text">
             <?= RichText::asHtml($document->pres_title); ?>
             <?= RichText::asHtml($document->pres_text); ?>
-            <a class="elAnim__slide anim__delayMedium_3 openLightbox">
+            <a class="elAnim__slide anim__delayMedium_6 openLightbox">
               <span class="link-text">
                 <?= RichText::asText($document->pres_link_text); ?>
               </span>
@@ -153,7 +153,7 @@ $document = $WPGLOBAL['document']->data;
               <?php } ?>
               <div class="el el-<?php echo $i; ?> elAnim__slide anim__delayMedium_<?php echo $i; ?>">
                 <h4><?= RichText::asText($document->stats_stat[($i-1)]->stat_title); ?></h4>
-                <p><?= RichText::asText($document->stats_stat[($i-1)]->stat_text); ?></p>
+                <p class="wrapLine"><?= RichText::asText($document->stats_stat[($i-1)]->stat_text); ?></p>
               </div>
               <?php
               if ( ($i % 2) == 0 ) { ?>
@@ -176,6 +176,9 @@ $document = $WPGLOBAL['document']->data;
             <?php foreach ($document->quotes_quotes as $quote) { ?>
               <img src="<?= $quote->quotes_photo->url; ?>" alt="">
             <?php } ?>
+            <div class="container-progressbar">
+              <div class="bar"></div>
+            </div>
           </div>
           <div class="container-quotes elAnim__fade anim__delayMedium_2">
             <img class="obj-1" src="/img/common/icn-quote-white.svg" alt="">
@@ -307,11 +310,11 @@ $document = $WPGLOBAL['document']->data;
 
     <script type="text/javascript" src="/script/minify/index-min.js"></script>
     <script type="text/javascript">
-      $('#section-cover h1').addClass('elAnim__slide anim__delayMedium_1');
-      $('#section-cover p').addClass('elAnim__slide anim__delayMedium_3');
+      $('#section-cover h1').addClass('wrapLine');
+      $('#section-cover p').addClass('wrapLine');
       $('#section-metier h2').addClass('elAnim__slide anim__delayMedium_1');
-      $('#section-pres h2').addClass('elAnim__slide anim__delayMedium_1');
-      $('#section-pres p').addClass('elAnim__slide anim__delayMedium_2');
+      $('#section-pres h2').addClass('elAnim__slide anim__delayMedium_1 wrapLine');
+      $('#section-pres p').addClass('elAnim__slide anim__delayMedium_2 wrapLine');
       $('#section-features h2').addClass('elAnim__slide anim__delayMedium_1');
       $('#common-section-banner h2').addClass('elAnim__slide anim__delayMedium_2');
     </script>

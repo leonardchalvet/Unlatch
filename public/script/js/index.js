@@ -252,11 +252,12 @@ function sectionFtrCaroussel_mobile(Delay, Section, El, Img){
 
 };
 
-function sectionQuotesCaroussel(Delay, Section, El, Img, Nav){
+function sectionQuotesCaroussel(Delay, Section, El, Img, Nav, Progress){
 
 	El = Section + ' ' + El;
 	Img = Section + ' ' + Img;
 	Nav = Section + ' ' + Nav;
+	Progress = Section + ' ' + Progress;
 
 	var valDelay = 0;
 	var numberEl = $(El).length;
@@ -275,6 +276,12 @@ function sectionQuotesCaroussel(Delay, Section, El, Img, Nav){
 		};
 
 		if (countEl <= numberEl && countEl >= 1) {
+
+			$(Progress).removeClass('active');
+
+			setTimeout(function() {
+				$(Progress).addClass('active');
+			}, 50);
 
 			$(El + '.active').removeClass('active');
 			$(elImg + '.active').removeClass('active').addClass('hide-after');
@@ -306,6 +313,7 @@ function sectionQuotesCaroussel(Delay, Section, El, Img, Nav){
 		$(El + ':nth-child(1)').addClass('active');
 		$(Img + ':nth-child(1)').addClass('active');
 		$(Img + '.active').nextAll().addClass('hide-before');
+		$(Progress).addClass('active');
 	};
 
 	let state = false;
@@ -408,11 +416,12 @@ $(window).on('load', function() {
 
 	var iframe = $('#section-cover iframe');
 	var player = new Vimeo.Player(iframe);
+	iframe.closest('.container-video').addClass('show');
 
-
+	/*
 	player.on('play', function(data) {
-	    iframe.closest('.container-video').addClass('show');
-	});
+	    
+	});*/
 
 
 	/* SECTION LOGO CAROUSSEL */
@@ -436,7 +445,8 @@ $(window).on('load', function() {
 			'#section-quotes',  
 			".container-el .el",
 			".container-img img", 
-			'.container-nav .nav'
+			'.container-nav .nav',
+			'.container-progressbar .bar'
 		);
 	} else {
 	  	sectionFtrCaroussel_mobile(
