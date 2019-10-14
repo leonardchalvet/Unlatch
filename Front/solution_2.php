@@ -139,20 +139,23 @@
 					<div class="container-img elAnim__slide anim__delayMedium_1">
 						<img src="img/common/section-quotes/quote-img-4.jpg" alt="">
 					</div>
-					<div class="container-quotes">
-						<img class="obj-1 elAnim__slide anim__delayMedium_2" src="img/common/icn-quote-red.svg" alt="">
+					<div class="container-quotes elAnim__slide anim__delayMedium_1">
+						<img class="obj-1 elAnim__slide anim__delayMedium_1" src="img/common/icn-quote-red.svg" alt="">
 						<div class="container-el">
 							<div class="el">
-								<q class="elAnim__slide anim__delayMedium_3">
-									Dans un environnement où la digitalisation du parcours clients est toujours plus présente, nous sommes convaincus que la dématérialisation des outils de vente est un enjeu majeur de notre métier. C’est pour cette raison que nous nous sommes rapprochés d'Unlatch : satisfaire nos clients acquéreurs et répondre aux besoins de nos clients promoteurs
-								</q>
-								<div class="container-infos elAnim__slide anim__delayMedium_4">
-									<div class="name">Bruno Goldstein & Benjamin Bisson</div>
-									<div class="job">Co-fondateurs, Inovefa</div>
+								<div class="quote">
+									<q class="elAnim__slide anim__delayMedium_2">
+										En tant que promoteur, la solution d’Unlatch répond à un vrai besoin de simplification de gestion des dossiers clients. Elle permet de gagner beaucoup de temps et de mieux gérer la relation avec les notaires et les acquéreurs.
+									</q>
+								</div>
+								
+								<div class="container-infos elAnim__slide anim__delayMedium_3">
+									<div class="name">Jérôme Copolata & Clément Guillemin</div>
+									<div class="job">Co-Fondateurs, Promège </div>
 								</div>
 							</div>
 						</div>
-						<div class="container-action elAnim__slide anim__delayMedium_5">
+						<div class="container-action elAnim__slide anim__delayMedium_4">
 							<div class="container-link">
 								<a href="">
 									<span class="link-text">
