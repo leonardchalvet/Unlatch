@@ -362,7 +362,7 @@
 <div id="cookies" class="hide">
 	<div class="text">
 		<p>
-			En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies. <a href="">En savoir plus</a>
+			En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies.
 		</p>
 	</div>
 	<div class="container-action">

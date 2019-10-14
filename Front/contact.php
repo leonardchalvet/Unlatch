@@ -139,6 +139,10 @@
 
 							<button>
 								<span class="btn-text">Me contacter</span>
+								<span class="btn-load"></span>
+								<span class="btn-validation">
+									Envoyé !
+								</span>
 							</button>
 						</form>
 					</div>
