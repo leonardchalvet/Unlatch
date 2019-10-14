@@ -857,6 +857,9 @@ main
 	&.hide{
 		transform: translateX(calc(100% + 50px));
 	}
+	&.displayNone{
+		display: none;
+	}
 }
 @media screen and (max-width: $breakPoint_tablet){
 	#cookies{
