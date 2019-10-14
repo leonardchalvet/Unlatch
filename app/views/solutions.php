@@ -127,20 +127,22 @@ $nbT = $document->global_template;
 					<div class="container-img elAnim__slide anim__delayMedium_1">
 						<img src="<?= $document->quotes_img->url; ?>" alt="">
 					</div>
-					<div class="container-quotes">
+					<div class="container-quotes elAnim__fade anim__delayMedium_1">
 						<img class="obj-1 elAnim__slide anim__delayMedium_2" src="/img/common/icn-quote-red.svg" alt="">
 						<div class="container-el">
 							<div class="el">
-								<q class="elAnim__slide anim__delayMedium_3">
-								 	<?= RichText::asText($document->quotes_text); ?>
-								</q>
-								<div class="container-infos elAnim__slide anim__delayMedium_4">
+								<div class="quote">
+									<q class="elAnim__slide anim__delayMedium_2">
+									 	<?= RichText::asText($document->quotes_text); ?>
+									</q>
+								</div>
+								<div class="container-infos elAnim__slide anim__delayMedium_3">
 									<div class="name"><?= RichText::asText($document->quotes_names); ?></div>
 									<div class="job"><?= RichText::asText($document->quotes_job); ?></div>
 								</div>
 							</div>
 						</div>
-						<div class="container-action elAnim__slide anim__delayMedium_5">
+						<div class="container-action elAnim__slide anim__delayMedium_4">
 							<div class="container-link">
 								<a href="<?= $document->quotes_link->url; ?>">
 									<span class="link-text">

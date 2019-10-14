@@ -171,7 +171,6 @@ $document = $WPGLOBAL['document']->data;
 		<?php include('common-footer.php') ?>
 
 		<script type="text/javascript" src="/script/minify/common-min.js"></script>
-
 	</body>
 </html>
 <script type="text/javascript">

@@ -64,6 +64,4 @@ $footer = $WPGLOBAL['footer']->data;
 		</div>
 
 	</div>
-
-
 </footer>

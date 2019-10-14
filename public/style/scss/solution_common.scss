@@ -340,6 +340,7 @@ main{
 			background-color: $colorMain_3_strong;
 		}
 		.obj-1{
+			display: block;
 			position: absolute;
 			left: 100px;
 			top: 85px;
@@ -358,13 +359,18 @@ main{
 				height: 100%;
 				width: 100%;
 				transition: all 0.5s ease;
-				q{
+				.quote{
 					position: absolute;
 					top: 50%;
 					transform: translateY(-50%);
-					@include styleQuote;
-					color: #FFF;
+					q{
+						display: block;
+						top: 50%;
+						@include styleQuote;
+						color: #FFF;
+					}
 				}
+				
 				.container-infos{
 					width: 250px;
 					position: absolute;
@@ -671,13 +677,18 @@ main{
 					left: initial;
 					position: relative;
 					padding-left: 0px;
-					q{
-						display: block;
-						position: relative;
-						top: initial;
-						text-align: center;
+					.quote{
 						transform: translateY(0px);
+						position: relative;
+						q{
+							display: block;
+							
+							top: initial;
+							text-align: center;
+							
+						}
 					}
+					
 					&.active{
 						display: block;
 					}

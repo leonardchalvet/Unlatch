@@ -138,3 +138,52 @@ $header = $WPGLOBAL['header']->data;
 		</a>
 	</div>
 </div>
+
+<script type="text/javascript">
+	function createCookie(name, value, days) {
+	    let expires;
+
+	    if (days) {
+	        let date = new Date();
+	        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+	        expires = "; expires=" + date.toGMTString();
+	    } else {
+	        expires = "";
+	    }
+	    document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
+	}
+
+	function readCookie(name) {
+	    let nameEQ = encodeURIComponent(name) + "=";
+	    let ca = document.cookie.split(';');
+	    for (let i = 0; i < ca.length; i++) {
+	        let c = ca[i];
+	        while (c.charAt(0) === ' ')
+	            c = c.substring(1, c.length);
+	        if (c.indexOf(nameEQ) === 0)
+	            return decodeURIComponent(c.substring(nameEQ.length, c.length));
+	    }
+	    return null;
+	}
+
+	function eraseCookie(name) {
+	    createCookie(name, "", -1);
+	}
+
+	window.addEventListener("DOMContentLoaded", (event) => {
+		if(readCookie('cookie') == null) {
+			createCookie('cookie', false, 30);
+		}
+
+		console.log(readCookie('cookie'));
+
+		if(readCookie('cookie') == 'true') {
+			document.getElementById('cookies').classList.add('displayNone');
+		}
+		
+		document.querySelector("#cookies .container-action .btn .btn-text").addEventListener("click", function( event ) {
+			createCookie('cookie', true, 30);
+		});
+	})
+
+</script>
