@@ -357,3 +357,17 @@
 		</div>
 	</div>
 </header>
+
+
+<div id="cookies" class="hide">
+	<div class="text">
+		<p>
+			En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies. <a href="">En savoir plus</a>
+		</p>
+	</div>
+	<div class="container-action">
+		<a class="btn">
+			<div class="btn-text">J'accepte</div>
+		</a>
+	</div>
+</div>

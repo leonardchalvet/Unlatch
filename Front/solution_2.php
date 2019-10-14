@@ -24,10 +24,10 @@
 						<div class="title elAnim__slide anim__delayMedium_1">
 							<span>COMMERCIALISATEUR</span>
 						</div>
-						<h1 class="elAnim__slide anim__delayMedium_2">
+						<h1 class="wrapLine">
 							Apportez un <em>nouveau service</em> à vos clients.
 						</h1>
-						<p class="elAnim__slide anim__delayMedium_3">
+						<p class="wrapLine">
 							Unlatch vous permet de rester organisé et de faciliter votre reporting auprès de vos clients promoteurs immobiliers.
 						</p>
 						<div class="container-btn elAnim__slide anim__delayMedium_4">
@@ -49,7 +49,7 @@
 			<section id="section-features">
 				<div class="wrapper">
 					<div class="container-text sectionAnim_container">
-						<h2 class="elAnim__slide anim__delayMedium_1">
+						<h2 class="wrapLine">
 							<em>Du lead jusqu’à la livraison</em> du bien immobilier, notre solution s’occupe de toutes les tâches chronophages
 						</h2>
 					</div>
@@ -65,7 +65,7 @@
 								<h3 class="elAnim__slide anim__delayMedium_2">
 									<em>Simplifiez la pipeline</em> de vos ventes.
 								</h3>
-								<p class="elAnim__slide anim__delayMedium_3">
+								<p class="wrapLine">
 									Unlatch optimise le traitement de vos prospects et vous permet de signer les contrats de réservation plus rapidement. Vous pouvez gérez toute votre activité sur une plateforme unique qui centralise l’ensemble des informations. 
 								</p>
 								<ul>
@@ -93,7 +93,7 @@
 								<h3 class="elAnim__slide anim__delayMedium_1">
 									<em>Collaborez</em> avec le promoteur et les acheteurs.
 								</h3>
-								<p class="elAnim__slide anim__delayMedium_2">
+								<p class="wrapLine">
 									Unlatch à été conçu comme une plateforme innovante mais aussi collaborative afin de rassembler autour d’un même outil les différentes personnes qui participent à la vente immobilière (commercialisateur, promoteur, notaire, acheteur, etc.)
 								</p>
 								<ul>
@@ -120,7 +120,7 @@
 								<h3 class="elAnim__slide anim__delayMedium_1">
 									<em>Rendez heureux</em> vos clients acquéreurs.
 								</h3>
-								<p class="elAnim__slide anim__delayMedium_2">
+								<p class="wrapLine">
 									Avec Unlatch, vos clients bénéficient dès la réservation du bien immobilier d’un espace personnalisé à vos couleurs pour compléter leur dossier et suivre l’avancement des travaux.
 								</p>
 								<ul>
@@ -173,7 +173,7 @@
 			<section id="section-logos" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="container-text">
-						<h2 class="elAnim__slide anim__delayMedium_1">
+						<h2 class="wrapLine">
 							<em>+ de 180 promoteurs</em> immobiliers et <em>commercialisateurs</em> utilisent Unlatch
 						</h2>
 					</div>

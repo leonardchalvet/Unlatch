@@ -27,12 +27,12 @@
 			<section id="section-cover" class="sectionAnim_container">
 				<div class="wrapper">
 					<div class="container-text">
-						<h1 class="elAnim__slide anim__delayMedium_1">
+						<h1 class="wrapLine">
 							Digitalisez<br>vos ventes
 							<em>immobilières.</em>
 						</h1>
 						<div class="sep elAnim__slide anim__delayMedium_2"></div>
-						<p class="elAnim__slide anim__delayMedium_3">
+						<p class="wrapLine">
 							Unlatch s'occupe des tâches chronophages pour vous permettre de vous concentrer sur vos objectifs : vendre et satisfaire vos clients.
 						</p>
 						<div class="container-btn elAnim__slide anim__delayMedium_4">
@@ -44,6 +44,7 @@
 					<div class="container-video">
 						<img class="obj-1" src="img/home/section-cover/obj-1.svg" alt="">
 						<img class="obj-1-mobile" src="img/home/section-cover/obj-1-mobile.svg" alt="">
+						<img class="poster" src="img/home/section-cover/poster.png" alt="">
 						<iframe src="https://player.vimeo.com/video/359528185?controls=0&background=1" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
@@ -213,7 +214,7 @@
 							</div>
 							<div class="text">
 								<h3 class="elAnim__slide anim__delayMedium_3">Promoteur Immobilier</h3>
-								<p class="elAnim__slide anim__delayMedium_4">
+								<p class="wrapLine">
 									Unlatch s'adapte à la taille de votre structure et à votre volume de ventes.
 								</p>
 								<a href="" class="elAnim__slide anim__delayMedium_5">
@@ -234,7 +235,7 @@
 							</div>
 							<div class="text">
 								<h3 class="elAnim__slide anim__delayMedium_4">Commercialisateur</h3>
-								<p class="elAnim__slide anim__delayMedium_5">
+								<p class="wrapLine">
 									Améliorez vos process et apportez un nouveau service à vos clients promoteurs.
 								</p>
 								<a href="" class="elAnim__slide anim__delayMedium_6">
@@ -260,15 +261,15 @@
 				</div>
 				<div class="wrapper">
 					<div class="container-text">
-						<h2 class="elAnim__slide anim__delayMedium_1">
-							Adoptez un <span>service innovant et collaboratif</span> qui simplifie la vente dans le neuf
+						<h2 class="elAnim__slide anim__delayMedium_1 wrapLine">
+							Adoptez un <em>service innovant et collaboratif</em> qui simplifie la vente dans le neuf
 						</h2>
-						<p class="elAnim__slide anim__delayMedium_2">
+						<p class="elAnim__slide anim__delayMedium_2 wrapLine">
 							Avec un design simple, ergonomique et adapté à tous types de supports (ordinateur, Smartphone, tablettes), notre logiciel dédié à la promotion immobilière vous aide à rationaliser toutes vos transactions :<br> 
 							<br>
 							CRM, espace prescripteurs, digitalisation de la documentation (signature électronique et recommandé électronique qualifié eIDAS), automatisation des processus manuels (alertes, relances, etc.), espace de travail collaboratif entre les différents acteurs (promoteur, vendeur, CGP, prescripteur, notaire, etc) et compte client pour offrir à vos acquéreurs une expérience d’achat 100 % digitale.
 						</p>
-						<a class="elAnim__slide anim__delayMedium_3">
+						<a class="elAnim__slide anim__delayMedium_6">
 							<span class="link-text">
 								Télécharger la plaquette
 							</span>
@@ -297,7 +298,7 @@
 									<h4>
 										1er
 									</h4>
-									<p>
+									<p class="wrapLine">
 										En moins de deux ans, Unlatch est devenu le leader de la VEFA digitalisée.
 									</p>
 								</div>
@@ -305,7 +306,7 @@
 									<h4>
 										98%
 									</h4>
-									<p>
+									<p class="wrapLine">
 										Des biens immobiliers présents sur Unlatch sont vendus grâce à la signature électronique.
 									</p>
 								</div>
@@ -318,7 +319,7 @@
 									<h4>
 										180
 									</h4>
-									<p>
+									<p class="wrapLine">
 										Promoteurs immobiliers et commercialisateurs utilisent notre solution pour digitaliser leurs ventes immobilières.
 									</p>
 								</div>
@@ -326,7 +327,7 @@
 									<h4>
 										25%
 									</h4>
-									<p>
+									<p class="wrapLine">
 										Des biens immobiliers disponibles sur Unlatch sont vendus à distance.
 									</p>
 								</div>
@@ -338,7 +339,7 @@
 									<h4>
 										4,5mds €
 									</h4>
-									<p>
+									<p class="wrapLine">
 										De biens immobiliers vendus sur la plateforme.
 									</p>
 								</div>
@@ -346,7 +347,7 @@
 									<h4>
 										10k €
 									</h4>
-									<p>
+									<p class="wrapLine">
 										D'économie en moyenne toutes les 100 réservations en passant à la signature électronique.
 									</p>
 								</div>
@@ -367,6 +368,9 @@
 						<img src="img/common/section-quotes/quote-img-1.jpg" alt="">
 						<img src="img/common/section-quotes/quote-img-2.png" alt="">
 						<img src="img/common/section-quotes/quote-img-3.png" alt="">
+						<div class="container-progressbar">
+							<div class="bar"></div>
+						</div>
 					</div>
 					<div class="container-quotes elAnim__fade anim__delayMedium_2">
 						<img class="obj-1" src="img/common/icn-quote-white.svg" alt="">

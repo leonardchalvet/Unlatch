@@ -113,7 +113,7 @@
 			<div class="container-cdr">
 				<a href="">Mentions Légales</a>
 				<a href="">Privacy & Legal Documentation</a>
-				<a >©2019Unlatch. All rights Reserved</a>
+				<div>©2019Unlatch. All rights Reserved</div>
 			</div>
 
 			<div class="container-share">

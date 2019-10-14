@@ -86,6 +86,25 @@ main{
 		bottom: 0px;
 		height: 100%;
 	}
+
+	&.reach{
+		.container-text{
+			h1.wrapLine{
+				@for $i from 1 to 20 {
+					>span:nth-child(#{$i}) {
+						transition-delay: $i * 0.1s; 
+					}
+				}
+			}
+			p.wrapLine{
+				@for $i from 1 to 20 {
+					>span:nth-child(#{$i}) {
+						transition-delay: 0.2s + $i * 0.1s; 
+					}
+				}
+			}
+		}
+	}
 }
 
 #section-features{
@@ -239,6 +258,32 @@ main{
 				.obj-2{
 					position: absolute;
 					width: 230px;
+				}
+			}
+
+			&.reach{
+				.container-text{
+					p.wrapLine{
+						@for $i from 1 to 20 {
+							>span:nth-child(#{$i}) {
+								transition-delay: 0.2s + $i * 0.1s; 
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.wrapper{
+		>.container-text{
+			&.reach{
+				h2{
+					@for $i from 1 to 20 {
+						>span:nth-child(#{$i}) {
+							transition-delay: 0.1s + $i * 0.1s; 
+						}
+					}
 				}
 			}
 		}
@@ -478,6 +523,18 @@ main{
 			}
 		}}
 
+	}
+
+	&.reach{
+		.container-text{
+			h2.wrapLine{
+				@for $i from 1 to 20 {
+					>span:nth-child(#{$i}) {
+						transition-delay: $i * 0.1s; 
+					}
+				}
+			}
+		}
 	}
 }
 

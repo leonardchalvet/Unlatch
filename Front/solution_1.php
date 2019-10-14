@@ -24,10 +24,10 @@
 						<div class="title elAnim__slide anim__delayMedium_1">
 							<span>PROMOTEUR IMMOBILIER</span>
 						</div>
-						<h1 class="elAnim__slide anim__delayMedium_2">
+						<h1 class="wrapLine">
 							Libérez<br>votre <em>productivité.</em>
 						</h1>
-						<p class="elAnim__slide anim__delayMedium_3">
+						<p class="wrapLine">
 							Unlatch propose la solution la plus complète du marché pour repenser totalement la VEFA.
 						</p>
 						<div class="container-btn elAnim__slide anim__delayMedium_4">
@@ -50,7 +50,7 @@
 			<section id="section-features">
 				<div class="wrapper">
 					<div class="container-text sectionAnim_container">
-						<h2 class="elAnim__slide anim__delayMedium_1">
+						<h2 class="wrapLine">
 							<em>Du lead jusqu’à la livraison</em> du bien immobilier, notre solution s’occupe de toutes les tâches chronophages
 						</h2>
 					</div>
@@ -65,7 +65,7 @@
 								<h3 class="elAnim__slide anim__delayMedium_2">
 									Accélérez vos <em>ventes immobilières.</em>
 								</h3>
-								<p class="elAnim__slide anim__delayMedium_3">
+								<p class="wrapLine">
 									L’objectif de Unlatch est de réduire le délai entre la réservation et la signature de l’acte authentique de vente chez le notaire. Vos commerciaux ne pourront plus s’en passer :
 								</p>
 								<ul>
@@ -96,7 +96,7 @@
 								<h3 class="elAnim__slide anim__delayMedium_1">
 									<em>Collaborez</em> avec les différents intervenants.
 								</h3>
-								<p class="elAnim__slide anim__delayMedium_2">
+								<p class="wrapLine">
 									Véritable plateforme collaborative. Unlatch facilite le travail et le suivi des différents intervenants (dirigeants, vendeurs, administration des ventes, commercialisateurs externes, notaires).
 								</p>
 								<ul>
@@ -124,7 +124,7 @@
 								<h3 class="elAnim__slide anim__delayMedium_1">
 									<em>Rendez heureux</em> vos clients acquéreurs.
 								</h3>
-								<p class="elAnim__slide anim__delayMedium_2">
+								<p class="wrapLine">
 									Avec Unlatch, vos clients bénéficient dès la réservation du bien immobilier d’un espace personnalisé à vos couleurs pour compléter leur dossier et suivre l’avancement des travaux.
 								</p>
 								<ul>
@@ -148,7 +148,7 @@
 								<h3 class="elAnim__slide anim__delayMedium_1">
 									<em>Analysez finement</em> vos ventes immobilières.
 								</h3>
-								<p class="elAnim__slide anim__delayMedium_2">
+								<p class="wrapLine">
 									Créez facilement des dashboards incroyables pour piloter votre activité commerciale. Générez des reporting en pdf pour vos présentations.
 								</p>
 								<ul>
@@ -171,7 +171,7 @@
 						<img class="obj-1 elAnim__slide anim__delayMedium_1" src="img/common/icn-quote-red.svg" alt="">
 						<div class="container-el">
 							<div class="el">
-								<q class="elAnim__slide anim__delayMedium_1">
+								<q class="wrapLine">
 									En tant que promoteur, la solution d’Unlatch répond à un vrai besoin de simplification de gestion des dossiers clients. Elle permet de gagner beaucoup de temps et de mieux gérer la relation avec les notaires et les acquéreurs.
 								</q>
 								<div class="container-infos elAnim__slide anim__delayMedium_2">
@@ -200,8 +200,8 @@
 
 			<section id="section-logos" class="sectionAnim_container">
 				<div class="wrapper">
-					<div class="container-text elAnim__slide anim__delayMedium_1">
-						<h2>
+					<div class="container-text">
+						<h2 class="wrapLine">
 							<em>+ de 180 promoteurs</em> immobiliers et <em>commercialisateurs</em> utilisent Unlatch
 						</h2>
 					</div>
