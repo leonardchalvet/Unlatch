@@ -365,7 +365,12 @@ main{
 					transform: translateY(-50%);
 					q{
 						display: block;
-						top: 50%;
+						&:before{
+							content: "";
+						}
+						&:after{
+							content: "";
+						}
 						@include styleQuote;
 						color: #FFF;
 					}
@@ -452,6 +457,22 @@ main{
 						background-color: #FFF;
 						svg{
 							stroke: $colorMain_1_strong;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.reach{
+		.container-quotes{
+			.container-el{
+				.quote{
+					q.wrapLine{
+						@for $i from 1 to 20 {
+							>span:nth-child(#{$i}) {
+								transition-delay: 0.4s + $i * 0.1s; 
+							}
 						}
 					}
 				}

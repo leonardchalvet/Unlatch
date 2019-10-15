@@ -132,11 +132,11 @@ $nbT = $document->global_template;
 						<div class="container-el">
 							<div class="el">
 								<div class="quote">
-									<q class="elAnim__slide anim__delayMedium_2">
+									<q class="wrapLine">
 									 	<?= RichText::asText($document->quotes_text); ?>
 									</q>
 								</div>
-								<div class="container-infos elAnim__slide anim__delayMedium_3">
+								<div class="container-infos elAnim__slide anim__delayMedium_5">
 									<div class="name"><?= RichText::asText($document->quotes_names); ?></div>
 									<div class="job"><?= RichText::asText($document->quotes_job); ?></div>
 								</div>

@@ -186,10 +186,12 @@ $document = $WPGLOBAL['document']->data;
             <div class="container-el">
               <?php foreach ($document->quotes_quotes as $quote) { ?>
                 <div class="el">
-                  <q>
-                    <?= RichText::asText($quote->quotes_text); ?>
-                  </q>
-                  <div class="container-infos">
+                  <div class="quote">
+                    <q class="wrapLine">
+                      <?= RichText::asText($quote->quotes_text); ?>
+                    </q>
+                  </div>
+                  <div class="container-infos elAnim__slide anim__delayMedium_4">
                     <div class="name"><?= RichText::asText($quote->quotes_name); ?></div>
                     <div class="job"><?= RichText::asText($quote->quotes_job); ?></div>
                   </div>
