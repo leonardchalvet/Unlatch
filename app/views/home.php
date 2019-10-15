@@ -5,6 +5,44 @@ $document = $WPGLOBAL['document']->data;
 <html>
   <head>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149848357-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-149848357-1');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TBP9M7J');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '706181269862400'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=706181269862400&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"11012398"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+
+
     <title><?= RichText::asText($document->global_title); ?></title>
 
     <meta name="description" content="<?= RichText::asText($document->global_description); ?>" />
@@ -29,6 +67,11 @@ $document = $WPGLOBAL['document']->data;
   
   <body>
 
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBP9M7J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <?php include('common-header.php') ?>
 
     <?php include('common-lightbox.php') ?>
@@ -44,6 +87,7 @@ $document = $WPGLOBAL['document']->data;
             <div class="container-btn elAnim__slide anim__delayMedium_4">
               <a href="<?= $document->cover_btn_link->url; ?>">
                 <span class="btn-text"><?= RichText::asText($document->cover_btn_txt); ?></span>
+                <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1118217&conversionId=1434073&fmt=gif" />
               </a>
             </div>
           </div>
@@ -129,6 +173,7 @@ $document = $WPGLOBAL['document']->data;
                   <use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
                 </svg>
               </span>
+              <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1118217&conversionId=1434081&fmt=gif" />
             </a>
           </div>
           <div class="container-illu elAnim__sk">
@@ -166,6 +211,7 @@ $document = $WPGLOBAL['document']->data;
           <div class="container-btn elAnim__slide anim__delayMedium_6">
             <a href="<?= $document->stats_button_link->url; ?>">
               <span class="btn-text"><?= RichText::asText($document->stats_button); ?></span>
+              <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1118217&conversionId=1434073&fmt=gif" />
             </a>
           </div>
         </div>
@@ -278,6 +324,7 @@ $document = $WPGLOBAL['document']->data;
                         <use xlink:href="/img/common/arrow-1.svg#arrow-1"></use>
                       </svg>
                     </span>
+                    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1118217&conversionId=1434081&fmt=gif" />
                   </a>
                 </div>
               <?php $i++; } ?>
@@ -298,6 +345,7 @@ $document = $WPGLOBAL['document']->data;
             <div class="container-btn elAnim__slide anim__delayMedium_3">
               <a href="<?= $document->banner_button_link->url; ?>" >
                 <span class="btn-text"><?= RichText::asText($document->banner_buttton_text); ?></span>
+                <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1118217&conversionId=1434073&fmt=gif" />
               </a>
             </div>
             <div class="container-infos elAnim__slide anim__delayMedium_4">
@@ -321,6 +369,21 @@ $document = $WPGLOBAL['document']->data;
       $('#section-features h2').addClass('elAnim__slide anim__delayMedium_1');
       $('#common-section-banner h2').addClass('elAnim__slide anim__delayMedium_2');
     </script>
+
+    <script type="text/javascript">
+    _linkedin_partner_id = "1118217";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script><script type="text/javascript">
+    (function(){var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);})();
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1118217&fmt=gif" />
+    </noscript>
 
   </body>
 </html>

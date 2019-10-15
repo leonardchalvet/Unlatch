@@ -330,7 +330,7 @@ main{
 }
 
 #section-logos{
-	margin-top: 80px;
+	margin-top: 250px;
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	  	overflow: hidden;
 	}
@@ -349,7 +349,6 @@ main{
 		}
 	}
 	.container-logos{
-		
 		margin: auto;
 		margin-top: 40px;
 		height: 300px;
@@ -359,6 +358,7 @@ main{
 		flex-flow: row wrap;
 		flex-wrap: nowrap;
 		align-items: flex-start;
+		background-color: #FFF;
 		img{
 			opacity: 0.7;
 			display: block;
