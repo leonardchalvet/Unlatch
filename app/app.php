@@ -74,31 +74,58 @@ $app->get('/{lg}/livesearch', function ($request, $response, $args) use ($app, $
 $app->get('/{uid}', function ($request, $response, $args) use ($app, $prismic) {
     $api = $prismic->get_api(); // PART 1 - Call api
 
-    //PART 2 - Call Header & Footer
-    $header   = $api->getByUID('header',   'header');
-    $footer   = $api->getByUID('footer' ,  'footer');
-    $lightbox = $api->getByUID('lightbox', 'lightbox');
-    
-    //PART 3 - Call current page
-    $document = NULL;
-    $nType = 0;
-    $arrayTypes = ['home', 'blog', 'clients', 'pres', 'services', 'about', 'legal_notices', 'solutions', 'contact', 'features', 'p404']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
-    $arrayView  = ['home', 'blog', 'clients', 'pres', 'services', 'about', 'legal_notices', 'solutions', 'contact', 'feature', '404']; // NAME IN "VIEWS" FOLDER, ALWAYS SAME POSITION BETWEEN "arrayTypes" & "arrayView"
-    foreach ($arrayTypes as $type) {
-        $document = $api->getByUID($type, $args['uid']);
-        $nType++;
-        if($document != NULL) {
+    //PART 2 - Select languages
+    $allLang = switchLanguages($args['uid']);
+    $options = false;
+    foreach ($allLang as $lang) {
+        $testReturn = $api->getByUID('header', 'header', [ 'lang' => $lang ] );
+        if($testReturn) {
+            $options = [ 'lang' => $lang ];
             break;
         }
     }
 
-    //PART 4 - Call good view
-    if($document != NULL) {
-      render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
+    if(!$options) {
+
+        //PART 3 - Call Header & Footer
+        $header   = $api->getByUID('header',   'header');
+        $footer   = $api->getByUID('footer' ,  'footer');
+        $lightbox = $api->getByUID('lightbox', 'lightbox');
+
+        //PART 4 - Call current page
+        $document = NULL;
+        $nType = 0;
+        $arrayTypes = ['home', 'blog', 'clients', 'pres', 'services', 'about', 'legal_notices', 'solutions', 'contact', 'features', 'p404']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
+        $arrayView  = ['home', 'blog', 'clients', 'pres', 'services', 'about', 'legal_notices', 'solutions', 'contact', 'feature', '404']; // NAME IN "VIEWS" FOLDER, ALWAYS SAME POSITION BETWEEN "arrayTypes" & "arrayView"
+        foreach ($arrayTypes as $type) {
+            $document = $api->getByUID($type, $args['uid']);
+            $nType++;
+            if($document != NULL) {
+                break;
+            }
+        }
+
+        //PART 5 - Call good view
+        if($document != NULL) {
+          render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
+        }
+        else {
+          header('Location: /'); // 404 or /
+          exit;
+        }
     }
     else {
-      header('Location: /'); // 404 or /
-      exit;
+
+        //PART 3 - Call Header & Footer & Lightbox
+        $header   = $api->getByUID('header',   'header',   $options);
+        $footer   = $api->getByUID('footer' ,  'footer',   $options);
+        $lightbox = $api->getByUID('lightbox', 'lightbox', $options);
+
+        //PART 4 - Call Home
+        $document = $api->getByUID('home', 'home');
+        
+        //PART 5 - Render the page
+        render($app, 'home', array('document' => $document, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
     }
 });
 
