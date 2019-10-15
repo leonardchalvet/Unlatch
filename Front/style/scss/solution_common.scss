@@ -360,7 +360,6 @@ main{
 				width: 100%;
 				transition: all 0.5s ease;
 				.quote{
-					width: 100%;
 					position: absolute;
 					top: 50%;
 					transform: translateY(-50%);
@@ -372,7 +371,6 @@ main{
 						&:after{
 							content: "";
 						}
-						width: 100%;
 						@include styleQuote;
 						color: #FFF;
 					}
