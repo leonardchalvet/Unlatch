@@ -360,12 +360,19 @@ main{
 				width: 100%;
 				transition: all 0.5s ease;
 				.quote{
+					width: 100%;
 					position: absolute;
 					top: 50%;
 					transform: translateY(-50%);
 					q{
 						display: block;
-						top: 50%;
+						&:before{
+							content: "";
+						}
+						&:after{
+							content: "";
+						}
+						width: 100%;
 						@include styleQuote;
 						color: #FFF;
 					}
@@ -452,6 +459,22 @@ main{
 						background-color: #FFF;
 						svg{
 							stroke: $colorMain_1_strong;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.reach{
+		.container-quotes{
+			.container-el{
+				.quote{
+					q.wrapLine{
+						@for $i from 1 to 20 {
+							>span:nth-child(#{$i}) {
+								transition-delay: 0.4s + $i * 0.1s; 
+							}
 						}
 					}
 				}

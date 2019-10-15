@@ -144,12 +144,12 @@
 						<div class="container-el">
 							<div class="el">
 								<div class="quote">
-									<q class="elAnim__slide anim__delayMedium_2">
+									<q class="wrapLine">
 										En tant que promoteur, la solution d’Unlatch répond à un vrai besoin de simplification de gestion des dossiers clients. Elle permet de gagner beaucoup de temps et de mieux gérer la relation avec les notaires et les acquéreurs.
 									</q>
 								</div>
 								
-								<div class="container-infos elAnim__slide anim__delayMedium_3">
+								<div class="container-infos elAnim__slide anim__delayMedium_5">
 									<div class="name">Jérôme Copolata & Clément Guillemin</div>
 									<div class="job">Co-Fondateurs, Promège </div>
 								</div>

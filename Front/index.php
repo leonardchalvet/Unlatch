@@ -376,28 +376,36 @@
 						<img class="obj-1" src="img/common/icn-quote-white.svg" alt="">
 						<div class="container-el">
 							<div class="el">
-								<q>
-									Après un premier test concluant sur un programme nous avons pris la décision de déployer la solution sur l’ensemble de nos programmes, nos équipes étant pleinement satisfaites de l’outil et du gain de temps procuré
-								</q>
-								<div class="container-infos">
+								<div class="quote">
+									<q class="wrapLine">
+										CBo Territoria est particulièrement heureux de franchir avec Unlatch cette étape stratégique de digitalisation de ses ventes en VEFA. Elle constitue un atout compétitif important qui permet de réduire les délais en simplifiant et sécurisant les échanges entre les acquéreurs, les notaires et nous-même. Forts de cette nouvelle technologie, nous apportons une expérience client innovante et rassurante à nos acquéreurs
+									</q>
+								</div>
+								
+								<div class="container-infos elAnim__slide anim__delayMedium_4">
 									<div class="name">Norbert Desmard</div>
 									<div class="job">Directeur Commercial, Quartus</div>
 								</div>
 							</div>
 							<div class="el">
-								<q>
-									La solution Unlatch nous permet d’offrir une solution unique, moderne et ergonomique à nos clients. En quelques clics, ils peuvent suivre et accomplir toutes les démarches de leur acquisition. Cela leur apporte plus rapidement toute l’information liée à leur acquisition immobilière, en toute transparence
-								</q>
-								<div class="container-infos">
+								<div class="quote">
+									<q class="wrapLine">
+										La solution Unlatch nous permet d’offrir une solution unique, moderne et ergonomique à nos clients. En quelques clics, ils peuvent suivre et accomplir toutes les démarches de leur acquisition. Cela leur apporte plus rapidement toute l’information liée à leur acquisition immobilière, en toute transparence
+									</q>
+								</div>
+								
+								<div class="container-infos elAnim__slide anim__delayMedium_4">
 									<div class="name">Anthony Perez</div>
 									<div class="job">Président, Davril Promotion</div>
 								</div>
 							</div>
 							<div class="el">
-								<q>
-									CBo Territoria est particulièrement heureux de franchir avec Unlatch cette étape stratégique de digitalisation de ses ventes en VEFA. Elle constitue un atout compétitif important qui permet de réduire les délais en simplifiant et sécurisant les échanges entre les acquéreurs, les notaires et nous-même. Forts de cette nouvelle technologie, nous apportons une expérience client innovante et rassurante à nos acquéreurs
-								</q>
-								<div class="container-infos">
+								<div class="quote">
+									<q class="wrapLine">
+										CBo Territoria est particulièrement heureux de franchir avec Unlatch cette étape stratégique de digitalisation de ses ventes en VEFA. Elle constitue un atout compétitif important qui permet de réduire les délais en simplifiant et sécurisant les échanges entre les acquéreurs, les notaires et nous-même. Forts de cette nouvelle technologie, nous apportons une expérience client innovante et rassurante à nos acquéreurs. Forts de cette nouvelle technologie, nous apportons une expérience client innovante et rassurante à nos acquéreurs
+									</q>
+								</div>
+								<div class="container-infos elAnim__slide anim__delayMedium_5">
 									<div class="name">Catherine Galatoire</div>
 									<div class="job">Directrice Commerciale, CBo Territoria</div>
 								</div>

@@ -737,13 +737,25 @@ main{
 				width: 100%;
 				opacity: 0;
 				transition: all 0.5s ease;
-				q{
+				.quote{
+					width: 100%;
 					position: absolute;
 					top: 50%;
 					transform: translateY(-50%);
-					@include styleQuote;
-					color: #FFF;
+					q{
+						display: block;
+						&:before{
+							content: "";
+						}
+						&:after{
+							content: "";
+						}
+						width: 100%;
+						@include styleQuote;
+						color: #FFF;
+					}
 				}
+				
 				.container-infos{
 					position: absolute;
 					bottom: 80px;
@@ -824,6 +836,22 @@ main{
 						background-color: #FFF;
 						svg{
 							stroke: $colorMain_1_strong;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.reach{
+		.container-quotes{
+			.container-el{
+				.quote{
+					q.wrapLine{
+						@for $i from 1 to 20 {
+							>span:nth-child(#{$i}) {
+								transition-delay: 0.4s + $i * 0.1s; 
+							}
 						}
 					}
 				}
@@ -1205,13 +1233,20 @@ main{
 					left: initial;
 					position: relative;
 					padding-left: 0px;
-					q{
-						display: block;
+					.quote{
 						position: relative;
-						top: initial;
-						text-align: center;
 						transform: translateY(0px);
+						top: initial;
+
+						q{
+							display: block;
+							position: relative;
+							top: initial;
+							text-align: center;
+							transform: translateY(0px);
+						}
 					}
+					
 					&.active{
 						display: block;
 					}
