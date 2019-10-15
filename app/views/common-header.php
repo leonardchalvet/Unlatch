@@ -45,7 +45,7 @@ $header = $WPGLOBAL['header']->data;
 				<ul>
 					<?php foreach ($slice->items as $item) { ?>
 					<li>
-						<a href="">
+						<a href="<?= $item->hc_dp_link->url; ?>">
 							<div class="icn">
 								<img src="<?= $item->hc_dp_icn->url; ?>" alt="">
 							</div>
