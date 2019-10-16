@@ -122,7 +122,7 @@ $app->get('/{uid}', function ($request, $response, $args) use ($app, $prismic) {
         $lightbox = $api->getByUID('lightbox', 'lightbox', $options);
 
         //PART 4 - Call Home
-        $document = $api->getByUID('home', 'home');
+        $document = $api->getByUID('home', 'home', $options);
         
         //PART 5 - Render the page
         render($app, 'home', array('document' => $document, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
