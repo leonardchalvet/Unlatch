@@ -4,7 +4,7 @@ $document = $WPGLOBAL['document'];
 $value = isset($_GET['value']) ? $_GET['value'] : -1;
 
 $link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
-                "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
+                "https" : "https") . "://" . $_SERVER['HTTP_HOST'] .  
                 $_SERVER['REQUEST_URI']; 
 
 $linkS = explode('/', $link);

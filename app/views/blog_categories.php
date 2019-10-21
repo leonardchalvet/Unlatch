@@ -4,6 +4,10 @@ $cta = $WPGLOBAL['cta'];
 $document = $WPGLOBAL['document']->results[0]->data;
 $articles = $WPGLOBAL['articles']->results;
 
+$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
+          "https" : "https") . "://" . $_SERVER['HTTP_HOST'] .  
+          $_SERVER['REQUEST_URI'];
+
 $i = 0;
 foreach ($document->container_categories as $categorie) {
     $categorie = trim(strtolower($categorie->categorie_name_page[0]->text));
@@ -124,8 +128,8 @@ foreach ($articles as $article) {
 						<?php $i = 1; 
 
 						$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
-						                "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
-						                $_SERVER['REQUEST_URI']; 
+						          "https" : "https") . "://" . $_SERVER['HTTP_HOST'] .  
+						          $_SERVER['REQUEST_URI'];
 
 						$linkS = explode('/', $link);
 						$newLink = $linkS[0] . '//' . $linkS[2] . '/' . $linkS[3] . '/blog';

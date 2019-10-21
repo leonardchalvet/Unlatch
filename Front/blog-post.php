@@ -103,8 +103,9 @@
 						</div>
 						<p>
 							Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.Nam dapibus nisl vitae elit fringilla              , erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien.
-							<img src="img/img-test/background-1.jpg" alt="">
 						</p>
+
+						<img src="img/img-test/background-1.jpg" alt="">
 						
 						<h2>Donec facilisis tortor ut augue lacinia, at vive.</h2>
 						<p>

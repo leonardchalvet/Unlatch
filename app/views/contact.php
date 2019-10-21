@@ -1,6 +1,11 @@
 <?php 
 use Prismic\Dom\RichText;
 $document = $WPGLOBAL['document']->data;
+
+$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
+          "https" : "https") . "://" . $_SERVER['HTTP_HOST'] .  
+          $_SERVER['REQUEST_URI'];
+
 ?>
 <html>
  	<head>
@@ -51,6 +56,26 @@ $document = $WPGLOBAL['document']->data;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" type="text/css" href="/style/css/contact.css">
+
+		<link rel="canonical" href="<?php echo $link; ?>" >
+	    <?php foreach ($WPGLOBAL['allUrl'] as $url) { 
+
+	      $hrefS = explode('/', $link);
+	      $newHref = $hrefS[0] . '//' . $hrefS[2] . '/';
+
+	      ?>
+
+	      <link rel="alternate" hreflang="<?php echo $url['lang']; ?>" href="<?php echo $newHref . invertSwitchLanguage($url['lang']) . '/' . $url['url']; ?>" >
+
+	      <?php if($url['lang'] == 'fr-fr') { ?>
+	        <link rel="alternate" hreflang="x-default" href="<?php echo $newHref . 'fr/' . $url['url']; ?>" >
+	      <?php } ?>
+
+	      <?php if($url['lang'] == 'en-gb') { ?>
+	        <link rel="alternate" hreflang="en-us" href="<?php echo $newHref . 'en/' . $url['url']; ?>" >
+	      <?php } ?>
+
+	    <?php } ?>
 
 		<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
@@ -159,12 +184,6 @@ $document = $WPGLOBAL['document']->data;
 									</div>
 								<?php $i++; } ?>
 							<?php } ?>
-
-							<?php 
-							$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
-						                "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
-						                $_SERVER['REQUEST_URI']; 
-							?>
 
 							<input type="text" name="page" value="<?php echo $link; ?>" style="display: none;">
 							<input type="text" name="allmail" value="<?= trim(RichText::asText($document->all_email)); ?>" style="display: none;">

@@ -3,6 +3,11 @@ use Prismic\Dom\RichText;
 $idA = $WPGLOBAL['document']->id;
 $document = $WPGLOBAL['document']->data;
 $articles = $WPGLOBAL['articles']->results;
+
+$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
+          "https" : "https") . "://" . $_SERVER['HTTP_HOST'] .  
+          $_SERVER['REQUEST_URI'];
+          
 ?>
 <html>
   	<head>
@@ -149,26 +154,8 @@ $articles = $WPGLOBAL['articles']->results;
 						<?php } ?>
 					</div>
 					<div class="wysiwyg">
-						<?= RichText::asHtml($document->content_first_text); ?>
-						<div class="container-quote">
-							<div class="icn">
-								<img src="/img/common/icn-quote-red.svg" alt="">
-							</div>
-							<div class="text">
-								<q>
-									<?= RichText::asText($document->content_quote); ?>
-								</q>
-							</div>
-							
-						</div>
-						<p>
-							<?= RichText::asHtml($document->content_before_img); ?>
-							<img src="<?= $document->content_img->url; ?>" alt="">
-						</p>
 						
 						<?= RichText::asHtml($document->content); ?>
-
-						<iframe src="<?= $document->content_video->url; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 						<div class="container-author">
 							<div class="infos">
@@ -290,6 +277,23 @@ $articles = $WPGLOBAL['articles']->results;
 				$('.header-blog .container-link .search .dropdown').removeClass('show');
 	        }
         });
+
+        $('#section-wysiwyg .wysiwyg pre').each(function(){
+        	
+        	let realQuote =   '<div class="container-quote">'
+							+ 	'<div class="icn">'
+							+		'<img src="/img/common/icn-quote-red.svg" alt="">'
+							+ 	'</div>'
+							+ 	'<div class="text">'
+							+		'<q>'
+							+			$(this).text()
+							+		'</q>'
+							+ 	'</div>'
+							+ '</div>';
+
+			$(realQuote).insertAfter($(this));
+			$(this).remove();
+        })
 
         // AJAX
         function getXMLHttpRequest() { 

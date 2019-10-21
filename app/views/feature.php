@@ -2,6 +2,11 @@
 use Prismic\Dom\RichText;
 $document = $WPGLOBAL['document']->data;
 $nbT = $document->global_skeleton;
+
+$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
+          "https" : "https") . "://" . $_SERVER['HTTP_HOST'] .  
+          $_SERVER['REQUEST_URI'];
+
 ?>
 <html>
 	<head>
@@ -52,6 +57,26 @@ $nbT = $document->global_skeleton;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" type="text/css" href="/style/css/feature.css">
+
+		<link rel="canonical" href="<?php echo $link; ?>" >
+	    <?php foreach ($WPGLOBAL['allUrl'] as $url) { 
+
+	      $hrefS = explode('/', $link);
+	      $newHref = $hrefS[0] . '//' . $hrefS[2] . '/';
+
+	      ?>
+
+	      <link rel="alternate" hreflang="<?php echo $url['lang']; ?>" href="<?php echo $newHref . invertSwitchLanguage($url['lang']) . '/' . $url['url']; ?>" >
+
+	      <?php if($url['lang'] == 'fr-fr') { ?>
+	        <link rel="alternate" hreflang="x-default" href="<?php echo $newHref . 'fr/' . $url['url']; ?>" >
+	      <?php } ?>
+
+	      <?php if($url['lang'] == 'en-gb') { ?>
+	        <link rel="alternate" hreflang="en-us" href="<?php echo $newHref . 'en/' . $url['url']; ?>" >
+	      <?php } ?>
+
+	    <?php } ?>
 
 		<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">

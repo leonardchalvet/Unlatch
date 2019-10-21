@@ -35,7 +35,17 @@ $app->get('/', function ($request, $response) use ($app, $prismic) {
     //PART 3 - Call home page (ask to client for default languages)
     $document = $api->getByID('XYoKVxIAACUAZYtk'); //For get ID, print_r($document) in home views, ctrl-c [id]
 
-    render($app, 'home', array('document' => $document, 'lightbox' => $lightbox, 'header' => $header, 'footer' => $footer));
+    $allUrl;
+    $allUrlCount = 1;
+    $allUrl[0]['lang'] = $document->lang;
+    $allUrl[0]['url']  = $document->uid;
+    foreach ($document->alternate_languages as $allLg) {           
+        $allUrl[$allUrlCount]['lang'] = $allLg->lang;
+        $allUrl[$allUrlCount]['url']  = $allLg->uid;
+        $allUrlCount++;
+    }
+
+    render($app, 'home', array('document' => $document, 'lightbox' => $lightbox, 'header' => $header, 'footer' => $footer, 'allUrl' => $allUrl ));
 });
 
 // Livesearch
@@ -64,6 +74,7 @@ $app->get('/{lg}/livesearch', function ($request, $response, $args) use ($app, $
 
     //PART 3 - Call Blog
     $options['pageSize'] = 9999;
+    $options['orderings'] = '[document.first_publication_date desc]';
     $document = $api->query(Predicates::at('document.type', 'articles'), $options);
 
     //PART 4 - Render the page
@@ -97,17 +108,34 @@ $app->get('/{uid}', function ($request, $response, $args) use ($app, $prismic) {
         $nType = 0;
         $arrayTypes = ['home', 'blog', 'clients', 'pres', 'services', 'about', 'legal_notices', 'solutions', 'contact', 'features', 'p404']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
         $arrayView  = ['home', 'blog', 'clients', 'pres', 'services', 'about', 'legal_notices', 'solutions', 'contact', 'feature', '404']; // NAME IN "VIEWS" FOLDER, ALWAYS SAME POSITION BETWEEN "arrayTypes" & "arrayView"
+        
+        $allUrl;
+        $allUrlCount = 1;
         foreach ($arrayTypes as $type) {
             $document = $api->getByUID($type, $args['uid']);
+            $allLang = $api->getByUID($type, $args['uid'], [ 'lang' => '*' ] );
+
             $nType++;
             if($document != NULL) {
+
+                $allUrl[0]['lang'] = $document->lang;
+                $allUrl[0]['url']  = $document->uid;
+
+                foreach ($document->alternate_languages as $allLg) {
+                    
+                    $allUrl[$allUrlCount]['lang'] = $allLg->lang;
+                    $allUrl[$allUrlCount]['url']  = $allLg->uid;
+
+                    $allUrlCount++;
+                }
+
                 break;
             }
         }
 
         //PART 5 - Call good view
         if($document != NULL) {
-          render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
+          render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox, 'allUrl' => $allUrl ));
         }
         else {
           header('Location: /'); // 404 or /
@@ -123,9 +151,19 @@ $app->get('/{uid}', function ($request, $response, $args) use ($app, $prismic) {
 
         //PART 4 - Call Home
         $document = $api->getByUID('home', 'home', $options);
+
+        $allUrl;
+        $allUrlCount = 1;
+        $allUrl[0]['lang'] = $document->lang;
+        $allUrl[0]['url']  = $document->uid;
+        foreach ($document->alternate_languages as $allLg) {           
+            $allUrl[$allUrlCount]['lang'] = $allLg->lang;
+            $allUrl[$allUrlCount]['url']  = $allLg->uid;
+            $allUrlCount++;
+        }
         
         //PART 5 - Render the page
-        render($app, 'home', array('document' => $document, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
+        render($app, 'home', array('document' => $document, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox, 'allUrl' => $allUrl ));
     }
 });
 
@@ -162,12 +200,27 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
     $nType = 0;
     $arrayTypes = ['home', 'blog', 'clients', 'pres', 'services', 'about', 'legal_notices', 'solutions', 'contact', 'features', 'p404']; // UPDATE NAME OF CUSTOM TYPE HERE (only if exist in CONTENT)
     $arrayView  = ['home', 'blog', 'clients', 'pres', 'services', 'about', 'legal_notices', 'solutions', 'contact', 'feature', '404']; // NAME IN "VIEWS" FOLDER, ALWAYS SAME POSITION BETWEEN "arrayTypes" & "arrayView"
+
+    $allUrl;
+    $allUrlCount = 1;
     foreach ($arrayTypes as $type) {
         $document = $api->getByUID($type, $args['uid'], $options);
         $allLang = $api->getByUID($type, $args['uid'], [ 'lang' => '*' ] );
         
         $nType++;
         if($document != NULL) {
+
+            $allUrl[0]['lang'] = $document->lang;
+            $allUrl[0]['url']  = $document->uid;
+            
+            foreach ($document->alternate_languages as $allLg) {
+                
+                $allUrl[$allUrlCount]['lang'] = $allLg->lang;
+                $allUrl[$allUrlCount]['url']  = $allLg->uid;
+
+                $allUrlCount++;
+            }
+
             break;
         }
     }
@@ -176,12 +229,13 @@ $app->get('/{lg}/{uid}', function ($request, $response, $args) use ($app, $prism
     if($document != NULL) {
       if($arrayView[$nType-1] == 'blog') {
       	$options['pageSize'] = 9999;
+        $options['orderings'] = '[document.first_publication_date desc]';
   	  	$articles = $api->query(Predicates::at('document.type', 'articles'), $options);
   	  	
-        render($app, $arrayView[$nType-1], array('document' => $document, 'articles' => $articles, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
+        render($app, $arrayView[$nType-1], array('document' => $document, 'articles' => $articles, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox, 'allUrl' => $allUrl ));
       }
       else {
-      	render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox));
+      	render($app, $arrayView[$nType-1], array('document' => $document, 'header' => $header, 'footer' => $footer, 'lightbox' => $lightbox, 'allUrl' => $allUrl ));
       }
     }
     else {
@@ -225,6 +279,7 @@ $app->get('/{lg}/blog/{cta}', function ($request, $response, $args) use ($app, $
 
     //PART 5 - Call Articles
     $options['pageSize'] = 9999;
+    $options['orderings'] = '[document.first_publication_date desc]';
     $articles = $api->query(Predicates::at('document.type', 'articles'), $options);
 
     if($document == NULL && $articles == NULL) {
@@ -295,6 +350,7 @@ $app->get('/{lg}/{blog}/{ct}/{uid}', function ($request, $response, $args) use (
 
     //PART 5 - Call Articles
     $options['pageSize'] = 4;
+    $options['orderings'] = '[document.first_publication_date desc]';
     $articles = $api->query(Predicates::at('document.type', 'articles'), $options);
 
     if($document == NULL && $articles == NULL) {
@@ -338,6 +394,18 @@ function switchLanguages($lg) {
         
         default: return false;
     }
+
+    //return [ 'lang' => $lglg ];
+}
+
+function invertSwitchLanguage($lg) {
+
+    if($lg == 'fr-fr' || $lg == 'fr-be' || $lg == 'fr-ca' || $lg == 'fr-lu' || $lg == 'fr-ch') return 'fr';
+    else if($lg == 'en-us' || $lg == 'en-au' || $lg == 'en-eu' || $lg == 'en-bz' || $lg == 'en-ca' || $lg == 'en-de' || $lg == 'en-gb' || $lg == 'en-in' || $lg == 'en-ie' || $lg == 'en-jm' || $lg == 'en-nz' || $lg == 'en-ph' || $lg == 'en-pl' || $lg == 'en-za' || $lg == 'en-tt') return 'en';
+    else if($lg == 'de-at' || $lg == 'de-de' || $lg == 'de-li' || $lg == 'de-lu' || $lg == 'de-ch') return 'de';
+    else if($lg == 'es-ar' || $lg == 'es-bo' || $lg == 'es-cl' || $lg == 'es-co' || $lg == 'es-cr' || $lg == 'es-do' || $lg == 'es-ec' || $lg == 'es-sv' || $lg == 'es-gt' || $lg == 'es-hn' || $lg == 'es-mx' || $lg == 'es-ni' || $lg == 'es-pa' || $lg == 'es-py' || $lg == 'es-pe' || $lg == 'es-pr' || $lg == 'es-es' || $lg == 'es-uy' || $lg == 'es-ve') return 'es';
+    else if($lg == 'it-it' || $lg == 'it-ch') return 'it';
+    else if($lg == 'ja-jp') return 'jp';
 
     //return [ 'lang' => $lglg ];
 }
