@@ -133,7 +133,7 @@
 
 
 
-$(window).on('load', function() {
+$(document).ready(function() {
 
 	$('body').addClass('ready');
 

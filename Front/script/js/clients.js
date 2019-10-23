@@ -82,7 +82,7 @@ function sectionQuotesCaroussel(Section, El, Img, Nav){
 /*=================================================================================
 ================================= END BEFORE LOAD =================================
 =================================================================================*/
-$(window).on('load', function() {	
+$(document).ready(function() {	
 
 	sectionQuotesCaroussel(
 		'#section-cover',  

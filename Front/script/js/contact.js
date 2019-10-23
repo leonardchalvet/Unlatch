@@ -1,6 +1,5 @@
-
 // @codekit-prepend 'common.js'
-$(window).on('load', function() {	
+$(document).ready(function() {	
 
 
 	$('#section-contact .container-form form .label-text input').focusin(function() {
